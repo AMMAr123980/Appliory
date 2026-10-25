@@ -15,7 +15,7 @@ const csp = [
 ].join("; ");
 const config: NextConfig = {
   poweredByHeader: false,
-  distDir: ".next-vercel",
+  distDir: ".next",
   async headers() {
     return [
       {
