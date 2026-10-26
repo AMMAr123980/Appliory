@@ -1,24 +1,27 @@
 import type { Metadata } from "next";
 export const siteUrl = (
   process.env.NEXT_PUBLIC_SITE_URL ||
-  "https://appliory.docileluck512.chatgpt.site"
+  "https://www.appliory.tech"
 ).replace(/\/$/, "");
-export const absolute = (path = "/") => siteUrl + path;
+export const absolute = (path = "/") => siteUrl + (path.startsWith("/") ? path : `/${path}`);
 export function pageMetadata(
   title: string,
   description: string,
   path: string,
+  keywords?: string[],
 ): Metadata {
   return {
     title,
     description,
-    alternates: { canonical: path },
+    keywords,
+    alternates: { canonical: absolute(path) },
     openGraph: {
       title: title + " | Appliory",
       description,
       url: absolute(path),
       siteName: "Appliory",
       type: "website",
+      locale: "en_US",
       images: [
         {
           url: absolute("/social-preview.png"),

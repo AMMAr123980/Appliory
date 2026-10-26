@@ -1,0 +1,27 @@
+# Appliory
+
+> Appliory (https://www.appliory.tech) is a privacy-first web platform offering free online document, PDF, and image utilities. All operations run 100% locally in the user's browser without file uploads or user registration.
+
+## Core Tools & Capabilities
+
+- Image Compressor (https://www.appliory.tech/tools/image-compressor): Compress JPG, PNG, and WebP images to a target size in KB with instant side-by-side comparison. Free and processed directly on device.
+- Image Resizer (https://www.appliory.tech/tools/image-resizer): Resize JPG, PNG, and WebP images to exact pixel dimensions with aspect ratio lock and format conversion.
+- PDF Page Counter & Summary (https://www.appliory.tech/tools/pdf-page-counter): Count PDF pages and extract text summaries locally using PDF.js without uploading sensitive documents.
+- File Size Checker (https://www.appliory.tech/tools/file-size-checker): Verify document sizes in KB and MB against official application portal upload limits.
+- Duplicate File Finder (https://www.appliory.tech/tools/duplicate-file-finder): Identify exact duplicate files across your device using cryptographic SHA-256 byte hashing.
+- Document Application Checker (https://www.appliory.tech/tool): Workspace to prepare and check scholarships, university admissions, and job application document packages against configurable checklist rules.
+
+## Privacy & Security
+
+- Zero Server Uploads: Files never leave the user's device. Processing occurs inside browser memory via Web APIs and WebAssembly/Canvas.
+- No Accounts Required: No signup, login, tracking, or document history retained.
+- Data Ownership: Downloads remain on the user's local device; closing or refreshing the tab clears all active memory.
+
+## Official Links
+
+- Website: https://www.appliory.tech
+- Tools Directory: https://www.appliory.tech/tools
+- How It Works: https://www.appliory.tech/how-it-works
+- Frequently Asked Questions: https://www.appliory.tech/faq
+- About Appliory: https://www.appliory.tech/about
+- Privacy Policy: https://www.appliory.tech/privacy

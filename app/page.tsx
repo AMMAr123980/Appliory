@@ -14,14 +14,41 @@ import {
 import { tools } from "@/lib/tool-catalog";
 import { faqs } from "@/lib/content";
 import { pageMetadata } from "@/lib/seo";
+import { StructuredData } from "@/components/appliory/structured-data";
 export const metadata = pageMetadata(
-  "Free document checker, PDF & image tools",
-  "Check application documents, count PDF pages, measure file sizes, resize images and find exact duplicates. Free tools with no login. Files stay on your device.",
+  "Free Document Checker, PDF & Image Tools Online",
+  "Appliory offers free, private document and image tools: Image Compressor, Image Resizer, PDF Page Counter, File Size Checker, and Duplicate File Finder. 100% free, no login, processed locally on your device.",
   "/",
+  [
+    "image compressor",
+    "compress image online",
+    "image compressor to kb",
+    "free image compressor",
+    "image resizer",
+    "pdf page counter",
+    "file size checker",
+    "duplicate file finder",
+    "appliory",
+    "appliory.tech",
+  ],
 );
 export default function Home() {
   return (
     <main>
+      <StructuredData
+        data={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.slice(0, 4).map(([q, a]) => ({
+            "@type": "Question",
+            name: q,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: a,
+            },
+          })),
+        }}
+      />
       <section className="home-hero wrap">
         <div className="hero-copy">
           <span className="eyebrow">

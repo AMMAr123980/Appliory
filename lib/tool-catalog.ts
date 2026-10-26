@@ -2,6 +2,18 @@ export const tools = [
   {
     slug: "pdf-page-counter",
     name: "PDF page counter & summary",
+    metaTitle: "Free PDF Page Counter Online & Summary — No Uploads | Appliory",
+    metaDescription:
+      "Count PDF pages instantly and generate an extractive text summary with page references online. 100% free, private on-device processing with zero document uploads.",
+    keywords: [
+      "pdf page counter",
+      "count pdf pages",
+      "count pages in pdf online",
+      "pdf page count free",
+      "pdf summary",
+      "extract pdf text count",
+      "private pdf tool",
+    ],
     category: "PDF",
     description:
       "Count PDF pages and generate a readable content summary with page references. Local extractive summaries, no uploads or registration.",
@@ -32,6 +44,17 @@ export const tools = [
   {
     slug: "file-size-checker",
     name: "File size checker",
+    metaTitle: "File Size Checker Online (KB & MB) — Free Application Document Check",
+    metaDescription:
+      "Check document and image file sizes in KB and MB against maximum upload limits. Fast, free, and accurate on-device file size checker with no uploads.",
+    keywords: [
+      "file size checker",
+      "check file size online",
+      "file size in kb",
+      "check mb size",
+      "document size checker",
+      "application file limit checker",
+    ],
     category: "FILES",
     description:
       "Check document sizes in KB and MB against your own upload limit. Files stay on your device.",
@@ -62,6 +85,18 @@ export const tools = [
   {
     slug: "image-resizer",
     name: "Image resizer",
+    metaTitle: "Online Image Resizer — Resize JPG, PNG & WebP to Exact Pixels Free",
+    metaDescription:
+      "Resize JPG, PNG and WebP images to exact pixel dimensions (width & height). Keep aspect ratio locked, convert formats and download privately in your browser.",
+    keywords: [
+      "image resizer",
+      "resize image online",
+      "resize photo to pixels",
+      "free photo resizer",
+      "resize jpg online",
+      "resize png online",
+      "passport photo resizer",
+    ],
     category: "IMAGES",
     description:
       "Resize JPG, PNG and WebP images to exact pixel dimensions and download the result privately.",
@@ -92,6 +127,21 @@ export const tools = [
   {
     slug: "image-compressor",
     name: "Image compressor",
+    metaTitle: "Free Image Compressor Online — Compress JPG, PNG & WebP to KB",
+    metaDescription:
+      "Compress JPG, PNG and WebP images to target KB online without losing quality. 100% private in-browser compression with instant preview and no file uploads.",
+    keywords: [
+      "image compressor",
+      "compress image",
+      "compress image to kb",
+      "image compressor 100kb",
+      "compress image online",
+      "image size reducer",
+      "compress jpg",
+      "compress webp",
+      "photo compressor",
+      "free online image compressor",
+    ],
     category: "IMAGES",
     description:
       "Reduce JPG or WebP image size with a target in KB. Compare the real result before downloading.",
@@ -122,6 +172,17 @@ export const tools = [
   {
     slug: "duplicate-file-finder",
     name: "Duplicate file finder",
+    metaTitle: "Duplicate File Finder Online — Exact SHA-256 Hash Matching",
+    metaDescription:
+      "Find identical duplicate files online with cryptographic SHA-256 byte hashing. Completely private and safe: files are analyzed locally without uploading.",
+    keywords: [
+      "duplicate file finder",
+      "find duplicate files online",
+      "duplicate finder free",
+      "sha256 file comparison",
+      "detect duplicate files",
+      "find duplicate documents",
+    ],
     category: "FILES",
     description:
       "Find exact duplicate files using SHA-256 hashes, even when filenames differ. No file uploads.",

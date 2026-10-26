@@ -1,8 +1,9 @@
 import type { MetadataRoute } from "next";
 export default function robots(): MetadataRoute.Robots {
-  const origin =
+  const origin = (
     process.env.NEXT_PUBLIC_SITE_URL ||
-    "https://appliory.docileluck512.chatgpt.site";
+    "https://www.appliory.tech"
+  ).replace(/\/$/, "");
   return {
     rules: {
       userAgent: "*",

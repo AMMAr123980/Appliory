@@ -13,9 +13,10 @@ export async function generateMetadata({
   const t = tools.find((t) => t.slug === slug);
   return t
     ? pageMetadata(
-        t.name + " online — free, no login",
-        t.description,
+        t.metaTitle,
+        t.metaDescription,
         "/tools/" + slug,
+        [...t.keywords],
       )
     : { title: "Tool not found", robots: { index: false } };
 }
@@ -44,13 +45,27 @@ export default async function Page({
           url: absolute("/tools/" + slug),
           description: t.description,
           applicationCategory: "UtilitiesApplication",
-          operatingSystem: "Modern web browser",
+          operatingSystem: "All (Web Browser)",
           browserRequirements:
             "Requires JavaScript, File API and Canvas support",
           isAccessibleForFree: true,
           offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
           featureList: [t.answer],
           publisher: { "@id": absolute("/#organization") },
+        }}
+      />
+      <StructuredData
+        data={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: t.questions.map(([q, a]) => ({
+            "@type": "Question",
+            name: q,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: a,
+            },
+          })),
         }}
       />
       <nav className="breadcrumbs" aria-label="Breadcrumb">
