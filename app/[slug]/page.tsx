@@ -7,6 +7,8 @@ import {
   FolderCheck,
   Plus,
   FileCheck2,
+  Mail,
+  Phone,
 } from "lucide-react";
 import { faqs } from "@/lib/content";
 
@@ -90,18 +92,49 @@ export default async function Page({
         </section>
       ) : slug === "contact" ? (
         <section className="wrap content-section" style={{ maxWidth: 850 }}>
-          <h2>Help with your documents</h2>
+          <h2>Get in touch with Appliory</h2>
           <p>
+            Have a question about document checking, technical limitations, or need support? Reach out directly to our team:
+          </p>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.5rem", margin: "2rem 0" }}>
+            <div style={{ padding: "1.5rem", border: "1px solid var(--border, #e2e8f0)", borderRadius: "12px", background: "var(--card, #f8fafc)" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "0.5rem" }}>
+                <Mail size={22} color="var(--primary, #0f766e)" />
+                <h3 style={{ margin: 0, fontSize: "1.15rem" }}>Email Support</h3>
+              </div>
+              <p style={{ margin: "0.25rem 0 0.75rem", color: "var(--muted, #64748b)" }}>
+                For general questions, bug reports, and partnership inquiries:
+              </p>
+              <a href="mailto:fitduo07@gmail.com" style={{ fontWeight: 600, color: "var(--primary, #0f766e)", wordBreak: "break-all" }}>
+                fitduo07@gmail.com
+              </a>
+            </div>
+            <div style={{ padding: "1.5rem", border: "1px solid var(--border, #e2e8f0)", borderRadius: "12px", background: "var(--card, #f8fafc)" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "0.5rem" }}>
+                <Phone size={22} color="var(--primary, #0f766e)" />
+                <h3 style={{ margin: 0, fontSize: "1.15rem" }}>Phone & WhatsApp</h3>
+              </div>
+              <p style={{ margin: "0.25rem 0 0.75rem", color: "var(--muted, #64748b)" }}>
+                Direct telephone and WhatsApp messaging support:
+              </p>
+              <a href="tel:+923215772078" style={{ fontWeight: 600, color: "var(--primary, #0f766e)" }}>
+                +92 321 5772078
+              </a>
+            </div>
+          </div>
+          <p style={{ marginTop: "1rem" }}>
             Check the FAQ for supported formats, file limits, and how to
             interpret results. For a failed check, use the action shown beside
             the result, correct the file or requirement, and run checks again.
           </p>
-          <Link className="button dark" href="/faq">
-            Open help center
-          </Link>{" "}
-          <Link className="button" href="/tool">
-            Open document checker
-          </Link>
+          <div style={{ display: "flex", gap: "1rem", marginTop: "1.5rem", flexWrap: "wrap" }}>
+            <Link className="button dark" href="/faq">
+              Open help center
+            </Link>
+            <Link className="button" href="/tool">
+              Open document checker
+            </Link>
+          </div>
         </section>
       ) : slug === "how-it-works" ? (
         <section className="wrap content-section">
