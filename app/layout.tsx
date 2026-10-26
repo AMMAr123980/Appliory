@@ -94,12 +94,17 @@ export default function RootLayout({
                 url: siteUrl,
                 logo: absolute("/brand-mark.png"),
                 description:
-                  "Appliory provides private, browser-based tools for document checking, PDF page counting, image compression, resizing, and duplicate file finding without file uploads.",
+                  "Appliory is a privacy-first web platform developed by Ammar Hassan Malik offering free online tools for image compression, image resizing, PDF page counting, file size verification, and duplicate file finding with zero document uploads.",
                 sameAs: ["https://www.appliory.tech", "https://appliory.tech"],
+                founder: {
+                  "@type": "Person",
+                  name: "Ammar Hassan Malik",
+                },
                 knowsAbout: [
-                  "Image Compression",
-                  "PDF Page Counting",
-                  "File Size Verification",
+                  "Image Compression (JPG, PNG, WebP)",
+                  "PDF Page Counting and Extractive Summary",
+                  "Application File Size Verification",
+                  "Exact Duplicate File Detection via SHA-256",
                   "Document Application Readiness",
                 ],
               },
