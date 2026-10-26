@@ -62,7 +62,14 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
-  icons: { icon: "/icon.svg", apple: "/apple-touch-icon.png" },
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/apple-touch-icon.png",
+    shortcut: "/favicon.svg",
+  },
   verification: {
     google:
       process.env.GOOGLE_SITE_VERIFICATION ||
