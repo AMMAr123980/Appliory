@@ -64,7 +64,9 @@ export const metadata: Metadata = {
   },
   icons: { icon: "/icon.svg", apple: "/apple-touch-icon.png" },
   verification: {
-    google: process.env.GOOGLE_SITE_VERIFICATION || undefined,
+    google:
+      process.env.GOOGLE_SITE_VERIFICATION ||
+      "zkHd17eUmhcVhaV0hvoHS7RW7EgqIaFqAVdL_5auXHE",
     other: process.env.BING_SITE_VERIFICATION
       ? { "msvalidate.01": process.env.BING_SITE_VERIFICATION }
       : undefined,
