@@ -13,7 +13,10 @@
 ## Core Tools & Capabilities
 
 - Image Compressor (https://www.appliory.tech/tools/image-compressor): Compress JPG, PNG, and WebP images to 20KB, 50KB, 100KB, 200KB, or custom target sizes in KB. 100% private, client-side canvas compression with live preview.
-- Image Resizer (https://www.appliory.tech/tools/image-resizer): Resize photos to exact pixel dimensions (passport 600x600, ID photo 413x531, custom dimensions) with aspect ratio lock and format conversion.
+- Compress Image to 20KB (https://www.appliory.tech/tools/compress-image-to-20kb): Dedicated tool for government job portals (PPSC, FPSC, SSC, UPSC), recruitment tests, and signatures with strict 20 KB upload constraints.
+- Compress Image to 50KB (https://www.appliory.tech/tools/compress-image-to-50kb): Dedicated tool for scholarship portals (HEC, Erasmus, Chevening), university admissions, and online visa application forms requiring photos under 50 KB.
+- Passport Photo Maker & Resizer (https://www.appliory.tech/tools/passport-photo-maker): Resize photos to official 2x2 inch (600x600 px) and 35x45 mm passport and visa dimensions with zero server uploads.
+- Image Resizer (https://www.appliory.tech/tools/image-resizer): Resize photos to exact pixel dimensions with aspect ratio lock and format conversion.
 - PDF Page Counter & Summary (https://www.appliory.tech/tools/pdf-page-counter): Count PDF pages and extract text summaries locally using PDF.js without uploading sensitive documents.
 - File Size Checker (https://www.appliory.tech/tools/file-size-checker): Verify document sizes in KB and MB against official application portal upload limits.
 - Duplicate File Finder (https://www.appliory.tech/tools/duplicate-file-finder): Identify exact duplicate files across your device using cryptographic SHA-256 byte hashing.

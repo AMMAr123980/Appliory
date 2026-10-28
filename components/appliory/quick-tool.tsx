@@ -24,7 +24,18 @@ const human = (n: number) =>
     : (n / 1024 / 1024).toFixed(2) + " MB";
 export default function QuickTool({ slug }: { slug: ToolSlug }) {
   const config = tools.find((t) => t.slug === slug)!;
-  const isImage = slug === "image-resizer" || slug === "image-compressor";
+  const isCompressor =
+    slug === "image-compressor" ||
+    slug === "compress-image-to-20kb" ||
+    slug === "compress-image-to-50kb";
+  const isResizer = slug === "image-resizer" || slug === "passport-photo-maker";
+  const isImage = isCompressor || isResizer;
+  const initialTarget =
+    slug === "compress-image-to-20kb"
+      ? 20
+      : slug === "compress-image-to-50kb"
+        ? 50
+        : 200;
   const [docs, setDocs] = useState<LocalDocument[]>([]);
   const [busy, setBusy] = useState(false),
     [drag, setDrag] = useState(false),
@@ -32,8 +43,8 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
   const [limit, setLimit] = useState(5),
     [width, setWidth] = useState(600),
     [height, setHeight] = useState(600),
-    [locked, setLocked] = useState(true),
-    [target, setTarget] = useState(200),
+    [locked, setLocked] = useState(slug !== "passport-photo-maker"),
+    [target, setTarget] = useState(initialTarget),
     [format, setFormat] = useState("image/jpeg");
   const [output, setOutput] = useState<LocalDocument | null>(null),
     [preview, setPreview] = useState("");
@@ -87,8 +98,10 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
       }
       setDocs([...keep, ...next]);
       if (isImage) {
-        setWidth(next[0].width!);
-        setHeight(next[0].height!);
+        if (slug !== "passport-photo-maker") {
+          setWidth(next[0].width!);
+          setHeight(next[0].height!);
+        }
       }
     } catch (e) {
       setError(e instanceof Error ? e.message : "Could not read this file.");
@@ -431,12 +444,12 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
                   >
                     <option value="image/jpeg">JPEG</option>
                     <option value="image/webp">WebP</option>
-                    {slug !== "image-compressor" && (
+                    {!isCompressor && (
                       <option value="image/png">PNG</option>
                     )}
                   </select>
                 </label>
-                {slug === "image-compressor" && (
+                {isCompressor && (
                   <label>
                     Target size (KB)
                     <input
@@ -452,7 +465,7 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
                   </label>
                 )}
               </fieldset>
-              {slug === "image-compressor" && (
+              {isCompressor && (
                 <div className="preset-block">
                   <span className="preset-title">Quick Target Presets:</span>
                   <div className="preset-chips">
@@ -479,7 +492,7 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
                   </div>
                 </div>
               )}
-              {slug === "image-resizer" && (
+              {isResizer && (
                 <div className="preset-block">
                   <span className="preset-title">Standard Size Presets:</span>
                   <div className="preset-chips">
@@ -523,7 +536,7 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
                 {busy
                   ? "Creating…"
                   : "Create " +
-                    (slug === "image-resizer" ? "resized" : "compressed") +
+                    (isResizer ? "resized" : "compressed") +
                     " image"}
               </button>
               {output && (
@@ -534,7 +547,7 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
                       {output.width} × {output.height} px · {human(output.size)}{" "}
                       · {output.type}
                     </p>
-                    {slug === "image-compressor" && (
+                    {isCompressor && (
                       <p
                         className={
                           output.size <= target * 1024
@@ -553,7 +566,7 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
                         Original: {human(source.size)}.
                       </p>
                     )}
-                    {slug === "image-compressor" && (
+                    {isCompressor && (
                       <p
                         className={
                           output.size > source.size

@@ -212,5 +212,129 @@ export const tools = [
       ],
     ],
   },
+  {
+    slug: "compress-image-to-20kb",
+    name: "Compress image to 20KB",
+    metaTitle: "Compress Image to 20KB Online Free (For Govt, Jobs & Portals) | Appliory",
+    metaDescription:
+      "Compress JPG & PNG images to under 20KB online for free. Ideal for PPSC, FPSC, SSC, UPSC, and online job application portals with strict 20KB limits. 100% private.",
+    keywords: [
+      "compress image to 20kb",
+      "compress photo to 20kb online",
+      "resize image to 20kb",
+      "image compressor 20kb",
+      "reduce image size in kb to 20kb",
+      "20kb photo converter",
+      "online 20kb photo compressor",
+      "compress signature to 20kb",
+    ],
+    category: "IMAGES",
+    description:
+      "Reduce JPG and PNG photos and signatures to under 20 KB for online job portals, recruitment exams, and admission applications.",
+    answer:
+      "Select your image or signature photo. The target size is preset to 20 KB. Appliory tests multiple compression algorithms locally to get below 20 KB without unreadable blur. Reducing dimensions to 300×300 or 400×400 px helps maintain sharp text and edges.",
+    action: "Compress to 20KB",
+    accepts: "image/jpeg,image/png,image/webp",
+    steps: [
+      "Select your JPG, PNG or WebP image or scanned signature.",
+      "The target size is already preset to 20 KB.",
+      "Click Create compressed image and download your ready-to-upload file.",
+    ],
+    questions: [
+      [
+        "Why do government and recruitment portals require 20KB?",
+        "Online exam and government job portals enforce 20KB to 50KB limits to manage massive database storage and speed up verification for millions of candidates.",
+      ],
+      [
+        "How do I compress to 20KB without losing quality?",
+        "Do not over-compress a 4000px photo. Instead, reduce the pixel width to 400px or 500px first, which naturally brings the file size down to 20KB while preserving sharp clarity.",
+      ],
+      [
+        "Are my identity cards and photos uploaded to a server?",
+        "No. All processing happens entirely inside your browser memory using HTML5 Canvas. Your files are never sent across the internet.",
+      ],
+    ],
+  },
+  {
+    slug: "compress-image-to-50kb",
+    name: "Compress image to 50KB",
+    metaTitle: "Compress Image to 50KB Online Free (JPG & PNG to 50KB) | Appliory",
+    metaDescription:
+      "Compress JPG, PNG and WebP images to 50KB online for free. Perfect for university admissions, scholarship portals, and visa photo requirements. 100% private.",
+    keywords: [
+      "compress image to 50kb",
+      "compress photo to 50kb online",
+      "reduce image size to 50kb",
+      "50kb image converter",
+      "compress jpg to 50kb",
+      "online photo compressor 50kb",
+      "compress document photo to 50kb",
+    ],
+    category: "IMAGES",
+    description:
+      "Compress JPG and PNG images down to 50 KB for scholarship portals, college admissions, and visa portals.",
+    answer:
+      "Select your document image or passport photo. Target is preset to 50 KB. Review the output size and live preview before downloading.",
+    action: "Compress to 50KB",
+    accepts: "image/jpeg,image/png,image/webp",
+    steps: [
+      "Select your JPG, PNG, or WebP photo.",
+      "The target size is preset to 50 KB.",
+      "Create and download your optimized 50KB image.",
+    ],
+    questions: [
+      [
+        "Can I convert PNG to JPG for 50KB?",
+        "Yes. PNG files are often large. Selecting JPEG output makes it much easier to hit the 50 KB limit while maintaining great quality.",
+      ],
+      [
+        "Is 50KB acceptable for university portals?",
+        "Most university admissions and scholarship portals (HEC, Erasmus, Chevening, Fulbright) specify 50KB to 200KB for applicant portraits.",
+      ],
+    ],
+  },
+  {
+    slug: "passport-photo-maker",
+    name: "Passport photo maker & resizer",
+    metaTitle: "Online Passport Photo Maker & Resizer (600x600 px & 35x45 mm) Free | Appliory",
+    metaDescription:
+      "Resize photos to official 2x2 inch (600x600 px) and 35x45 mm passport and visa dimensions online for free. 100% private in your browser with zero uploads.",
+    keywords: [
+      "passport photo resizer",
+      "passport photo maker",
+      "resize image to passport size",
+      "online passport size photo maker",
+      "passport photo 600x600",
+      "visa photo maker 35x45",
+      "free passport photo converter",
+      "create passport size photo online",
+    ],
+    category: "IMAGES",
+    description:
+      "Resize photos to official passport and visa dimensions (600×600 px / 2×2 inch or 35×45 mm) with zero server uploads.",
+    answer:
+      "Upload a portrait photo, select standard 600×600 px (US / Online Portals) or 413×531 px (35×45 mm European/Asian standard), and create a high-resolution print-ready passport photo privately on your device.",
+    action: "Make passport photo",
+    accepts: "image/jpeg,image/png,image/webp",
+    steps: [
+      "Select a clear, front-facing portrait photo with a plain background.",
+      "Pick your standard preset: 600×600 px or 413×531 px (35×45 mm).",
+      "Create and download your resized passport photo instantly.",
+    ],
+    questions: [
+      [
+        "What are the official passport photo pixel dimensions?",
+        "For US visas and standard 2x2 inch online portals, 600×600 pixels is required. For UK, Schengen, and Asian 35×45 mm photos, 413×531 pixels at 300 DPI is standard.",
+      ],
+      [
+        "Does Appliory crop the face automatically?",
+        "Appliory resizes and scales to exact dimensions. Ensure your original photo is already centered with eyes at normal level before creating.",
+      ],
+      [
+        "Can I print the downloaded passport photo?",
+        "Yes, the output is saved in full resolution, ready to print on standard 4x6 inch photo paper or upload to government portals.",
+      ],
+    ],
+  },
 ] as const;
 export type ToolSlug = (typeof tools)[number]["slug"];
