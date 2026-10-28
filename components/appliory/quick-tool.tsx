@@ -141,7 +141,7 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
       return;
     }
     if (
-      slug === "image-compressor" &&
+      isCompressor &&
       (!Number.isFinite(target) || target < 1 || target > 25000)
     ) {
       setError("Enter a target from 1 to 25,000 KB.");
@@ -154,7 +154,7 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
         width,
         height,
         format,
-        slug === "image-compressor" ? target : 0,
+        isCompressor ? target : 0,
       );
       const result = await inspectFile(f);
       setPreview(URL.createObjectURL(f));
@@ -561,7 +561,7 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
                           <TriangleAlert size={16} />
                         )}{" "}
                         {output.size <= target * 1024
-                          ? "Target reached."
+                          ? `Target reached: ${human(output.size)} (Within ${target} KB limit).`
                           : "Target not reached. Try smaller dimensions."}{" "}
                         Original: {human(source.size)}.
                       </p>

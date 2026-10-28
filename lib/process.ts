@@ -133,40 +133,81 @@ export async function transformImage(
     throw new Error("Choose dimensions below 25 megapixels.");
   }
   const bmp = await decodeImage(file);
-  const canvas = document.createElement("canvas");
-  canvas.width = width;
-  canvas.height = height;
-  const ctx = canvas.getContext("2d");
-  if (!ctx) {
-    bmp.close();
-    throw new Error("Image editing is unavailable.");
+  const maxBytes = targetKB > 0 ? targetKB * 1024 : 0;
+
+  let currentW = width;
+  let currentH = height;
+
+  // Smart initial sizing for small target KBs to prevent blurry overcompression
+  if (maxBytes > 0) {
+    if (targetKB <= 25 && (currentW > 700 || currentH > 700)) {
+      const scale = Math.min(650 / currentW, 650 / currentH);
+      currentW = Math.max(1, Math.round(currentW * scale));
+      currentH = Math.max(1, Math.round(currentH * scale));
+    } else if (targetKB <= 60 && (currentW > 1200 || currentH > 1200)) {
+      const scale = Math.min(1000 / currentW, 1000 / currentH);
+      currentW = Math.max(1, Math.round(currentW * scale));
+      currentH = Math.max(1, Math.round(currentH * scale));
+    }
   }
-  if (type === "image/jpeg") {
-    ctx.fillStyle = "#fff";
-    ctx.fillRect(0, 0, width, height);
-  }
+
+  let finalBlob: Blob | null = null;
+  const qualitySteps = maxBytes > 0
+    ? [0.88, 0.78, 0.68, 0.55, 0.42, 0.30, 0.20, 0.12]
+    : [0.92];
+
   try {
-    ctx.drawImage(bmp.source, 0, 0, width, height);
+    for (let pass = 0; pass < 10; pass++) {
+      const canvas = document.createElement("canvas");
+      canvas.width = currentW;
+      canvas.height = currentH;
+      const ctx = canvas.getContext("2d");
+      if (!ctx) throw new Error("Image editing is unavailable.");
+
+      if (type === "image/jpeg") {
+        ctx.fillStyle = "#fff";
+        ctx.fillRect(0, 0, currentW, currentH);
+      }
+      ctx.drawImage(bmp.source, 0, 0, currentW, currentH);
+
+      let passBlob: Blob | null = null;
+      for (const q of qualitySteps) {
+        passBlob = await new Promise<Blob | null>((resolve) =>
+          canvas.toBlob(resolve, type, q),
+        );
+        if (passBlob) {
+          finalBlob = passBlob;
+          if (!maxBytes || passBlob.size <= maxBytes || type === "image/png") {
+            break;
+          }
+        }
+      }
+
+      if (!maxBytes || (finalBlob && finalBlob.size <= maxBytes) || type === "image/png") {
+        break;
+      }
+
+      // If still above targetKB, adaptively shrink dimensions while maintaining aspect ratio
+      if (currentW <= 120 || currentH <= 120) {
+        break;
+      }
+
+      const shrink = finalBlob && finalBlob.size > maxBytes * 1.8 ? 0.72 : 0.84;
+      currentW = Math.max(100, Math.round(currentW * shrink));
+      currentH = Math.max(100, Math.round(currentH * shrink));
+    }
   } finally {
     bmp.close();
   }
-  let blob: Blob | null = null;
-  for (let q = 0.92; q >= 0.18; q -= 0.08) {
-    blob = await new Promise((r) => canvas.toBlob(r, type, q));
-    if (
-      blob &&
-      (!targetKB || blob.size <= targetKB * 1024 || type === "image/png")
-    )
-      break;
-  }
-  if (!blob) throw new Error("Image conversion failed.");
-  if (blob.type !== type)
+
+  if (!finalBlob) throw new Error("Image conversion failed.");
+  if (finalBlob.type !== type)
     throw new Error(
       "Your browser cannot export this format. Choose JPEG or PNG.",
     );
   const ext = type.split("/")[1] === "jpeg" ? "jpg" : type.split("/")[1];
   return new File(
-    [blob],
+    [finalBlob],
     file.name.replace(/\.[^.]*$/, "") + "-edited." + ext,
     { type },
   );
