@@ -1,0 +1,78 @@
+# Appliory — Comprehensive System & Knowledge Reference
+
+> Canonical Domain: https://www.appliory.tech
+> Platform Category: Privacy-First Document, PDF & Image Preparation Utilities
+> Founder: Ammar Hassan Malik (Pakistan, VIRELEO studio: https://vireleo.me)
+> Support Contact: fitduo07@gmail.com | +92 321 5772078
+
+---
+
+## 1. Executive Summary & Purpose
+
+Appliory is an in-browser utility suite designed for students, job applicants, visa applicants, and professionals who need to verify, resize, compress, and check documents against strict submission guidelines without sacrificing privacy.
+
+Unlike traditional cloud-based document converters (such as Smallpdf, iLovePDF, or TinyPNG) that upload user files to remote servers, Appliory processes 100% of files inside the user's local browser memory using modern Web APIs (HTML5 Canvas, PDF.js, and Web Cryptography API). Files are never transmitted across a network, guaranteeing total confidentiality for sensitive materials such as transcripts, passports, national identity cards, and financial statements.
+
+---
+
+## 2. Detailed Tool Specifications
+
+### Tool 1: Image Compressor
+- URL: https://www.appliory.tech/tools/image-compressor
+- Supported Input Formats: JPEG, PNG, WebP
+- Target Presets: 20 KB (Government job portals), 50 KB (Visa & passport submission portals), 100 KB (University admission systems), 200 KB (Standard portals), 500 KB (Email attachments)
+- Custom Target Size: 1 KB to 25,000 KB
+- Output Formats: JPEG, WebP
+- Core Mechanism: Client-side HTML5 Canvas multi-pass iterative compression with quality optimization and dimension reduction. Includes live side-by-side visual preview and percentage reduction calculation.
+
+### Tool 2: Image Resizer
+- URL: https://www.appliory.tech/tools/image-resizer
+- Supported Input Formats: JPEG, PNG, WebP
+- Standard Presets: Passport Size (600x600 px), ID Photo (413x531 px), Square Avatar (800x800 px), Full HD (1920x1080 px)
+- Features: Exact pixel dimension controls (width & height), aspect ratio lock toggle, format conversion (JPEG, PNG, WebP).
+- Processing: Local Canvas resampling with Lanczos-equivalent high-quality interpolation.
+
+### Tool 3: PDF Page Counter & Extractive Summary
+- URL: https://www.appliory.tech/tools/pdf-page-counter
+- Supported Format: PDF (.pdf)
+- Features: Instant multi-file page count, extractable text page count vs scanned image page count, warning indicators for scanned pages requiring manual review.
+- Extractive Summary Engine: Extracts actual sentences and structured headings directly from text layers with page references, allowing users to copy, download as TXT, or print as PDF summary.
+- Processing: Mozilla PDF.js running entirely on-device via Web Workers.
+
+### Tool 4: File Size Checker
+- URL: https://www.appliory.tech/tools/file-size-checker
+- Supported Formats: Any document or media file (PDF, DOCX, XLSX, JPG, PNG, ZIP, etc.)
+- Features: Precise byte-level measurement, verification against custom application size limits in MB, visual badge indicators ("Within limit" vs "Exceeds limit").
+- Measurement Standard: 1 MB = 1,048,576 bytes (binary standard) with exact byte breakdown.
+
+### Tool 5: Duplicate File Finder
+- URL: https://www.appliory.tech/tools/duplicate-file-finder
+- Supported Formats: Any file type
+- Verification Method: Cryptographic SHA-256 byte hashing via Web Cryptography API (`crypto.subtle.digest`).
+- Guarantee: Detects byte-for-byte exact duplicates regardless of file name differences. Safe: does not auto-delete any user files.
+
+### Tool 6: Full Document Application Checker
+- URL: https://www.appliory.tech/tool
+- Capabilities: Configurable checklist workspace for scholarship applications (Fulbright, Erasmus Mundus, Chevening, Commonwealth), university admissions, and employment packages.
+- Rule Checks: Missing items, file signature verification (magic bytes), page count constraints, text readability, size limits, naming conventions, and duplicate detection.
+
+---
+
+## 3. Privacy, Architecture & Security Standards
+
+1. Zero Cloud Transmissions: No server uploads, no temporary cloud storage, no cloud AI model scanning.
+2. No Authentication Gate: No registration, login, cookies for tracking, or account creation required.
+3. Volatile In-Memory Processing: Closing the browser tab instantly flushes all loaded documents from memory.
+4. Content Security Policy: Strict CSP headers enforcing `'self'` execution and blocking third-party exfiltration.
+
+---
+
+## 4. Organizational & Contact Information
+
+- Organization: Appliory
+- Founder & Principal Engineer: Ammar Hassan Malik
+- Country: Pakistan
+- Associated Venture: VIRELEO (https://vireleo.me)
+- Primary Email: fitduo07@gmail.com
+- Telephone: +92 321 5772078
+- Official Domain: https://www.appliory.tech

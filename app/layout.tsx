@@ -107,10 +107,24 @@ export default function RootLayout({
                 logo: absolute("/brand-mark.png"),
                 description:
                   "Appliory is a privacy-first web platform developed by Ammar Hassan Malik offering free online tools for image compression, image resizing, PDF page counting, file size verification, and duplicate file finding with zero document uploads.",
-                sameAs: ["https://www.appliory.tech", "https://appliory.tech"],
+                sameAs: [
+                  "https://www.appliory.tech",
+                  "https://appliory.tech",
+                  "https://vireleo.me",
+                ],
                 founder: {
                   "@type": "Person",
                   name: "Ammar Hassan Malik",
+                  jobTitle: "Founder & Lead Engineer",
+                  nationality: "Pakistani",
+                  sameAs: ["https://vireleo.me"],
+                },
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  email: "fitduo07@gmail.com",
+                  telephone: "+92 321 5772078",
+                  contactType: "customer support",
+                  availableLanguage: ["English", "Urdu"],
                 },
                 knowsAbout: [
                   "Image Compression (JPG, PNG, WebP)",

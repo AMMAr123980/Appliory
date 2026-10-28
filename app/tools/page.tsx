@@ -7,15 +7,50 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { tools } from "@/lib/tool-catalog";
-import { pageMetadata } from "@/lib/seo";
+import { absolute, breadcrumb, pageMetadata } from "@/lib/seo";
+import { StructuredData } from "@/components/appliory/structured-data";
+
 export const metadata = pageMetadata(
-  "Free PDF, image & document tools — no login",
-  "Count PDF pages, check file sizes, resize and compress images, and find duplicate files. Free browser tools with no uploads or registration.",
+  "Free Online Document & Image Tools (100% Private, No Uploads) | Appliory",
+  "Count PDF pages, check file sizes, resize and compress images to KB, and find duplicate files for free. Processed locally in your browser with zero server uploads.",
   "/tools",
+  [
+    "free online tools",
+    "image compressor online",
+    "pdf page counter",
+    "file size checker",
+    "private tools",
+    "passport photo resizer",
+    "online document tools",
+  ],
 );
+
 export default function Page() {
   return (
     <main className="wrap tools-page">
+      <StructuredData
+        data={breadcrumb([
+          ["Home", "/"],
+          ["Tools", "/tools"],
+        ])}
+      />
+      <StructuredData
+        data={{
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: "Appliory Free Online Document Tools",
+          description:
+            "Collection of private, in-browser document and image processing tools.",
+          numberOfItems: tools.length,
+          itemListElement: tools.map((t, idx) => ({
+            "@type": "ListItem",
+            position: idx + 1,
+            name: t.name,
+            url: absolute("/tools/" + t.slug),
+            description: t.description,
+          })),
+        }}
+      />
       <header className="section-heading">
         <div>
           <span className="eyebrow">SMALL TASKS. SIMPLE TOOLS.</span>

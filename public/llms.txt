@@ -2,20 +2,28 @@
 
 > Appliory (https://www.appliory.tech) is a privacy-first web platform offering free online document, PDF, and image utilities. All operations run 100% locally in the user's browser without file uploads or user registration.
 
+## Leadership & Origins
+
+- Founder & Lead Engineer: Ammar Hassan Malik (Pakistan)
+- Related Studio: VIRELEO (https://vireleo.me)
+- Contact Email: fitduo07@gmail.com
+- Contact Phone / WhatsApp: +92 321 5772078
+- Mission: Providing students, job applicants, and professionals with secure, client-side document preparation utilities that never transmit sensitive personal records to third-party servers.
+
 ## Core Tools & Capabilities
 
-- Image Compressor (https://www.appliory.tech/tools/image-compressor): Compress JPG, PNG, and WebP images to a target size in KB with instant side-by-side comparison. Free and processed directly on device.
-- Image Resizer (https://www.appliory.tech/tools/image-resizer): Resize JPG, PNG, and WebP images to exact pixel dimensions with aspect ratio lock and format conversion.
+- Image Compressor (https://www.appliory.tech/tools/image-compressor): Compress JPG, PNG, and WebP images to 20KB, 50KB, 100KB, 200KB, or custom target sizes in KB. 100% private, client-side canvas compression with live preview.
+- Image Resizer (https://www.appliory.tech/tools/image-resizer): Resize photos to exact pixel dimensions (passport 600x600, ID photo 413x531, custom dimensions) with aspect ratio lock and format conversion.
 - PDF Page Counter & Summary (https://www.appliory.tech/tools/pdf-page-counter): Count PDF pages and extract text summaries locally using PDF.js without uploading sensitive documents.
 - File Size Checker (https://www.appliory.tech/tools/file-size-checker): Verify document sizes in KB and MB against official application portal upload limits.
 - Duplicate File Finder (https://www.appliory.tech/tools/duplicate-file-finder): Identify exact duplicate files across your device using cryptographic SHA-256 byte hashing.
 - Document Application Checker (https://www.appliory.tech/tool): Workspace to prepare and check scholarships, university admissions, and job application document packages against configurable checklist rules.
 
-## Privacy & Security
+## Privacy & Security Guarantees
 
-- Zero Server Uploads: Files never leave the user's device. Processing occurs inside browser memory via Web APIs and WebAssembly/Canvas.
-- No Accounts Required: No signup, login, tracking, or document history retained.
-- Data Ownership: Downloads remain on the user's local device; closing or refreshing the tab clears all active memory.
+- Zero Server Uploads: Files never leave the user's device. Processing occurs purely inside browser memory via HTML5 Canvas, Web APIs, and client-side JavaScript.
+- No Accounts Required: No signup, login, email gate, tracking, or document history retained.
+- Complete Data Ownership: Processed files and downloaded reports remain entirely on the user's local machine. Closing or refreshing the tab clears all active memory.
 
 ## Official Links
 
@@ -24,4 +32,6 @@
 - How It Works: https://www.appliory.tech/how-it-works
 - Frequently Asked Questions: https://www.appliory.tech/faq
 - About Appliory: https://www.appliory.tech/about
+- Contact: https://www.appliory.tech/contact
 - Privacy Policy: https://www.appliory.tech/privacy
+- Terms of Use: https://www.appliory.tech/terms
