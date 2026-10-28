@@ -4,6 +4,7 @@ import { tools } from "@/lib/tool-catalog";
 import { absolute, breadcrumb, pageMetadata } from "@/lib/seo";
 import { StructuredData } from "@/components/appliory/structured-data";
 import QuickTool from "@/components/appliory/quick-tool";
+import { ShareBar } from "@/components/appliory/share-bar";
 export async function generateMetadata({
   params,
 }: {
@@ -103,6 +104,11 @@ export default async function Page({
           ))}
         </aside>
       </section>
+      <ShareBar
+        title={`Appliory ${t.name}`}
+        description={t.description}
+        url={absolute("/tools/" + slug)}
+      />
       <section className="related-tools">
         <h2>Keep working on your documents</h2>
         <div>

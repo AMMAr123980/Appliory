@@ -16,6 +16,7 @@ import type { LocalDocument } from "@/lib/model";
 import { inspectFile, transformImage } from "@/lib/process";
 import { download } from "@/lib/reports";
 import { filePackError } from "@/lib/file-limits";
+import Link from "next/link";
 import PDFContentSummary from "./pdf-content-summary";
 const human = (n: number) =>
   n < 1024 * 1024
@@ -451,6 +452,60 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
                   </label>
                 )}
               </fieldset>
+              {slug === "image-compressor" && (
+                <div className="preset-block">
+                  <span className="preset-title">Quick Target Presets:</span>
+                  <div className="preset-chips">
+                    {[
+                      { kb: 20, tag: "20 KB", note: "Govt jobs" },
+                      { kb: 50, tag: "50 KB", note: "Portals" },
+                      { kb: 100, tag: "100 KB", note: "Admissions" },
+                      { kb: 200, tag: "200 KB", note: "Standard" },
+                      { kb: 500, tag: "500 KB", note: "Email" },
+                    ].map((item) => (
+                      <button
+                        key={item.kb}
+                        type="button"
+                        className={`chip-button ${target === item.kb ? "active" : ""}`}
+                        onClick={() => {
+                          setTarget(item.kb);
+                          setOutput(null);
+                        }}
+                      >
+                        <b>{item.tag}</b>
+                        <small>{item.note}</small>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+              {slug === "image-resizer" && (
+                <div className="preset-block">
+                  <span className="preset-title">Standard Size Presets:</span>
+                  <div className="preset-chips">
+                    {[
+                      { label: "Passport (600×600)", w: 600, h: 600 },
+                      { label: "ID Photo (413×531)", w: 413, h: 531 },
+                      { label: "Square (800×800)", w: 800, h: 800 },
+                      { label: "Full HD (1920×1080)", w: 1920, h: 1080 },
+                    ].map((item) => (
+                      <button
+                        key={item.label}
+                        type="button"
+                        className={`chip-button ${width === item.w && height === item.h ? "active" : ""}`}
+                        onClick={() => {
+                          setLocked(false);
+                          setWidth(item.w);
+                          setHeight(item.h);
+                          setOutput(null);
+                        }}
+                      >
+                        {item.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
               <label className="ratio-lock">
                 <input
                   type="checkbox"
@@ -518,6 +573,20 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
                       <Download size={17} />
                       Download image
                     </button>
+                    <div className="next-action-card">
+                      <span>Preparing other application documents?</span>
+                      <div className="next-action-links">
+                        <Link href="/tools/pdf-page-counter" className="button small">
+                          Count PDF pages
+                        </Link>
+                        <Link href="/tools/file-size-checker" className="button small">
+                          Check file size limits
+                        </Link>
+                        <Link href="/tool" className="button small dark">
+                          Document checklist
+                        </Link>
+                      </div>
+                    </div>
                   </div>
                   {preview && (
                     <img src={preview} alt="Preview of your processed image" />

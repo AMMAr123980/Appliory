@@ -4,6 +4,7 @@ import { ArrowUpRight, Info } from "lucide-react";
 import { StructuredData } from "@/components/appliory/structured-data";
 import { absolute, breadcrumb, pageMetadata } from "@/lib/seo";
 import { guides } from "@/lib/content";
+import { ShareBar } from "@/components/appliory/share-bar";
 export async function generateMetadata({
   params,
 }: {
@@ -89,6 +90,11 @@ export default async function Page({
             Open the document checker <ArrowUpRight size={15} />
           </Link>
         </div>
+        <ShareBar
+          title={g.title}
+          description={g.intro}
+          url={absolute("/guides/" + slug)}
+        />
         <h2>Keep preparing</h2>
         {guides
           .filter((x) => x.slug !== slug)
