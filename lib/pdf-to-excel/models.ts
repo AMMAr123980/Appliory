@@ -33,13 +33,22 @@ export interface TableExtractionResult {
   scannedPages: number[];
   warnings: string[];
   tablesDetected: number;
+  isNarrative?: boolean;
+  narrativeAlternative?: {
+    summaryColumns: ColumnConfig[];
+    summaryRows: ExtractedRow[];
+    itemizedColumns: ColumnConfig[];
+    itemizedRows: ExtractedRow[];
+  };
 }
 
 export interface ExtractionOptions {
   startPage?: number;
   endPage?: number;
   batchSize?: number;
-  rowTolerance?: number; // Y-clustering tolerance in points (default: 3.5)
+  rowTolerance?: number; // Y-clustering tolerance in points (default: 4.0)
+  mode?: "auto" | "table" | "narrative";
+  narrativeView?: "summary" | "itemized";
   removeRepeatedHeaders?: boolean;
   detectPageHeadings?: boolean;
   onProgress?: (progress: ExtractionProgress) => void;

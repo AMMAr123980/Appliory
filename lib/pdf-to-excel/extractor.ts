@@ -4,6 +4,10 @@ import type {
   TableExtractionResult,
   ExtractionOptions,
 } from "./models";
+import {
+  isNarrativePayrollDocument,
+  parseNarrativePayrollText,
+} from "./narrative-parser";
 
 interface RawTextItem {
   str: string;
@@ -93,6 +97,7 @@ export async function extractPDFTables(
   const detectedHeadings: { page: number; heading: string }[] = [];
   const allPageRows: ExtractedRow[] = [];
   const allXPositions: number[] = [];
+  const pageTexts: { page: number; text: string }[] = [];
 
   let startTime = Date.now();
   let rowIdCounter = 1;
@@ -145,6 +150,12 @@ export async function extractPDFTables(
         });
         allXPositions.push(x);
       }
+
+      const pageText = textContent.items
+        .map((item) => ("str" in item && typeof item.str === "string" ? item.str : ""))
+        .filter(Boolean)
+        .join(" ");
+      pageTexts.push({ page: pNum, text: pageText });
 
       // Check if page has selectable text or is scanned
       const totalText = rawItems.map((r) => r.str).join("");
@@ -220,6 +231,41 @@ export async function extractPDFTables(
     }
   } finally {
     await loadingTask.destroy();
+  }
+
+  // Check if document is Narrative Payroll (e.g. Case Notes with paragraph pay details)
+  const fullDocumentText = pageTexts.map((p) => p.text).join("\n");
+  const isNarrative =
+    options.mode === "narrative" ||
+    (options.mode !== "table" && isNarrativePayrollDocument(fullDocumentText));
+
+  if (isNarrative) {
+    const parsed = parseNarrativePayrollText(pageTexts);
+    if (parsed.employees.length > 0) {
+      const useItemized = options.narrativeView === "itemized";
+      const activeCols = useItemized ? parsed.itemizedColumns : parsed.summaryColumns;
+      const activeRows = useItemized ? parsed.itemizedRows : parsed.summaryRows;
+
+      return {
+        columns: activeCols,
+        rows: activeRows,
+        detectedPageHeadings: detectedHeadings,
+        totalPages: totalDocPages,
+        processedPages: pagesToProcess,
+        scannedPages,
+        warnings: [
+          `Intelligently parsed ${parsed.employees.length} narrative payroll case records into structured fields.`,
+        ],
+        tablesDetected: parsed.employees.length,
+        isNarrative: true,
+        narrativeAlternative: {
+          summaryColumns: parsed.summaryColumns,
+          summaryRows: parsed.summaryRows,
+          itemizedColumns: parsed.itemizedColumns,
+          itemizedRows: parsed.itemizedRows,
+        },
+      };
+    }
   }
 
   // 4. Determine Global Column Boundaries across all processed rows

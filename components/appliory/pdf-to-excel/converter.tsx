@@ -58,6 +58,8 @@ export function PDFToExcelConverter() {
   const [detectHeadings, setDetectHeadings] = useState<boolean>(true);
   const [autoRemoveHeaders, setAutoRemoveHeaders] = useState<boolean>(true);
   const [includeSummarySheet, setIncludeSummarySheet] = useState<boolean>(true);
+  const [layoutMode, setLayoutMode] = useState<"auto" | "table" | "narrative">("auto");
+  const [activeNarrativeView, setActiveNarrativeView] = useState<"summary" | "itemized">("summary");
 
   // Processing state
   const [isProcessing, setIsProcessing] = useState<boolean>(false);
@@ -167,12 +169,14 @@ export function PDFToExcelConverter() {
         endPage: pageRangeMode === "custom" ? endPageInput : undefined,
         rowTolerance,
         detectPageHeadings: detectHeadings,
+        mode: layoutMode,
+        narrativeView: activeNarrativeView,
         onProgress: (p) => setProgress(p),
         signal: controller.signal,
       });
 
       let initialRows = result.rows;
-      if (autoRemoveHeaders && initialRows.length > 1) {
+      if (!result.isNarrative && autoRemoveHeaders && initialRows.length > 1) {
         const { cleanedRows } = removeRepeatedHeaders(initialRows, 0);
         initialRows = cleanedRows;
       }
@@ -182,7 +186,11 @@ export function PDFToExcelConverter() {
       setRows(initialRows);
       setHistory([]);
       setCurrentPage(1);
-      toast.success(`Extracted ${initialRows.length} rows across ${result.columns.length} columns!`);
+      if (result.isNarrative) {
+        toast.success(`Parsed ${result.tablesDetected} employee narrative records into structured columns!`);
+      } else {
+        toast.success(`Extracted ${initialRows.length} rows across ${result.columns.length} columns!`);
+      }
     } catch (err: unknown) {
       if (err instanceof Error && err.message.includes("cancelled")) {
         setErrorMessage("Extraction was cancelled.");
@@ -222,6 +230,22 @@ export function PDFToExcelConverter() {
     if (fileInputRef.current) {
       fileInputRef.current.value = "";
     }
+  };
+
+  const handleSwitchNarrativeView = (view: "summary" | "itemized") => {
+    if (!extractionResult?.narrativeAlternative) return;
+    setActiveNarrativeView(view);
+    if (view === "summary") {
+      setColumns(extractionResult.narrativeAlternative.summaryColumns);
+      setRows(extractionResult.narrativeAlternative.summaryRows);
+    } else {
+      setColumns(extractionResult.narrativeAlternative.itemizedColumns);
+      setRows(extractionResult.narrativeAlternative.itemizedRows);
+    }
+    setCurrentPage(1);
+    toast.success(
+      `Switched to ${view === "summary" ? "Master Summary Table" : "Itemized Pay Lines (Like 2nd PDF)"}`,
+    );
   };
 
   // Push state to undo stack
@@ -630,6 +654,32 @@ export function PDFToExcelConverter() {
                     Increase for loose line spacing; decrease for compact tables.
                   </p>
                 </div>
+
+                {/* Document Structure Mode */}
+                <div>
+                  <label style={{ display: "block", fontSize: 12, fontWeight: 700, marginBottom: 6 }}>
+                    Document Structure Mode
+                  </label>
+                  <select
+                    value={layoutMode}
+                    onChange={(e) => setLayoutMode(e.target.value as "auto" | "table" | "narrative")}
+                    style={{
+                      width: "100%",
+                      padding: "8px 10px",
+                      borderRadius: 6,
+                      border: "1px solid var(--line)",
+                      fontSize: 13,
+                      background: "#fff",
+                    }}
+                  >
+                    <option value="auto">Auto-Detect (Table or Narrative Payroll)</option>
+                    <option value="narrative">Narrative Payroll Parser (Case Notes into columns)</option>
+                    <option value="table">Standard Table Grid (Fixed coordinate columns)</option>
+                  </select>
+                  <p style={{ margin: "4px 0 0", fontSize: 11, color: "var(--muted)" }}>
+                    Auto-detects narrative case notes vs tabular report grids.
+                  </p>
+                </div>
               </div>
 
               {/* Start Button */}
@@ -796,6 +846,56 @@ export function PDFToExcelConverter() {
                 <Plus size={14} />
                 <span>Extract Another PDF</span>
               </button>
+
+              {/* Narrative View Switcher */}
+              {extractionResult.isNarrative && extractionResult.narrativeAlternative && (
+                <div
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    background: "var(--soft)",
+                    padding: "2px 4px",
+                    borderRadius: 6,
+                    border: "1px solid var(--line)",
+                    gap: 4,
+                  }}
+                >
+                  <button
+                    type="button"
+                    onClick={() => handleSwitchNarrativeView("summary")}
+                    style={{
+                      border: "none",
+                      borderRadius: 4,
+                      padding: "4px 8px",
+                      fontSize: 11,
+                      fontWeight: activeNarrativeView === "summary" ? 700 : 500,
+                      cursor: "pointer",
+                      background: activeNarrativeView === "summary" ? "#fff" : "transparent",
+                      color: activeNarrativeView === "summary" ? "var(--ink)" : "var(--muted)",
+                      boxShadow: activeNarrativeView === "summary" ? "0 1px 2px rgba(0,0,0,0.08)" : "none",
+                    }}
+                  >
+                    Master Summary (1 row/emp)
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => handleSwitchNarrativeView("itemized")}
+                    style={{
+                      border: "none",
+                      borderRadius: 4,
+                      padding: "4px 8px",
+                      fontSize: 11,
+                      fontWeight: activeNarrativeView === "itemized" ? 700 : 500,
+                      cursor: "pointer",
+                      background: activeNarrativeView === "itemized" ? "#fff" : "transparent",
+                      color: activeNarrativeView === "itemized" ? "var(--ink)" : "var(--muted)",
+                      boxShadow: activeNarrativeView === "itemized" ? "0 1px 2px rgba(0,0,0,0.08)" : "none",
+                    }}
+                  >
+                    Itemized Pay Lines (Like 2nd PDF)
+                  </button>
+                </div>
+              )}
 
               <button
                 type="button"
