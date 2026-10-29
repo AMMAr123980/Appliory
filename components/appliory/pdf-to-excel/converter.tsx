@@ -10,7 +10,6 @@ import {
   TriangleAlert,
   Search,
   Trash2,
-  Settings2,
   ArrowDown,
   Layers,
   ShieldCheck,
@@ -21,7 +20,9 @@ import {
   Check,
   Edit2,
   Sliders,
+  Plus,
 } from "lucide-react";
+import { toast } from "sonner";
 import type {
   ExtractedRow,
   ColumnConfig,
@@ -181,15 +182,18 @@ export function PDFToExcelConverter() {
       setRows(initialRows);
       setHistory([]);
       setCurrentPage(1);
+      toast.success(`Extracted ${initialRows.length} rows across ${result.columns.length} columns!`);
     } catch (err: unknown) {
       if (err instanceof Error && err.message.includes("cancelled")) {
         setErrorMessage("Extraction was cancelled.");
+        toast.info("Extraction cancelled");
       } else {
-        setErrorMessage(
+        const msg =
           err instanceof Error
             ? err.message
-            : "An unexpected error occurred while parsing the PDF tables.",
-        );
+            : "An unexpected error occurred while parsing the PDF tables.";
+        setErrorMessage(msg);
+        toast.error(msg);
       }
     } finally {
       setIsProcessing(false);
@@ -201,6 +205,22 @@ export function PDFToExcelConverter() {
   const handleCancel = () => {
     if (abortControllerRef.current) {
       abortControllerRef.current.abort();
+    }
+  };
+
+  // Reset view to allow extracting another PDF
+  const handleExtractAnother = () => {
+    setFile(null);
+    setExtractionResult(null);
+    setRows([]);
+    setColumns([]);
+    setHistory([]);
+    setDetectedTotalPages(null);
+    setErrorMessage(null);
+    setCurrentPage(1);
+    setActiveSearch("");
+    if (fileInputRef.current) {
+      fileInputRef.current.value = "";
     }
   };
 
@@ -220,6 +240,7 @@ export function PDFToExcelConverter() {
     setColumns(last.columns);
     setRows(last.rows);
     setHistory((prev) => prev.slice(0, -1));
+    toast.info(`Reverted: ${last.actionLabel}`);
   };
 
   const handleReset = () => {
@@ -228,18 +249,26 @@ export function PDFToExcelConverter() {
     setRows(extractionResult.rows);
     setHistory([]);
     setCurrentPage(1);
+    toast.info("Table reset to original extraction");
   };
 
   // Table cleanup actions
   const applyFillDown = (colIndex: number) => {
     const updated = fillDownColumn(rows, colIndex);
-    pushHistory(`Fill down ${columns[colIndex]?.name || `Col ${colIndex + 1}`}`, columns, updated);
+    const colName = columns[colIndex]?.name || `Col ${colIndex + 1}`;
+    pushHistory(`Fill down ${colName}`, columns, updated);
     setShowFillDownModal(false);
+    toast.success(`Applied fill down on "${colName}"`);
   };
 
   const applyRemoveHeaders = () => {
     const { cleanedRows, removedCount } = removeRepeatedHeaders(rows, 0);
     pushHistory(`Removed ${removedCount} repeated headers`, columns, cleanedRows);
+    if (removedCount > 0) {
+      toast.success(`Removed ${removedCount} repeated table headers`);
+    } else {
+      toast.info("No repeated headers found across pages");
+    }
   };
 
   const applyAddPageHeadings = () => {
@@ -249,23 +278,31 @@ export function PDFToExcelConverter() {
       "Reporting Period / Page Context",
     );
     pushHistory("Added page context column", nextCols, nextRows);
+    toast.success("Added page context column to spreadsheet");
   };
 
   const applyRemoveBlankRows = () => {
     const cleaned = removeBlankRows(rows);
     const removedCount = rows.length - cleaned.length;
     pushHistory(`Removed ${removedCount} blank rows`, columns, cleaned);
+    if (removedCount > 0) {
+      toast.success(`Removed ${removedCount} blank rows`);
+    } else {
+      toast.info("No empty rows detected");
+    }
   };
 
   const handleDeleteColumn = (colIndex: number) => {
     const colName = columns[colIndex]?.name || `Col ${colIndex + 1}`;
     const { columns: nextCols, rows: nextRows } = deleteColumn(columns, rows, colIndex);
     pushHistory(`Deleted column ${colName}`, nextCols, nextRows);
+    toast.success(`Deleted column "${colName}"`);
   };
 
   const handleDeleteRow = (rowId: string) => {
     const updated = deleteRow(rows, rowId);
     pushHistory("Deleted row", columns, updated);
+    toast.success("Row deleted");
   };
 
   const handleCellChange = (rowId: string, colIndex: number, val: string) => {
@@ -275,10 +312,12 @@ export function PDFToExcelConverter() {
 
   const handleSaveColumnRename = (colIndex: number) => {
     if (!editingColName.trim()) return;
-    const updatedCols = updateColumnConfig(columns, colIndex, { name: editingColName.trim() });
+    const newName = editingColName.trim();
+    const updatedCols = updateColumnConfig(columns, colIndex, { name: newName });
     setColumns(updatedCols);
     setEditingColId(null);
     setEditingColName("");
+    toast.success(`Column renamed to "${newName}"`);
   };
 
   const handleToggleColumnType = (colIndex: number) => {
@@ -289,6 +328,7 @@ export function PDFToExcelConverter() {
       preserveAsText: nextType === "text",
     });
     setColumns(updated);
+    toast.success(`Column format set to ${nextType.toUpperCase()}`);
   };
 
   // Filtered rows based on search
@@ -328,8 +368,9 @@ export function PDFToExcelConverter() {
         blob,
         file.name.replace(/\.pdf$/i, "") + "_converted.xlsx",
       );
+      toast.success("Excel spreadsheet (.xlsx) downloaded successfully!");
     } catch (e) {
-      alert("Failed to export Excel file. " + (e instanceof Error ? e.message : ""));
+      toast.error("Failed to export Excel file. " + (e instanceof Error ? e.message : ""));
     }
   };
 
@@ -341,6 +382,7 @@ export function PDFToExcelConverter() {
       blob,
       file.name.replace(/\.pdf$/i, "") + "_converted.csv",
     );
+    toast.success("CSV spreadsheet downloaded successfully!");
   };
 
   return (
@@ -741,8 +783,20 @@ export function PDFToExcelConverter() {
               gap: 12,
             }}
           >
-            {/* Left Tools: Cleanup actions */}
+            {/* Left Tools: Extract Another PDF & Cleanup actions */}
             <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 8 }}>
+              {/* Prominent Extract Another PDF Button */}
+              <button
+                type="button"
+                className="button small dark"
+                onClick={handleExtractAnother}
+                title="Convert / Extract another PDF document"
+                style={{ gap: 6, fontWeight: 700 }}
+              >
+                <Plus size={14} />
+                <span>Extract Another PDF</span>
+              </button>
+
               <button
                 type="button"
                 className="button small"
@@ -939,7 +993,7 @@ export function PDFToExcelConverter() {
               padding: "0 4px",
             }}
           >
-            <div style={{ display: "flex", alignItems: "center", gap: 12, fontSize: 13, color: "var(--muted)" }}>
+            <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 12, fontSize: 13, color: "var(--muted)" }}>
               <span style={{ fontWeight: 700, color: "var(--ink)" }}>
                 {rows.length} rows
               </span>
@@ -947,6 +1001,24 @@ export function PDFToExcelConverter() {
               <span>{columns.length} columns</span>
               <span>·</span>
               <span>{extractionResult.processedPages} pages extracted</span>
+              <span>·</span>
+              <button
+                type="button"
+                onClick={handleExtractAnother}
+                style={{
+                  border: "none",
+                  background: "none",
+                  color: "var(--accent)",
+                  cursor: "pointer",
+                  fontWeight: 700,
+                  padding: 0,
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: 4,
+                }}
+              >
+                <Plus size={13} /> Extract another PDF
+              </button>
             </div>
 
             <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
@@ -1276,6 +1348,53 @@ export function PDFToExcelConverter() {
                 style={{ padding: "6px 10px" }}
               >
                 <ChevronRight size={14} />
+              </button>
+            </div>
+          </div>
+
+          {/* Bottom Action Footer for Extract Another PDF and Quick Export */}
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "space-between",
+              alignItems: "center",
+              marginTop: 12,
+              padding: "16px 20px",
+              background: "#fff",
+              border: "1px solid var(--line)",
+              borderRadius: 10,
+              gap: 12,
+            }}
+          >
+            <button
+              type="button"
+              className="button"
+              onClick={handleExtractAnother}
+              style={{ gap: 8, fontWeight: 600 }}
+            >
+              <Plus size={16} />
+              <span>Convert / Extract Another PDF</span>
+            </button>
+
+            <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+              <button
+                type="button"
+                className="button"
+                onClick={handleExportCSV}
+                style={{ gap: 6 }}
+              >
+                <Download size={14} />
+                <span>Download CSV</span>
+              </button>
+              <button
+                type="button"
+                className="button dark"
+                onClick={handleExportExcel}
+                style={{ gap: 6 }}
+              >
+                <FileSpreadsheet size={16} />
+                <span>Download Excel (.xlsx)</span>
               </button>
             </div>
           </div>

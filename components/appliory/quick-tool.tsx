@@ -18,11 +18,17 @@ import { download } from "@/lib/reports";
 import { filePackError } from "@/lib/file-limits";
 import Link from "next/link";
 import PDFContentSummary from "./pdf-content-summary";
+import { PDFToExcelConverter } from "./pdf-to-excel/converter";
+
 const human = (n: number) =>
   n < 1024 * 1024
     ? (n / 1024).toFixed(1) + " KB"
     : (n / 1024 / 1024).toFixed(2) + " MB";
+
 export default function QuickTool({ slug }: { slug: ToolSlug }) {
+  if (slug === "pdf-to-excel") {
+    return <PDFToExcelConverter />;
+  }
   const config = tools.find((t) => t.slug === slug)!;
   const isCompressor =
     slug === "image-compressor" ||

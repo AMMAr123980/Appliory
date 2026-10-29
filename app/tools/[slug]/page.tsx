@@ -5,6 +5,12 @@ import { absolute, breadcrumb, pageMetadata } from "@/lib/seo";
 import { StructuredData } from "@/components/appliory/structured-data";
 import QuickTool from "@/components/appliory/quick-tool";
 import { ShareBar } from "@/components/appliory/share-bar";
+import { PDFToExcelConverter } from "@/components/appliory/pdf-to-excel/converter";
+
+export function generateStaticParams() {
+  return tools.map((t) => ({ slug: t.slug }));
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -78,7 +84,13 @@ export default async function Page({
         <h1>{t.name}</h1>
         <p>{t.description}</p>
       </header>
-      <QuickTool slug={t.slug} />
+      {t.slug === "pdf-to-excel" ? (
+        <section style={{ marginBottom: 48 }}>
+          <PDFToExcelConverter />
+        </section>
+      ) : (
+        <QuickTool slug={t.slug} />
+      )}
       <section className="tool-explainer">
         <div>
           <h2>How to use the {t.name.toLowerCase()}</h2>
@@ -89,9 +101,9 @@ export default async function Page({
             ))}
           </ol>
           <p>
-            Limit: 25 MB per file, 40 files and 200 MB per batch. Files are
-            cleared when you leave or refresh. Download your results before
-            leaving.
+            {t.slug === "pdf-to-excel"
+              ? "All table extraction and spreadsheet conversions run 100% in your browser. Confidential documents never leave your machine."
+              : "Limit: 25 MB per file, 40 files and 200 MB per batch. Files are cleared when you leave or refresh. Download your results before leaving."}
           </p>
         </div>
         <aside>
