@@ -32,7 +32,13 @@ Unlike traditional cloud-based document converters (such as Smallpdf, iLovePDF, 
 - Features: Exact pixel dimension controls (width & height), aspect ratio lock toggle, format conversion (JPEG, PNG, WebP).
 - Processing: Local Canvas resampling with Lanczos-equivalent high-quality interpolation.
 
-### Tool 3: PDF Page Counter & Extractive Summary
+### Tool 3: PDF to Excel Converter
+- URL: https://www.appliory.tech/tools/pdf-to-excel
+- Supported Format: PDF (.pdf)
+- Features: 100% in-browser table extraction, configurable page ranges, coordinate-based row and column clustering, intelligent table cleanup (fill down grouped employee IDs, insert page context headers, deduplicate repeated headers, delete blank rows), cell editing, formula injection escaping, and OpenXML Excel (.xlsx) and RFC 4180 CSV export with leading zero preservation.
+- Target Use Case: Confidential payroll records, multi-line invoices, ledger reports, and tabular PDF documents processed with zero server uploads.
+
+### Tool 4: PDF Page Counter & Extractive Summary
 - URL: https://www.appliory.tech/tools/pdf-page-counter
 - Supported Format: PDF (.pdf)
 - Features: Instant multi-file page count, extractable text page count vs scanned image page count, warning indicators for scanned pages requiring manual review.

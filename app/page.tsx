@@ -103,6 +103,13 @@ export default function Home() {
             </span>
             <ArrowUpRight size={20} />
           </Link>
+          <Link href="/tools/pdf-to-excel">
+            <span>
+              <b>A PDF table or payroll report to export</b>
+              <small>Extract and clean PDF tables to Excel (.xlsx) & CSV</small>
+            </span>
+            <ArrowUpRight size={20} />
+          </Link>
           <Link href="/tools/pdf-page-counter">
             <span>
               <b>A PDF that needs a quick check</b>

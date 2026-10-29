@@ -336,5 +336,53 @@ export const tools = [
       ],
     ],
   },
+  {
+    slug: "pdf-to-excel",
+    name: "PDF to Excel converter",
+    metaTitle: "Convert PDF to Excel Free & Private (Clean Tables to XLSX) | Appliory",
+    metaDescription:
+      "Convert PDF tables into editable Excel (.xlsx) and CSV spreadsheets locally in your browser. Clean payroll reports, fill down IDs, remove repeated headers with 100% privacy.",
+    keywords: [
+      "pdf to excel converter",
+      "convert pdf to xlsx free",
+      "extract pdf tables to excel",
+      "pdf to excel private no upload",
+      "pdf table to csv",
+      "convert payroll pdf to excel",
+      "clean pdf tables",
+      "in browser pdf to excel",
+    ],
+    category: "PDF",
+    description:
+      "Convert PDF tables into editable spreadsheets, clean extracted data, and export your results. Designed with privacy-conscious processing.",
+    answer:
+      "Select any text-based PDF containing tables or rows. Appliory analyzes row and column coordinates in your browser, reconstructs the tabular grid, allows intelligent cleanup (fill down missing IDs, repeat page headers, delete repeated headers), and exports clean Excel (.xlsx) or CSV files with zero server uploads.",
+    action: "Convert PDF to Excel",
+    accepts: ".pdf,application/pdf",
+    steps: [
+      "Select a PDF file with tables, statements, or payroll reports from your device.",
+      "Configure page range and alignment tolerance, then start table extraction.",
+      "Clean up extracted data using Fill Down, header removal, or cell editing.",
+      "Export your finalized spreadsheet directly to Excel (.xlsx) or CSV format.",
+    ],
+    questions: [
+      [
+        "Are my sensitive payroll or financial documents uploaded to any server?",
+        "No. The entire extraction and conversion pipeline runs strictly in your browser using local Web APIs and PDF.js. Your document never leaves your machine.",
+      ],
+      [
+        "Can this handle employee IDs with leading zeros (e.g., 00142)?",
+        "Yes. Appliory detects identifier codes and preserves them as text formatting in the generated Excel (.xlsx) file, preventing Excel from stripping leading zeros.",
+      ],
+      [
+        "Can it convert scanned PDFs?",
+        "Appliory inspects each page for selectable digital text. Scanned document pages that contain only raw bitmap images cannot be extracted without an OCR engine and will be flagged.",
+      ],
+      [
+        "How does the Fill Down cleanup feature work?",
+        "In many payroll reports and multi-line invoices, the Employee ID or Department is only shown on the first row of each group. Fill Down propagates that value downwards to all related sub-rows with one click.",
+      ],
+    ],
+  },
 ] as const;
 export type ToolSlug = (typeof tools)[number]["slug"];

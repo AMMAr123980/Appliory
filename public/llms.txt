@@ -17,6 +17,7 @@
 - Compress Image to 50KB (https://www.appliory.tech/tools/compress-image-to-50kb): Dedicated tool for scholarship portals (HEC, Erasmus, Chevening), university admissions, and online visa application forms requiring photos under 50 KB.
 - Passport Photo Maker & Resizer (https://www.appliory.tech/tools/passport-photo-maker): Resize photos to official 2x2 inch (600x600 px) and 35x45 mm passport and visa dimensions with zero server uploads.
 - Image Resizer (https://www.appliory.tech/tools/image-resizer): Resize photos to exact pixel dimensions with aspect ratio lock and format conversion.
+- PDF to Excel Converter (https://www.appliory.tech/tools/pdf-to-excel): Convert PDF tables into editable Excel (.xlsx) and CSV spreadsheets locally in your browser. Clean confidential payroll reports, fill down grouped employee IDs, remove repeated headers, and preserve leading zeros with 100% client-side privacy.
 - PDF Page Counter & Summary (https://www.appliory.tech/tools/pdf-page-counter): Count PDF pages and extract text summaries locally using PDF.js without uploading sensitive documents.
 - File Size Checker (https://www.appliory.tech/tools/file-size-checker): Verify document sizes in KB and MB against official application portal upload limits.
 - Duplicate File Finder (https://www.appliory.tech/tools/duplicate-file-finder): Identify exact duplicate files across your device using cryptographic SHA-256 byte hashing.
