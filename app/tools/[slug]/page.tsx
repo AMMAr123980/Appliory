@@ -47,6 +47,20 @@ export default async function Page({
       <StructuredData
         data={{
           "@context": "https://schema.org",
+          "@type": "HowTo",
+          name: `How to Use ${t.name}`,
+          description: t.description,
+          step: t.steps.map((s, idx) => ({
+            "@type": "HowToStep",
+            position: idx + 1,
+            name: `Step ${idx + 1}`,
+            text: s,
+          })),
+        }}
+      />
+      <StructuredData
+        data={{
+          "@context": "https://schema.org",
           "@type": "WebApplication",
           name: "Appliory " + t.name,
           url: absolute("/tools/" + slug),

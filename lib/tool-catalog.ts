@@ -162,12 +162,20 @@ export const tools = [
         "You can set 100 KB as the target, but the result depends on dimensions and content. Appliory displays the actual size and whether the target was met.",
       ],
       [
-        "Does it compress PDFs?",
-        "No. This tool compresses supported images only.",
+        "How do I compress an image to 100KB without losing quality?",
+        "To hit 100KB without pixelation or blur, downscale oversized camera dimensions (e.g. from 4000px down to 1200px) alongside quality optimization. This naturally lowers file size while preserving high visual sharpness.",
       ],
       [
-        "Is compression lossless?",
-        "JPEG and WebP quality reduction can lose detail. Keep your original and review the exported image.",
+        "Are my photos uploaded to a cloud server or stored online?",
+        "No. Appliory operates with 100% in-browser processing via HTML5 Canvas. Your images, identity cards, and personal photos never leave your device.",
+      ],
+      [
+        "Does it compress PDFs?",
+        "No. This tool compresses supported images (JPG, PNG, WebP). For PDF documents, use our dedicated PDF to Excel Converter or PDF Page Counter.",
+      ],
+      [
+        "Which image formats offer the best compression?",
+        "JPEG and WebP offer superior compression ratios for photos. If you have a large PNG photo, exporting as JPEG or WebP will dramatically reduce file size.",
       ],
     ],
   },

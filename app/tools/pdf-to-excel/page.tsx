@@ -83,6 +83,41 @@ export default function PDFToExcelPage() {
       <StructuredData
         data={{
           "@context": "https://schema.org",
+          "@type": "HowTo",
+          name: "How to Convert PDF Tables to Excel with Intelligent Cleanup",
+          description:
+            "Step-by-step instructions to extract PDF tabular data into clean, editable Microsoft Excel (.xlsx) and CSV spreadsheets completely in your browser.",
+          step: [
+            {
+              "@type": "HowToStep",
+              position: 1,
+              name: "Select Your PDF File",
+              text: "Choose or drag-and-drop any text-based PDF containing tables, financial reports, or payroll records into the drop zone.",
+            },
+            {
+              "@type": "HowToStep",
+              position: 2,
+              name: "Configure Table Extraction Settings",
+              text: "Select All Pages or enter a custom page range, adjust alignment tolerances if needed, and run the extraction engine.",
+            },
+            {
+              "@type": "HowToStep",
+              position: 3,
+              name: "Intelligently Clean Extracted Data",
+              text: "Use Fill Down to propagate employee IDs, remove duplicate page headers, clean blank rows, or edit cells directly.",
+            },
+            {
+              "@type": "HowToStep",
+              position: 4,
+              name: "Export to Excel (.xlsx) or CSV",
+              text: "Click Export to Excel (.xlsx) or Export to CSV to download your structured, ready-to-use spreadsheet instantly.",
+            },
+          ],
+        }}
+      />
+      <StructuredData
+        data={{
+          "@context": "https://schema.org",
           "@type": "FAQPage",
           mainEntity: faqs.map(([q, a]) => ({
             "@type": "Question",
@@ -101,10 +136,10 @@ export default function PDFToExcelPage() {
       </nav>
 
       <header className="tool-intro" style={{ marginBottom: 32 }}>
-        <span className="eyebrow">100% LOCAL · PRIVACY-FIRST · IN-BROWSER</span>
-        <h1>PDF to Excel Converter</h1>
+        <span className="eyebrow">100% LOCAL · PRIVACY-FIRST · ZERO CLOUD UPLOADS</span>
+        <h1>Free Online PDF to Excel Converter</h1>
         <p>
-          Convert PDF tables into editable spreadsheets, clean extracted data, and export your results. Designed with privacy-conscious processing.
+          Convert PDF tables into editable Excel (.xlsx) and CSV spreadsheets with intelligent table cleanup. 100% private in-browser processing with zero server uploads.
         </p>
       </header>
 
@@ -113,25 +148,97 @@ export default function PDFToExcelPage() {
         <PDFToExcelConverter />
       </section>
 
+      {/* Features Overview */}
+      <section style={{ marginBottom: 48 }}>
+        <h2 style={{ fontSize: 24, fontWeight: 650, marginBottom: 20 }}>Why Use Appliory for PDF to Excel Conversion?</h2>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: 20 }}>
+          <div style={{ background: "#fff", border: "1px solid var(--line)", borderRadius: 8, padding: 22 }}>
+            <h3 style={{ fontSize: 16, fontWeight: 600, color: "var(--accent)", marginBottom: 8 }}>🔒 100% Private (No Uploads)</h3>
+            <p style={{ fontSize: 13, lineHeight: 1.6, color: "#55645a", margin: 0 }}>
+              Your confidential payroll reports, employee salaries, and bank records never leave your machine. Processing runs entirely inside your browser memory.
+            </p>
+          </div>
+          <div style={{ background: "#fff", border: "1px solid var(--line)", borderRadius: 8, padding: 22 }}>
+            <h3 style={{ fontSize: 16, fontWeight: 600, color: "var(--accent)", marginBottom: 8 }}>🧹 Intelligent Table Cleanup</h3>
+            <p style={{ fontSize: 13, lineHeight: 1.6, color: "#55645a", margin: 0 }}>
+              Fix messy PDF tables instantly: use <strong>Fill Down</strong> to propagate parent Employee IDs, eliminate repeated page headers, and delete blank rows.
+            </p>
+          </div>
+          <div style={{ background: "#fff", border: "1px solid var(--line)", borderRadius: 8, padding: 22 }}>
+            <h3 style={{ fontSize: 16, fontWeight: 600, color: "var(--accent)", marginBottom: 8 }}>🔢 Leading Zero Preservation</h3>
+            <p style={{ fontSize: 13, lineHeight: 1.6, color: "#55645a", margin: 0 }}>
+              Employee IDs, postal codes, and bank account numbers like <code>00142</code> stay intact. We export identifier columns as inline text so Excel won't strip zeros.
+            </p>
+          </div>
+          <div style={{ background: "#fff", border: "1px solid var(--line)", borderRadius: 8, padding: 22 }}>
+            <h3 style={{ fontSize: 16, fontWeight: 600, color: "var(--accent)", marginBottom: 8 }}>📊 Dual View Extraction</h3>
+            <p style={{ fontSize: 13, lineHeight: 1.6, color: "#55645a", margin: 0 }}>
+              Parse complex case notes and narrative documents into both a <strong>Master Summary</strong> table and an <strong>Itemized Pay Lines</strong> ledger with a single click.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Comparison: Local Processing vs Generic Cloud Converters */}
+      <section style={{ marginBottom: 48, background: "#f5f7f3", border: "1px solid var(--line)", borderRadius: 9, padding: 28 }}>
+        <h2 style={{ fontSize: 22, fontWeight: 650, marginBottom: 12 }}>Local In-Browser vs. Cloud Converters</h2>
+        <p style={{ fontSize: 13, color: "#55645a", marginBottom: 20 }}>
+          Unlike common online converters that upload your PDFs to third-party cloud servers, Appliory parses PDFs locally on your device using WebAssembly and Web Workers.
+        </p>
+        <div style={{ overflowX: "auto" }}>
+          <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13, textAlign: "left" }}>
+            <thead>
+              <tr style={{ borderBottom: "2px solid #ccd8c7" }}>
+                <th style={{ padding: "10px 14px", fontWeight: 600 }}>Feature</th>
+                <th style={{ padding: "10px 14px", fontWeight: 600, color: "var(--accent)" }}>Appliory PDF to Excel</th>
+                <th style={{ padding: "10px 14px", fontWeight: 600, color: "#8c564b" }}>Standard Cloud Converters</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style={{ borderBottom: "1px solid #e1e7dc" }}>
+                <td style={{ padding: "10px 14px", fontWeight: 550 }}>Data Confidentiality</td>
+                <td style={{ padding: "10px 14px", color: "var(--accent)" }}>✅ 100% Private (0 bytes sent to servers)</td>
+                <td style={{ padding: "10px 14px", color: "#666" }}>❌ Uploaded to remote third-party servers</td>
+              </tr>
+              <tr style={{ borderBottom: "1px solid #e1e7dc" }}>
+                <td style={{ padding: "10px 14px", fontWeight: 550 }}>Table Cleanup Tools</td>
+                <td style={{ padding: "10px 14px", color: "var(--accent)" }}>✅ Fill Down, Header Clean, Cell Editing</td>
+                <td style={{ padding: "10px 14px", color: "#666" }}>❌ Raw, messy table dump only</td>
+              </tr>
+              <tr style={{ borderBottom: "1px solid #e1e7dc" }}>
+                <td style={{ padding: "10px 14px", fontWeight: 550 }}>Leading Zeros (e.g. 0012)</td>
+                <td style={{ padding: "10px 14px", color: "var(--accent)" }}>✅ Protected as inline string values</td>
+                <td style={{ padding: "10px 14px", color: "#666" }}>❌ Stripped to 12 automatically by Excel</td>
+              </tr>
+              <tr style={{ borderBottom: "1px solid #e1e7dc" }}>
+                <td style={{ padding: "10px 14px", fontWeight: 550 }}>File Limits & Paywalls</td>
+                <td style={{ padding: "10px 14px", color: "var(--accent)" }}>✅ Unlimited free use, no registration</td>
+                <td style={{ padding: "10px 14px", color: "#666" }}>❌ Daily limits, subscriptions, and queues</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
       {/* Explainer and FAQ Section */}
       <section className="tool-explainer">
         <div>
-          <h2>How to convert PDF tables to Excel</h2>
+          <h2>How to Convert PDF Tables to Excel (Step-by-Step)</h2>
           <p className="direct-answer">
             Upload your PDF document containing tabular data or payroll reports. Appliory analyzes text coordinates directly in your browser, aligns rows and columns, allows you to clean missing or repeated values, and exports clean Excel (.xlsx) or CSV files without uploading files to any external server.
           </p>
           <ol>
-            <li>Select a PDF file with tables, statements, or payroll reports from your device.</li>
-            <li>Configure page range and alignment tolerance, then start table extraction.</li>
-            <li>Clean up extracted data using Fill Down, header removal, or cell editing.</li>
-            <li>Export your finalized spreadsheet directly to Excel (.xlsx) or CSV format.</li>
+            <li><strong>Select PDF File:</strong> Choose any text-based PDF containing tables, statements, or payroll records from your computer or phone.</li>
+            <li><strong>Configure Settings:</strong> Select custom page ranges or let our engine auto-detect columns based on geometric alignment.</li>
+            <li><strong>Review & Clean Data:</strong> Click Fill Down on employee ID columns, eliminate repeated page headers, and edit any cells.</li>
+            <li><strong>Export Your Spreadsheet:</strong> Download your finished spreadsheet as an OpenXML Excel (.xlsx) file or clean RFC 4180 CSV.</li>
           </ol>
           <p>
             Designed for privacy-sensitive data like financial statements, pay slips, and roster sheets. Files are never transmitted over the internet or stored in the cloud.
           </p>
         </div>
         <aside>
-          <h2>Common questions</h2>
+          <h2>Frequently Asked Questions</h2>
           {faqs.map(([q, a]) => (
             <details key={q}>
               <summary>{q}</summary>
@@ -148,7 +255,7 @@ export default function PDFToExcelPage() {
       />
 
       <section className="related-tools">
-        <h2>Keep working on your documents</h2>
+        <h2>Explore More Free Document Tools</h2>
         <div>
           {tools
             .filter((x) => x.slug !== currentSlug)

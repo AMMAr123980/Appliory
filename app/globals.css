@@ -807,8 +807,8 @@ h2 {
 }
 .footer-top {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 50px;
+  grid-template-columns: 1.8fr repeat(4, 1fr);
+  gap: 36px;
   max-width: 1148px;
   margin: auto;
 }

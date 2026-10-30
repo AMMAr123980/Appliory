@@ -98,24 +98,34 @@ export function Footer() {
           </span>
         </div>
         <div>
-          <b>Workspace</b>
-          <Link href="/tool">Document checker</Link>
-          <Link href="/tools">PDF & image tools</Link>
-          <Link href="/compare">Compare tools</Link>
-          <Link href="/checklists">Starter checklists</Link>
+          <b>PDF Tools</b>
+          <Link href="/tools/pdf-to-excel">PDF to Excel Converter</Link>
+          <Link href="/tools/pdf-page-counter">PDF Page Counter</Link>
+          <Link href="/tools/file-size-checker">File Size Checker</Link>
+          <Link href="/tool">Document Checker</Link>
         </div>
         <div>
-          <b>Learn</b>
-          <Link href="/how-it-works">How it works</Link>
-          <Link href="/guides">Application guides</Link>
-          <Link href="/faq">Frequently asked questions</Link>
+          <b>Image Tools</b>
+          <Link href="/tools/compress-image-to-20kb">Compress Image to 20KB</Link>
+          <Link href="/tools/compress-image-to-50kb">Compress Image to 50KB</Link>
+          <Link href="/tools/image-compressor">Image Compressor</Link>
+          <Link href="/tools/image-resizer">Image Resizer</Link>
+          <Link href="/tools/passport-photo-maker">Passport Photo Maker</Link>
+        </div>
+        <div>
+          <b>Resources</b>
+          <Link href="/tools">All Tools Directory</Link>
+          <Link href="/checklists">Starter Checklists</Link>
+          <Link href="/how-it-works">How It Works</Link>
+          <Link href="/guides">Application Guides</Link>
+          <Link href="/faq">FAQ</Link>
         </div>
         <div>
           <b>Appliory</b>
-          <Link href="/about">About us</Link>
-          <Link href="/contact">Help & support</Link>
-          <Link href="/privacy">Privacy policy</Link>
-          <Link href="/terms">Terms of use</Link>
+          <Link href="/about">About Us</Link>
+          <Link href="/contact">Help & Support</Link>
+          <Link href="/privacy">Privacy Policy</Link>
+          <Link href="/terms">Terms of Use</Link>
         </div>
       </div>
       <div className="footer-bottom">
