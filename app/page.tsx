@@ -307,6 +307,48 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      {/* Blog section on homepage */}
+      <section className="wrap content-section" style={{ paddingTop: 0 }}>
+        <div className="section-heading">
+          <div>
+            <span className="eyebrow">GUIDES &amp; TIPS</span>
+            <h2>Free how-to guides for every applicant</h2>
+          </div>
+          <Link href="/blog" className="text-link">
+            All guides <ArrowUpRight size={17} />
+          </Link>
+        </div>
+        <div className="blog-grid" style={{ marginTop: 20 }}>
+          <Link className="blog-card" href="/blog/how-to-compress-image-to-20kb-for-ppsc-fpsc">
+            <div className="blog-card-header"><span className="blog-category">Image Tools</span></div>
+            <h3>How to Compress Image to 20KB for PPSC, FPSC &amp; Government Portals</h3>
+            <p>Step-by-step guide to reduce your photo to exactly 20KB — free, private, no upload.</p>
+            <div className="blog-card-footer">
+              <span className="blog-meta" style={{ fontSize: 11, color: "var(--muted)" }}>4 min read</span>
+              <span className="text-link" style={{ fontSize: 13 }}>Read <ArrowUpRight size={12} /></span>
+            </div>
+          </Link>
+          <Link className="blog-card" href="/blog/how-to-convert-pdf-to-excel">
+            <div className="blog-card-header"><span className="blog-category">PDF Tools</span></div>
+            <h3>How to Convert a PDF Table to Excel Without Uploading to Any Server</h3>
+            <p>Convert payroll and financial PDFs to Excel privately — no cloud upload required.</p>
+            <div className="blog-card-footer">
+              <span className="blog-meta" style={{ fontSize: 11, color: "var(--muted)" }}>5 min read</span>
+              <span className="text-link" style={{ fontSize: 13 }}>Read <ArrowUpRight size={12} /></span>
+            </div>
+          </Link>
+          <Link className="blog-card" href="/blog/how-to-make-passport-photo-online-free">
+            <div className="blog-card-header"><span className="blog-category">Image Tools</span></div>
+            <h3>How to Make a Passport Photo Online Free — 2×2 Inch &amp; 35×45mm</h3>
+            <p>Create official passport and visa photos in the correct size — instant, free, no account.</p>
+            <div className="blog-card-footer">
+              <span className="blog-meta" style={{ fontSize: 11, color: "var(--muted)" }}>4 min read</span>
+              <span className="text-link" style={{ fontSize: 13 }}>Read <ArrowUpRight size={12} /></span>
+            </div>
+          </Link>
+        </div>
+      </section>
     </main>
   );
 }

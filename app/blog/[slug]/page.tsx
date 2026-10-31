@@ -4,6 +4,7 @@ import { ArrowUpRight, Clock, ChevronLeft } from "lucide-react";
 import { blogPosts } from "@/lib/blog";
 import { StructuredData } from "@/components/appliory/structured-data";
 import { absolute, breadcrumb } from "@/lib/seo";
+import { ShareBar } from "@/components/appliory/share-bar";
 
 export async function generateStaticParams() {
   return blogPosts.map((p) => ({ slug: p.slug }));
@@ -127,6 +128,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             </div>
           </div>
         )}
+
+        <ShareBar
+          title={post.title}
+          description={post.metaDescription}
+          url={absolute("/blog/" + slug)}
+        />
 
         {/* Related Posts */}
         <h2>More guides</h2>
