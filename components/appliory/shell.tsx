@@ -114,6 +114,7 @@ export function Footer() {
         </div>
         <div>
           <b>Resources</b>
+          <Link href="/blog">Blog & Guides</Link>
           <Link href="/tools">All Tools Directory</Link>
           <Link href="/checklists">Starter Checklists</Link>
           <Link href="/how-it-works">How It Works</Link>

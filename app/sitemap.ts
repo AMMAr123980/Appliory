@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { guides } from "@/lib/content";
 import { tools } from "@/lib/tool-catalog";
 import { templates } from "@/lib/model";
+import { blogPosts } from "@/lib/blog";
 export default function sitemap(): MetadataRoute.Sitemap {
   const origin = (
     process.env.NEXT_PUBLIC_SITE_URL ||
@@ -12,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "", priority: 1.0, changeFrequency: "weekly" },
     { path: "/tools", priority: 0.9, changeFrequency: "weekly" },
     { path: "/tool", priority: 0.9, changeFrequency: "weekly" },
+    { path: "/blog", priority: 0.9, changeFrequency: "weekly" },
     { path: "/compare", priority: 0.8, changeFrequency: "monthly" },
     { path: "/checklists", priority: 0.8, changeFrequency: "weekly" },
     { path: "/how-it-works", priority: 0.8, changeFrequency: "monthly" },
@@ -41,9 +43,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "monthly" as const,
   }));
 
+  const blogRoutes = blogPosts.map((p) => ({
+    path: "/blog/" + p.slug,
+    priority: 0.85,
+    changeFrequency: "monthly" as const,
+  }));
+
   const now = new Date();
 
-  return [...staticRoutes, ...toolRoutes, ...templateRoutes, ...guideRoutes].map(
+  return [...staticRoutes, ...toolRoutes, ...templateRoutes, ...guideRoutes, ...blogRoutes].map(
     (item) => ({
       url: origin + item.path,
       lastModified: now,
