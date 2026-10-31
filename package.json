@@ -21,6 +21,7 @@
     "format": "prettier --write app components/appliory lib/model.ts lib/process.ts lib/reports.ts lib/validation lib/schemas.ts lib/content.ts tests next.config.ts"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.5.0",
     "@base-ui/react": "^1.7.0",
     "@hookform/resolvers": "^5.7.1",
     "@noble/hashes": "^2.4.0",

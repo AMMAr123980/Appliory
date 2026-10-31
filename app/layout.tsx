@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { Header, Footer } from "@/components/appliory/shell";
 import { Toaster } from "sonner";
@@ -171,6 +172,7 @@ export default function RootLayout({
         <div id="content">{children}</div>
         <Footer />
         <Toaster richColors position="bottom-right" />
+        <Analytics />
       </body>
     </html>
   );
