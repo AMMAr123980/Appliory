@@ -4,6 +4,8 @@ import { StructuredData } from "@/components/appliory/structured-data";
 import { ShareBar } from "@/components/appliory/share-bar";
 import { PDFToExcelConverter } from "@/components/appliory/pdf-to-excel/converter";
 import { tools } from "@/lib/tool-catalog";
+import { blogPosts } from "@/lib/blog";
+import { ArrowUpRight } from "lucide-react";
 
 export const metadata = pageMetadata(
   "Convert PDF to Excel Free & Private (Clean Tables to XLSX) | Appliory",
@@ -265,6 +267,30 @@ export default function PDFToExcelPage() {
                 {x.name}
               </Link>
             ))}
+        </div>
+      </section>
+
+      {/* Helpful Guides & Tutorials */}
+      <section className="wrap content-section" style={{ marginTop: 40, paddingTop: 24, borderTop: "1px solid var(--line)" }}>
+        <div className="section-heading" style={{ marginBottom: 16 }}>
+          <div>
+            <span className="eyebrow">STEP-BY-STEP GUIDANCE</span>
+            <h2 style={{ fontSize: "1.25rem", margin: "4px 0" }}>Helpful Guides &amp; Tutorials</h2>
+          </div>
+          <Link href="/blog" className="text-link" style={{ fontSize: 13 }}>
+            View all guides <ArrowUpRight size={14} />
+          </Link>
+        </div>
+        <div className="blog-related" style={{ marginTop: 12 }}>
+          {blogPosts.slice(0, 3).map((p) => (
+            <Link key={p.slug} className="blog-related-card" href={`/blog/${p.slug}`}>
+              <span className="blog-category">{p.category}</span>
+              <h4>{p.title}</h4>
+              <span className="text-link" style={{ fontSize: 13 }}>
+                Read Guide <ArrowUpRight size={12} />
+              </span>
+            </Link>
+          ))}
         </div>
       </section>
     </main>
