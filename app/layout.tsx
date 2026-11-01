@@ -110,6 +110,12 @@ export default function RootLayout({
             `,
           }}
         />
+        {/* Ahrefs Web Analytics */}
+        <Script
+          strategy="afterInteractive"
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="+esYWE0KYUZz/T2uUK8aDg"
+        />
       </head>
       <body>
         <a className="skip-link" href="#content">
