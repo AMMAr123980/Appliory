@@ -16,20 +16,19 @@ import { faqs } from "@/lib/content";
 import { pageMetadata } from "@/lib/seo";
 import { StructuredData } from "@/components/appliory/structured-data";
 export const metadata = pageMetadata(
-  "Free Document Checker, PDF & Image Tools Online",
-  "Appliory offers free, private document and image tools: Image Compressor, Image Resizer, PDF Page Counter, File Size Checker, and Duplicate File Finder. 100% free, no login, processed locally on your device.",
+  "Free Document & Image Tools for Job Applications | Appliory",
+  "Compress photos to 20KB or 50KB, resize passport photos, check application documents, and convert PDFs to Excel. 100% free, private browser-based tools.",
   "/",
   [
+    "free document tools for job applications",
+    "compress photo to 20kb",
+    "compress photo to 50kb",
     "image compressor",
-    "compress image online",
-    "image compressor to kb",
-    "free image compressor",
-    "image resizer",
-    "pdf page counter",
-    "file size checker",
-    "duplicate file finder",
+    "passport photo maker",
+    "pdf to excel converter",
+    "ppsc photo compressor",
+    "fpsc document resize",
     "appliory",
-    "appliory.tech",
   ],
 );
 export default function Home() {
@@ -55,13 +54,15 @@ export default function Home() {
             <span className="live-dot" /> PRIVATE TOOLS. READY WHEN YOU ARE.
           </span>
           <h1>
-            Better prepared.
+            Free Online Document &amp; Image Tools
             <br />
-            <span>One file at a time.</span>
+            <span>for Every Application</span>
           </h1>
           <p>
-            Check your application documents, count PDF pages, or resize a
-            photo. Simple tools for the details that matter.
+            Compress images to 20KB or 50KB, resize passport photos, verify
+            document readiness, and convert PDFs to Excel. Prepare files for
+            PPSC, FPSC, university admissions, and scholarship portals — free,
+            private, without registration.
           </p>
           <div className="hero-actions">
             <Link className="button dark" href="/tool">

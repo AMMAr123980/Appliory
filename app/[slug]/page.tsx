@@ -200,17 +200,17 @@ export default async function Page({
             <>
               <h2>What is Appliory?</h2>
               <p>
-                <strong>Appliory</strong> (appliory.tech) is a free, privacy-first web platform built for students, job applicants, and professionals who need to prepare and verify documents before submitting to government portals, universities, scholarships, and employers.
+                <strong>Appliory</strong> (appliory.tech) is a free, privacy-first web platform built for students, job applicants, and professionals who need to prepare, compress, and verify documents before submitting to government portals, universities, scholarships, and employers.
               </p>
               <p>
-                Appliory is not a Connected TV platform, not an advertising network, and not a field sales automation company. It is a document and image utility toolkit that runs 100% inside your browser — no file uploads, no cloud storage, no registration required.
+                Unlike traditional utilities that upload your sensitive files to cloud servers, Appliory runs 100% inside your browser using HTML5 Canvas, PDF.js, and modern Web APIs. No document uploads, no server storage, and no registration required.
               </p>
               <h2>Who Built Appliory?</h2>
               <p>
-                Appliory was founded and built by <strong>Ammar Hassan Malik</strong>, a software engineer based in Pakistan. The platform was created to solve a real problem: online job portals, government recruitment exams (PPSC, FPSC, UPSC, NTS), and scholarship applications enforce strict file size and format rules — and most applicants don't have an easy private way to check and fix their documents before submission.
+                Appliory was founded and built by <strong>Ammar Hassan Malik</strong>, a software engineer based in Pakistan. The platform was created to solve a widespread problem: online recruitment portals (PPSC, FPSC, UPSC, NTS), university admissions, and scholarship applications enforce strict file size (like 20KB or 50KB limits) and dimension rules. Most applicants lack an easy, secure way to resize and check their files without compromising privacy.
               </p>
               <p>
-                Appliory fills that gap with fast, free, browser-based tools that keep your data on your own device.
+                Appliory provides fast, free, and accessible tools designed specifically to make document submission seamless for applicants worldwide.
               </p>
               <h2>Appliory's Core Tools</h2>
               <p>Every tool on Appliory processes files locally in your browser. Nothing is ever sent to a server.</p>
@@ -226,20 +226,18 @@ export default async function Page({
                 <li><strong>Duplicate File Finder</strong> — Detect identical duplicate files using SHA-256 cryptographic hashing.</li>
                 <li><strong>Document Checker</strong> — Build a full application checklist, verify all documents together, and export a readiness report.</li>
               </ul>
-              <h2>Privacy First — Not a Slogan</h2>
+              <h2>Privacy First — Zero Server Uploads</h2>
               <p>
-                When you upload a photo, PDF or document to Appliory, it never leaves your device. Processing happens entirely inside your browser using Web APIs, HTML5 Canvas, and WebAssembly (PDF.js). There is no document upload API, no cloud file storage, and no AI content analysis in Appliory.
+                When you select a photo, PDF, or certificate in Appliory, it never leaves your machine. All computation happens locally in your device's memory. There is no file storage, no cloud database of documents, and no third-party data tracking.
               </p>
               <p>
-                This matters because Appliory's users often work with identity cards, payroll records, transcripts, and other sensitive personal documents. Those files should never be uploaded to a third-party cloud server.
+                This is essential because our users routinely process identity cards, transcripts, pay slips, and personal credentials that should always remain completely private.
               </p>
-              <h2>Appliory.tech — Not the Same as Applory or Appilary</h2>
-              <p>
-                Appliory (appliory.tech) is an independent document and image utilities platform. It is not related to Applory.com (a Connected TV platform), Appilary Technologies (an Indian B2B field sales software firm), or any other company with a similar name. Appliory is a distinct product built and operated by Ammar Hassan Malik from Pakistan.
-              </p>
-              <Link href="/tools" className="button dark">
-                Explore all tools <ArrowUpRight size={16} />
-              </Link>
+              <div style={{ marginTop: 28 }}>
+                <Link href="/tools" className="button dark">
+                  Explore all tools <ArrowUpRight size={16} />
+                </Link>
+              </div>
             </>
 
           ) : slug === "privacy" ? (

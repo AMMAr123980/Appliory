@@ -165,10 +165,11 @@ export default function RootLayout({
                 "@type": "WebSite",
                 "@id": absolute("/#website"),
                 name: "Appliory",
-                url: siteUrl,
+                alternateName: ["Appliory.tech", "Appliory Tools"],
+                url: siteUrl + "/",
                 inLanguage: "en",
                 description:
-                  "Free document checker, PDF page counter, image compressor and file tools with zero file uploads.",
+                  "Free document tools, 20KB/50KB image compressors, PDF to Excel converter, and passport photo resizer with zero file uploads.",
                 publisher: { "@id": absolute("/#organization") },
               },
             ],
