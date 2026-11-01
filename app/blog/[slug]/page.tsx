@@ -6,7 +6,10 @@ import { StructuredData } from "@/components/appliory/structured-data";
 import { absolute, breadcrumb } from "@/lib/seo";
 import { ShareBar } from "@/components/appliory/share-bar";
 
-export async function generateStaticParams() {
+export const dynamic = "force-static";
+export const dynamicParams = true;
+
+export function generateStaticParams() {
   return blogPosts.map((p) => ({ slug: p.slug }));
 }
 
