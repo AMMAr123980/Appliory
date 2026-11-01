@@ -5,11 +5,26 @@ export default function robots(): MetadataRoute.Robots {
     "https://www.appliory.tech"
   ).replace(/\/$/, "");
   return {
-    rules: {
-      userAgent: "*",
-      allow: "/",
-      disallow: ["/dashboard", "/api/", "/login", "/signup", "/auth/"],
-    },
+    rules: [
+      {
+        userAgent: "*",
+        allow: "/",
+        disallow: ["/dashboard", "/api/", "/login", "/signup", "/auth/"],
+      },
+      {
+        userAgent: [
+          "GPTBot",
+          "ChatGPT-User",
+          "PerplexityBot",
+          "Google-Extended",
+          "ClaudeBot",
+          "cohere-ai",
+          "Omgilibot",
+        ],
+        allow: "/",
+        disallow: ["/dashboard", "/api/"],
+      },
+    ],
     sitemap: origin + "/sitemap.xml",
   };
 }

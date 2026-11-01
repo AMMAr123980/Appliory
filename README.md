@@ -1,8 +1,36 @@
-# Appliory — guest document checker
+# Appliory — Free Online Document & Image Tools
 
-No login, database, Supabase configuration, or API keys required.
+[![Website](https://img.shields.io/badge/Website-appliory.tech-153a3d?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.appliory.tech)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-## Run
+> **Official Website:** [https://www.appliory.tech](https://www.appliory.tech)  
+> Fast, free, privacy-first web utilities for job applicants, students, and professionals in Pakistan, India, and worldwide. 100% in-browser processing with zero server uploads.
+
+---
+
+## 🛠️ Free Online Tools Available on Appliory
+
+* **[Compress Image to 20KB](https://www.appliory.tech/tools/compress-image-to-20kb):** Dedicated photo, signature, and challan compressor for PPSC, FPSC, NTS, and online recruitment portals.
+* **[Compress Image to 50KB](https://www.appliory.tech/tools/compress-image-to-50kb):** Optimized image size reducer for university admissions and HEC scholarship applications.
+* **[PDF to Excel Converter](https://www.appliory.tech/tools/pdf-to-excel):** Convert PDF tables into editable Excel (.xlsx) and CSV spreadsheets locally without cloud uploads.
+* **[Passport Photo Maker & Resizer](https://www.appliory.tech/tools/passport-photo-maker):** Resize photos to 600×600 px (2×2 inch) or 413×531 px (35×45 mm) for passports and visas.
+* **[PDF Page Counter & Summary](https://www.appliory.tech/tools/pdf-page-counter):** Count pages and generate extractive text summaries from multiple PDFs.
+* **[File Size Checker](https://www.appliory.tech/tools/file-size-checker):** Check exact document and photo byte sizes against portal upload limits.
+* **[Duplicate File Finder](https://www.appliory.tech/tools/duplicate-file-finder):** Detect identical duplicates locally using cryptographic SHA-256 byte hashing.
+* **[Document Application Checker](https://www.appliory.tech/tool):** Build a requirement checklist, verify document compliance, and export readiness reports.
+
+---
+
+## 🔒 Privacy Architecture
+
+Unlike traditional web tools, **Appliory never uploads your documents to cloud servers**:
+1. Image compression and resizing use the **HTML5 Canvas API** in browser memory.
+2. PDF text extraction and table analysis run via **PDF.js** locally.
+3. Cryptographic duplicate file detection uses client-side **SHA-256 Web Crypto**.
+
+---
+
+## Run Locally
 Requires Node.js 22.13+.
 
 ```bash
