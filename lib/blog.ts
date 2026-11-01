@@ -390,4 +390,109 @@ export const blogPosts: BlogPost[] = [
       href: "/tools",
     },
   },
+  {
+    slug: "how-to-resize-ppsc-fpsc-challan-form-to-25kb",
+    title: "How to Resize PPSC & FPSC Fee Challan Form to 25KB Online (Free)",
+    metaTitle: "Resize PPSC & FPSC Challan Form to 25KB Online Free | Appliory",
+    metaDescription:
+      "Step-by-step guide to compress your paid bank fee challan form under 25KB for PPSC and FPSC online applications. 100% private, no upload needed.",
+    category: "Challan & Fee Receipts",
+    tag: "PPSC · FPSC · Challan",
+    date: "2026-11-01",
+    readTime: "4 min read",
+    intro:
+      "When applying online for PPSC (Punjab Public Service Commission) or FPSC jobs, one of the most frustrating errors is: 'Challan image size must be less than 25KB'. Here is how to compress your paid bank receipt so the stamp and bank deposit ID stay perfectly legible under 25KB.",
+    keywords: [
+      "resize challan form to 25kb",
+      "ppsc challan form compress 25kb",
+      "fpsc challan size reducer",
+      "compress ppsc challan online free",
+      "challan image size less than 25kb",
+      "resize bank receipt to 25kb",
+    ],
+    sections: [
+      {
+        heading: "Why PPSC and FPSC Reject Challan Scans",
+        body: "Government recruitment portals enforce a strict 25KB limit for paid fee challan scans. Candidates taking pictures with modern smartphones end up with 3MB to 5MB photos. Trying to upload these directly results in instant rejection or upload failure.",
+      },
+      {
+        heading: "Crucial Rule: Crop Before You Compress",
+        body: "A fee challan contains a lot of blank paper margins. If you compress the whole sheet down to 25KB, the bank stamp and deposit number become a blurry mess. Always crop tightly around the applicant's copy showing the bank branch code, date, deposit ID, and official cashier stamp.",
+      },
+      {
+        heading: "How to Compress Your Challan to 25KB in Appliory",
+        body: "1. Open Appliory's free Compress Image to 20KB/25KB tool. 2. Select or drag your cropped challan photo. 3. Appliory automatically calibrates dimensions and compression quality. 4. Download your crisp JPEG challan file. Because processing occurs inside your device, no bank receipts or personal details are uploaded to external servers.",
+      },
+      {
+        heading: "Check Before Submitting to the Portal",
+        body: "Open the downloaded image on your screen. Verify that the bank scroll number, applicant CNIC, and transaction date are readable. If yes, upload it to the PPSC or FPSC portal without worrying about rejection.",
+      },
+    ],
+    faqs: [
+      [
+        "Can I upload a PDF challan to PPSC?",
+        "No. PPSC and FPSC strictly require image format (JPG or JPEG) under 25KB for fee challan verification.",
+      ],
+      [
+        "Will the bank stamp remain clear at 25KB?",
+        "Yes, provided you cropped out unnecessary white borders before compressing.",
+      ],
+      [
+        "Does Appliory store my bank fee receipt?",
+        "No. Appliory processes everything locally in your browser memory. Nothing is transmitted to any cloud database.",
+      ],
+    ],
+    relatedTool: {
+      label: "Compress Challan to 20KB/25KB",
+      href: "/tools/compress-image-to-20kb",
+    },
+  },
+  {
+    slug: "how-to-compress-signature-to-20kb",
+    title: "How to Compress Signature to 20KB for Online Job Applications",
+    metaTitle: "Compress Signature to 20KB Online Free (Sharp & Clear) | Appliory",
+    metaDescription:
+      "Compress scanned signatures to under 20KB for PPSC, FPSC, NTS, and university portals without blur. 100% private in-browser compression.",
+    category: "Signature Tools",
+    tag: "Signature · PPSC · Jobs",
+    date: "2026-11-01",
+    readTime: "3 min read",
+    intro:
+      "Online recruitment portals and university forms almost universally demand candidate signatures below 20KB. Compressing a signature without losing line clarity or turning ink into blurry noise requires the right approach.",
+    keywords: [
+      "compress signature to 20kb",
+      "signature resizer online 20kb",
+      "reduce signature size in kb",
+      "ppsc signature size online",
+      "compress signature for job application",
+    ],
+    sections: [
+      {
+        heading: "How to Capture a Perfect Signature",
+        body: "Sign on clean, unlined white paper using a dark blue or black ballpoint pen. Take a well-lit photo directly from above without casting shadows. Crop tightly around the signature ink so 90% of the image is the actual signature.",
+      },
+      {
+        heading: "Why Signature Files Get Blurry",
+        body: "When you compress a huge photo that has lots of white background, the compression algorithm wastes precious bytes compressing empty paper. Cropping first ensures that every kilobyte is dedicated to the pen strokes.",
+      },
+      {
+        heading: "Compressing to 20KB Using Appliory",
+        body: "Upload your cropped signature to Appliory. The preset target is 20KB. Download your sharp, lightweight JPEG file ready to upload to any recruitment portal in seconds.",
+      },
+    ],
+    faqs: [
+      [
+        "Should I save my signature as PNG or JPG?",
+        "Most portals specify JPG or JPEG. If given a choice, JPEG reaches smaller file sizes more reliably while meeting the 20KB ceiling.",
+      ],
+      [
+        "What dimensions should a signature be?",
+        "A typical dimensions range is 300×150 px to 400×200 px at 96 DPI.",
+      ],
+    ],
+    relatedTool: {
+      label: "Compress Signature to 20KB",
+      href: "/tools/compress-image-to-20kb",
+    },
+  },
 ];
