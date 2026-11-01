@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   ),
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Appliory — Free Document Checker, PDF & Image Tools Online",
+    default: "Appliory — Free Document, PDF & Image Tools Online",
     template: "%s | Appliory",
   },
   applicationName: "Appliory",

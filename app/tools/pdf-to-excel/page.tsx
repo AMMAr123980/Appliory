@@ -8,7 +8,7 @@ import { blogPosts } from "@/lib/blog";
 import { ArrowUpRight } from "lucide-react";
 
 export const metadata = pageMetadata(
-  "Convert PDF to Excel Free & Private (Clean Tables to XLSX) | Appliory",
+  "Convert PDF to Excel Free & Private (XLSX) | Appliory",
   "Convert PDF tables into editable Excel (.xlsx) and CSV spreadsheets locally in your browser. Clean payroll reports, fill down IDs, remove repeated headers with 100% privacy.",
   "/tools/pdf-to-excel",
   [

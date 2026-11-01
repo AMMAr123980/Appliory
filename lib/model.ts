@@ -88,7 +88,7 @@ export const templates: Template[] = [
     title: "Scholarship application",
     category: "Scholarships",
     description:
-      "Bring your academic story together, from transcripts to your statement of purpose.",
+      "Prepare and verify your scholarship documents: transcripts, personal statements, recommendation letters, and identity cards with zero file uploads.",
     items: [
       rule(
         "transcript",
@@ -131,7 +131,8 @@ export const templates: Template[] = [
     slug: "university",
     title: "University admission",
     category: "Admissions",
-    description: "A clear starting point for your next chapter in education.",
+    description:
+      "A complete document preparation checklist for university admissions: verify academic transcripts, motivation letters, language certificates, and IDs.",
     items: [
       rule(
         "transcript",
@@ -167,7 +168,7 @@ export const templates: Template[] = [
     title: "Job application",
     category: "Careers",
     description:
-      "Put your experience forward with a tidy, submission-ready document pack.",
+      "Prepare your job application document pack: format resumes, check page counts, structure cover letters, and organize portfolios with total privacy.",
     items: [
       rule(
         "cv",

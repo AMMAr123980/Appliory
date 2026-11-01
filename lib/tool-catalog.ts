@@ -2,7 +2,7 @@ export const tools = [
   {
     slug: "pdf-page-counter",
     name: "PDF page counter & summary",
-    metaTitle: "Count PDF Pages & Extract Summary Online Free (No Uploads) | Appliory",
+    metaTitle: "Count PDF Pages Online Free (No Uploads) | Appliory",
     metaDescription:
       "Count pages across multiple PDF files instantly and generate page-by-page extractive summaries without uploading sensitive documents to cloud servers.",
     keywords: [
@@ -85,7 +85,7 @@ export const tools = [
   {
     slug: "image-resizer",
     name: "Image resizer",
-    metaTitle: "Resize Image to Passport & ID Photo Size Online (Exact Pixels) | Appliory",
+    metaTitle: "Resize Image to Passport & ID Dimensions Online | Appliory",
     metaDescription:
       "Resize JPG, PNG and WebP photos to exact pixel dimensions (600x600 passport, 35x45mm, custom px). Lock aspect ratio and download privately on your device.",
     keywords: [
@@ -127,7 +127,7 @@ export const tools = [
   {
     slug: "image-compressor",
     name: "Image compressor",
-    metaTitle: "Compress Image to 20KB, 50KB, 100KB, 200KB Online Free | Appliory",
+    metaTitle: "Compress Image to 20KB, 50KB, 100KB Online Free | Appliory",
     metaDescription:
       "Compress JPG, PNG and WebP images to 20KB, 50KB, 100KB or 200KB online for free. 100% private in-browser compression with instant preview and zero file uploads.",
     keywords: [
@@ -304,7 +304,7 @@ export const tools = [
   {
     slug: "passport-photo-maker",
     name: "Passport photo maker & resizer",
-    metaTitle: "Online Passport Photo Maker & Resizer (600x600 px & 35x45 mm) Free | Appliory",
+    metaTitle: "Passport Photo Maker & Resizer Online Free | Appliory",
     metaDescription:
       "Resize photos to official 2x2 inch (600x600 px) and 35x45 mm passport and visa dimensions online for free. 100% private in your browser with zero uploads.",
     keywords: [
@@ -347,7 +347,7 @@ export const tools = [
   {
     slug: "pdf-to-excel",
     name: "PDF to Excel converter",
-    metaTitle: "Convert PDF to Excel Free & Private (Clean Tables to XLSX) | Appliory",
+    metaTitle: "Convert PDF to Excel Free & Private (XLSX) | Appliory",
     metaDescription:
       "Convert PDF tables into editable Excel (.xlsx) and CSV spreadsheets locally in your browser. Clean payroll reports, fill down IDs, remove repeated headers with 100% privacy.",
     keywords: [

@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { FileText, ArrowUpRight } from "lucide-react";
 import { guides } from "@/lib/content";
-export const metadata = {
-  title: "Application preparation guides",
-  description:
-    "Practical guides for preparing scholarship, university and job application documents, checking PDFs, resizing images and finding duplicate files.",
-  alternates: { canonical: "/guides" },
-};
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata(
+  "Application Preparation Guides — Document & File Tips",
+  "Practical step-by-step guides for preparing scholarship, university, and job application documents, resizing images, and checking PDF page counts.",
+  "/guides",
+);
 export default function Page() {
   return (
     <>

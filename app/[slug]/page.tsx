@@ -11,35 +11,38 @@ import {
   Phone,
 } from "lucide-react";
 import { faqs } from "@/lib/content";
+import { pageMetadata } from "@/lib/seo";
 
 const pages: Record<string, { title: string; description: string }> = {
   "how-it-works": {
-    title: "A clear path from files to ready.",
+    title: "How Appliory Works — Private Document Preparation",
     description:
-      "Create a checklist, add your documents, run the real checks, and leave with a practical report and organized files.",
+      "Learn how Appliory processes documents and checks requirements locally in your browser with zero file uploads and full privacy.",
   },
   faq: {
-    title: "A little clarity, before you begin.",
+    title: "Frequently Asked Questions — Document Checks & Privacy",
     description:
-      "Straightforward answers about document checks, privacy, exports, and downloads.",
+      "Find quick answers about local document checks, PDF privacy, file compression, supported formats, and browser-based verification.",
   },
   about: {
     title: "About Appliory — Free Privacy-First Document & Image Tools",
     description:
-      "Appliory (appliory.tech) is a free browser-based document and image toolkit for students and job applicants in Pakistan, India and worldwide. Compress images, convert PDFs to Excel, resize photos and more — all privately in your browser.",
+      "Appliory provides free in-browser document tools: image compression, PDF table extraction, and file validation with 100% privacy.",
   },
   contact: {
-    title: "We’re here for your next question.",
-    description: "Find practical help with file checks and exports.",
+    title: "Contact Appliory — Help & Support for File Tools",
+    description:
+      "Need help with our document tools or have a suggestion? Get in touch with the Appliory team for technical support.",
   },
   privacy: {
-    title: "Your documents should stay yours.",
-    description: "How Appliory handles your files, files and downloads.",
+    title: "Privacy Policy — Zero Server Uploads Guaranteed",
+    description:
+      "Read our strict privacy policy. Learn why your sensitive documents and images never leave your local device when using Appliory.",
   },
   terms: {
-    title: "Clear expectations, from the start.",
+    title: "Terms of Service — Free Document & File Checking Tools",
     description:
-      "What Appliory does, what you’re responsible for, and the limits of technical document checks.",
+      "Read the terms and conditions for using Appliory's free client-side image compressors, PDF utilities, and checklist tools.",
   },
 };
 export async function generateMetadata({
@@ -49,14 +52,8 @@ export async function generateMetadata({
 }) {
   const { slug } = await params;
   const p = pages[slug];
-  return {
-    title: p?.title,
-    description: p?.description,
-    alternates: { canonical: "/" + slug },
-    robots: ["login", "signup"].includes(slug)
-      ? { index: false, follow: false }
-      : undefined,
-  };
+  if (!p) return { title: "Page not found", robots: { index: false } };
+  return pageMetadata(p.title, p.description, "/" + slug);
 }
 export default async function Page({
   params,

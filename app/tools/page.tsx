@@ -11,7 +11,7 @@ import { absolute, breadcrumb, pageMetadata } from "@/lib/seo";
 import { StructuredData } from "@/components/appliory/structured-data";
 
 export const metadata = pageMetadata(
-  "Free Online Document & Image Tools (100% Private, No Uploads) | Appliory",
+  "Free Online Document & Image Tools (100% Private) | Appliory",
   "Count PDF pages, check file sizes, resize and compress images to KB, and find duplicate files for free. Processed locally in your browser with zero server uploads.",
   "/tools",
   [

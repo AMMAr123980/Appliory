@@ -1,19 +1,13 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import Tool from "@/components/appliory/tool";
-export const metadata: Metadata = {
-  title: "Application document checker",
-  description:
-    "Create a checklist, check real document formats, PDF pages, file sizes and image dimensions, then export your readiness report.",
-  alternates: { canonical: "/tool" },
-  openGraph: {
-    title: "Free application document checker | Appliory",
-    description:
-      "Check your requirements, files, PDF pages and image dimensions. No login.",
-    url: "/tool",
-    images: ["/social-preview.png"],
-  },
-};
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = pageMetadata(
+  "Free Document Checker Online — Private File & PDF Validator",
+  "Check application requirements, missing files, PDF page counts, file sizes, and image dimensions locally in your browser with zero document uploads.",
+  "/tool",
+);
 export default function Page() {
   return (
     <div>

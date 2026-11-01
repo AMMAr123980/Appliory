@@ -8,12 +8,13 @@ import {
   Info,
 } from "lucide-react";
 import { templates } from "@/lib/model";
-export const metadata = {
-  title: "Editable application checklists",
-  description:
-    "Scholarship, university admission, job application, and custom document checklists. Editable starter examples to adapt to official requirements.",
-  alternates: { canonical: "/checklists" },
-};
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata(
+  "Editable Application Checklists — Scholarships, Universities & Jobs",
+  "Download and customize ready-to-use document checklists for university admissions, job portals, and scholarships. Adapt to official requirements easily.",
+  "/checklists",
+);
 export default function Page() {
   return (
     <>

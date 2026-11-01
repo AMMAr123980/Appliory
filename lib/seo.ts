@@ -10,15 +10,16 @@ export function pageMetadata(
   path: string,
   keywords?: string[],
 ): Metadata {
+  const fullUrl = absolute(path);
   return {
     title,
     description,
     keywords,
-    alternates: { canonical: absolute(path) },
+    alternates: { canonical: fullUrl },
     openGraph: {
-      title: title + " | Appliory",
+      title,
       description,
-      url: absolute(path),
+      url: fullUrl,
       siteName: "Appliory",
       type: "website",
       locale: "en_US",
@@ -33,7 +34,7 @@ export function pageMetadata(
     },
     twitter: {
       card: "summary_large_image",
-      title: title + " | Appliory",
+      title,
       description,
       images: [absolute("/social-preview.png")],
     },

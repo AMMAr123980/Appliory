@@ -83,7 +83,7 @@ export const guides = [
     category: "ADMISSIONS",
     read: "5 min read",
     intro:
-      "Prepare a separate checklist for each university and program. Document rules may differ even within the same institution.",
+      "Prepare a separate document checklist for each university and program. Verify admission requirements, transcripts, translations, and file sizes.",
     sections: [
       [
         "Separate program requirements from general instructions",
@@ -115,7 +115,7 @@ export const guides = [
     category: "CAREERS",
     read: "4 min read",
     intro:
-      "Keep a tailored submission copy for each job, use clear file names, and include only documents the employer requests.",
+      "Keep a tailored submission copy for each job role. Format your resumes, check PDF page counts, use clear file names, and include required attachments.",
     sections: [
       [
         "Make one folder per role",
@@ -147,7 +147,7 @@ export const guides = [
     category: "DOCUMENT BASICS",
     read: "4 min read",
     intro:
-      "Add a PDF to Appliory, map it to a checklist item, and run checks to see its real page count without uploading the document.",
+      "Check PDF page counts across single or multiple files instantly in your browser. Verify document limits and extract page highlights without uploading.",
     sections: [
       [
         "Set the rule you actually need",
@@ -179,7 +179,7 @@ export const guides = [
     category: "DOCUMENT BASICS",
     read: "4 min read",
     intro:
-      "Check both pixel dimensions and file size: they measure different things, and an application may restrict one or both.",
+      "Check both pixel dimensions and file size in KB and MB. Verify passport photo rules, job portal requirements, and application limits on your device.",
     sections: [
       [
         "Understand the two measurements",
@@ -211,7 +211,7 @@ export const guides = [
     category: "DOCUMENT BASICS",
     read: "4 min read",
     intro:
-      "Use file hashes to find exact duplicates, then review similar-looking versions manually before choosing what to submit.",
+      "Use cryptographic SHA-256 byte hashes to find identical duplicate documents, review similar copies, and prepare a clean submission pack locally.",
     sections: [
       [
         "Add the files you intend to submit",
