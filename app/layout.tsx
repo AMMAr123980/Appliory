@@ -117,6 +117,13 @@ export default function RootLayout({
           src="https://analytics.ahrefs.com/analytics.js"
           data-key="+esYWE0KYUZz/T2uUK8aDg"
         />
+        {/* Google AdSense */}
+        <Script
+          async
+          strategy="afterInteractive"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4368605380975029"
+          crossOrigin="anonymous"
+        />
       </head>
       <body>
         <a className="skip-link" href="#content">
