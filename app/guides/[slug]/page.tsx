@@ -12,15 +12,17 @@ export async function generateMetadata({
 }) {
   const { slug } = await params;
   const g = guides.find((g) => g.slug === slug);
-  return g
-    ? {
-        ...pageMetadata(g.title, g.intro, "/guides/" + slug),
-        openGraph: {
-          ...pageMetadata(g.title, g.intro, "/guides/" + slug).openGraph,
-          type: "article",
-        },
-      }
-    : { title: "Guide not found", robots: { index: false } };
+  if (!g) return { title: "Guide not found", robots: { index: false } };
+  const metaTitle = (g as { metaTitle?: string }).metaTitle || g.title;
+  const metaDesc = (g as { metaDescription?: string }).metaDescription || g.intro;
+  const keywords = (g as { keywords?: string[] }).keywords || [];
+  return {
+    ...pageMetadata(metaTitle, metaDesc, "/guides/" + slug, keywords),
+    openGraph: {
+      ...pageMetadata(metaTitle, metaDesc, "/guides/" + slug, keywords).openGraph,
+      type: "article",
+    },
+  };
 }
 export default async function Page({
   params,
@@ -30,6 +32,7 @@ export default async function Page({
   const { slug } = await params;
   const g = guides.find((g) => g.slug === slug);
   if (!g) notFound();
+  const guideFaqs = (g as { faqs?: [string, string][] }).faqs;
   return (
     <>
       <StructuredData
@@ -43,8 +46,8 @@ export default async function Page({
         data={{
           "@context": "https://schema.org",
           "@type": "Article",
-          headline: g.title,
-          description: g.intro,
+          headline: (g as { metaTitle?: string }).metaTitle || g.title,
+          description: (g as { metaDescription?: string }).metaDescription || g.intro,
           url: absolute("/guides/" + slug),
           mainEntityOfPage: absolute("/guides/" + slug),
           author: {
@@ -56,6 +59,36 @@ export default async function Page({
           inLanguage: "en",
         }}
       />
+      <StructuredData
+        data={{
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          name: g.title,
+          description: g.intro,
+          step: g.sections.map(([name, text], idx) => ({
+            "@type": "HowToStep",
+            position: idx + 1,
+            name,
+            text,
+          })),
+        }}
+      />
+      {guideFaqs && guideFaqs.length > 0 && (
+        <StructuredData
+          data={{
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: guideFaqs.map(([q, a]) => ({
+              "@type": "Question",
+              name: q,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: a,
+              },
+            })),
+          }}
+        />
+      )}
       <section className="page-hero wrap">
         <Link className="eyebrow" href="/guides">
           RESOURCES / {g.category}
@@ -78,8 +111,58 @@ export default async function Page({
             <p>{copy}</p>
           </section>
         ))}
-        <h2>A common question</h2>
-        <p>{g.faq}</p>
+
+        {guideFaqs && guideFaqs.length > 0 ? (
+          <section style={{ marginTop: 32 }}>
+            <h2>Frequently Asked Questions</h2>
+            <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+              {guideFaqs.map(([q, a]) => (
+                <div
+                  key={q}
+                  style={{
+                    padding: "16px 20px",
+                    borderRadius: 8,
+                    border: "1px solid rgba(255,255,255,0.08)",
+                    background: "rgba(255,255,255,0.02)",
+                  }}
+                >
+                  <h3 style={{ margin: "0 0 8px 0", fontSize: 16 }}>{q}</h3>
+                  <p style={{ margin: 0, fontSize: 14, color: "var(--muted, #a1a1aa)" }}>
+                    {a}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+        ) : (
+          <>
+            <h2>A common question</h2>
+            <p>{g.faq}</p>
+          </>
+        )}
+
+        {/* Free Local Preparation Tools */}
+        <section style={{ marginTop: 36, padding: "24px", borderRadius: 12, border: "1px solid rgba(79, 209, 197, 0.2)", background: "rgba(79, 209, 197, 0.03)" }}>
+          <h2 style={{ marginTop: 0, fontSize: 18 }}>Free Tools for Application Document Preparation</h2>
+          <p style={{ fontSize: 14, color: "var(--muted, #a1a1aa)" }}>
+            Format and verify all your files locally on your device with 100% privacy:
+          </p>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 12, marginTop: 16 }}>
+            <Link href="/tools/file-size-checker" className="button" style={{ fontSize: 13, padding: "8px 12px" }}>
+              Check File Size in KB/MB <ArrowUpRight size={13} />
+            </Link>
+            <Link href="/tools/compress-image-to-20kb" className="button" style={{ fontSize: 13, padding: "8px 12px" }}>
+              Compress Photo / Challan <ArrowUpRight size={13} />
+            </Link>
+            <Link href="/tools/pdf-page-counter" className="button" style={{ fontSize: 13, padding: "8px 12px" }}>
+              Count PDF Pages <ArrowUpRight size={13} />
+            </Link>
+            <Link href="/tools/image-resizer" className="button" style={{ fontSize: 13, padding: "8px 12px" }}>
+              Resize Passport Photo <ArrowUpRight size={13} />
+            </Link>
+          </div>
+        </section>
+
         <div className="panel panel-body" style={{ marginTop: 30 }}>
           <h2 style={{ marginTop: 0 }}>Put your checklist to work.</h2>
           <p>

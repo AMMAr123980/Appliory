@@ -8,6 +8,8 @@ export const tools = [
     keywords: [
       "count pdf pages online",
       "pdf page counter",
+      "page range checker",
+      "check pdf page range",
       "count pages in multiple pdfs",
       "pdf page count free",
       "pdf summary online",
@@ -32,6 +34,10 @@ export const tools = [
         "No. The PDF is read on your device using PDF.js. Its contents are not sent to Appliory’s server.",
       ],
       [
+        "Can this act as a page range checker for multiple PDFs?",
+        "Yes. When you load one or more PDF files, Appliory displays the exact total page count, text page count, and page ranges so you can verify if your document meets university or job submission page range guidelines.",
+      ],
+      [
         "Does no text mean a blank page?",
         "No. Scans and outlined text may have no extractable text. Inspect those pages manually.",
       ],
@@ -44,16 +50,18 @@ export const tools = [
   {
     slug: "file-size-checker",
     name: "File size checker",
-    metaTitle: "Check File Size in KB & MB Online (Upload Limit Validator) | Appliory",
+    metaTitle: "File Size Check Online in KB & MB (Instant Validator) | Appliory",
     metaDescription:
-      "Verify document and photo file sizes in exact KB and MB against official application upload limits. Fast, free, and runs 100% locally in your browser.",
+      "Check file size online in exact KB and MB. Verify PDF, photo, and document upload limits for jobs, scholarships, PPSC, and FPSC. 100% private in browser.",
     keywords: [
+      "file size check",
+      "how to check the size of a file",
       "check file size online",
       "file size checker kb mb",
-      "check document size",
+      "check document size in kb",
       "file upload limit checker",
       "measure file size in kb",
-      "application file limit checker",
+      "check pdf size online",
     ],
     category: "FILES",
     description:
@@ -68,6 +76,14 @@ export const tools = [
       "Review each size and download your results.",
     ],
     questions: [
+      [
+        "How to check the size of a file on phone or PC?",
+        "Select or drop your file into Appliory’s File Size Checker. It instantly calculates and displays the exact file size in bytes, Kilobytes (KB), and Megabytes (MB) directly in your browser without uploading.",
+      ],
+      [
+        "How do I check if my file is under the 2MB or 500KB upload limit?",
+        "Enter your target limit (e.g. 2 MB) into the limit input. The checker highlights in green if your file is within the limit, or flags it in amber/red if it exceeds the limit so you know to compress it before uploading.",
+      ],
       [
         "Does this compress files?",
         "No. This tool measures file size. Use the image compressor for supported images; PDF compression is not provided.",

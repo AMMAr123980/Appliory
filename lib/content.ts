@@ -47,34 +47,83 @@ export const faqs = [
 export const guides = [
   {
     slug: "scholarship-document-checklist",
-    title: "How to create a scholarship document checklist",
+    title: "Scholarship Document Checklist (2025–2026): Complete Required Documents Guide",
+    metaTitle: "Scholarship Document Checklist (2025–2026) | Complete Requirements",
+    metaDescription:
+      "Complete scholarship document checklist for 2025–2026. Review transcripts, SOP, recommendation letters, passport photos, and file size limits before applying.",
+    keywords: [
+      "scholarship document checklist",
+      "documents required for scholarship",
+      "scholarship application checklist pdf",
+      "international scholarship documents list",
+      "hec scholarship document checklist",
+      "chevening document checklist",
+      "fulbright scholarship document checklist",
+      "scholarship document requirements",
+      "scholarship document verification",
+      "scholarship application documents",
+    ],
     category: "SCHOLARSHIPS",
-    read: "5 min read",
+    read: "6 min read",
     intro:
-      "Build your checklist from the scholarship provider’s current instructions, then turn every document requirement into a small, verifiable rule.",
+      "Complete scholarship document checklist for 2025–2026 international and national scholarship applications. Ensure your academic transcripts, statement of purpose, recommendation letters, passport photos, and PDF files comply with strict portal upload limits.",
     sections: [
       [
-        "Start at the source",
-        "Open the provider’s official application page and any instructions inside the application portal. Note the deadline and distinguish documents needed now from those requested after shortlisting. If two official sources disagree, ask the provider before making assumptions.",
+        "1. Essential Academic Transcripts and Degree Certificates",
+        "Your official transcripts and graduation degrees must show all completed semesters, grades, and credit hours. If documents are in a regional language, include notarized certified English translations. Check whether attestation from the Higher Education Commission (HEC), Ministry of Foreign Affairs (MOFA), or Apostille is required before uploading.",
       ],
       [
-        "Turn instructions into checklist items",
-        "Create one item for each required document. Copy the allowed formats, maximum size, page limits, and naming instructions. Add the source URL and the date you checked it. Treat transcript, statement, reference letter, and identity entries in our template as prompts to verify, not a universal list.",
+        "2. Statement of Purpose (SOP) and Personal Motivation Letter",
+        "Write a compelling, focused Statement of Purpose tailored specifically to the scholarship criteria. Ensure your statement adheres to the maximum page count (typically 1 to 2 pages). Use our PDF Page Counter to verify page constraints before uploading.",
       ],
       [
-        "Use concrete, testable requirements",
-        "For example, if your provider asks for a PDF transcript below 2 MB, change the transcript item to PDF and 2 MB. If the provider gives no page limit, leave that field empty. Do not invent a limit just because another scholarship uses one.",
+        "3. Academic and Professional Letters of Recommendation (LORs)",
+        "Most prestigious scholarships (like Fulbright, Chevening, DAAD, and Commonwealth) require 2 to 3 recommendation letters from university professors or research supervisors on official institutional letterhead with active institutional email addresses and signatures.",
       ],
       [
-        "Add files and examine the findings",
-        "Map each file to the correct item. Run checks and resolve missing items, format mismatches, and size failures. A scanned transcript may need manual review if its pages have no extractable text. Check the scan visually rather than assuming it is blank.",
+        "4. Curriculum Vitae (CV) or Academic Resume",
+        "Submit a concise 1–2 page resume formatted according to international standards (such as Europass format for European scholarships). Ensure all contact info, publications, academic honors, and voluntary experiences are up to date.",
       ],
       [
-        "Make your final human review",
-        "Check names, dates, translations, signatures, completeness, and eligibility against the official instructions. Open every exported file after downloading. A successful technical check does not confirm that the scholarship application is accurate or eligible.",
+        "5. Standardized Language Proficiency and Test Scores",
+        "Prepare official PDF test score reports for IELTS, TOEFL, Duolingo, GRE, or GMAT. If English was the medium of instruction during your undergraduate degree, obtain an official English Proficiency Certificate from your university registrar.",
+      ],
+      [
+        "6. Passport-Size Photographs and Valid Passport Copy",
+        "Scan your passport photo and data pages clearly. For application photos, ensure standard 600x600 px white-background dimensions and compress the image under 50KB or 20KB using Appliory’s local Image Compressor without compromising face sharpness.",
+      ],
+      [
+        "7. Research Proposal or Study Plan (Master's and PhD Candidates)",
+        "Doctoral and research-based Master's programs require an in-depth study plan outlining your proposed research methodology, literature review, and academic timeline. Keep the PDF within the program’s specified size limit (typically under 2MB).",
+      ],
+      [
+        "8. Medical Fitness Certificate and Police Character Certificate",
+        "Certain international awards (e.g. Chinese CSC Scholarship, Turkish Burslari, Korean GKS) require an official Foreigner Physical Examination Form signed by a registered physician, along with a valid Police Character Clearance Certificate.",
+      ],
+      [
+        "9. Verify Upload Limits and File Formats Locally",
+        "Scholarship portals frequently reject applications or crash during submission because uploaded files exceed strict limits (commonly 2MB per PDF or 200KB per photo). Use Appliory’s File Size Checker and Image Compressor to verify and adjust your documents in private browser memory before submitting.",
       ],
     ],
-    faq: "Should I always include recommendation letters? Only if the provider asks for them. Our template is a starting point, and reference requirements vary.",
+    faq: "Can I reuse the same recommendation letters and SOP for multiple scholarships? While academic transcripts and test scores remain identical, your Statement of Purpose and research proposal must always be customized for each scholarship’s specific objectives and university program.",
+    faqs: [
+      [
+        "What are the mandatory documents required for almost all scholarships?",
+        "The core mandatory documents for international scholarships are: (1) Official Academic Transcripts and Degrees, (2) Statement of Purpose / Motivation Letter, (3) 2–3 Academic Recommendation Letters, (4) Updated Academic CV, (5) Valid Passport, and (6) English Language Proficiency Test (IELTS/TOEFL) or English Medium Certificate.",
+      ],
+      [
+        "What is the standard file size limit for scholarship application portals?",
+        "Most online scholarship portals (like DAAD, Chevening, and CSC) restrict individual PDF uploads to between 2 MB and 5 MB, and passport photos between 20 KB and 50 KB. Files larger than this will fail to upload or produce silent errors.",
+      ],
+      [
+        "Do scholarship documents need to be attested before applying?",
+        "For initial online applications, most programs accept clear color scans of original degrees. However, for Chinese CSC, Turkish Burslari, and certain national awards, notarized copies or HEC/MOFA attestations are required right at the application stage. Always check your specific call for applications.",
+      ],
+      [
+        "How can I ensure my application isn't rejected due to technical file errors?",
+        "Run every file through Appliory’s free Document Checker. It verifies whether your PDF page counts match the required limit, verifies exact byte sizes against portal rules, flags unreadable scans, and ensures photographs meet required dimensions.",
+      ],
+    ],
     template: "scholarship",
   },
   {

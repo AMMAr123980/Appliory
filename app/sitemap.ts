@@ -39,8 +39,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const guideRoutes = guides.map((g) => ({
     path: "/guides/" + g.slug,
-    priority: 0.7,
-    changeFrequency: "monthly" as const,
+    priority: 0.9,
+    changeFrequency: "weekly" as const,
   }));
 
   const blogRoutes = blogPosts.map((p) => ({
