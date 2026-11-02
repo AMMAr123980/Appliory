@@ -1,3 +1,1 @@
-# Google AdSense ads.txt for Appliory (https://www.appliory.tech)
-# Once your AdSense application is approved, add your publisher line here:
-# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+google.com, pub-4368605380975029, DIRECT, f08c47fec0942fa0
