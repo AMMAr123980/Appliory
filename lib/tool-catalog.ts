@@ -2,6 +2,7 @@ export const tools = [
   {
     slug: "pdf-page-counter",
     name: "PDF page counter & summary",
+    h1: "PDF Page Counter & Page Range Checker Online",
     metaTitle: "Count PDF Pages Online Free (No Uploads) | Appliory",
     metaDescription:
       "Count pages across multiple PDF files instantly and generate page-by-page extractive summaries without uploading sensitive documents to cloud servers.",
@@ -50,6 +51,7 @@ export const tools = [
   {
     slug: "file-size-checker",
     name: "File size checker",
+    h1: "File Size Checker Online in KB & MB",
     metaTitle: "File Size Check Online in KB & MB (Instant Validator) | Appliory",
     metaDescription:
       "Check file size online in exact KB and MB. Verify PDF, photo, and document upload limits for jobs, scholarships, PPSC, and FPSC. 100% private in browser.",
@@ -101,6 +103,7 @@ export const tools = [
   {
     slug: "image-resizer",
     name: "Image resizer",
+    h1: "Image Resizer Online (Passport, ID & Custom Dimensions)",
     metaTitle: "Resize Image to Passport & ID Dimensions Online | Appliory",
     metaDescription:
       "Resize JPG, PNG and WebP photos to exact pixel dimensions (600x600 passport, 35x45mm, custom px). Lock aspect ratio and download privately on your device.",
@@ -143,6 +146,7 @@ export const tools = [
   {
     slug: "image-compressor",
     name: "Image compressor",
+    h1: "Image Compressor Online to KB (20KB, 50KB, 100KB)",
     metaTitle: "Compress Image to 20KB, 50KB, 100KB Online Free | Appliory",
     metaDescription:
       "Compress JPG, PNG and WebP images to 20KB, 50KB, 100KB or 200KB online for free. 100% private in-browser compression with instant preview and zero file uploads.",
@@ -198,6 +202,7 @@ export const tools = [
   {
     slug: "duplicate-file-finder",
     name: "Duplicate file finder",
+    h1: "Duplicate File Finder Online (Private SHA-256 Hashing)",
     metaTitle: "Duplicate File Finder Online — Exact SHA-256 Hash Matching",
     metaDescription:
       "Find identical duplicate files online with cryptographic SHA-256 byte hashing. Completely private and safe: files are analyzed locally without uploading.",
@@ -239,6 +244,7 @@ export const tools = [
   {
     slug: "compress-image-to-20kb",
     name: "Compress image to 20KB",
+    h1: "Compress Image to 20KB Online Free (PPSC, FPSC & Jobs)",
     metaTitle: "Compress Image to 20KB Online Free (PPSC, FPSC & Jobs) | Appliory",
     metaDescription:
       "Compress photos, signatures, CNIC scans, and bank fee challan forms under 20KB/25KB online for free. Tailored for PPSC, FPSC, NTS, and job portals.",
@@ -288,6 +294,7 @@ export const tools = [
   {
     slug: "compress-image-to-50kb",
     name: "Compress image to 50KB",
+    h1: "Compress Image to 50KB Online Free (JPG & PNG)",
     metaTitle: "Compress Image to 50KB Online Free (JPG & PNG to 50KB) | Appliory",
     metaDescription:
       "Compress JPG, PNG and WebP images to 50KB online for free. Perfect for university admissions, scholarship portals, and visa photo requirements. 100% private.",
@@ -326,6 +333,7 @@ export const tools = [
   {
     slug: "passport-photo-maker",
     name: "Passport photo maker & resizer",
+    h1: "Passport Size Photo Maker Online Free (600x600 & 35x45mm)",
     metaTitle: "Passport Photo Maker & Resizer Online Free | Appliory",
     metaDescription:
       "Resize photos to official 2x2 inch (600x600 px) and 35x45 mm passport and visa dimensions online for free. 100% private in your browser with zero uploads.",
@@ -369,6 +377,7 @@ export const tools = [
   {
     slug: "pdf-to-excel",
     name: "PDF to Excel converter",
+    h1: "PDF to Excel Converter Online (Extract Tables Free & Privately)",
     metaTitle: "Convert PDF to Excel Free & Private (XLSX) | Appliory",
     metaDescription:
       "Convert PDF tables into editable Excel (.xlsx) and CSV spreadsheets locally in your browser. Clean payroll reports, fill down IDs, remove repeated headers with 100% privacy.",

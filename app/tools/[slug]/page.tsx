@@ -97,7 +97,7 @@ export default async function Page({
       </nav>
       <header className="tool-intro">
         <span className="eyebrow">FREE · NO LOGIN · ON YOUR DEVICE</span>
-        <h1>{t.name}</h1>
+        <h1>{(t as { h1?: string }).h1 || t.name}</h1>
         <p>{t.description}</p>
       </header>
       {t.slug === "pdf-to-excel" ? (
