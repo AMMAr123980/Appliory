@@ -12,7 +12,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata(
   "Editable Application Checklists — Scholarships, Universities & Jobs",
-  "Download and customize ready-to-use document checklists for university admissions, job portals, and scholarships. Adapt to official requirements easily.",
+  "Download and customize ready-to-use document checklists for university admissions, job portals, and scholarships. Adapt to official requirements with 100% privacy.",
   "/checklists",
 );
 export default function Page() {

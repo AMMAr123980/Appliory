@@ -129,6 +129,9 @@ export const guides = [
   {
     slug: "university-application-documents",
     title: "How to prepare documents for a university application",
+    metaTitle: "University Application Document Checklist — Admissions Guide | Appliory",
+    metaDescription:
+      "Complete document checklist for university admissions: verify academic transcripts, motivation letters, translations, passport photos, and file upload limits.",
     category: "ADMISSIONS",
     read: "5 min read",
     intro:
@@ -161,6 +164,9 @@ export const guides = [
   {
     slug: "organize-job-application-files",
     title: "How to organize files before a job application",
+    metaTitle: "How to Organize Job Application Files & Resumes | Appliory",
+    metaDescription:
+      "Organize job application documents professionally: verify resume page counts, format cover letters, compress signature scans, and eliminate duplicate files.",
     category: "CAREERS",
     read: "4 min read",
     intro:
@@ -193,6 +199,9 @@ export const guides = [
   {
     slug: "check-pdf-page-count",
     title: "How to check PDF page count online",
+    metaTitle: "How to Check PDF Page Count Online (Instant & Free) | Appliory",
+    metaDescription:
+      "Check PDF page counts and verify submission page limits across multiple documents instantly. Extract text highlights locally in your browser with zero uploads.",
     category: "DOCUMENT BASICS",
     read: "4 min read",
     intro:
@@ -225,6 +234,9 @@ export const guides = [
   {
     slug: "check-image-dimensions-file-size",
     title: "How to check image dimensions and file size",
+    metaTitle: "Check Image Dimensions & File Size Online | Appliory",
+    metaDescription:
+      "Verify image pixel dimensions and exact file size in KB and MB. Comply with passport photo rules, government job portal specs, and upload limits with privacy.",
     category: "DOCUMENT BASICS",
     read: "4 min read",
     intro:
@@ -257,10 +269,9 @@ export const guides = [
   {
     slug: "find-duplicate-application-files",
     title: "How to find duplicate files before submitting an application",
-    category: "DOCUMENT BASICS",
-    read: "4 min read",
-    intro:
-      "Use cryptographic SHA-256 byte hashes to find identical duplicate documents, review similar copies, and prepare a clean submission pack locally.",
+    metaTitle: "Find Duplicate Application Files Online (SHA-256) | Appliory",
+    metaDescription:
+      "Identify duplicate files and documents using cryptographic SHA-256 byte hashes. Clean your application submission pack locally with complete browser privacy.",
     sections: [
       [
         "Add the files you intend to submit",

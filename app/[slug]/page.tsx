@@ -17,32 +17,32 @@ const pages: Record<string, { title: string; description: string }> = {
   "how-it-works": {
     title: "How Appliory Works — Private Document Preparation",
     description:
-      "Learn how Appliory processes documents and checks requirements locally in your browser with zero file uploads and full privacy.",
+      "Learn how Appliory validates application documents, compresses images, and counts PDF pages locally in your browser with zero file uploads and complete privacy.",
   },
   faq: {
     title: "Frequently Asked Questions — Document Checks & Privacy",
     description:
-      "Find quick answers about local document checks, PDF privacy, file compression, supported formats, and browser-based verification.",
+      "Get comprehensive answers about Appliory's local document verification, privacy guarantees, image compression limits, PDF conversion, and supported file types.",
   },
   about: {
     title: "About Appliory — Free Privacy-First Document & Image Tools",
     description:
-      "Appliory provides free in-browser document tools: image compression, PDF table extraction, and file validation with 100% privacy.",
+      "Appliory is a privacy-first platform created by Ammar Hassan Malik providing free in-browser image compressors, PDF converters, and application document checkers.",
   },
   contact: {
     title: "Contact Appliory — Help & Support for File Tools",
     description:
-      "Need help with our document tools or have a suggestion? Get in touch with the Appliory team for technical support.",
+      "Contact the Appliory support team for questions, technical assistance, feedback, or tool feature requests. We are committed to private, client-side utilities.",
   },
   privacy: {
     title: "Privacy Policy — Zero Server Uploads Guaranteed",
     description:
-      "Read our strict privacy policy. Learn why your sensitive documents and images never leave your local device when using Appliory.",
+      "Read our strict privacy policy. Learn how Appliory ensures your sensitive identity documents, photos, and PDFs never leave your browser with zero server uploads.",
   },
   terms: {
     title: "Terms of Service — Free Document & File Checking Tools",
     description:
-      "Read the terms and conditions for using Appliory's free client-side image compressors, PDF utilities, and checklist tools.",
+      "Review terms and conditions for using Appliory's free client-side utilities, image compressors, PDF converters, and application document preparation tools.",
   },
 };
 export async function generateMetadata({

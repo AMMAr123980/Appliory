@@ -15,7 +15,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   ...pageMetadata(
     "Free Document Checker, PDF & Image Tools Online",
-    "Appliory offers free, private document and image tools: Image Compressor, Image Resizer, PDF Page Counter, File Size Checker, and Duplicate File Finder. 100% free, no login, processed locally on your device.",
+    "Appliory provides free, private document & image tools: compress images to 20KB/50KB, resize photos, verify file sizes, and convert PDFs with zero server uploads.",
     "/",
     [
       "image compressor",

@@ -5,7 +5,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata(
   "Application Preparation Guides — Document & File Tips",
-  "Practical step-by-step guides for preparing scholarship, university, and job application documents, resizing images, and checking PDF page counts.",
+  "Practical step-by-step guides for preparing scholarship, university, and job application documents, resizing photos, and verifying PDF page counts with privacy.",
   "/guides",
 );
 export default function Page() {

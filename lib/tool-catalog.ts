@@ -5,7 +5,7 @@ export const tools = [
     h1: "PDF Page Counter & Page Range Checker Online",
     metaTitle: "Count PDF Pages Online Free (No Uploads) | Appliory",
     metaDescription:
-      "Count pages across multiple PDF files instantly and generate page-by-page extractive summaries without uploading sensitive documents to cloud servers.",
+      "Count pages across single or multiple PDF files instantly. Verify submission page limits and extract document summaries locally in your browser with zero uploads.",
     keywords: [
       "count pdf pages online",
       "pdf page counter",
@@ -54,7 +54,7 @@ export const tools = [
     h1: "File Size Checker Online in KB & MB",
     metaTitle: "File Size Check Online in KB & MB (Instant Validator) | Appliory",
     metaDescription:
-      "Check file size online in exact KB and MB. Verify PDF, photo, and document upload limits for jobs, scholarships, PPSC, and FPSC. 100% private in browser.",
+      "Check file size online in exact KB and MB. Verify PDF, image, and document upload limits for job portals, scholarships, PPSC, and FPSC with 100% local privacy.",
     keywords: [
       "file size check",
       "how to check the size of a file",
@@ -106,7 +106,7 @@ export const tools = [
     h1: "Image Resizer Online (Passport, ID & Custom Dimensions)",
     metaTitle: "Resize Image to Passport & ID Dimensions Online | Appliory",
     metaDescription:
-      "Resize JPG, PNG and WebP photos to exact pixel dimensions (600x600 passport, 35x45mm, custom px). Lock aspect ratio and download privately on your device.",
+      "Resize JPG, PNG, and WebP images to exact pixel dimensions (600x600 passport, 35x45mm, custom px). Lock aspect ratio and download privately with zero uploads.",
     keywords: [
       "resize image to passport size",
       "resize photo online",
@@ -149,7 +149,7 @@ export const tools = [
     h1: "Image Compressor Online to KB (20KB, 50KB, 100KB)",
     metaTitle: "Compress Image to 20KB, 50KB, 100KB Online Free | Appliory",
     metaDescription:
-      "Compress JPG, PNG and WebP images to 20KB, 50KB, 100KB or 200KB online for free. 100% private in-browser compression with instant preview and zero file uploads.",
+      "Compress JPG, PNG, and WebP images to 20KB, 50KB, 100KB, or 200KB online for free. In-browser compression with live preview and zero server document uploads.",
     keywords: [
       "compress image to 100kb",
       "compress image to 50kb",
@@ -205,7 +205,7 @@ export const tools = [
     h1: "Duplicate File Finder Online (Private SHA-256 Hashing)",
     metaTitle: "Duplicate File Finder Online — Exact SHA-256 Hash Matching",
     metaDescription:
-      "Find identical duplicate files online with cryptographic SHA-256 byte hashing. Completely private and safe: files are analyzed locally without uploading.",
+      "Find identical duplicate files and documents using cryptographic SHA-256 byte hashing. Compare file bytes locally in your browser with 100% privacy and safety.",
     keywords: [
       "duplicate file finder",
       "find duplicate files online",
@@ -247,7 +247,7 @@ export const tools = [
     h1: "Compress Image to 20KB Online Free (PPSC, FPSC & Jobs)",
     metaTitle: "Compress Image to 20KB Online Free (PPSC, FPSC & Jobs) | Appliory",
     metaDescription:
-      "Compress photos, signatures, CNIC scans, and bank fee challan forms under 20KB/25KB online for free. Tailored for PPSC, FPSC, NTS, and job portals.",
+      "Compress photos, signatures, CNIC scans, and bank fee challans under 20KB or 25KB online for free. Tailored for PPSC, FPSC, NTS, and government job portal forms.",
     keywords: [
       "compress image to 20kb",
       "compress photo to 20kb online",
@@ -297,7 +297,7 @@ export const tools = [
     h1: "Compress Image to 50KB Online Free (JPG & PNG)",
     metaTitle: "Compress Image to 50KB Online Free (JPG & PNG to 50KB) | Appliory",
     metaDescription:
-      "Compress JPG, PNG and WebP images to 50KB online for free. Perfect for university admissions, scholarship portals, and visa photo requirements. 100% private.",
+      "Compress JPG, PNG, and WebP images to 50KB online for free. Perfect for university admissions, scholarship portals, and visa photo requirements. 100% private.",
     keywords: [
       "compress image to 50kb",
       "compress photo to 50kb online",
@@ -336,7 +336,7 @@ export const tools = [
     h1: "Passport Size Photo Maker Online Free (600x600 & 35x45mm)",
     metaTitle: "Passport Photo Maker & Resizer Online Free | Appliory",
     metaDescription:
-      "Resize photos to official 2x2 inch (600x600 px) and 35x45 mm passport and visa dimensions online for free. 100% private in your browser with zero uploads.",
+      "Create official 2x2 inch (600x600 px) and 35x45 mm passport and visa photos online for free. Maintain exact aspect ratio and download privately with zero uploads.",
     keywords: [
       "passport photo resizer",
       "passport photo maker",
@@ -380,7 +380,7 @@ export const tools = [
     h1: "PDF to Excel Converter Online (Extract Tables Free & Privately)",
     metaTitle: "Convert PDF to Excel Free & Private (XLSX) | Appliory",
     metaDescription:
-      "Convert PDF tables into editable Excel (.xlsx) and CSV spreadsheets locally in your browser. Clean payroll reports, fill down IDs, remove repeated headers with 100% privacy.",
+      "Convert PDF tables into editable Excel (.xlsx) and CSV spreadsheets locally in your browser. Clean payroll reports, fill down IDs, and export with 100% privacy.",
     keywords: [
       "pdf to excel converter",
       "convert pdf to xlsx free",

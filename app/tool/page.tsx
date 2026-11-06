@@ -5,7 +5,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata(
   "Free Document Checker Online — Private File & PDF Validator",
-  "Check application requirements, missing files, PDF page counts, file sizes, and image dimensions locally in your browser with zero document uploads.",
+  "Check application requirements, missing files, PDF page counts, file sizes, and image dimensions locally in your browser with zero document uploads & privacy.",
   "/tool",
 );
 export default function Page() {

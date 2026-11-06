@@ -23,7 +23,7 @@ export const blogPosts: BlogPost[] = [
     title: "How to Compress Image to 20KB for PPSC, FPSC, and Government Job Portals",
     metaTitle: "How to Compress Image to 20KB for PPSC FPSC — Free Online | Appliory",
     metaDescription:
-      "Step-by-step guide to compress your JPG or PNG photo to exactly 20KB for PPSC, FPSC, NTS, and government job portals — 100% free, no upload required.",
+      "Learn how to compress JPG and PNG photos under 20KB for PPSC, FPSC, NTS, and government job portals. Keep text and face sharp with 100% private in-browser tools.",
     category: "Image Tools",
     tag: "PPSC · FPSC · NTS",
     date: "2026-10-31",
@@ -88,7 +88,7 @@ export const blogPosts: BlogPost[] = [
     title: "How to Compress Image to 50KB for University and Scholarship Applications",
     metaTitle: "Compress Image to 50KB Free Online — University & Scholarship Portals | Appliory",
     metaDescription:
-      "Compress JPG, PNG or WebP images to exactly 50KB for university admissions, scholarship applications, and visa portals. No upload. No registration. Free.",
+      "Compress JPG, PNG, and WebP images to exactly 50KB for university admissions, scholarship portals, and visa forms. Fast, free, and runs locally with zero uploads.",
     category: "Image Tools",
     tag: "Scholarships · Universities",
     date: "2026-10-31",
@@ -149,7 +149,7 @@ export const blogPosts: BlogPost[] = [
     title: "How to Convert a PDF Table to Excel Without Uploading to Any Server",
     metaTitle: "Convert PDF to Excel Free — No Upload, No Registration | Appliory",
     metaDescription:
-      "Convert PDF tables to Excel XLSX or CSV privately in your browser. Works with payroll reports, salary sheets, financial tables. No server upload. Free.",
+      "Convert PDF tables into editable Excel (.xlsx) and CSV spreadsheets locally in your browser. Perfect for payroll reports and financial sheets with zero uploads.",
     category: "PDF Tools",
     tag: "PDF · Excel · Privacy",
     date: "2026-10-31",
@@ -215,7 +215,7 @@ export const blogPosts: BlogPost[] = [
     title: "How to Make a Passport Size Photo Online Free — 2×2 Inch and 35×45mm",
     metaTitle: "Make Passport Photo Online Free — 2×2 Inch, 35×45mm | Appliory",
     metaDescription:
-      "Create official passport and visa photos in 2×2 inch or 35×45mm format free online. No upload to servers. Works on mobile. Instant download.",
+      "Create official 2x2 inch and 35x45mm passport and visa photos online for free. Adjust dimensions, maintain aspect ratio, and download privately with zero uploads.",
     category: "Image Tools",
     tag: "Passport · Visa · Photo",
     date: "2026-10-31",
@@ -277,7 +277,7 @@ export const blogPosts: BlogPost[] = [
     title: "How to Reduce Image File Size Without Losing Quality",
     metaTitle: "Reduce Image File Size Without Losing Quality — Free Online | Appliory",
     metaDescription:
-      "Learn how to compress JPG, PNG and WebP images while keeping them sharp. Practical tips for job portals, email attachments, and websites.",
+      "Learn how to compress JPG, PNG, and WebP images while preserving crisp clarity. Practical dimension scaling and quality tips for job portals and email attachments.",
     category: "Image Tools",
     tag: "Image Compression · Quality",
     date: "2026-10-31",
@@ -338,7 +338,7 @@ export const blogPosts: BlogPost[] = [
     title: "What Is Appliory? Free Document and Image Tools for Job and Scholarship Applicants",
     metaTitle: "What Is Appliory? Free Privacy-First Document & Image Tools | Appliory",
     metaDescription:
-      "Appliory is a free, privacy-first web platform offering image compressor, PDF to Excel converter, passport photo maker and document checker tools — all processed in your browser with no uploads.",
+      "Discover Appliory: a free, privacy-first platform offering image compressors, PDF converters, passport photo makers, and document checkers with zero server uploads.",
     category: "About Appliory",
     tag: "Overview · Privacy",
     date: "2026-10-31",
@@ -395,7 +395,7 @@ export const blogPosts: BlogPost[] = [
     title: "How to Resize PPSC & FPSC Fee Challan Form to 25KB Online (Free)",
     metaTitle: "Resize PPSC & FPSC Challan Form to 25KB Online Free | Appliory",
     metaDescription:
-      "Step-by-step guide to compress your paid bank fee challan form under 25KB for PPSC and FPSC online applications. 100% private, no upload needed.",
+      "Compress paid bank fee challan forms under 25KB for PPSC and FPSC online applications without blur. Crop borders and preserve bank stamps with 100% private tools.",
     category: "Challan & Fee Receipts",
     tag: "PPSC · FPSC · Challan",
     date: "2026-11-01",
@@ -452,7 +452,7 @@ export const blogPosts: BlogPost[] = [
     title: "How to Compress Signature to 20KB for Online Job Applications",
     metaTitle: "Compress Signature to 20KB Online Free (Sharp & Clear) | Appliory",
     metaDescription:
-      "Compress scanned signatures to under 20KB for PPSC, FPSC, NTS, and university portals without blur. 100% private in-browser compression.",
+      "Compress scanned signature images to under 20KB for PPSC, FPSC, NTS, and university portals without blur. Crop ink tightly and optimize locally with zero uploads.",
     category: "Signature Tools",
     tag: "Signature · PPSC · Jobs",
     date: "2026-11-01",
