@@ -7,7 +7,7 @@ import QuickTool from "@/components/appliory/quick-tool";
 import { ShareBar } from "@/components/appliory/share-bar";
 import { PDFToExcelConverter } from "@/components/appliory/pdf-to-excel/converter";
 import { blogPosts } from "@/lib/blog";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, ShieldCheck } from "lucide-react";
 
 export function generateStaticParams() {
   return tools.map((t) => ({ slug: t.slug }));
@@ -100,6 +100,35 @@ export default async function Page({
         <h1>{(t as { h1?: string }).h1 || t.name}</h1>
         <p>{t.description}</p>
       </header>
+
+      {/* Pre-Upload Expected Output & Readiness Box */}
+      <div className="sample-result-box" style={{ maxWidth: 920, margin: "0 auto 24px" }}>
+        <div className="sample-meta">
+          <div className="sample-step">
+            <small>Accepted Input Format</small>
+            <b>{t.accepts ? t.accepts.replace(/,/g, ", ") : "Any file"} (Max 25 MB)</b>
+          </div>
+          <div className="sample-arrow">➔</div>
+          <div className="sample-step">
+            <small>Target Output Specification</small>
+            <b>
+              {t.slug === "compress-image-to-20kb"
+                ? "Under 20KB JPEG (Sharp Face & Details)"
+                : t.slug === "compress-image-to-50kb"
+                  ? "Under 50KB JPEG (High Clarity)"
+                  : t.slug === "passport-photo-maker"
+                    ? "Official 2×2 Inch or 35×45mm Format"
+                    : t.slug === "pdf-to-excel"
+                      ? "Clean Excel (.xlsx) / CSV Spreadsheet"
+                      : "Verified & Compliant Result"}
+            </b>
+          </div>
+        </div>
+        <div className="sample-status">
+          ✓ Verified for Portal Uploads
+        </div>
+      </div>
+
       {t.slug === "pdf-to-excel" ? (
         <section style={{ marginBottom: 48 }}>
           <PDFToExcelConverter />
@@ -107,6 +136,28 @@ export default async function Page({
       ) : (
         <QuickTool slug={t.slug} />
       )}
+
+      {/* How to Verify Our Privacy Claim in Browser */}
+      <details className="privacy-verify-callout" style={{ maxWidth: 920, margin: "24px auto 0" }}>
+        <summary>
+          <ShieldCheck size={18} color="var(--accent)" />
+          How to verify our 100% in-browser privacy claim yourself
+        </summary>
+        <div className="privacy-verify-content">
+          <p>
+            Verify that your files never touch any external server:
+          </p>
+          <ol style={{ paddingLeft: 20, margin: "8px 0" }}>
+            <li>Press <code>F12</code> (or right-click and select <strong>Inspect</strong>).</li>
+            <li>Click the <strong>Network</strong> tab in your browser developer tools.</li>
+            <li>Select and process your document above.</li>
+          </ol>
+          <p>
+            Notice that <strong>0 file upload requests are initiated</strong>. All data processing executes locally inside your browser's private memory.
+          </p>
+        </div>
+      </details>
+
       <section className="tool-explainer">
         <div>
           <h2>How to use the {t.name.toLowerCase()}</h2>

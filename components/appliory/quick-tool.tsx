@@ -293,15 +293,27 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
           aria-label="Select tool files"
           onChange={(e) => void add(e.target.files)}
         />
+        <div style={{ display: "inline-flex", alignItems: "center", gap: 6, margin: "14px 0 6px", fontSize: 12, color: "#19664b", background: "#eaf5ef", padding: "5px 14px", borderRadius: 20 }}>
+          <ShieldCheck size={14} /> 100% In-Browser · Zero cloud uploads · Safe for confidential documents
+        </div>
         <small>
-          25 MB per file · {isImage ? "JPG, PNG and WebP" : "40 files maximum"}{" "}
-          · No registration
+          25 MB per file · {isImage ? "JPG, PNG and WebP" : "40 files maximum"} · No registration required
         </small>
       </div>
       {error && (
-        <p role="alert" className="error-message">
-          {error}
-        </p>
+        <div className="retry-guidance-panel" role="alert" style={{ margin: "16px 24px" }}>
+          <h4><TriangleAlert size={16} /> {error}</h4>
+          <ul>
+            {isCompressor && (
+              <li>If the file cannot reach the target size, crop empty paper margins or use <Link href="/tools/image-resizer" style={{ textDecoration: "underline", fontWeight: 600 }}>Image Resizer</Link> to scale down pixel dimensions first.</li>
+            )}
+            {isImage && (
+              <li>For government job portals (PPSC, FPSC), save your image as JPEG (JPG) instead of PNG to achieve significantly smaller file sizes.</li>
+            )}
+            <li>Verify your document is not password-protected and under 25 MB in size.</li>
+            <li>Click <strong>Choose file</strong> again to re-attempt with an alternate image or scan.</li>
+          </ul>
+        </div>
       )}
       {busy && (
         <p role="status" className="busy">

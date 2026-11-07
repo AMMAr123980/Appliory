@@ -15,10 +15,36 @@ export default function Page() {
         <h1>Check your application documents online</h1>
         <p>
           Set your requirements, select your files, and check missing documents,
-          PDF pages, file sizes, image dimensions and exact duplicates. No login
-          or document uploads. Edit starter rules to match your official
-          instructions.
+          PDF pages, file sizes, image dimensions and exact duplicates. 100% private,
+          processed locally on your device with zero document uploads.
         </p>
+
+        {/* Validation Scope: What it validates vs What it cannot */}
+        <div className="checker-scope-grid" style={{ maxWidth: 960, margin: "24px auto 0" }}>
+          <div className="scope-col">
+            <span className="scope-title valid">
+              ✓ What This Checker Validates
+            </span>
+            <ul className="scope-list">
+              <li><strong>File Size (Bytes):</strong> Compares actual bytes against 20KB, 50KB, 2MB, or custom rules.</li>
+              <li><strong>Real Binary Signatures:</strong> Detects corrupted or renamed files (e.g. .jpg renamed as .pdf).</li>
+              <li><strong>Pixel Dimensions:</strong> Verifies exact image dimensions (e.g. 35×45mm, 600×600 px).</li>
+              <li><strong>PDF Pages &amp; Text:</strong> Checks total page count and flags scanned pages lacking selectable text.</li>
+              <li><strong>Duplicate Detection:</strong> Identifies duplicate uploads using SHA-256 hashes.</li>
+            </ul>
+          </div>
+          <div className="scope-col">
+            <span className="scope-title invalid">
+              ✕ What This Checker Cannot Validate
+            </span>
+            <ul className="scope-list">
+              <li><strong>Legal Authenticity:</strong> Cannot verify if a degree, CNIC, or challan is legally genuine.</li>
+              <li><strong>Typographical Accuracy:</strong> Does not read or correct spelling of names or marks inside files.</li>
+              <li><strong>Merit Decisions:</strong> Technical compliance does not guarantee acceptance by selection boards.</li>
+              <li><strong>Unreadable Scans:</strong> Cannot extract text from low-quality photos without digital OCR.</li>
+            </ul>
+          </div>
+        </div>
       </section>
       <Suspense
         fallback={
