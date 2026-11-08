@@ -13,8 +13,11 @@ export async function generateMetadata({
   const { slug } = await params;
   const g = guides.find((g) => g.slug === slug);
   if (!g) return { title: "Guide not found", robots: { index: false } };
-  const metaTitle = (g as { metaTitle?: string }).metaTitle || g.title;
-  const metaDesc = (g as { metaDescription?: string }).metaDescription || g.intro;
+  const metaTitle = ((g as { metaTitle?: string }).metaTitle || g.title) ?? "";
+  const metaDesc =
+    ((g as { metaDescription?: string }).metaDescription ||
+      (g as { intro?: string }).intro) ??
+    "";
   const keywords = (g as { keywords?: string[] }).keywords || [];
   return {
     ...pageMetadata(metaTitle, metaDesc, "/guides/" + slug, keywords),
