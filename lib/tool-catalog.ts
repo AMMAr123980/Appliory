@@ -51,8 +51,8 @@ export const tools = [
   {
     slug: "file-size-checker",
     name: "File size checker",
-    h1: "File Size Checker Online in KB & MB",
-    metaTitle: "File Size Check Online in KB & MB (Instant Validator) | Appliory",
+    h1: "Check File Size Online in KB & MB (Instant Validator)",
+    metaTitle: "Check File Size Online in KB & MB (Instant Free) | Appliory",
     metaDescription:
       "Check file size online in exact KB and MB. Verify PDF, image, and document upload limits for job portals, scholarships, PPSC, and FPSC with 100% local privacy.",
     keywords: [
@@ -244,8 +244,8 @@ export const tools = [
   {
     slug: "compress-image-to-20kb",
     name: "Compress image to 20KB",
-    h1: "Compress Image to 20KB Online Free (PPSC, FPSC & Jobs)",
-    metaTitle: "Compress Image to 20KB Online Free (PPSC, FPSC & Jobs) | Appliory",
+    h1: "Compress Photo to 20KB for PPSC, FPSC & Govt Jobs Online",
+    metaTitle: "Compress Photo to 20KB for PPSC, FPSC & NTS Online Free | Appliory",
     metaDescription:
       "Compress photos, signatures, CNIC scans, and bank fee challans under 20KB or 25KB online for free. Tailored for PPSC, FPSC, NTS, and government job portal forms.",
     keywords: [
@@ -294,8 +294,8 @@ export const tools = [
   {
     slug: "compress-image-to-50kb",
     name: "Compress image to 50KB",
-    h1: "Compress Image to 50KB Online Free (JPG & PNG)",
-    metaTitle: "Compress Image to 50KB Online Free (JPG & PNG to 50KB) | Appliory",
+    h1: "Compress Image to 50KB Online Free for Admissions & Visas",
+    metaTitle: "Compress Image to 50KB Online Free (University & Scholarship Portals) | Appliory",
     metaDescription:
       "Compress JPG, PNG, and WebP images to 50KB online for free. Perfect for university admissions, scholarship portals, and visa photo requirements. 100% private.",
     keywords: [
@@ -333,8 +333,8 @@ export const tools = [
   {
     slug: "passport-photo-maker",
     name: "Passport photo maker & resizer",
-    h1: "Passport Size Photo Maker Online Free (600x600 & 35x45mm)",
-    metaTitle: "Passport Photo Maker & Resizer Online Free | Appliory",
+    h1: "Passport Size Photo Maker Online Free (2x2 Inch & 35x45mm)",
+    metaTitle: "Make Passport Size Photo Online Free (2x2 & 35x45mm) | Appliory",
     metaDescription:
       "Create official 2x2 inch (600x600 px) and 35x45 mm passport and visa photos online for free. Maintain exact aspect ratio and download privately with zero uploads.",
     keywords: [

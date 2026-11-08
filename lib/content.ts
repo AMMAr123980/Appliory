@@ -47,10 +47,10 @@ export const faqs = [
 export const guides = [
   {
     slug: "scholarship-document-checklist",
-    title: "Scholarship Document Checklist (2025–2026): Complete Required Documents Guide",
-    metaTitle: "Scholarship Document Checklist (2025–2026) | Complete Requirements",
+    title: "Scholarship Document Checklist (2026): Complete Required Documents Guide",
+    metaTitle: "[PDF Checklist] Scholarship Documents Required (2026) | Appliory",
     metaDescription:
-      "Complete scholarship document checklist for 2025–2026. Review transcripts, SOP, recommendation letters, passport photos, and file size limits before applying.",
+      "Complete scholarship document checklist for 2026. Review transcripts, SOP, recommendation letters, passport photos, and file size limits before applying.",
     keywords: [
       "scholarship document checklist",
       "documents required for scholarship",

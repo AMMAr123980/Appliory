@@ -50,6 +50,20 @@ export function Header() {
           </Link>
           <Link
             onClick={() => setOpen(false)}
+            className={p === "/tools/compress-image-to-20kb" ? "active" : ""}
+            href="/tools/compress-image-to-20kb"
+          >
+            Compress to 20KB
+          </Link>
+          <Link
+            onClick={() => setOpen(false)}
+            className={p === "/guides/scholarship-document-checklist" ? "active" : ""}
+            href="/guides/scholarship-document-checklist"
+          >
+            Scholarship Guide
+          </Link>
+          <Link
+            onClick={() => setOpen(false)}
             className={p.startsWith("/checklists") ? "active" : ""}
             href="/checklists"
           >
@@ -57,12 +71,6 @@ export function Header() {
           </Link>
           <Link onClick={() => setOpen(false)} href="/tools">
             All tools
-          </Link>
-          <Link onClick={() => setOpen(false)} href="/how-it-works">
-            How it works
-          </Link>
-          <Link onClick={() => setOpen(false)} href="/guides">
-            Guides
           </Link>
         </nav>
         <div className="header-actions">
@@ -113,13 +121,13 @@ export function Footer() {
           <Link href="/tools/passport-photo-maker">Passport Photo Maker</Link>
         </div>
         <div>
-          <b>Resources</b>
-          <Link href="/blog">Blog & Guides</Link>
-          <Link href="/tools">All Tools Directory</Link>
+          <b>Guides & Checklists</b>
+          <Link href="/guides/scholarship-document-checklist">Scholarship Checklist (2026)</Link>
+          <Link href="/blog/how-to-compress-image-to-20kb-for-ppsc-fpsc">PPSC 20KB Photo Guide</Link>
+          <Link href="/blog/how-to-make-passport-photo-online-free">Passport Photo Maker Guide</Link>
+          <Link href="/blog/how-to-convert-pdf-to-excel">PDF to Excel Guide</Link>
           <Link href="/checklists">Starter Checklists</Link>
-          <Link href="/how-it-works">How It Works</Link>
-          <Link href="/guides">Application Guides</Link>
-          <Link href="/faq">FAQ</Link>
+          <Link href="/tools">All Tools Directory</Link>
         </div>
         <div>
           <b>Appliory</b>

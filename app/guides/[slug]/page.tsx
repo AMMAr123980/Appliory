@@ -98,6 +98,29 @@ export default async function Page({
         <span style={{ fontSize: 10, color: "#8b9980" }}>
           {g.read} · Appliory preparation notes
         </span>
+
+        {/* Quick Action Box for High Retention & Instant Utility */}
+        {slug === "scholarship-document-checklist" && (
+          <div style={{ marginTop: 24, padding: "20px 24px", background: "#f3f7f4", borderRadius: 12, border: "1px solid var(--line)" }}>
+            <h3 style={{ margin: "0 0 10px 0", fontSize: 16, display: "flex", alignItems: "center", gap: 8, color: "var(--ink)" }}>
+              ⚡ Scholarship Application Preparation Suite
+            </h3>
+            <p style={{ fontSize: 13, margin: "0 0 16px 0", color: "var(--muted)" }}>
+              Applying for HEC, Fulbright, Chevening, DAAD, or Commonwealth? Verify and compress your required documents against portal upload limits before deadlines.
+            </p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
+              <Link href="/tool?template=scholarship" className="button dark" style={{ fontSize: 13, padding: "8px 16px" }}>
+                Open Interactive Workspace <ArrowUpRight size={14} />
+              </Link>
+              <Link href="/tools/compress-image-to-50kb" className="button" style={{ fontSize: 13, padding: "8px 16px" }}>
+                Compress Photo to 50KB <ArrowUpRight size={14} />
+              </Link>
+              <Link href="/tools/file-size-checker" className="button" style={{ fontSize: 13, padding: "8px 16px" }}>
+                Check 2MB/5MB Limits <ArrowUpRight size={14} />
+              </Link>
+            </div>
+          </div>
+        )}
       </section>
       <article className="article">
         <div className="info-note">

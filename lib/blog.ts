@@ -21,7 +21,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "how-to-compress-image-to-20kb-for-ppsc-fpsc",
     title: "How to Compress Image to 20KB for PPSC, FPSC, and Government Job Portals",
-    metaTitle: "How to Compress Image to 20KB for PPSC FPSC — Free Online | Appliory",
+    metaTitle: "How to Compress Photo to 20KB for PPSC FPSC Online (Free) | Appliory",
     metaDescription:
       "Learn how to compress JPG and PNG photos under 20KB for PPSC, FPSC, NTS, and government job portals. Keep text and face sharp with 100% private in-browser tools.",
     category: "Image Tools",
@@ -213,7 +213,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "how-to-make-passport-photo-online-free",
     title: "How to Make a Passport Size Photo Online Free — 2×2 Inch and 35×45mm",
-    metaTitle: "Make Passport Photo Online Free — 2×2 Inch, 35×45mm | Appliory",
+    metaTitle: "Make Passport Size Photo Online Free (2x2 & 35x45mm) | Appliory",
     metaDescription:
       "Create official 2x2 inch and 35x45mm passport and visa photos online for free. Adjust dimensions, maintain aspect ratio, and download privately with zero uploads.",
     category: "Image Tools",
