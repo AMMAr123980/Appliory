@@ -726,7 +726,6 @@ export default async function Page({
             </article>
           </section>
         </>
-      )
       ) : (
         <article className="article">
           {slug === "about" ? (
