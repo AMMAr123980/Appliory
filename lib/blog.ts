@@ -32,11 +32,16 @@ export const blogPosts: BlogPost[] = [
       "Government job portals in Pakistan — PPSC, FPSC, NTS, ETEA, and others — have strict upload rules. The most common requirement is a profile photo below 20KB in JPEG format. Here is how to do it correctly without uploading your photo to any cloud server.",
     keywords: [
       "compress image to 20kb",
+      "ppsc photo compressor 20kb",
+      "ppsc photo size reducer 20kb",
       "ppsc photo size",
+      "resize photo for ppsc application online",
       "fpsc photo requirements",
+      "fpsc photo size 20kb",
       "nts photo size kb",
       "compress photo for government job portal",
       "resize photo for job application pakistan",
+      "compress picture for ppsc 20kb",
     ],
     sections: [
       {
@@ -406,8 +411,13 @@ export const blogPosts: BlogPost[] = [
       "resize challan form to 25kb",
       "ppsc challan form compress 25kb",
       "fpsc challan size reducer",
+      "fpsc challan form compress 25kb online",
       "compress ppsc challan online free",
       "challan image size less than 25kb",
+      "ppsc bank challan size reducer",
+      "compress 32a challan form to 25kb",
+      "ppsc fee challan scan size",
+      "resize ppsc challan in mobile",
       "resize bank receipt to 25kb",
     ],
     sections: [

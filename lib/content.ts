@@ -57,8 +57,15 @@ export const guides = [
       "scholarship application checklist pdf",
       "international scholarship documents list",
       "hec scholarship document checklist",
+      "hec scholarship document checklist 2026",
+      "documents required for foreign scholarships",
+      "hec degree attestation mofa checklist",
       "chevening document checklist",
       "fulbright scholarship document checklist",
+      "csc scholarship document checklist",
+      "daad scholarship required documents",
+      "turkiye burslari document checklist",
+      "overseas scholarship documents required hec",
       "scholarship document requirements",
       "scholarship document verification",
       "scholarship application documents",
@@ -66,7 +73,7 @@ export const guides = [
     category: "SCHOLARSHIPS",
     read: "6 min read",
     intro:
-      "Complete scholarship document checklist for 2025–2026 international and national scholarship applications. Ensure your academic transcripts, statement of purpose, recommendation letters, passport photos, and PDF files comply with strict portal upload limits.",
+      "Complete scholarship document checklist for 2026 international and national scholarship applications. Ensure your academic transcripts, statement of purpose, recommendation letters, passport photos, and PDF files comply with strict portal upload limits.",
     sections: [
       [
         "1. Essential Academic Transcripts and Degree Certificates",
