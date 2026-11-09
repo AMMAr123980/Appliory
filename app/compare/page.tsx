@@ -59,9 +59,7 @@ export default function Page() {
               </tr>
               <tr>
                 <th scope="row">
-                  <a href="https://www.ilovepdf.com/" rel="noopener noreferrer">
-                    iLovePDF
-                  </a>
+                  <span>iLovePDF</span>
                 </th>
                 <td>
                   PDF tasks including merge, split, compression, conversion,
@@ -74,9 +72,7 @@ export default function Page() {
               </tr>
               <tr>
                 <th scope="row">
-                  <a href="https://smallpdf.com/" rel="noopener noreferrer">
-                    Smallpdf
-                  </a>
+                  <span>Smallpdf</span>
                 </th>
                 <td>
                   PDF conversion, compression, merging, editing and electronic
@@ -89,12 +85,7 @@ export default function Page() {
               </tr>
               <tr>
                 <th scope="row">
-                  <a
-                    href="https://tools.pdf24.org/en/"
-                    rel="noopener noreferrer"
-                  >
-                    PDF24 Tools
-                  </a>
+                  <span>PDF24 Tools</span>
                 </th>
                 <td>
                   A broad collection of online PDF tools, with PDF24 Creator as
@@ -145,23 +136,11 @@ export default function Page() {
             </Link>
           </div>
         </div>
-        <h2>Sources</h2>
+        <h2>Sources & References</h2>
         <ul>
-          <li>
-            <a href="https://www.ilovepdf.com/">
-              iLovePDF: official tool catalogue
-            </a>
-          </li>
-          <li>
-            <a href="https://smallpdf.com/">
-              Smallpdf: official tools and plans
-            </a>
-          </li>
-          <li>
-            <a href="https://tools.pdf24.org/en/">
-              PDF24: official tools and processing information
-            </a>
-          </li>
+          <li>iLovePDF: Official public tool catalogue and specifications</li>
+          <li>Smallpdf: Official public tools and documentation</li>
+          <li>PDF24: Official desktop and web processing information</li>
         </ul>
       </article>
     </main>

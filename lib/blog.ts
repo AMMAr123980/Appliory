@@ -42,6 +42,14 @@ export const blogPosts: BlogPost[] = [
       "compress photo for government job portal",
       "resize photo for job application pakistan",
       "compress picture for ppsc 20kb",
+      "compress photo to 20kb online",
+      "compress jpeg to 20kb",
+      "compress jpg to 20kb",
+      "resize photo to 20kb online free",
+      "ppsc challan compress 25kb",
+      "signature resizer 20kb",
+      "photo size reducer to 20kb",
+      "20kb photo converter",
     ],
     sections: [
       {
@@ -107,6 +115,14 @@ export const blogPosts: BlogPost[] = [
       "scholarship photo size kb",
       "compress image for visa application",
       "online image compressor 50kb",
+      "compress jpeg to 50kb",
+      "compress jpg to 50kb online",
+      "reduce photo to 50kb",
+      "image compressor 50kb online",
+      "50kb photo converter online free",
+      "resize photo to 50kb",
+      "compress picture to 50kb",
+      "photo size reducer to 50kb",
     ],
     sections: [
       {
@@ -169,6 +185,12 @@ export const blogPosts: BlogPost[] = [
       "pdf to csv converter",
       "private pdf to excel converter",
       "payroll pdf to excel",
+      "convert pdf to excel online free",
+      "pdf to excel converter without email",
+      "pdf to excel free no limits",
+      "convert bank statement pdf to excel free",
+      "extract table from pdf to excel online",
+      "pdf to xlsx converter free",
     ],
     sections: [
       {
@@ -235,6 +257,13 @@ export const blogPosts: BlogPost[] = [
       "visa photo maker free",
       "passport photo pakistan online",
       "passport size photo generator",
+      "passport size photo maker",
+      "passport photo resizer",
+      "passport size photo maker online free",
+      "create passport photo free",
+      "make passport size photo online",
+      "convert photo to passport size online free",
+      "passport photo 600x600",
     ],
     sections: [
       {
@@ -296,6 +325,12 @@ export const blogPosts: BlogPost[] = [
       "compress jpg without losing quality",
       "reduce png file size",
       "online image optimizer free",
+      "compress image without losing quality",
+      "reduce image size in kb",
+      "compress jpeg online free",
+      "photo size reducer in kb",
+      "compress picture in kb",
+      "reduce photo size in kb",
     ],
     sections: [
       {
@@ -475,6 +510,11 @@ export const blogPosts: BlogPost[] = [
       "reduce signature size in kb",
       "ppsc signature size online",
       "compress signature for job application",
+      "signature resizer 20kb",
+      "reduce signature size to 20kb",
+      "online signature compressor 20kb",
+      "compress signature online",
+      "resize signature image in kb",
     ],
     sections: [
       {
