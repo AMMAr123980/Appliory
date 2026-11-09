@@ -218,6 +218,8 @@ export const tools = [
       "compress picture in kb",
       "compress photo size online",
       "reduce image file size",
+      "compress photo to 100kb",
+      "compress image to 100kb online free",
     ],
     category: "IMAGES",
     description:
@@ -469,6 +471,7 @@ export const tools = [
       "passport size photo maker app free",
       "crop photo to passport size",
       "passport photo 2x2 maker",
+      "2x2 photo maker online free",
     ],
     category: "IMAGES",
     description:
@@ -521,6 +524,7 @@ export const tools = [
       "pdf to xlsx converter free",
       "best free pdf to excel converter",
       "convert pdf to excel without losing formatting",
+      "extract tables from pdf to excel",
     ],
     category: "PDF",
     description:
