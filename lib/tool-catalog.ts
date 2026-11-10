@@ -6,6 +6,11 @@ export const tools = [
     metaTitle: "Count PDF Pages Online Free (No Uploads) | Appliory",
     metaDescription:
       "Count pages across single or multiple PDF files instantly. Verify submission page limits and extract document summaries locally in your browser with zero uploads.",
+    intro: `Appliory's PDF Page Counter lets you count pages in any PDF file instantly — no uploads, no account, no waiting. Simply select your PDF and the exact page count appears in seconds, all processed locally inside your browser.
+
+Universities, government job portals, and scholarship programs enforce strict page limits. PPSC application guidelines, HEC research paper submissions, and Fulbright personal statement portals all specify a maximum page range. Submitting even one extra page can get your application rejected automatically. Use this free page range checker to verify your document meets the exact requirement before you hit submit.
+
+You can also count pages across multiple PDF files at once. Upload your complete application package — research proposal, CV, statement of purpose — and confirm every document is within its allowed page limit in a single session. A readable document summary is generated from the actual text on each page, with no AI model involved and no data leaving your device.`,
     keywords: [
       "count pdf pages online",
       "pdf page counter",
@@ -27,6 +32,11 @@ export const tools = [
       "how to check number of pages in pdf",
     ],
     category: "PDF",
+    intro: `Appliory's PDF Page Counter lets you count pages in any PDF file instantly — no uploads, no account, no waiting. Simply select your PDF and the exact page count appears in seconds, all processed locally inside your browser.
+
+Universities, government job portals, and scholarship programs enforce strict page limits. PPSC application guidelines, HEC research paper submissions, and Fulbright personal statement portals all specify a maximum page range. Submitting even one extra page can get your application rejected automatically. Use this free page range checker to verify your document meets the exact requirement before you hit submit.
+
+You can also count pages across multiple PDF files at once. Upload your complete application package — research proposal, CV, statement of purpose — and confirm every document is within its allowed page limit in a single session. A readable document summary is generated from the actual text on each page, with no AI model involved and no data leaving your device.`,
     description:
       "Count PDF pages and generate a readable content summary with page references. Local extractive summaries, no uploads or registration.",
     answer:
@@ -91,6 +101,11 @@ export const tools = [
       "file size test online",
     ],
     category: "FILES",
+    intro: `Appliory's File Size Checker tells you the exact size of any file — in bytes, kilobytes (KB), and megabytes (MB) — right inside your browser without uploading it anywhere. This is the fastest way to check file size online for free, on mobile or desktop.
+
+Government job portals and scholarship applications are strict about file size limits. PPSC requires photos under 20KB and documents under 2MB. FPSC challan scans must be under 25KB. University admission portals for HEC scholarships commonly cap documents at 500KB or 1MB. If your file exceeds the limit, the portal rejects your submission with an error — sometimes without explaining why. Check your file size here before you apply, so you never get a surprise rejection.
+
+To use it: set the maximum allowed size (for example, enter 2 MB or 500 KB), then select your documents. Each file is instantly measured and shown as within limit (green) or over limit (red). You can check a photo, a PDF, a Word document, or any other format — the tool measures any file type. Your files stay 100% private on your device.`,
     description:
       "Check document sizes in KB and MB against your own upload limit. Files stay on your device.",
     answer:
@@ -154,6 +169,11 @@ export const tools = [
       "resize png online",
     ],
     category: "IMAGES",
+    intro: `Appliory's Image Resizer lets you resize any photo to exact pixel dimensions online for free — no software installation, no account, and no uploads. Simply select your image, enter the required width and height in pixels, and download the resized result instantly.
+
+Knowing how to resize a photo is essential for dozens of online applications. Passport photos for US visas require exactly 600×600 pixels (2×2 inch). The 35×45 mm format used for UK, Schengen, and Pakistani passports equals 413×531 pixels at 300 DPI. OCI (Overseas Citizen of India) application photos must be exactly 200×200 pixels. If you need to resize photo for OCI application, PPSC challan, or any government portal with strict pixel size requirements, enter the exact dimensions here and get a correctly sized image in one click.
+
+The image resizer also supports custom dimensions for ID cards, HR portals, university admissions, and company intranets. You can resize an image to 100KB to 200KB equivalent by reducing dimensions, then compressing. Lock the aspect ratio to prevent stretching when you resize JPEG, PNG, or WebP images. All processing happens directly inside your browser — your personal photos, identity documents, and passport pictures are never uploaded to any server.`,
     description:
       "Resize JPG, PNG and WebP images to exact pixel dimensions and download the result privately.",
     answer:
@@ -222,6 +242,11 @@ export const tools = [
       "compress image to 100kb online free",
     ],
     category: "IMAGES",
+    intro: `Appliory's Image Compressor reduces any JPG, PNG, or WebP photo to your exact target size in KB — 20KB, 50KB, 100KB, or 200KB — directly inside your browser without uploading to any server. Set a target, click Compress, and get a submission-ready image in seconds.
+
+Compress image to 20KB for PPSC and FPSC government job portals. Compress image to 50KB for university admission forms. Compress image to 100KB for visa applications, scholarship portals, and HR systems. The tool shows the actual output size alongside a live preview so you can compare before downloading. If the compressed image is still too large, reduce the pixel dimensions alongside quality to easily hit your target.
+
+This free image compressor supports JPEG and WebP output formats. JPEG gives the best compression for passport photos and document scans. WebP gives smaller file sizes for web use. Unlike other tools, Appliory shows the exact KB result — not an estimate — so you know the compressed photo will be accepted by the portal. No registration, no watermark, no file size limits on input, and 100% private processing on your device.`,
     description:
       "Reduce JPG or WebP image size with a target in KB. Compare the real result before downloading.",
     answer:
@@ -278,6 +303,11 @@ export const tools = [
       "detect duplicate images",
     ],
     category: "FILES",
+    intro: `Appliory's Duplicate File Finder detects exact duplicate files using SHA-256 cryptographic hashing — the same method used by digital forensics professionals. Select any files from your device: photos, documents, PDFs, or spreadsheets. Files with identical byte content are instantly grouped as duplicates, even if their filenames are completely different.
+
+This is the most reliable way to find duplicate files online for free. Many people accumulate duplicate documents during scholarship applications, government job submissions, or when managing large photo libraries. A PPSC challan saved under two different names, a CV copied to multiple folders, or passport photos renamed before uploading — all detected instantly. Unlike visual similarity checkers, SHA-256 comparison is exact: if even one byte differs, the files are not duplicates.
+
+No files are uploaded. All SHA-256 hashing runs locally inside your browser using the Web Crypto API, which is built into every modern browser. You can check up to 40 files per session. The tool never reads your filenames or file contents beyond what is needed for hashing — your documents stay completely private.`,
     description:
       "Find exact duplicate files using SHA-256 hashes, even when filenames differ. No file uploads.",
     answer:
@@ -347,6 +377,11 @@ export const tools = [
       "20kb image compressor without losing quality",
     ],
     category: "IMAGES",
+    intro: `Appliory's Compress Image to 20KB tool is built specifically for PPSC, FPSC, NTS, and government job portal requirements in Pakistan. These portals require your passport photo, digital signature, and bank fee challan to each be under 20KB or 25KB. This tool presets the target automatically so you get a submission-ready file in one click.
+
+Compress your passport photo to 20KB without losing face clarity. Compress your digital signature to 20KB without blurring the ink. Compress your PPSC or FPSC challan scan to 25KB without making the bank stamp illegible. The compressor works by intelligently reducing both JPEG quality and pixel dimensions together — a smarter approach than quality-only reduction which often fails to reach strict 20KB limits.
+
+PPSC picture size requirements, FPSC photo size rules, and NTS image requirements are all 20KB or under. Thousands of candidates get their applications rejected every year simply because their image file is 22KB or 30KB — just barely over the limit. Use this free online tool to compress your image to under 20KB and avoid an automatic rejection. No uploads, no watermarks, 100% private processing on your device.`,
     description:
       "Reduce JPG photos, signatures, CNIC scans, and paid fee challans to under 20KB or 25KB for PPSC, FPSC, NTS, and government recruitment portals.",
     answer:
@@ -413,6 +448,11 @@ export const tools = [
       "compress image under 50kb",
     ],
     category: "IMAGES",
+    intro: `Appliory's Compress Image to 50KB tool helps students, job applicants, and visa seekers reduce photo and document file sizes to under 50KB online for free. University admissions, scholarship portals, and visa applications commonly set a 50KB maximum for applicant photos and supporting document images.
+
+HEC scholarship portals, Erasmus+ applications, Chevening scholarship forms, and Fulbright applications all require a passport-style photo under 50KB. Convert image to 50KB to upload it successfully. If your original passport photo is 300KB or 500KB from your camera, this tool will compress it to under 50KB while keeping your face sharp and clearly recognizable for identity verification.
+
+The 50KB compressor also handles document images — scanned certificates, bank statements, and fee receipts. It supports JPG, PNG, and WebP input formats. Convert PNG to JPEG output for maximum compression efficiency. All processing happens locally in your browser using HTML5 Canvas — your personal documents, identity images, and sensitive application materials are never uploaded to Appliory's servers or any third party.`,
     description:
       "Compress JPG and PNG images down to 50 KB for scholarship portals, college admissions, and visa portals.",
     answer:
@@ -474,6 +514,11 @@ export const tools = [
       "2x2 photo maker online free",
     ],
     category: "IMAGES",
+    intro: `Appliory's Passport Size Photo Maker is a free online tool to create official passport and visa photos in the correct dimensions — 2×2 inch (600×600 pixels) for US visas and Pakistani online portals, or 35×45 mm (413×531 pixels) for UK, Schengen, and European passports. Make passport size photo online free from any device without installing an app.
+
+The 2x2 passport photo format is used by the US State Department for visa and passport applications. The 35×45 mm format (sometimes written as 45mm × 35mm) is the standard for UK passports, Indian passports, Schengen visa applications, and Pakistani national ID renewal photos online. Simply select your portrait photo, choose your preset, and get a correctly sized, print-ready passport photo in seconds. No background removal, no AI editing — just exact dimensions with your original photo intact.
+
+Create passport size photo online free for PPSC, FPSC, and NTS job applications. Convert your phone selfie or camera photo into the correct passport size without visiting a photo studio. The pixel size of passport size photo is 600×600 for 2x2 inch format. Online passport size photo is accepted by most government portals, embassy websites, and job recruitment systems. Your photo is resized privately on your device — no data is uploaded to any server.`,
     description:
       "Resize photos to official passport and visa dimensions (600×600 px / 2×2 inch or 35×45 mm) with zero server uploads.",
     answer:
@@ -527,6 +572,11 @@ export const tools = [
       "extract tables from pdf to excel",
     ],
     category: "PDF",
+    intro: `Appliory's PDF to Excel Converter extracts tables from any text-based PDF and converts them into a clean, editable Excel (.xlsx) or CSV spreadsheet — directly in your browser, with no file uploads and no email required. This is the fastest free way to convert PDF to Excel online without losing table structure or formatting.
+
+Extract tables from PDF to Excel in seconds. The converter works best with payroll reports, salary slips, bank statements, fee registers, attendance sheets, and government data tables. It detects rows and columns from PDF coordinates, reconstructs the tabular grid, and lets you clean up the data before exporting. Use the Fill Down feature to propagate employee IDs or department names that only appear on the first row of each group — a problem common in government payroll PDFs.
+
+Convert bank statement PDF to Excel free for financial analysis and reconciliation. Convert payroll PDF to Excel for HR departments managing hundreds of employee records. The tool preserves leading zeros in employee IDs and codes (like 00142) by formatting them as text in the Excel output — unlike simple CSV converters that strip leading zeros. All conversion runs 100% locally in your browser. Confidential financial documents, payroll data, and employee records never leave your machine.`,
     description:
       "Convert PDF tables into editable spreadsheets, clean extracted data, and export your results. Designed with privacy-conscious processing.",
     answer:

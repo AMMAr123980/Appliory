@@ -99,6 +99,13 @@ export default async function Page({
         <span className="eyebrow">FREE · NO LOGIN · ON YOUR DEVICE</span>
         <h1>{(t as { h1?: string }).h1 || t.name}</h1>
         <p>{t.description}</p>
+        {(t as { intro?: string }).intro && (
+          <div className="tool-intro-body">
+            {((t as { intro?: string }).intro ?? "").split("\n\n").map((para, i) => (
+              <p key={i}>{para}</p>
+            ))}
+          </div>
+        )}
       </header>
 
       {/* Pre-Upload Expected Output & Readiness Box */}
