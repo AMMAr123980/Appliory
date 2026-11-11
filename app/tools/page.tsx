@@ -61,6 +61,27 @@ export default function Page() {
           <ShieldCheck size={17} /> Files stay on your device
         </span>
       </header>
+      <section className="article" style={{ maxWidth: 820, margin: "0 auto 2.5rem", padding: "0 24px" }}>
+        <p>
+          Appliory offers a growing collection of free, browser-based tools built for one purpose: helping you prepare
+          documents and images for online applications — faster and without sending your files to any server. Whether
+          you&apos;re applying for a job, a scholarship, a visa, a government portal, or a university admission, the
+          documents you submit need to meet strict size, dimension, format, and quality requirements. Failing to meet
+          them can get your application rejected before it&apos;s even reviewed.
+        </p>
+        <p>
+          Every tool on this page works entirely in your browser using local web APIs. That means your photos, PDFs, and
+          personal documents never leave your device. There is no login required, no file upload to a cloud server, and
+          no usage limit beyond your browser&apos;s memory. You can compress a photo to under 20 KB, resize a passport
+          image to the exact pixel dimensions required by NADRA, PPSC, or the US embassy, count pages in a PDF, convert
+          a PDF table to Excel, or check whether a file meets size requirements — all in seconds, all for free.
+        </p>
+        <p>
+          Our tools are especially useful for Pakistani applicants preparing documents for PPSC, FPSC, NTS, NADRA,
+          HEC, provincial scholarship portals, and overseas universities. Each tool page includes a step-by-step guide,
+          the most common requirements for popular portals, and answers to frequently asked questions.
+        </p>
+      </section>
       <div className="quick-tools-grid">
         {tools.map((t) => (
           <Link

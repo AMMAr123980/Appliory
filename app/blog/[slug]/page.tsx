@@ -56,8 +56,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           dateModified: post.date,
           inLanguage: "en",
           author: {
-            "@type": "Organization",
-            name: "Appliory",
+            "@type": "Person",
+            name: "Ammar Hassan Malik",
             url: absolute("/about"),
           },
           publisher: { "@id": absolute("/#organization") },

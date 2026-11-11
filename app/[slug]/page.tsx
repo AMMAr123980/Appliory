@@ -911,55 +911,61 @@ export default async function Page({
             </>
           ) : (
             <>
-              <p>Effective: 24 October 2026.</p>
-              <h2>Purpose of the service</h2>
-              <p>
-                Appliory is a preparation tool that checks selected files
-                against rules you configure. It is not an application submission
-                portal, admissions adviser, employer, scholarship provider, or
-                legal service.
-              </p>
-              <h2>Your responsibilities</h2>
-              <p>
-                You must verify current official requirements, confirm the
-                accuracy and authenticity of your documents, and submit through
-                the correct official channel before its deadline. You are
-                responsible for choosing appropriate rules and interpreting
-                results. Do not process files you lack permission to use or use
-                the service to misrepresent documents.
-              </p>
-              <h2>Starter templates and results</h2>
-              <p>
-                Templates are editable examples, not official requirements.
-                Passed checks do not guarantee acceptance, eligibility, document
-                authenticity, image quality, or completeness. Unreadable files
-                and pages without extractable text may need manual inspection.
-              </p>
-              <h2>File corrections and downloads</h2>
-              <p>
-                Image corrections can change quality, dimensions, transparency,
-                or file size. Compression is best effort. Originals on disk are
-                preserved, but you should maintain your own backups and inspect
-                exported files. Browser limits may interrupt large-file
-                processing.
-              </p>
-              <h2>Availability and limitations</h2>
-              <p>
-                The service is provided as available without guarantees of
-                uninterrupted operation or suitability for a particular
-                application. To the extent permitted by applicable law, the
-                operator is not responsible for application outcomes, missed
-                deadlines, or losses caused by relying solely on automated
-                checks. Nothing here excludes rights that cannot lawfully be
-                excluded.
-              </p>
-              <h2>Changes and contact</h2>
-              <p>
-                Features and these terms may change. Review this page when
-                preparing an important application. Questions and deletion
-                requests can be sent through{" "}
-                <Link href="/contact">the help center</Link>.
-              </p>
+              <p><strong>Effective: 24 October 2026.</strong> These Terms of Service govern your use of Appliory (appliory.tech), operated by Ammar Hassan Malik, Lahore, Pakistan. By using the site, you agree to these terms. If you do not agree, please do not use the site.</p>
+
+              <h2>1. Description of Service</h2>
+              <p>Appliory is a free, browser-based platform that provides document preparation tools including image compression, image resizing, passport photo creation, PDF page counting, PDF to Excel conversion, file size checking, and duplicate file detection. All file processing occurs entirely within your browser using local web APIs — no files are uploaded to any server.</p>
+              <p>Appliory is a preparation and verification tool only. It is not an application submission portal, admissions adviser, employer, scholarship provider, legal adviser, or government body. Passing Appliory's technical checks does not guarantee acceptance, eligibility, or approval by any institution, portal, or authority.</p>
+
+              <h2>2. Free Use and No Account Required</h2>
+              <p>All tools on Appliory are provided free of charge. No registration, account creation, or subscription is required to use any tool. There are no hidden fees, premium tiers, or usage limits beyond the technical browser limits specified in these terms (25 MB per file, 40 files per session, 200 MB total per session).</p>
+
+              <h2>3. User Responsibilities</h2>
+              <p>By using Appliory, you agree to the following:</p>
+              <ul style={{ margin: "0.5rem 0 1rem", paddingLeft: "1.5rem", lineHeight: 2 }}>
+                <li>You will verify current official requirements from the relevant institution, portal, or authority independently before submitting any application.</li>
+                <li>You are responsible for the accuracy, authenticity, and completeness of all documents you prepare using Appliory's tools.</li>
+                <li>You will not use Appliory to process, prepare, or submit fraudulent, forged, or misrepresented documents.</li>
+                <li>You will not use Appliory's tools for any unlawful purpose or in any way that violates applicable local, national, or international laws.</li>
+                <li>You will not attempt to reverse-engineer, copy, or redistribute Appliory's source code, tools, or content without written permission.</li>
+                <li>You will not use Appliory to process files you do not have the legal right to access or modify.</li>
+              </ul>
+
+              <h2>4. Accuracy of Tool Outputs</h2>
+              <p>Appliory's tools perform best-effort processing. Specifically:</p>
+              <ul style={{ margin: "0.5rem 0 1rem", paddingLeft: "1.5rem", lineHeight: 2 }}>
+                <li>Image compression targets a specified file size but cannot guarantee the exact output size in all cases. The actual compressed size may differ slightly from the target.</li>
+                <li>PDF page counting relies on the PDF.js library's ability to parse the document structure. Password-protected or corrupted PDFs may not be readable.</li>
+                <li>PDF to Excel conversion works best with text-based PDFs. Scanned PDFs (image-only PDFs) cannot be converted without OCR, which Appliory does not provide.</li>
+                <li>File size measurements use 1 MB = 1,048,576 bytes (binary). Some portals use decimal measurements (1 MB = 1,000,000 bytes), which may cause minor discrepancies.</li>
+              </ul>
+              <p>Always inspect the output of any tool before submitting it to an application portal. Appliory recommends keeping original, unmodified copies of all documents on your device.</p>
+
+              <h2>5. Intellectual Property</h2>
+              <p>All content on Appliory — including text, guides, blog posts, tool descriptions, and interface design — is the intellectual property of Ammar Hassan Malik / Appliory unless otherwise attributed. You may not reproduce, republish, or redistribute Appliory's content without prior written permission.</p>
+              <p>Appliory uses open-source libraries including PDF.js (Mozilla Public License 2.0), which are credited appropriately. These libraries remain the intellectual property of their respective copyright holders.</p>
+
+              <h2>6. Limitation of Liability</h2>
+              <p>Appliory is provided "as is" without warranties of any kind, express or implied. To the fullest extent permitted by applicable law, Ammar Hassan Malik and Appliory are not liable for:</p>
+              <ul style={{ margin: "0.5rem 0 1rem", paddingLeft: "1.5rem", lineHeight: 2 }}>
+                <li>Any application rejection, missed deadline, or negative outcome resulting from the use or misuse of Appliory's tools.</li>
+                <li>Any loss of data, documents, or files processed through the platform.</li>
+                <li>Any errors in tool output including incorrect file sizes, page counts, or compression results.</li>
+                <li>Any interruption in service availability, including downtime, maintenance, or technical failures.</li>
+                <li>Any damages arising from your reliance on Appliory's tools as a substitute for professional legal, academic, or technical advice.</li>
+              </ul>
+
+              <h2>7. Advertising</h2>
+              <p>Appliory displays advertisements through Google AdSense. These advertisements help support the free operation of the platform. Appliory is not responsible for the content of third-party advertisements displayed on the site. Advertisement content is controlled by Google and its advertising partners based on your browsing history and interests. You can opt out of personalized advertising through <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer">Google Ads Settings</a>.</p>
+
+              <h2>8. Third-Party Links</h2>
+              <p>Appliory may contain links to third-party websites, government portals, or external resources for reference purposes. These links are provided for convenience only. Appliory does not control, endorse, or take responsibility for the content, privacy practices, or availability of any third-party website.</p>
+
+              <h2>9. Governing Law</h2>
+              <p>These Terms of Service are governed by the laws of Pakistan. Any disputes arising from the use of Appliory shall be subject to the exclusive jurisdiction of the courts of Lahore, Pakistan.</p>
+
+              <h2>10. Changes to Terms</h2>
+              <p>Appliory reserves the right to update these Terms of Service at any time. Changes will be indicated by an updated effective date at the top of this page. Continued use of the site after changes constitutes your acceptance of the revised terms. For questions about these terms, contact us at <a href="mailto:fitduo07@gmail.com">fitduo07@gmail.com</a>.</p>
             </>
           )}
         </article>
