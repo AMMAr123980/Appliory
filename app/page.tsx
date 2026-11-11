@@ -363,6 +363,43 @@ export default function Home() {
       <section className="workflow-section">
         <div className="wrap">
           <div className="section-heading">
+
+      {/* Editorial Content Section — AdSense substantial value */}
+      <section className="wrap content-section" style={{ paddingTop: 48, paddingBottom: 48 }}>
+        <div style={{ maxWidth: 860, margin: "0 auto" }}>
+          <span className="eyebrow">WHY APPLIORY EXISTS</span>
+          <h2 style={{ fontSize: "1.75rem", margin: "8px 0 20px" }}>
+            Free document tools built for real application problems
+          </h2>
+          <p style={{ fontSize: "1.05rem", lineHeight: 1.8, color: "var(--ink)" }}>
+            Every year, thousands of government job candidates in Pakistan get their PPSC and FPSC applications rejected — not because of their qualifications, but because their photo is 22KB instead of 20KB, or their bank challan scan is too blurry, or their signature image is in the wrong format. University scholarship applicants face the same problem: a 55KB photo gets rejected by an HEC portal that requires 50KB. Visa applicants upload a 650px × 900px photo when only a 600×600px 2×2 inch format is accepted.
+          </p>
+          <p style={{ fontSize: "1.05rem", lineHeight: 1.8, color: "var(--ink)" }}>
+            Most tools that solve these problems upload your files to unknown servers — which is a serious privacy risk when you are dealing with identity cards, bank receipts, salary slips, and personal photos. Appliory was built to fix this: every tool runs entirely inside your browser. Your CNIC, your challan, your passport photo — none of it leaves your device.
+          </p>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "1rem", margin: "28px 0" }}>
+            {([
+              ["20KB", "PPSC & FPSC photo limit — the most common rejection threshold"],
+              ["25KB", "Bank fee challan scan limit for government job portals"],
+              ["50KB", "University and scholarship portal photo upload limit"],
+              ["600×600px", "US visa & most online portal passport photo dimension"],
+            ] as [string, string][]).map(([stat, label]) => (
+              <div key={stat} style={{ background: "var(--surface, #f8fafc)", border: "1px solid var(--line)", borderRadius: 12, padding: "16px 20px" }}>
+                <b style={{ fontSize: "1.5rem", color: "var(--accent)", display: "block" }}>{stat}</b>
+                <p style={{ margin: "4px 0 0", fontSize: "0.875rem", color: "var(--muted)", lineHeight: 1.5 }}>{label}</p>
+              </div>
+            ))}
+          </div>
+          <p style={{ fontSize: "1rem", lineHeight: 1.8, color: "var(--ink)" }}>
+            Appliory provides purpose-built presets for every common requirement: compress to 20KB for PPSC, compress to 25KB for bank challans, compress to 50KB for scholarship portals, create a 2×2 inch passport photo for US visas, or a 35×45mm photo for Pakistani and European passports. Use the File Size Checker to verify every document in your application pack before you start the online form — so you never face a file rejection error on the day of the deadline.
+          </p>
+        </div>
+      </section>
+
+      {/* Connected 3-Step Workflow (original) */}
+      <section className="workflow-section">
+        <div className="wrap">
+          <div className="section-heading">
             <div>
               <span className="eyebrow">END-TO-END APPLICATION WORKFLOW</span>
               <h2>Your application, step by step</h2>

@@ -101,7 +101,7 @@ export default async function Page({
         <section className="wrap content-section" style={{ maxWidth: 850 }}>
           <h2>Get in touch with Appliory</h2>
           <p>
-            Have a question about document checking, technical limitations, or need support? Reach out directly to our team:
+            Appliory is operated by <strong>Ammar Hassan Malik</strong>, a software engineer based in <strong>Lahore, Pakistan</strong>. Have a question about document checking, technical limitations, feature requests, or need help with a tool? Reach out directly:
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.5rem", margin: "2rem 0" }}>
             <div style={{ padding: "1.5rem", border: "1px solid var(--border, #e2e8f0)", borderRadius: "12px", background: "var(--card, #f8fafc)" }}>
@@ -129,10 +129,20 @@ export default async function Page({
               </a>
             </div>
           </div>
-          <p style={{ marginTop: "1rem" }}>
-            Check the FAQ for supported formats, file limits, and how to
-            interpret results. For a failed check, use the action shown beside
-            the result, correct the file or requirement, and run checks again.
+          <h2>Response Times</h2>
+          <p>
+            We aim to respond to all email inquiries within 24–48 hours on business days (Monday to Friday, Pakistan Standard Time). WhatsApp messages are typically answered within a few hours during business hours.
+          </p>
+          <h2>What We Can Help With</h2>
+          <ul style={{ margin: "0.5rem 0 1.5rem", paddingLeft: "1.5rem", lineHeight: 2 }}>
+            <li>Technical questions about image compression, file size limits, and tool usage</li>
+            <li>Bug reports — if a tool is not working correctly on your device or browser</li>
+            <li>Feature requests — suggestions for new tools or improvements to existing ones</li>
+            <li>Partnership and collaboration inquiries</li>
+            <li>Media and press inquiries about Appliory</li>
+          </ul>
+          <p>
+            For tool-specific questions (like why a compressed image is still above the target size, or why a PDF table is not extracting correctly), please check the FAQ page first — most common issues are covered there.
           </p>
           <div style={{ display: "flex", gap: "1rem", marginTop: "1.5rem", flexWrap: "wrap" }}>
             <Link className="button dark" href="/faq">
@@ -814,48 +824,89 @@ export default async function Page({
           ) : slug === "privacy" ? (
             <>
               <p>
-                Effective: 24 October 2026. This notice describes this release
-                of Appliory. The site owner should review it whenever processing
-                or service providers change.
+                <strong>Effective: 24 October 2026.</strong> This Privacy Policy explains how Appliory (appliory.tech), operated by Ammar Hassan Malik, Lahore, Pakistan, handles information when you use our free document and image tools. Please read this policy carefully before using the site.
               </p>
-              <h2>Documents selected in the checker</h2>
+
+              <h2>1. Information We Do Not Collect</h2>
               <p>
-                Selected files are held in browser memory and processed locally.
-                Appliory reads file bytes to calculate hashes, inspect supported
-                formats, extract PDF text for a text-presence check, and decode
-                images. Document contents and extracted text are not uploaded to
-                our backend, logged, or sent to AI services. They are cleared
-                when you leave or refresh the page. Downloads remain on your
-                device until you delete them.
+                Appliory is built on a zero-upload architecture. When you select a file — a photo, PDF, signature, CNIC scan, or any other document — that file is loaded exclusively into your browser's private memory using the HTML5 File API. The file content is never transmitted to Appliory's servers, stored in a database, or shared with any third party. This applies to all file processing tools: image compression, image resizing, passport photo creation, PDF page counting, PDF to Excel conversion, file size checking, and duplicate file detection.
               </p>
-              <h2>No registration or stored documents</h2>
               <p>
-                There are no user accounts or server-side saved reports.
-                Download checklists and reports to your own device. Import a
-                downloaded checklist to reuse its rules.
+                Appliory does not collect, store, or process: your name, email address, identity documents, photos, PDF files, signatures, payment receipts, or any personal document you load into the tools. There are no user accounts, no server-side session storage, and no cloud database of user files.
               </p>
-              <h2>Hosting and network requests</h2>
+
+              <h2>2. Information That May Be Automatically Collected</h2>
               <p>
-                The hosting provider may process IP addresses, request
-                timestamps, and operational logs. No advertising or analytics
-                scripts are added by this application. The optional stateless
-                validation API processes only metadata submitted by its caller
-                and does not save it.
+                Like all websites, Appliory's hosting provider (Vercel) may automatically log standard server access data including IP addresses, browser type, referring URL, pages visited, and timestamps. This data is used for security monitoring and service operation. It is not linked to your identity or the files you process.
               </p>
-              <h2>Using a shared device</h2>
               <p>
-                Other visitors cannot browse your selected files through
-                Appliory. Someone using your open browser or device can still
-                see the current workspace and downloaded files. Clear the
-                workspace and remove sensitive downloads before handing the
-                device to another person. Keep your browser and operating system
-                updated; no website can guarantee protection from every attack.
+                Appliory uses Google Analytics to understand aggregate site usage — such as which tools are most popular, how long sessions last, and which countries visitors come from. Google Analytics uses cookies and collects anonymized usage data. It does not receive or access your document files.
               </p>
-              <h2>Clear your workspace</h2>
+
+              <h2>3. Cookies and Advertising (Google AdSense)</h2>
               <p>
-                Use Start fresh (or Clear files in a quick tool), refresh, or
-                close the tab to clear selected documents. Downloaded files
-                remain on your device until you delete them.
+                Appliory uses <strong>Google AdSense</strong> to display advertisements. Google AdSense uses cookies and similar tracking technologies to serve ads based on your prior visits to this site and other sites on the internet. Google's use of advertising cookies enables it and its partners to serve ads based on your visit to Appliory and/or other sites on the Internet.
+              </p>
+              <p>
+                You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer">Google Ads Settings</a>. You can also opt out of a third-party vendor's use of cookies for personalized advertising by visiting <a href="http://www.aboutads.info/choices/" target="_blank" rel="noopener noreferrer">www.aboutads.info</a>.
+              </p>
+              <p>
+                Appliory uses the following cookies:
+              </p>
+              <ul style={{ margin: "0.5rem 0 1rem", paddingLeft: "1.5rem", lineHeight: 2 }}>
+                <li><strong>Google Analytics cookies</strong> (_ga, _gid, _gat) — Used to distinguish users and throttle request rate. Set by Google Analytics.</li>
+                <li><strong>Google AdSense cookies</strong> — Used to serve relevant advertisements. Set by Google and its advertising partners.</li>
+                <li><strong>Google Tag Manager</strong> — Used to manage and deploy analytics and advertising tags. Does not itself collect personal information.</li>
+              </ul>
+              <p>
+                You can control cookie preferences through your browser settings. Disabling cookies may affect the display of advertisements on this site.
+              </p>
+
+              <h2>4. Third-Party Services</h2>
+              <p>
+                Appliory integrates the following third-party services, each with their own privacy policies:
+              </p>
+              <ul style={{ margin: "0.5rem 0 1rem", paddingLeft: "1.5rem", lineHeight: 2 }}>
+                <li><strong>Google AdSense</strong> — Advertising service. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+                <li><strong>Google Analytics</strong> — Usage analytics. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+                <li><strong>Vercel</strong> — Website hosting provider. <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Vercel Privacy Policy</a></li>
+              </ul>
+
+              <h2>5. How Your Files Are Processed Locally</h2>
+              <p>
+                All document processing on Appliory happens inside your browser using these local browser APIs:
+              </p>
+              <ul style={{ margin: "0.5rem 0 1rem", paddingLeft: "1.5rem", lineHeight: 2 }}>
+                <li><strong>HTML5 Canvas API</strong> — Used for image compression, resizing, and format conversion. Processes pixel data in browser memory only.</li>
+                <li><strong>PDF.js</strong> — An open-source Mozilla library used for PDF reading, page counting, and table extraction. Runs locally in the browser.</li>
+                <li><strong>Web Cryptography API</strong> — Used for SHA-256 duplicate file detection. Runs entirely within the browser's local cryptographic engine.</li>
+                <li><strong>HTML5 File API</strong> — Reads file bytes from your device selection into local browser memory without network transmission.</li>
+              </ul>
+              <p>
+                When you close or refresh the browser tab, all files loaded into Appliory are cleared from browser memory automatically. Files you download remain on your device until you delete them.
+              </p>
+
+              <h2>6. Children's Privacy</h2>
+              <p>
+                Appliory does not knowingly collect personal information from children under 13 years of age. The service is intended for students, job applicants, and professionals who are at least 13 years old. If you believe a child has provided personal information through this site, please contact us so we can take appropriate action.
+              </p>
+
+              <h2>7. Your Rights</h2>
+              <p>
+                Since Appliory does not store your personal files or documents on any server, there is no stored personal data to request deletion of. For any concerns about data collected by third-party services (Google Analytics, Google AdSense), please refer to their respective privacy policies and opt-out tools linked above.
+              </p>
+              <p>
+                For questions about this Privacy Policy, contact us at <a href="mailto:fitduo07@gmail.com">fitduo07@gmail.com</a>.
+              </p>
+
+              <h2>8. Using a Shared Device</h2>
+              <p>
+                Other visitors cannot access your selected files through Appliory. However, someone using your open browser or physical device can still see the current browser session and any downloaded files on your device. Clear your browser session and remove sensitive downloads before handing the device to another person. Keep your browser and operating system updated for best security.
+              </p>
+
+              <h2>9. Changes to This Policy</h2>
+              <p>
+                Appliory may update this Privacy Policy when the site adds new features, integrates new third-party services, or when regulatory requirements change. The effective date at the top of this page will be updated with each revision. Continued use of the site after changes constitutes acceptance of the revised policy.
               </p>
             </>
           ) : (
