@@ -439,9 +439,9 @@ export const blogPosts: BlogPost[] = [
     category: "Challan & Fee Receipts",
     tag: "PPSC · FPSC · Challan",
     date: "2026-11-01",
-    readTime: "4 min read",
+    readTime: "6 min read",
     intro:
-      "When applying online for PPSC (Punjab Public Service Commission) or FPSC jobs, one of the most frustrating errors is: 'Challan image size must be less than 25KB'. Here is how to compress your paid bank receipt so the stamp and bank deposit ID stay perfectly legible under 25KB.",
+      "When applying online for PPSC (Punjab Public Service Commission) or FPSC (Federal Public Service Commission) jobs, one of the most frustrating errors is: 'Challan image size must be less than 25KB'. This error stops thousands of candidates from completing their applications every year. Here is a complete, step-by-step guide to compress your paid bank fee receipt so the stamp and bank deposit ID stay perfectly legible under 25KB.",
     keywords: [
       "resize challan form to 25kb",
       "ppsc challan form compress 25kb",
@@ -454,37 +454,60 @@ export const blogPosts: BlogPost[] = [
       "ppsc fee challan scan size",
       "resize ppsc challan in mobile",
       "resize bank receipt to 25kb",
+      "ppsc challan compress 25kb",
+      "ppsc image resize",
+      "ppsc challan compressor 25kb",
     ],
     sections: [
       {
-        heading: "Why PPSC and FPSC Reject Challan Scans",
-        body: "Government recruitment portals enforce a strict 25KB limit for paid fee challan scans. Candidates taking pictures with modern smartphones end up with 3MB to 5MB photos. Trying to upload these directly results in instant rejection or upload failure.",
+        heading: "Why PPSC and FPSC Reject Challan Scans Above 25KB",
+        body: "Government recruitment portals like PPSC and FPSC enforce a strict 25KB file size limit for paid fee challan scans for several technical and administrative reasons. First, these portals handle tens of thousands of applications simultaneously during peak recruitment drives. Large image files cause database bottlenecks and slow the verification process for administrative staff. Second, 25KB is enough for a legible scan of a bank stamp and deposit reference number — the two things reviewers actually need to verify payment. Third, portal servers often run on shared infrastructure with tight storage quotas. Candidates taking pictures with modern smartphones end up with photos that are 2MB to 5MB in size. Trying to upload these directly results in an error message, and many applicants waste hours trying to find a solution on the day of the deadline.",
       },
       {
-        heading: "Crucial Rule: Crop Before You Compress",
-        body: "A fee challan contains a lot of blank paper margins. If you compress the whole sheet down to 25KB, the bank stamp and deposit number become a blurry mess. Always crop tightly around the applicant's copy showing the bank branch code, date, deposit ID, and official cashier stamp.",
+        heading: "What Information Must Remain Readable at 25KB",
+        body: "Before compressing your challan, you need to know exactly what must stay clear in the final image. The bank branch code and branch name must be readable so administrators can verify the payment location. The deposit reference number or scroll number is the unique transaction identifier — this must be crystal clear. The bank cashier's official stamp or seal must be visible. The date of payment confirms the challan was paid before the application deadline. The applicant's CNIC number links the payment to your account. The amount deposited confirms the correct fee was paid. Everything else — blank paper margins, printed form text, and decorative borders — is not needed by the reviewer and can be safely removed by cropping.",
       },
       {
-        heading: "How to Compress Your Challan to 25KB in Appliory",
-        body: "1. Open Appliory's free Compress Image to 20KB/25KB tool. 2. Select or drag your cropped challan photo. 3. Appliory automatically calibrates dimensions and compression quality. 4. Download your crisp JPEG challan file. Because processing occurs inside your device, no bank receipts or personal details are uploaded to external servers.",
+        heading: "Crucial Rule: Always Crop Before You Compress",
+        body: "This is the single most important rule for getting a legible 25KB challan. A bank fee challan is usually a full A4 or half-A4 sheet. If you photograph the entire sheet and then compress it down to 25KB, the compression algorithm has to discard an enormous amount of data to hit the target. The result is a blurry, pixelated image where the bank stamp looks like a smudge and the deposit number is unreadable. By cropping the image to only the applicant's copy area — typically a strip 8–10 cm wide and 5–7 cm tall — you dramatically reduce the total pixel area. This means the compression algorithm has far less work to do, and your 25KB budget goes entirely toward preserving the sharp edges of the stamp and the printed numbers.",
       },
       {
-        heading: "Check Before Submitting to the Portal",
-        body: "Open the downloaded image on your screen. Verify that the bank scroll number, applicant CNIC, and transaction date are readable. If yes, upload it to the PPSC or FPSC portal without worrying about rejection.",
+        heading: "How to Take a Good Challan Photo on Your Mobile",
+        body: "The quality of your compressed challan depends entirely on the quality of the original photo. Here are specific steps to get a usable image before you even open a compression tool. Place the challan flat on a table in a well-lit room. Avoid direct sunlight, which creates glare that washes out printed text. Use your phone's rear camera — the front camera is lower resolution on most phones. Hold the phone directly above the challan, parallel to the surface, to avoid trapezoidal distortion. Tap on the challan in your camera app to focus precisely on the printed text. Take 2–3 shots and choose the sharpest one. If the image looks blurry or the stamp is hard to read in the full-resolution photo, it will be unreadable after compression. Take a fresh photo rather than compressing a poor-quality original.",
+      },
+      {
+        heading: "How to Compress Your Challan to 25KB Using Appliory",
+        body: "Open Appliory's free Compress Image to 20KB or 25KB tool at appliory.tech/tools/compress-image-to-20kb. First, use your phone's default photo editor or any free crop tool to crop tightly around the applicant's copy portion of the challan. Remove all white paper margins and trim to just the essential area with the deposit number and bank stamp. Then select or drag your cropped challan photo into Appliory. The tool automatically calibrates both pixel dimensions and JPEG compression quality in multiple passes to reach the smallest file size while keeping text edges sharp. Download your JPEG file. The processing happens entirely inside your browser — your bank receipts, CNIC details, and transaction information are never uploaded to external servers.",
+      },
+      {
+        heading: "Verifying the Result Before Portal Submission",
+        body: "After downloading your compressed challan, open the image file on your phone or computer screen and zoom in to 100% view. Specifically check: Can you read all digits of the deposit reference or scroll number clearly? Is the bank cashier stamp or seal visible enough to confirm it is an official stamp? Are the date and deposited amount legible? If yes to all three, your challan will pass manual verification. If any text looks blurry, it means you either started with a low-quality photo or the compression was too aggressive. In that case, retake the original photo in better lighting and repeat the process. Submit the compressed image to your PPSC or FPSC portal only after confirming all critical information is readable.",
+      },
+      {
+        heading: "Common Mistakes That Lead to Challan Rejection",
+        body: "Many candidates make avoidable mistakes when preparing their challan scans. Submitting the entire A4 sheet without cropping is the most common error — it forces heavy compression and destroys legibility. Using a screenshot instead of a direct photo produces lower image quality because screenshots are compressed twice. Using PNG format instead of JPEG produces larger file sizes at the same visual quality — PPSC and FPSC portals require JPEG specifically. Compressing on a mobile app that adds watermarks can get your application flagged. And submitting a photocopy instead of the original challan may be rejected regardless of file size, as the official stamp needs to be from the bank's actual ink pad.",
       },
     ],
     faqs: [
       [
         "Can I upload a PDF challan to PPSC?",
-        "No. PPSC and FPSC strictly require image format (JPG or JPEG) under 25KB for fee challan verification.",
+        "No. PPSC and FPSC strictly require image format (JPG or JPEG) under 25KB for fee challan verification. If your bank gave you a printed challan, photograph it and compress the image. If your bank gave you a digital PDF receipt, take a screenshot of the relevant section and compress that image.",
       ],
       [
         "Will the bank stamp remain clear at 25KB?",
-        "Yes, provided you cropped out unnecessary white borders before compressing.",
+        "Yes, provided you cropped out all unnecessary white borders before compressing. The key is that 25KB is sufficient for a small, tightly cropped area showing the stamp, deposit number, and date. If you try to fit the entire A4 sheet into 25KB, the stamp will become illegible.",
+      ],
+      [
+        "What if I cannot get below 25KB without the image becoming blurry?",
+        "This usually means the original photo area is still too large. Try cropping even more aggressively — focus only on the bank stamp, deposit reference number, and date, eliminating everything else. A well-cropped 400×300 pixel image can be compressed to under 25KB with excellent clarity.",
       ],
       [
         "Does Appliory store my bank fee receipt?",
-        "No. Appliory processes everything locally in your browser memory. Nothing is transmitted to any cloud database.",
+        "No. Appliory processes everything locally in your browser memory using HTML5 Canvas. Nothing is transmitted to any cloud database, server, or third party. When you close the browser tab, all loaded files are cleared automatically from device memory.",
+      ],
+      [
+        "My challan was deposited at HBL / UBL / ABL — does it matter which bank?",
+        "No. The compression process is identical regardless of which bank issued your challan. What matters is that your photo shows the official bank cashier stamp, the deposit reference number, and the amount deposited. All Pakistani bank challans follow the same general format.",
       ],
     ],
     relatedTool: {
@@ -501,9 +524,9 @@ export const blogPosts: BlogPost[] = [
     category: "Signature Tools",
     tag: "Signature · PPSC · Jobs",
     date: "2026-11-01",
-    readTime: "3 min read",
+    readTime: "5 min read",
     intro:
-      "Online recruitment portals and university forms almost universally demand candidate signatures below 20KB. Compressing a signature without losing line clarity or turning ink into blurry noise requires the right approach.",
+      "Online recruitment portals and university application forms almost universally demand a candidate's digital signature below 20KB. This requirement is tougher than it sounds — a photo of your signature taken on a modern smartphone is typically 2MB to 4MB, which is 100 to 200 times larger than the portal allows. Compressing a signature without losing line clarity or turning crisp ink strokes into blurry noise requires the right approach. This guide explains exactly how to do it.",
     keywords: [
       "compress signature to 20kb",
       "signature resizer online 20kb",
@@ -515,33 +538,224 @@ export const blogPosts: BlogPost[] = [
       "online signature compressor 20kb",
       "compress signature online",
       "resize signature image in kb",
+      "signature size 10kb to 20kb online",
+      "signature resize 10 to 20 kb",
+      "signature resize 10 kb to 20kb",
+      "compress signature to 20 kb",
     ],
     sections: [
       {
-        heading: "How to Capture a Perfect Signature",
-        body: "Sign on clean, unlined white paper using a dark blue or black ballpoint pen. Take a well-lit photo directly from above without casting shadows. Crop tightly around the signature ink so 90% of the image is the actual signature.",
+        heading: "Why Online Portals Require Signatures Under 20KB",
+        body: "PPSC, FPSC, NTS, ETEA, and most university admission portals set a 20KB limit for digital signature uploads because signature images are stored directly in applicant profile databases. If every candidate uploads a 500KB signature image, a database with 500,000 applicants would require 250GB just for signatures. At 20KB per applicant, the same database uses only 10GB — a 25x reduction in storage and bandwidth costs. The 20KB limit is also based on the fact that a correctly prepared signature image — small canvas, plain white background, dark ink — does not need more than 20KB to be clearly readable. The challenge is that most people photograph their signature on a full-size piece of paper, which creates a huge, blank white area that the compression algorithm must struggle to eliminate.",
       },
       {
-        heading: "Why Signature Files Get Blurry",
-        body: "When you compress a huge photo that has lots of white background, the compression algorithm wastes precious bytes compressing empty paper. Cropping first ensures that every kilobyte is dedicated to the pen strokes.",
+        heading: "How to Capture a Perfect Signature for Compression",
+        body: "The quality of your digital signature starts long before you open any compression tool. Begin by signing on clean, unlined white paper using a dark blue or black ballpoint pen. Avoid felt-tip markers or gel pens that can smear. Write your signature at a comfortable, medium size — not too small and not so large that it fills the entire page. Place the paper flat on a table with good lighting. Overhead lighting is best — it eliminates shadows. Hold your phone directly above the signature, parallel to the paper surface, and tap to focus on the ink. The goal is to get a sharp, high-contrast image of dark ink on a pure white background. Avoid taking photos at an angle, which creates a trapezoidal distortion that makes compression less efficient. Take the photo in the highest quality your phone offers — you will crop it down afterward.",
       },
       {
-        heading: "Compressing to 20KB Using Appliory",
-        body: "Upload your cropped signature to Appliory. The preset target is 20KB. Download your sharp, lightweight JPEG file ready to upload to any recruitment portal in seconds.",
+        heading: "The Most Important Step: Crop Tightly Around the Ink",
+        body: "This step determines whether your compressed signature is sharp or blurry. When you compress a full-sheet photo of your signature down to 20KB, the compression algorithm spends most of its data budget compressing the large blank white areas around the signature — wasting precious kilobytes on empty space. The ink strokes get the least allocation and become blurry. By cropping tightly so that the signature ink fills 80–90% of the frame — leaving only a small white margin of 10–15 pixels on each side — you redirect all 20KB of your budget to preserving the actual pen strokes. Use your phone's built-in photo editor, Windows Photos, or any free crop tool. Crop to a narrow rectangle that just contains your signature ink with minimal surrounding whitespace.",
+      },
+      {
+        heading: "Recommended Dimensions for a Signature Image",
+        body: "Most government portals and university forms accept signature images in a horizontal rectangle format. The ideal dimensions for a cropped signature image are between 300×100 pixels and 500×200 pixels — wide and short, matching the natural shape of a handwritten signature. At these dimensions, a JPEG file with reasonable quality easily fits under 20KB. PPSC specifically recommends a signature image of 213×71 pixels, though dimensions in the 300×100 to 400×150 pixel range are accepted by most other portals. After cropping, check the pixel dimensions in your photo editor and resize if needed using Appliory's Image Resizer before compressing.",
+      },
+      {
+        heading: "Compressing Your Signature to 20KB Using Appliory",
+        body: "Open Appliory's Compress Image to 20KB tool at appliory.tech/tools/compress-image-to-20kb. The target size is preset to 20KB so you do not need to change any settings. Click the upload area or drag your cropped signature image into it. The tool runs multiple compression passes, progressively reducing JPEG quality until the file reaches 20KB. Because signature images are small and have high contrast between dark ink and white background, they generally compress very well — your result will typically be a sharp, clearly readable signature. Download the JPEG file and verify it looks good before uploading to the portal. All processing happens inside your browser — your signature image is never sent to any server.",
+      },
+      {
+        heading: "What to Do If Your Signature Looks Blurry After Compression",
+        body: "If your compressed signature shows blurring or ink strokes appear faded, there are a few things to try. First, check that you cropped the image tightly enough — excessive white space is the most common cause of blurry signature compression. Second, retake the original photo in better lighting — a low-light photo already has noise before compression, which amplifies after aggressive compression. Third, make sure you are using the JPEG format for output, not PNG — PNG lossless compression often cannot achieve 20KB for signature images and may produce a larger file than expected. If your signature has very fine, delicate lines, try a slightly bolder pen stroke in your original signature for better compression results.",
+      },
+      {
+        heading: "Common Portal-Specific Signature Requirements",
+        body: "Different Pakistani recruitment and admission portals have specific requirements beyond file size. PPSC requires signature images in JPEG format under 20KB, with dimensions approximately 213×71 pixels. FPSC follows similar requirements. NTS (National Testing Service) specifies JPEG under 20KB. HEC (Higher Education Commission) scholarship portals typically accept up to 50KB for signatures. For international scholarship applications like Chevening, Fulbright, and Commonwealth, check the specific portal requirements — many accept up to 100KB for signatures. Always read the portal's document requirements section before preparing your files, as requirements can change between recruitment cycles.",
       },
     ],
     faqs: [
       [
         "Should I save my signature as PNG or JPG?",
-        "Most portals specify JPG or JPEG. If given a choice, JPEG reaches smaller file sizes more reliably while meeting the 20KB ceiling.",
+        "Most portals specify JPG or JPEG explicitly. If given a choice, JPEG is strongly preferred because it reaches smaller file sizes more reliably. A PNG signature image with the same visual quality is typically 3–5 times larger in file size than the JPEG equivalent. For a 20KB target, JPEG is almost always the correct choice.",
       ],
       [
-        "What dimensions should a signature be?",
-        "A typical dimensions range is 300×150 px to 400×200 px at 96 DPI.",
+        "What dimensions should a signature image be for PPSC?",
+        "PPSC recommends approximately 213×71 pixels for signature images. However, dimensions between 300×100 and 400×150 pixels are generally accepted by most portals. The key requirements are: JPEG format, under 20KB file size, clearly readable signature, and white or light background.",
+      ],
+      [
+        "Can I use a digital signature (typed or drawn on tablet) instead of a handwritten one?",
+        "Most Pakistani government portals require a handwritten signature scanned or photographed. Digital signatures drawn with a stylus may be accepted for some university applications, but PPSC and FPSC specifically require a physically handwritten signature. When in doubt, use the handwritten approach to avoid rejection.",
+      ],
+      [
+        "My signature has lots of loops and curves — will it compress well?",
+        "Complex signatures with many loops and curves contain more image data than simple signatures, which can make it slightly harder to reach 20KB without some quality loss. The solution is to crop very tightly, ensure good lighting and contrast in the original photo, and use JPEG format for output. Most complex signatures still compress clearly to 20KB with proper preparation.",
       ],
     ],
     relatedTool: {
       label: "Compress Signature to 20KB",
+      href: "/tools/compress-image-to-20kb",
+    },
+  },
+  {
+    slug: "how-to-check-image-size-and-dimensions-online",
+    title: "How to Check Image Size in KB and Dimensions in Pixels Online Free",
+    metaTitle: "How to Check Image Size in KB and Dimensions Online Free | Appliory",
+    metaDescription:
+      "Learn how to check image file size in KB and pixel dimensions online for free. Verify photo size for PPSC, FPSC, and visa portals with Appliory's instant file size checker.",
+    category: "Image Tools",
+    tag: "File Size · Pixels · Dimensions",
+    date: "2026-11-02",
+    readTime: "5 min read",
+    intro:
+      "Before uploading a photo to any government portal, university admission system, or visa application, you need to verify two things: the file size in kilobytes (KB) and the pixel dimensions (width × height). An image that looks correct on screen can still be rejected if it exceeds the portal's file size limit or does not meet the required pixel dimensions. This guide explains how to check both — instantly and for free — using Appliory's online tools.",
+    keywords: [
+      "how to check image size",
+      "how to check dimensions of an image",
+      "how to check pixels of an image",
+      "find image size",
+      "size of an image",
+      "dimensions of a photo",
+      "check image size in kb online",
+      "how do i know how many pixels my photo is",
+      "check photo size in kb",
+      "image size checker online",
+      "how to see size of file",
+      "file size check",
+      "check file size",
+      "how to check the size of a file",
+      "check image dimensions online",
+      "pixel size checker online free",
+    ],
+    sections: [
+      {
+        heading: "What Is Image File Size and Why Does It Matter",
+        body: "Image file size is measured in kilobytes (KB) or megabytes (MB) and refers to how much storage space the image occupies on a disk or device. This is different from the image's visual or print size. A 600×600 pixel JPEG photo can be anywhere from 15KB to 300KB depending on the JPEG quality setting, the complexity of the image, and whether it has been compressed before. Government job portals, scholarship portals, and visa application systems set a maximum file size for uploaded photos — typically 20KB for PPSC profile photos, 25KB for bank challans, 50KB for university admission photos, and 100KB to 500KB for visa photos. If your image exceeds the portal's limit by even 1KB, the upload will be rejected. This is why checking your image size before uploading is essential.",
+      },
+      {
+        heading: "What Are Pixel Dimensions and Why Do They Matter",
+        body: "Pixel dimensions describe the width and height of an image measured in pixels (px). For example, a 600×600 pixel image is 600 pixels wide and 600 pixels tall. Pixel dimensions determine the image's resolution and how large it will print or display. Government portals often specify exact pixel dimension requirements alongside file size limits. PPSC requires profile photos to be approximately 213×213 pixels. US visa photos must be exactly 600×600 pixels. Schengen and Pakistani passport photos follow the 35×45 mm standard, which at 300 DPI equals 413×531 pixels. Submitting a photo with incorrect pixel dimensions — even if the file size is within limit — can cause portal validation errors or lead to your application being flagged during document review.",
+      },
+      {
+        heading: "How to Check Image File Size in KB on Windows and Mobile",
+        body: "On Windows, you can right-click any image file, select Properties, and read the size under the General tab. On macOS, right-click and select Get Info. On Android, open the Files app, long-press the image, and tap Details. On iPhone, open the Photos app, tap the image, swipe up, and scroll to Information. These methods show the file size but not the pixel dimensions in a convenient format. For the fastest and most accurate way to check image file size in KB online, use Appliory's File Size Checker at appliory.tech/tools/file-size-checker. Upload your image and get the exact size in bytes, KB, and MB instantly, alongside a comparison against your target upload limit — without sending your photo to any server.",
+      },
+      {
+        heading: "How to Check the Pixel Dimensions of an Image",
+        body: "To find out how many pixels your photo is, you can use the operating system's built-in tools. On Windows, open the image in Photos, click the three-dot menu, and select File info — dimensions are shown. On macOS, open in Preview and go to Tools → Adjust Size. On Android, the native gallery often shows dimensions when you tap the image info icon. On iPhone, check the image Info by swiping up in Photos. Alternatively, use Appliory's Image Resizer at appliory.tech/tools/image-resizer — when you upload any image, it shows you the original pixel dimensions before you resize. This is the fastest way to check dimensions of an image online for free on any device without installing software.",
+      },
+      {
+        heading: "Using Appliory's File Size Checker for Portal Validation",
+        body: "Appliory's File Size Checker was built specifically for applicants preparing documents for portals with strict size limits. Here is how to use it effectively. Open the File Size Checker at appliory.tech/tools/file-size-checker. Enter your portal's maximum file size in the limit field — for example, type 20 for a 20KB limit or 0.5 for a 500KB limit if the portal specifies MB. Select all your application documents at once — photo, signature, challan, certificate scans. The tool instantly shows each file's size in KB and MB, with a clear green (within limit) or red (over limit) indicator. Download the results summary as a text file for reference. This saves you from discovering a file size problem at the last moment during submission.",
+      },
+      {
+        heading: "What to Do if Your Image Is Too Large",
+        body: "If Appliory's File Size Checker shows your image exceeds the portal's limit, the fix depends on how much over the limit it is. If your photo is 30KB but the limit is 20KB, use Appliory's Compress Image to 20KB tool — it will hit the target precisely. If your photo is 500KB and the limit is 50KB, first resize the pixel dimensions to match the required size (e.g. 600×600) using the Image Resizer, then compress. If your image is a large PNG, convert it to JPEG — PNG lossless compression cannot reach the small file sizes that JPEG achieves. The workflow is: check size → identify whether it is a pixel dimension problem or a file size problem → use the appropriate Appliory tool → re-check to confirm compliance.",
+      },
+    ],
+    faqs: [
+      [
+        "How do I know how many pixels my photo is without software?",
+        "Use Appliory's Image Resizer online — when you upload any image, it shows the original pixel dimensions (width × height) before you make any changes. No software installation is needed. Alternatively, right-click the image on Windows and select Properties → Details to see dimensions.",
+      ],
+      [
+        "Why does my portal show a different file size than what Windows shows?",
+        "Some portals measure file size using decimal megabytes (1 MB = 1,000,000 bytes), while Windows uses binary megabytes (1 MB = 1,048,576 bytes). This creates a small difference. For example, a 2.0 MB file by portal standards is 1.907 MB by Windows standards. Appliory shows the exact byte count so you can compare against either measurement system.",
+      ],
+      [
+        "Can I check image size on mobile without an app?",
+        "Yes. Appliory's File Size Checker works in any mobile browser — Chrome on Android or Safari on iPhone. Simply open the tool, tap the upload area, select your image from your phone's gallery, and get the instant file size in KB and MB. No app download required.",
+      ],
+      [
+        "What is the difference between file size and image size?",
+        "File size is how much disk space the image takes up (measured in KB or MB). Image size or dimensions refers to the width and height in pixels. A large-dimension image (e.g. 4000×3000 pixels) has a large file size. But you can also have a small-dimension image (e.g. 100×100 pixels) with a small file size. File size and dimensions are related but are not the same measurement.",
+      ],
+    ],
+    relatedTool: {
+      label: "File Size Checker — Free Tool",
+      href: "/tools/file-size-checker",
+    },
+  },
+  {
+    slug: "ppsc-fpsc-document-requirements-complete-guide",
+    title: "PPSC & FPSC Online Application Document Requirements — Complete Guide 2026",
+    metaTitle: "PPSC & FPSC Document Requirements for Online Applications 2026 | Appliory",
+    metaDescription:
+      "Complete guide to PPSC and FPSC online application document requirements. Learn exact photo size, signature size, challan format, and file size limits for government job portals in Pakistan.",
+    category: "Government Jobs",
+    tag: "PPSC · FPSC · Government Jobs",
+    date: "2026-11-03",
+    readTime: "7 min read",
+    intro:
+      "Applying for a government job through PPSC (Punjab Public Service Commission) or FPSC (Federal Public Service Commission) requires preparing several digital documents to exact specifications. Many candidates are rejected or have their applications flagged simply because their photo is 22KB instead of 20KB, or their challan scan is too blurry, or their signature is in the wrong format. This complete guide covers every document requirement so you can prepare your application correctly the first time.",
+    keywords: [
+      "ppsc document requirements",
+      "fpsc application documents",
+      "ppsc photo size requirements",
+      "ppsc challan compress 25kb",
+      "ppsc image resize",
+      "ppsc photo resizer online free",
+      "ppsc picture size in kb",
+      "fpsc photo size 20kb",
+      "ppsc signature size online",
+      "only passport size (less than 250 pixel width and height ) file are accepted",
+      "ppsc photo requirements",
+      "government job portal document requirements",
+      "compress image for government job portal",
+    ],
+    sections: [
+      {
+        heading: "Overview of PPSC and FPSC Document Requirements",
+        body: "Both PPSC and FPSC require applicants to upload several digital documents when submitting online applications. While the specific requirements can vary slightly between job advertisements, the following documents are almost always required: a recent passport-size photograph, a scanned copy of the paid bank fee challan, a digital copy of your signature, a scanned copy of your CNIC (Computerized National Identity Card), and in some cases a scanned copy of your most recent educational degree or certificate. Each of these has strict file size and format requirements that are enforced by the portal software. Understanding these requirements before you start the application process saves you from last-minute panic on the application deadline day.",
+      },
+      {
+        heading: "PPSC Photo Requirements — Exact Specifications",
+        body: "The PPSC profile photo must be a recent, clear passport-size photograph. The file must be in JPEG format (JPG extension). The file size must be under 20KB — this is the most commonly violated requirement. The pixel dimensions should be approximately 213×213 pixels, though some PPSC advertisements specify 250×250 pixels. The photo must show a full face, front view, with a plain white or light blue background. No sunglasses, hats, or other face coverings are permitted (exceptions apply for religious head coverings). The face should be centered and occupy approximately 70–80% of the frame. The image must be recent — typically within the last 6 months. If you receive the error message 'only passport size (less than 250 pixel width and height) file are accepted', it means your image pixel dimensions exceed 250×250 pixels and need to be reduced.",
+      },
+      {
+        heading: "PPSC Challan (Bank Fee Receipt) Requirements",
+        body: "The paid bank fee challan is proof that you have deposited the application fee at an authorized bank. PPSC requires the challan scan to be in JPEG format and under 25KB in file size. The image must clearly show the bank cashier's stamp or seal, the transaction reference or scroll number, the date of payment, the applicant's CNIC number, and the amount deposited. Many PPSC advertisements use the National Bank of Pakistan (NBP) or other designated banks for fee collection. After paying the fee, the bank cashier stamps your challan. Take a clear photograph of the applicant's copy (usually the smaller portion of the challan) and crop out blank margins before compressing. This is the section of the challan that PPSC reviewers check for payment verification.",
+      },
+      {
+        heading: "Signature Requirements for PPSC and FPSC Applications",
+        body: "Your digital signature must be a photograph or scan of your handwritten signature on plain white paper. The file must be in JPEG format under 20KB. The recommended dimensions are approximately 213×71 pixels — a wide, short rectangle matching the natural shape of a signature. Sign with a dark blue or black pen on clean white paper. After photographing your signature, crop the image tightly so the ink strokes fill most of the frame, leaving only a small white margin of a few pixels on each side. This is essential for compressing to 20KB while keeping the signature lines sharp and readable. Signatures that appear blurry, faded, or pixelated during the review process can flag your application for manual scrutiny.",
+      },
+      {
+        heading: "CNIC (National Identity Card) Scan Requirements",
+        body: "Most PPSC and FPSC applications require a scan or photo of both sides of your CNIC. The common requirement is JPEG format under 200KB to 500KB (this limit is more relaxed than photos and signatures). The CNIC image must be clear enough that all printed information — name, father's name, date of birth, CNIC number, and date of issue/expiry — is readable. If your CNIC scan is too large, Appliory's File Size Checker can tell you the exact current size, and the Image Compressor can reduce it to any target. For CNIC scans, do not compress aggressively — the text must remain legible. A target of 150KB to 200KB is usually safe for maintaining clarity while meeting portal limits.",
+      },
+      {
+        heading: "Educational Certificate and Degree Requirements",
+        body: "When PPSC or FPSC requires educational document uploads, the requirements are typically less strict in terms of pixel dimensions but still have file size limits. Certificates and degrees are usually acceptable as PDF files (which preserves the original document quality better than a photo) or as JPEG scans under 500KB to 2MB. For PDF documents, use Appliory's PDF Page Counter to verify the page count matches the requirement. If you have a multi-page degree transcript that must be a single PDF under 2MB, check the file size with Appliory's File Size Checker. For scanned certificates, ensure all text — university name, degree title, roll number, and date of issuance — is clearly readable.",
+      },
+      {
+        heading: "Common PPSC Application Errors and How to Fix Them",
+        body: "The most common technical errors during PPSC and FPSC online applications are entirely preventable. File size exceeded: your photo is over 20KB or challan is over 25KB — use Appliory's compression tools with the preset targets. Invalid file format: you uploaded a PNG or PDF when JPEG is required — use Appliory to export as JPEG. Image dimensions too large: your photo is 1200×1200 pixels but only up to 250×250 is accepted — use the Image Resizer to set exact pixel dimensions. Blurry challan scan: you compressed the full A4 sheet without cropping — retake the photo, crop to the challan's payment section only, then compress. Signature not accepted: your signature background is not white, or the image is too large — use a plain white paper, crop tightly, and compress with Appliory. Session timeout: applications should ideally be prepared before starting the portal form — have all documents ready in a folder before you begin filling.",
+      },
+    ],
+    faqs: [
+      [
+        "What is the PPSC photo size in KB?",
+        "PPSC requires the profile photograph to be in JPEG format and under 20KB in file size. The pixel dimensions should be approximately 213×213 pixels or as specified in the job advertisement. Use Appliory's Compress Image to 20KB tool to prepare your photo to this exact specification.",
+      ],
+      [
+        "Can I submit a digital CNIC photo instead of a scanned copy?",
+        "Most PPSC and FPSC portals accept a clear photograph of your CNIC taken with a mobile phone, as long as the image is sharp, all text is readable, and the file meets the size and format requirements. A flatbed scanner produces better quality, but a phone photo taken in good lighting is generally acceptable.",
+      ],
+      [
+        "What bank can I use to pay PPSC application fee?",
+        "PPSC designates specific banks for fee payment, which are listed in each job advertisement. National Bank of Pakistan (NBP) is the most commonly used bank. The challan form is downloaded from the PPSC website and deposited at the specified bank. Always check the specific job advertisement for the authorized bank and fee amount.",
+      ],
+      [
+        "How long does it take to prepare documents for a PPSC application?",
+        "With the right tools, preparing all documents takes 15–30 minutes. The process is: compress your photo to 20KB (2 minutes), compress your challan to 25KB (3–5 minutes including cropping), compress your signature to 20KB (2–3 minutes), verify all document sizes with the File Size Checker (1 minute), then start the application form with all files ready.",
+      ],
+      [
+        "Does Appliory upload my CNIC or personal documents to any server?",
+        "No. Appliory processes all files using browser-based technology — HTML5 Canvas for images and PDF.js for PDFs. Your CNIC, challan, photo, and signature never leave your device. The processing happens inside your browser's local memory, and files are cleared when you close or refresh the tab.",
+      ],
+    ],
+    relatedTool: {
+      label: "Compress Photo to 20KB for PPSC/FPSC",
       href: "/tools/compress-image-to-20kb",
     },
   },

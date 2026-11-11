@@ -732,38 +732,77 @@ export default async function Page({
             <>
               <h2>What is Appliory?</h2>
               <p>
-                <strong>Appliory</strong> (appliory.tech) is a free, privacy-first web platform built for students, job applicants, and professionals who need to prepare, compress, and verify documents before submitting to government portals, universities, scholarships, and employers.
+                <strong>Appliory</strong> (appliory.tech) is a free, privacy-first web platform built for students, job applicants, and professionals who need to prepare, compress, and verify documents before submitting to government portals, universities, scholarships, and employers. Every tool on Appliory processes files entirely inside your browser — no uploads, no accounts, and no subscriptions.
               </p>
               <p>
-                Unlike traditional utilities that upload your sensitive files to cloud servers, Appliory runs 100% inside your browser using HTML5 Canvas, PDF.js, and modern Web APIs. No document uploads, no server storage, and no registration required.
+                The platform was built to solve a problem that affects millions of people in Pakistan and across South Asia every year: online recruitment portals like PPSC and FPSC, university admissions systems, and scholarship application platforms enforce strict technical rules — 20KB for photos, 25KB for bank challans, exact pixel dimensions, specific file formats — and most applicants have no easy way to meet these requirements without uploading their personal documents to unreliable third-party servers.
               </p>
+
               <h2>Who Built Appliory?</h2>
               <p>
-                Appliory was founded and built by <strong>Ammar Hassan Malik</strong>, a software engineer based in Pakistan. The platform was created to solve a widespread problem: online recruitment portals (PPSC, FPSC, UPSC, NTS), university admissions, and scholarship applications enforce strict file size (like 20KB or 50KB limits) and dimension rules. Most applicants lack an easy, secure way to resize and check their files without compromising privacy.
+                Appliory was founded and built by <strong>Ammar Hassan Malik</strong>, a software engineer based in Pakistan. The platform was created after observing how commonly applicants fail government job applications not because of their qualifications, but because of technical document errors — a photo that is 22KB instead of 20KB, a challan scan that is too blurry, or a signature image in the wrong format.
               </p>
               <p>
-                Appliory provides fast, free, and accessible tools designed specifically to make document submission seamless for applicants worldwide.
+                Ammar built Appliory as a fully client-side platform using Next.js, React, HTML5 Canvas, PDF.js, and the Web Cryptography API — technologies that enable complex document processing to run entirely inside a browser without any server involvement. The result is a suite of tools that is not only free and fast, but also genuinely private: sensitive documents like CNIC cards, salary slips, and bank receipts never leave the user's device.
               </p>
+
+              <h2>The Problem Appliory Solves</h2>
+              <p>
+                Every year in Pakistan, hundreds of thousands of candidates apply for government positions through PPSC (Punjab Public Service Commission), FPSC (Federal Public Service Commission), NTS (National Testing Service), ETEA, and similar bodies. University applicants submit to HEC scholarship portals, overseas scholarship programs like Chevening and Fulbright, and dozens of private university admission systems.
+              </p>
+              <p>
+                Each portal has technical document requirements that differ in details — one requires 20KB photos, another requires 50KB, one wants 213×213 pixel dimensions while another requires 600×600. Most applicants discover these requirements only when their upload fails at the last moment, often just before a midnight deadline. The tools most people reach for — WhatsApp to send photos to friends, random websites that upload documents to unknown servers, or paid desktop software — are either insecure, expensive, or unreliable.
+              </p>
+              <p>
+                Appliory provides purpose-built tools that handle exactly these requirements, with preset targets for PPSC (20KB photos), FPSC challan scans (25KB), university portals (50KB), and international visa photos (2×2 inch / 35×45mm), all without requiring a user account or uploading any file to any server.
+              </p>
+
               <h2>Appliory's Core Tools</h2>
               <p>Every tool on Appliory processes files locally in your browser. Nothing is ever sent to a server.</p>
               <ul style={{ margin: "1rem 0 1.5rem", paddingLeft: "1.5rem", lineHeight: 2 }}>
-                <li><strong>Image Compressor</strong> — Compress JPG, PNG and WebP images to exact KB targets (20KB, 50KB, 100KB, 200KB) for government and job portals.</li>
-                <li><strong>Compress Image to 20KB</strong> — Dedicated tool for PPSC, FPSC, SSC, NTS and similar government job portal requirements.</li>
-                <li><strong>Compress Image to 50KB</strong> — For university admissions, scholarship portals and visa photo uploads.</li>
-                <li><strong>Image Resizer</strong> — Resize photos to exact pixel dimensions including 600×600 px passport size and 35×45 mm visa size.</li>
-                <li><strong>Passport Photo Maker</strong> — Create official 2×2 inch and 35×45 mm passport and visa photos from any portrait photo.</li>
-                <li><strong>PDF to Excel Converter</strong> — Extract tables from text-based PDFs into clean, editable Excel (.xlsx) and CSV files with intelligent payroll cleanup (fill down IDs, remove repeated headers).</li>
-                <li><strong>PDF Page Counter</strong> — Count pages and generate extractive text summaries from multiple PDFs without uploading them.</li>
-                <li><strong>File Size Checker</strong> — Verify exact file sizes in KB and MB against application upload limits.</li>
-                <li><strong>Duplicate File Finder</strong> — Detect identical duplicate files using SHA-256 cryptographic hashing.</li>
-                <li><strong>Document Checker</strong> — Build a full application checklist, verify all documents together, and export a readiness report.</li>
+                <li><strong>Image Compressor</strong> — Compress JPG, PNG and WebP images to exact KB targets (20KB, 50KB, 100KB, 200KB). Shows live before/after preview and actual output size in KB.</li>
+                <li><strong>Compress Image to 20KB</strong> — Dedicated tool preset for PPSC, FPSC, NTS, and government job portal photo and signature requirements. Calibrates both quality and dimensions automatically.</li>
+                <li><strong>Compress Image to 50KB</strong> — For university admissions, scholarship portals, and visa photo uploads. Accepts JPG, PNG, and WebP with JPEG output for best compression.</li>
+                <li><strong>Image Resizer</strong> — Resize photos to exact pixel dimensions including 600×600 px for US visa/passport, 413×531 px for 35×45mm European passports, and any custom dimension.</li>
+                <li><strong>Passport Photo Maker</strong> — Create official 2×2 inch and 35×45mm passport and visa photos from any portrait photo. Supports standard print-ready output for all major countries.</li>
+                <li><strong>PDF to Excel Converter</strong> — Extract tables from text-based PDFs into editable Excel (.xlsx) and CSV files. Includes intelligent payroll cleanup: fill down IDs, remove repeated headers, preserve leading zeros.</li>
+                <li><strong>PDF Page Counter</strong> — Count pages across multiple PDFs simultaneously. Generate extractive text summaries without uploading files. Verifies submission page limits for research papers and applications.</li>
+                <li><strong>File Size Checker</strong> — Verify exact file sizes in KB and MB against any upload limit. Check multiple files at once and get clear pass/fail indicators for each document.</li>
+                <li><strong>Duplicate File Finder</strong> — Detect identical duplicate files using SHA-256 cryptographic byte hashing. Works on any file type. Processes up to 40 files per session locally.</li>
+                <li><strong>Document Checker</strong> — Build a full application checklist, upload all documents, verify technical compliance, and export a readiness report before submitting to any portal.</li>
               </ul>
+
               <h2>Privacy First — Zero Server Uploads</h2>
               <p>
-                When you select a photo, PDF, or certificate in Appliory, it never leaves your machine. All computation happens locally in your device's memory. There is no file storage, no cloud database of documents, and no third-party data tracking.
+                When you select a photo, PDF, certificate, or any file in Appliory, it never leaves your machine. All computation happens locally inside your device's memory using browser-native APIs:
+              </p>
+              <ul style={{ margin: "1rem 0 1.5rem", paddingLeft: "1.5rem", lineHeight: 2 }}>
+                <li><strong>HTML5 Canvas API</strong> — Used for image compression, resizing, format conversion, and passport photo creation. The Canvas API processes image pixel data entirely within the browser's local rendering engine.</li>
+                <li><strong>PDF.js Library</strong> — An open-source Mozilla library that reads and parses PDF documents locally. Used for page counting, text extraction, and table coordinate analysis for Excel conversion.</li>
+                <li><strong>Web Cryptography API</strong> — A browser-native cryptographic API used to calculate SHA-256 hashes for duplicate file detection. No external cryptographic service is called.</li>
+                <li><strong>HTML5 File API</strong> — Reads file bytes from the user's device selection. Files are loaded into browser sandbox memory and are never transmitted over the network.</li>
+              </ul>
+              <p>
+                This architecture is especially important because Appliory's users routinely process identity cards (CNIC), bank fee receipts, salary slips, university degrees, and personal photographs — documents that contain sensitive personal information that should never be uploaded to unknown servers.
+              </p>
+
+              <h2>Who Uses Appliory</h2>
+              <p>Appliory serves a wide range of users across Pakistan and internationally:</p>
+              <ul style={{ margin: "1rem 0 1.5rem", paddingLeft: "1.5rem", lineHeight: 2 }}>
+                <li><strong>Government job applicants</strong> — PPSC, FPSC, NTS, ETEA, and OTS candidates preparing 20KB photos, 25KB challan scans, and 20KB signatures.</li>
+                <li><strong>Scholarship students</strong> — HEC, Chevening, Fulbright, Commonwealth, and Erasmus applicants preparing 50KB photos and application document packages.</li>
+                <li><strong>Visa applicants</strong> — Preparing 2×2 inch or 35×45mm passport photos for US, UK, Schengen, and UAE visa applications.</li>
+                <li><strong>HR and payroll professionals</strong> — Converting payroll PDFs into clean, editable Excel spreadsheets for financial analysis and reporting.</li>
+                <li><strong>University applicants</strong> — Preparing admission documents within portal-specified file size limits for Pakistani and international universities.</li>
+                <li><strong>IT professionals</strong> — Using duplicate file detection and file size verification tools for data management and system administration tasks.</li>
+              </ul>
+
+              <h2>Appliory's Commitment to Accessibility</h2>
+              <p>
+                All tools on Appliory are and will remain completely free. There are no premium tiers, no watermarks on compressed images, no download limits, and no registration walls. The platform is fully responsive and works on all modern browsers — Chrome, Firefox, Safari, and Edge — on both mobile and desktop. Android and iOS browsers are fully supported.
               </p>
               <p>
-                This is essential because our users routinely process identity cards, transcripts, pay slips, and personal credentials that should always remain completely private.
+                Appliory does not display intrusive advertising that disrupts document preparation workflows. The platform is focused entirely on helping applicants succeed with their submissions — from the first tool they open to the final document they download.
               </p>
               <div style={{ marginTop: 28 }}>
                 <Link href="/tools" className="button dark">
