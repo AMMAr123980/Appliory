@@ -5,6 +5,19 @@ export const metadata = pageMetadata(
   "Appliory vs iLovePDF, Smallpdf & PDF24 — which tool fits?",
   "Compare application document checks with PDF editing tools. Understand Appliory's local checks, supported image tools and limitations before choosing.",
   "/compare",
+  [
+    "appliory vs ilovepdf",
+    "appliory vs smallpdf",
+    "document compliance checker vs pdf editor",
+    "best tool for government job document preparation",
+    "ppsc document checker online",
+    "image resizer vs pdf editor",
+    "online document tool comparison",
+    "private pdf tool vs ilovepdf",
+    "pdf checker online free",
+    "file size and page checker",
+    "document upload requirements checker",
+  ],
 );
 export default function Page() {
   return (
