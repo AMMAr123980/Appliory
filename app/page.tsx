@@ -374,11 +374,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Connected 3-Step Workflow */}
-      <section className="workflow-section">
-        <div className="wrap">
-          <div className="section-heading">
-
       {/* Editorial Content Section — AdSense substantial value */}
       <section className="wrap content-section" style={{ paddingTop: 48, paddingBottom: 48 }}>
         <div style={{ maxWidth: 860, margin: "0 auto" }}>
