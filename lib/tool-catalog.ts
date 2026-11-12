@@ -6,11 +6,6 @@ export const tools = [
     metaTitle: "Count PDF Pages Online Free (No Uploads) | Appliory",
     metaDescription:
       "Count pages across single or multiple PDF files instantly. Verify submission page limits and extract document summaries locally in your browser with zero uploads.",
-    intro: `Appliory's PDF Page Counter lets you count pages in any PDF file instantly — no uploads, no account, no waiting. Simply select your PDF and the exact page count appears in seconds, all processed locally inside your browser.
-
-Universities, government job portals, and scholarship programs enforce strict page limits. PPSC application guidelines, HEC research paper submissions, and Fulbright personal statement portals all specify a maximum page range. Submitting even one extra page can get your application rejected automatically. Use this free page range checker to verify your document meets the exact requirement before you hit submit.
-
-You can also count pages across multiple PDF files at once. Upload your complete application package — research proposal, CV, statement of purpose — and confirm every document is within its allowed page limit in a single session. A readable document summary is generated from the actual text on each page, with no AI model involved and no data leaving your device.`,
     keywords: [
       "count pdf pages online",
       "pdf page counter",
