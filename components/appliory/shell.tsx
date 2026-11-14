@@ -104,6 +104,23 @@ export function Footer() {
           <span className="privacy-inline">
             <ShieldCheck size={15} /> Your documents stay in your browser.
           </span>
+          <div style={{ marginTop: "1.25rem" }}>
+            <a
+              href="https://launchkiwi.com/p/appliory"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: "inline-block" }}
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://launchkiwi.com/badge-light.svg"
+                alt="Featured on LaunchKiwi"
+                width={198}
+                height={62}
+                style={{ height: "auto", maxWidth: "100%" }}
+              />
+            </a>
+          </div>
         </div>
         <div>
           <b>PDF Tools</b>
