@@ -90,12 +90,15 @@ export default function Home() {
             <span className="live-dot" /> PRIVATE IN-BROWSER SUITE · ZERO CLOUD UPLOADS
           </span>
           <h1>
-            Free Online Document &amp; Image Tools
+            Flexible Document Preparation
             <br />
             <span>for Every Application</span>
           </h1>
           <p>
-            Appliory offers flexible compression presets for job applications, university admissions and visa documents. Select a target size, check your image quality and verify the exact requirements from your current official application instructions. 100% free, private, and with zero file uploads.
+            Appliory provides customizable image compression presets and document checklists for government jobs, university admissions, scholarships and visa applications. Select your desired file-size target, check image dimensions and review your documents before submission.
+          </p>
+          <p style={{ marginTop: "0.5rem", fontSize: "0.95rem", color: "var(--muted)" }}>
+            Upload limits vary by institution and application. Always confirm the latest official instructions before using a preset. 100% free, private, and with zero file uploads.
           </p>
           <div className="hero-actions">
             <Link className="button dark" href="/tool">
@@ -195,11 +198,11 @@ export default function Home() {
                 <span className="goal-group-badge">
                   <Briefcase size={13} /> Target: Government Portals
                 </span>
-                <h3>PPSC, FPSC, NTS &amp; Public Service Commission</h3>
-                <p>Common recruitment presets: 20KB or 25KB target for PPSC, under 30KB for FPSC, and custom targets for testing agencies.</p>
+                <h3>Public Service &amp; Recruitment Portals</h3>
+                <p>Customizable presets: 20KB or 25KB target options for recruitment portals, under 30KB for FPSC, and custom limits for testing agencies.</p>
               </div>
               <Link className="text-link" href="/blog/how-to-compress-image-to-20kb-for-ppsc-fpsc">
-                PPSC Photo Guide <ArrowUpRight size={14} />
+                Recruitment Photo Guide <ArrowUpRight size={14} />
               </Link>
             </div>
             <div className="goal-tools-grid">
@@ -426,7 +429,7 @@ export default function Home() {
                 ListChecks,
                 "01",
                 "Choose Portal Checklist",
-                "Start with a preset for PPSC, FPSC, HEC scholarships, or foreign visas. Adjust requirements to match your official instructions.",
+                "Start with a preset for recruitment, scholarships, or foreign visas. Adjust requirements to match your official instructions.",
               ],
               [
                 UploadCloud,

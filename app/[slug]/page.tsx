@@ -222,7 +222,7 @@ export default async function Page({
                   name: "What file size limits and constraints does Appliory validate?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Appliory supports file sizes up to 25 MB per individual file and batches up to 40 files (200 MB total). It validates exact byte constraints such as 20KB for PPSC profile photos, 25KB for bank challans, and 50KB for university scholarships.",
+                    text: "Appliory supports file sizes up to 25 MB per individual file and batches up to 40 files (200 MB total). It validates exact byte constraints against your configured limits, such as recruitment presets (20KB or 25KB), under-30KB photo guidelines, or 50KB university targets.",
                   },
                 },
                 {
@@ -325,7 +325,7 @@ export default async function Page({
                   [
                     FileCheck2,
                     "Step 1: Create or Select Your Checklist",
-                    "Select an official starter template—such as HEC Overseas Scholarships, PPSC Government Recruitment, or Foreign University Admissions—or build a custom checklist. Define official limits for file size, page count, and dimensions.",
+                    "Select a starter checklist template—such as HEC Overseas Scholarships, Public Service Recruitment, or University Admissions—or build a custom checklist. Define limits for file size, page count, and dimensions based on your official instructions.",
                   ],
                   [
                     UploadCloud,
@@ -406,7 +406,7 @@ export default async function Page({
                         locally to ensure files stay within portal thresholds.
                       </td>
                       <td>
-                        20KB for PPSC/FPSC photos, 25KB for bank challans, 50KB for
+                        20KB or 25KB recruitment presets, under 30KB guidelines, 50KB for
                         scholarships, 2MB–5MB for PDFs
                       </td>
                     </tr>
@@ -419,8 +419,8 @@ export default async function Page({
                         upload to prevent portrait distortion or stretching.
                       </td>
                       <td>
-                        600×600 px (US 2×2 inch), 413×531 px (35×45 mm Schengen),
-                        213×213 px (PPSC profile)
+                        Square 600–1200 px (US DS-160), 600×750 px (UK Digital), 413×531 px (35×45 mm),
+                        or custom dimensions
                       </td>
                     </tr>
                     <tr>

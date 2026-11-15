@@ -122,11 +122,11 @@ You can also count pages across multiple PDF files at once. Select your applicat
     category: "FILES",
     intro: `Appliory's File Size Checker tells you the exact size of any file — in bytes, kilobytes (KB), and megabytes (MB) — right inside your browser without uploading it anywhere. This is the fastest way to check file size online for free, on mobile or desktop.
 
-Recruitment and scholarship portals enforce varying file size caps. PPSC guidelines specify photographs and CNIC front images under 25KB, FPSC specifies photographs under 30KB, and other portals enforce custom ceilings. University admission portals commonly cap documents at 500KB, 1MB, or 2MB. Appliory compares your actual file size against the limit you configure so you can verify attachment sizes before submission.
+Check the exact size of your files in bytes, KB and MB. Enter your application's maximum upload limit and instantly see whether each file meets your selected size requirement. File Size Checker verifies file size only, not complete application compliance. Check your upload limit before submission to verify attachment sizes against your specific portal's stated ceiling.
 
 To use it: set the maximum allowed size (for example, enter 2 MB or 500 KB), then select your documents. Each file is instantly measured and compared against your selected limit. You can check a photo, a PDF, a Word document, or any other format — the tool measures any file type locally on your device.`,
     description:
-      "Check the exact size of your documents in bytes, KB and MB. Enter your own application upload limit and instantly see whether each file is within that limit. Appliory checks file size only; other requirements such as file format, image dimensions and document quality must be verified separately.",
+      "Check the exact size of your files in bytes, KB and MB. Enter your application's maximum upload limit and instantly see whether each file meets your selected size requirement. File Size Checker verifies file size only, not complete application compliance.",
     answer:
       "Choose your files and enter your application’s maximum size in MB. Appliory shows each file’s actual byte size and whether it is within your chosen limit. One MB is treated as 1,048,576 bytes.",
     action: "Check file sizes",
@@ -204,7 +204,7 @@ To use it: set the maximum allowed size (for example, enter 2 MB or 500 KB), the
     category: "IMAGES",
     intro: `Appliory's Image Resizer lets you resize any photo to exact pixel dimensions online for free — no software installation, no account, and no uploads. Simply select your image, enter the required width and height in pixels, and download the resized result instantly.
 
-Knowing how to resize a photo is essential for dozens of online applications. Passport photos for US visas require exactly 600×600 pixels (2×2 inch). The 35×45 mm format used for UK, Schengen, and Pakistani passports equals 413×531 pixels at 300 DPI. OCI (Overseas Citizen of India) application photos must be exactly 200×200 pixels. If you need to resize photo for OCI application, PPSC challan, or any government portal with strict pixel size requirements, enter the exact dimensions here and get a correctly sized image in one click.
+Knowing how to resize a photo is essential for dozens of online applications. Digital passport and visa specifications vary by authority: US DS-160 accepts square dimensions from 600×600 up to 1200×1200 pixels (max 240KB), while the US Diversity Visa program requires exactly 600×600 pixels. UK Digital Passport and UK Visa portals specify at least 600×750 pixels, Pakistan Pak-Identity specifies 350×467 pixels, and physical printed photo standards specify 35×45 mm (413×531 pixels at 300 DPI). OCI (Overseas Citizen of India) application photos require 200×200 pixels. Enter your exact required dimensions here and get a correctly sized image in one click.
 
 The image resizer also supports custom dimensions for ID cards, HR portals, university admissions, and company intranets. Pixel dimensions (width × height) and file size (in KB) are separate properties. While scaling down image dimensions reduces the total pixel count and helps decrease final file size, the actual KB output depends on image complexity, format, and compression quality. Lock the aspect ratio to prevent stretching when you resize JPEG, PNG, or WebP images. All processing happens directly inside your browser — your personal photos, identity documents, and passport pictures are never uploaded to any server.`,
     description:

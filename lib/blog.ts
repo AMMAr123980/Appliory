@@ -285,8 +285,8 @@ export const blogPosts: BlogPost[] = [
     ],
     sections: [
       {
-        heading: "Standard Passport Photo Sizes: Physical Prints vs Digital Uploads",
-        body: "Official passport photo rules strictly distinguish between printed submissions and digital online uploads. For physical printed photos, 35×45mm (approx 413×531 pixels at 300 DPI) is the standard across the UK, Schengen Area, Pakistan (NADRA offline), and India, while the United States requires 2×2 inch (51×51mm). However, for digital online uploads, requirements differ: the UK HM Passport Office online service mandates a digital photo of at least 600×750 pixels (between 50KB and 10MB); the US State Department DS-160 portal requires exactly 600×600 pixels; and Pakistan's Pak-Identity online portal requires 350×467 pixels. Appliory supports both standard 600×600 px and 35×45mm dimensions.",
+        heading: "Standard Passport & Visa Photo Sizes: Digital Uploads vs Physical Prints (Verified November 2026)",
+        body: "Official passport and visa photo rules distinguish between online digital portals and physical printed submissions. Here are the official country-specific requirements:\n\n• US DS-160 Digital Visa: The U.S. Department of State permits square dimensions from 600×600 to 1200×1200 pixels in JPEG format, with file size under 240KB (Reference: travel.state.gov).\n• US Diversity Visa (DV Lottery): Requires exactly 600×600 pixels in JPEG format, max 240KB.\n• UK Digital Passport: HM Passport Office online requires a minimum of 600×750 pixels and a file size between 50KB and 10MB (Reference: gov.uk).\n• UK Visa Digital: UK Visas and Immigration requires at least 600×750 pixels and allows up to 6MB file size (Reference: gov.uk).\n• Pakistan Pak-Identity: NADRA online requires exactly 350×467 pixels, max 3MB (Reference: id.nadra.gov.pk).\n• 35×45mm Physical Prints: Standard across the UK, Schengen Area, Pakistan, and India (approx. 413×531 pixels at 300 DPI).\n\nAppliory's Passport Photo Maker includes dedicated presets for each of these official standards.",
       },
       {
         heading: "Background Requirements for Passport Photos",
@@ -294,7 +294,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: "How to Format Your Passport Photo Using Appliory",
-        body: "Open the Passport Photo Maker at appliory.tech/tools/passport-photo-maker. Upload a clear portrait photo. Select your required preset — US DS-160 (600×600 px), UK Digital Passport (600×750 px), Pakistan Pak-Identity (350×467 px), or 35×45mm physical print (413×531 px). Appliory scales your image to exact pixel dimensions. Download your formatted photo instantly.",
+        body: "Open the Passport Photo Maker at appliory.tech/tools/passport-photo-maker. Upload a clear portrait photo. Select your required preset — US DS-160 Digital (600–1200px, max 240KB), US Diversity Visa (600×600px), UK Digital Passport (600×750px, 50KB–10MB), UK Visa Digital (600×750px, max 6MB), Pakistan Pak-Identity (350×467px), or 35×45mm physical print (413×531px). Appliory scales and formats your image to exact pixel dimensions. Download your formatted photo instantly with 100% in-browser privacy.",
       },
       {
         heading: "Photo Requirements Beyond Size",
