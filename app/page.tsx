@@ -24,7 +24,7 @@ import { pageMetadata } from "@/lib/seo";
 import { StructuredData } from "@/components/appliory/structured-data";
 
 export const metadata = pageMetadata(
-  "Free Document & Image Tools for Job Applications | Appliory",
+  "Free Online Document & Image Tools",
   "Compress photos to 20KB or 50KB, resize passport photos, check application documents, and convert PDFs to Excel. 100% free, private browser-based tools.",
   "/",
   [
@@ -182,7 +182,7 @@ export default function Home() {
             <span className="eyebrow">GROUPED BY YOUR TASK</span>
             <h2>Tools organized by your application goal</h2>
             <p>
-              Direct routes to portal acceptance. Pick your objective and get exact, compliant files in seconds.
+              Prepare your documents with confidence. Check file sizes, formats, dimensions and PDF requirements before submission.
             </p>
           </div>
           <Link className="text-link" href="/tools">
@@ -420,7 +420,7 @@ export default function Home() {
               <span className="eyebrow">END-TO-END APPLICATION WORKFLOW</span>
               <h2>Your application, step by step</h2>
               <p>
-                Follow our 3-step preparation workflow to ensure 100% portal acceptance.
+                Follow our 3-step preparation workflow to verify, format, and audit your files before submitting.
               </p>
             </div>
             <Link className="button dark" href="/tool">
@@ -535,7 +535,7 @@ export default function Home() {
                 <li>Upload and compress your photo or convert a PDF table.</li>
               </ol>
               <p>
-                Notice that <strong>no file packets or document data are transmitted to any remote server</strong>. All operations execute strictly inside your device's memory using client-side JavaScript.
+                Notice that <strong>no file packets or document data are transmitted to any remote server</strong>. All file operations execute strictly inside your device's memory using client-side JavaScript. Standard website analytics and hosting logs collect only anonymous technical request data — never your file contents.
               </p>
             </div>
           </details>

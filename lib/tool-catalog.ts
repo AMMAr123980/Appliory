@@ -3,7 +3,7 @@ export const tools = [
     slug: "pdf-page-counter",
     name: "PDF page counter & summary",
     h1: "PDF Page Counter & Page Range Checker Online",
-    metaTitle: "Count PDF Pages Online Free (No Uploads) | Appliory",
+    metaTitle: "Free PDF Page Counter & Summary Tool",
     metaDescription:
       "Count pages across single or multiple PDF files instantly. Verify submission page limits and extract document summaries locally in your browser with zero uploads.",
     keywords: [
@@ -77,7 +77,7 @@ You can also count pages across multiple PDF files at once. Upload your complete
     slug: "file-size-checker",
     name: "File size checker",
     h1: "Check File Size Online in KB & MB (Instant Validator)",
-    metaTitle: "Check File Size Online in KB & MB (Instant Free) | Appliory",
+    metaTitle: "Check File Size Online in KB & MB",
     metaDescription:
       "Check file size online in exact KB and MB. Verify PDF, image, and document upload limits for job portals, scholarships, PPSC, and FPSC with 100% local privacy.",
     keywords: [
@@ -122,7 +122,7 @@ You can also count pages across multiple PDF files at once. Upload your complete
     category: "FILES",
     intro: `Appliory's File Size Checker tells you the exact size of any file — in bytes, kilobytes (KB), and megabytes (MB) — right inside your browser without uploading it anywhere. This is the fastest way to check file size online for free, on mobile or desktop.
 
-Government job portals and scholarship applications are strict about file size limits. PPSC requires photos under 20KB and documents under 2MB. FPSC challan scans must be under 25KB. University admission portals for HEC scholarships commonly cap documents at 500KB or 1MB. If your file exceeds the limit, the portal rejects your submission with an error — sometimes without explaining why. Check your file size here before you apply, so you never get a surprise rejection.
+Government job portals and scholarship applications are strict about file size limits. PPSC requires profile photos under 20KB and bank fee challan scans under 25KB, while FPSC requires candidate photographs under 30KB. University admission portals for scholarships commonly cap documents at 500KB or 1MB. If your file exceeds the limit, the portal rejects your submission with an error — sometimes without explaining why. Check your file size here before you apply, so you never get a surprise rejection.
 
 To use it: set the maximum allowed size (for example, enter 2 MB or 500 KB), then select your documents. Each file is instantly measured and shown as within limit (green) or over limit (red). You can check a photo, a PDF, a Word document, or any other format — the tool measures any file type. Your files stay 100% private on your device.`,
     description:
@@ -163,7 +163,7 @@ To use it: set the maximum allowed size (for example, enter 2 MB or 500 KB), the
     slug: "image-resizer",
     name: "Image resizer",
     h1: "Image Resizer Online (Passport, ID & Custom Dimensions)",
-    metaTitle: "Resize Image to Passport & ID Dimensions Online | Appliory",
+    metaTitle: "Resize Image to Passport & ID Dimensions Online",
     metaDescription:
       "Resize JPG, PNG, and WebP images to exact pixel dimensions (600x600 passport, 35x45mm, custom px). Lock aspect ratio and download privately with zero uploads.",
     keywords: [
@@ -237,9 +237,9 @@ The image resizer also supports custom dimensions for ID cards, HR portals, univ
     slug: "image-compressor",
     name: "Image compressor",
     h1: "Image Compressor Online to KB (20KB, 50KB, 100KB)",
-    metaTitle: "Compress Image to 20KB, 50KB, 100KB Online Free | Appliory",
+    metaTitle: "Online Image Compressor to KB",
     metaDescription:
-      "Compress JPG, PNG, and WebP images to 20KB, 50KB, 100KB, or 200KB online for free. In-browser compression with live preview and zero server document uploads.",
+      "Compress JPG, PNG, and WebP images to custom sizes in KB online for free. Fast in-browser image compressor with live preview and zero server document uploads.",
     keywords: [
       "compress image to 100kb",
       "compress image to 50kb",
@@ -328,7 +328,7 @@ This free image compressor supports JPEG and WebP output formats. JPEG gives the
     slug: "duplicate-file-finder",
     name: "Duplicate file finder",
     h1: "Duplicate File Finder Online (Private SHA-256 Hashing)",
-    metaTitle: "Duplicate File Finder Online — Exact SHA-256 Hash Matching",
+    metaTitle: "Duplicate File Finder Online (SHA-256)",
     metaDescription:
       "Find identical duplicate files and documents using cryptographic SHA-256 byte hashing. Compare file bytes locally in your browser with 100% privacy and safety.",
     keywords: [
@@ -388,9 +388,9 @@ No files are uploaded. All SHA-256 hashing runs locally inside your browser usin
     slug: "compress-image-to-20kb",
     name: "Compress image to 20KB",
     h1: "Compress Photo to 20KB for PPSC, FPSC & Govt Jobs Online",
-    metaTitle: "Compress Photo to 20KB for PPSC, FPSC & NTS Online Free | Appliory",
+    metaTitle: "Compress Image to 20KB Online Free",
     metaDescription:
-      "Compress photos, signatures, CNIC scans, and bank fee challans under 20KB or 25KB online for free. Tailored for PPSC, FPSC, NTS, and government job portal forms.",
+      "Compress photos, signatures, and PPSC bank fee challans under 20KB or 25KB online for free. Tailored for PPSC, FPSC, NTS, and public service recruitment portals.",
     keywords: [
       "compress image to 20kb",
       "compress photo to 20kb online",
@@ -440,13 +440,13 @@ No files are uploaded. All SHA-256 hashing runs locally inside your browser usin
       "compress image to 25kb",
     ],
     category: "IMAGES",
-    intro: `Appliory's Compress Image to 20KB tool is built specifically for PPSC, FPSC, NTS, and government job portal requirements in Pakistan. These portals require your passport photo, digital signature, and bank fee challan to each be under 20KB or 25KB. This tool presets the target automatically so you get a submission-ready file in one click.
+    intro: `Appliory's Compress Image to 20KB tool is built specifically for public service recruitment portals and online job applications in Pakistan. The Punjab Public Service Commission (PPSC) strictly enforces an under-20KB limit for applicant passport photos and digital signatures, as well as an under-25KB limit for paid bank fee challan scans (Form 32-A). The Federal Public Service Commission (FPSC) requires uploaded photographs to be under 30KB. NTS and testing agencies routinely mandate images between 20KB and 25KB. This tool presets the target automatically so your images safely clear both 20KB and 30KB thresholds in one click.
 
-Compress your passport photo to 20KB without losing face clarity. Compress your digital signature to 20KB without blurring the ink. Compress your PPSC or FPSC challan scan to 25KB without making the bank stamp illegible. The compressor works by intelligently reducing both JPEG quality and pixel dimensions together — a smarter approach than quality-only reduction which often fails to reach strict 20KB limits.
+Compress your passport photo to 20KB without losing face clarity. Compress your digital signature to 20KB without blurring the ink. Compress your PPSC Form 32-A challan scan to 25KB without making the bank stamp illegible. The compressor works by intelligently reducing both JPEG quality and pixel dimensions together — a smarter approach than quality-only reduction which often fails to reach strict 20KB limits.
 
-PPSC picture size requirements, FPSC photo size rules, and NTS image requirements are all 20KB or under. Thousands of candidates get their applications rejected every year simply because their image file is 22KB or 30KB — just barely over the limit. Use this free online tool to compress your image to under 20KB and avoid an automatic rejection. No uploads, no watermarks, 100% private processing on your device.`,
+Thousands of candidates get their applications delayed every year simply because their image file is 22KB or 35KB — just slightly over the portal limit. Use this free online tool to compress your image to under 20KB and ensure smooth submission. No uploads, no watermarks, 100% private processing on your device.`,
     description:
-      "Reduce JPG photos, signatures, CNIC scans, and paid fee challans to under 20KB or 25KB for PPSC, FPSC, NTS, and government recruitment portals.",
+      "Reduce JPG photos, signatures, and paid fee challans to under 20KB or 25KB for PPSC, FPSC, NTS, and public service recruitment portals.",
     answer:
       "Upload your photo, signature, or scanned bank challan. The target size is preset to 20 KB. Appliory optimizes pixel dimensions and applies lossy compression locally in your browser to hit strict portal limits while preserving sharp text, stamps, and face clarity.",
     action: "Compress to 20KB",
@@ -458,16 +458,16 @@ PPSC picture size requirements, FPSC photo size rules, and NTS image requirement
     ],
     questions: [
       [
-        "How do I compress a PPSC or FPSC bank fee challan to 25KB?",
-        "Crop away unnecessary blank paper borders around the challan first. Upload the cropped scan here and compress it. Keeping the dimensions focused on the bank stamp and deposit ID guarantees the challan stays legible below 25KB.",
+        "How do I compress a PPSC bank fee challan (Form 32-A) to 25KB?",
+        "Crop away unnecessary blank paper borders around the challan first. Upload the cropped scan here and compress it. Keeping the dimensions focused on the cashier's stamp, deposit ID, and date ensures the challan stays completely legible below 25KB.",
+      ],
+      [
+        "What are the photo size limits for PPSC vs FPSC?",
+        "PPSC requires passport photos and signatures to be strictly under 20KB in JPG format. FPSC's online application system requires uploaded photographs to be under 30KB. Compressing to 20KB safely satisfies both portals.",
       ],
       [
         "How do I compress an online job signature to 20KB without blur?",
         "Sign on plain white paper in good light. Crop tightly around your signature ink before compressing. Because the image area is small, text edges remain crisp even under 20KB.",
-      ],
-      [
-        "Why do government and recruitment portals require 20KB to 25KB?",
-        "Portals like PPSC, FPSC, and NTS handle millions of candidate forms simultaneously. Strict 20KB–25KB upload limits prevent server crashes and database bottlenecks.",
       ],
       [
         "Are my CNIC cards and private documents uploaded to any server?",
@@ -479,9 +479,9 @@ PPSC picture size requirements, FPSC photo size rules, and NTS image requirement
     slug: "compress-image-to-50kb",
     name: "Compress image to 50KB",
     h1: "Compress Image to 50KB Online Free for Admissions & Visas",
-    metaTitle: "Compress Image to 50KB Online Free (University & Scholarship Portals) | Appliory",
+    metaTitle: "Compress Image to 50KB Online Free",
     metaDescription:
-      "Compress JPG, PNG, and WebP images to 50KB online for free. Perfect for university admissions, scholarship portals, and visa photo requirements. 100% private.",
+      "Compress JPG, PNG, and WebP images to 50KB online for free. Ideal for university admissions, specific scholarship forms, and portals enforcing a 50KB limit. 100% private.",
     keywords: [
       "compress image to 50kb",
       "compress photo to 50kb online",
@@ -520,30 +520,34 @@ PPSC picture size requirements, FPSC photo size rules, and NTS image requirement
       "photo size under 50kb converter free",
     ],
     category: "IMAGES",
-    intro: `Appliory's Compress Image to 50KB tool helps students, job applicants, and visa seekers reduce photo and document file sizes to under 50KB online for free. University admissions, scholarship portals, and visa applications commonly set a 50KB maximum for applicant photos and supporting document images.
+    intro: `Appliory's Compress Image to 50KB tool reduces photo and document scans to under 50KB online for free. Many university admission systems, state recruitment portals, and specific scholarship application forms impose an explicit 50KB maximum upload limit for applicant portraits or certificate attachments.
 
-HEC scholarship portals, Erasmus+ applications, Chevening scholarship forms, and Fulbright applications all require a passport-style photo under 50KB. Convert image to 50KB to upload it successfully. If your original passport photo is 300KB or 500KB from your camera, this tool will compress it to under 50KB while keeping your face sharp and clearly recognizable for identity verification.
+Unlike tools that simply reduce quality until an image looks blurry, Appliory downsamples dimensions and optimizes JPEG encoding in multiple passes. A 3MB smartphone photo can be cleanly compressed to approximately 42KB–48KB while retaining sharp facial features, clear text, and high contrast for automated verification.
 
-The 50KB compressor also handles document images — scanned certificates, bank statements, and fee receipts. It supports JPG, PNG, and WebP input formats. Convert PNG to JPEG output for maximum compression efficiency. All processing happens locally in your browser using HTML5 Canvas — your personal documents, identity images, and sensitive application materials are never uploaded to Appliory's servers or any third party.`,
+Keep in mind that portal requirements vary: while several admission and scholarship portals set a strict 50KB ceiling, others allow up to 100KB, 200KB, or 500KB. Always verify your specific portal's official upload instructions before compressing. Supported formats include JPG, PNG, and WebP, with all processing occurring entirely inside your web browser.`,
     description:
-      "Compress JPG and PNG images down to 50 KB for scholarship portals, college admissions, and visa portals.",
+      "Compress JPG, PNG, and WebP images down to under 50 KB for university admissions, scholarship portals, and forms enforcing a 50KB file limit.",
     answer:
       "Select your document image or passport photo. Target is preset to 50 KB. Review the output size and live preview before downloading.",
     action: "Compress to 50KB",
     accepts: "image/jpeg,image/png,image/webp",
     steps: [
       "Select your JPG, PNG, or WebP photo.",
-      "The target size is preset to 50 KB.",
-      "Create and download your optimized 50KB image.",
+      "The target size is preset to 50 KB (typically outputting between 40KB and 48KB).",
+      "Inspect the live preview and download your optimized 50KB image.",
     ],
     questions: [
       [
         "Can I convert PNG to JPG for 50KB?",
-        "Yes. PNG files are often large. Selecting JPEG output makes it much easier to hit the 50 KB limit while maintaining great quality.",
+        "Yes. PNG files are lossless and often exceed 500KB. Selecting JPEG output makes it much easier to hit the 50 KB limit while maintaining excellent visual sharpness.",
       ],
       [
-        "Is 50KB acceptable for university portals?",
-        "Most university admissions and scholarship portals (HEC, Erasmus, Chevening, Fulbright) specify 50KB to 200KB for applicant portraits.",
+        "Do all university and scholarship portals require 50KB?",
+        "No. Requirements vary by institution. Some portals cap profile photos at 50KB, while others permit 100KB to 200KB. Always check your specific application instructions.",
+      ],
+      [
+        "What is a typical before-and-after result?",
+        "A typical 2.5MB mobile portrait (3000×4000 px) is resized to around 800×1066 px and compressed to ~44KB, keeping facial details crisp and fully recognizable.",
       ],
     ],
   },
@@ -551,7 +555,7 @@ The 50KB compressor also handles document images — scanned certificates, bank 
     slug: "passport-photo-maker",
     name: "Passport photo maker & resizer",
     h1: "Passport Size Photo Maker Online Free (2x2 Inch & 35x45mm)",
-    metaTitle: "Make Passport Size Photo Online Free (2x2 & 35x45mm) | Appliory",
+    metaTitle: "Passport Size Photo Maker Online Free (2x2 & 35x45mm)",
     metaDescription:
       "Create official 2x2 inch (600x600 px) and 35x45 mm passport and visa photos online for free. Maintain exact aspect ratio and download privately with zero uploads.",
     keywords: [
@@ -610,11 +614,11 @@ The 50KB compressor also handles document images — scanned certificates, bank 
       "make photo 2x2 for passport",
     ],
     category: "IMAGES",
-    intro: `Appliory's Passport Size Photo Maker is a free online tool to create official passport and visa photos in the correct dimensions — 2×2 inch (600×600 pixels) for US visas and Pakistani online portals, or 35×45 mm (413×531 pixels) for UK, Schengen, and European passports. Make passport size photo online free from any device without installing an app.
+    intro: `Appliory's Passport Size Photo Maker is a free online tool to format official passport and visa photos to exact required dimensions — including standard 2×2 inch (600×600 pixels) for US visa / Diversity Visa portals, and 35×45 mm (413×531 pixels at 300 DPI) for European, Schengen, and Pakistani physical passport prints.
 
-The 2x2 passport photo format is used by the US State Department for visa and passport applications. The 35×45 mm format (sometimes written as 45mm × 35mm) is the standard for UK passports, Indian passports, Schengen visa applications, and Pakistani national ID renewal photos online. Simply select your portrait photo, choose your preset, and get a correctly sized, print-ready passport photo in seconds. No background removal, no AI editing — just exact dimensions with your original photo intact.
+Important: Official requirements distinguish between physical printed photos and online digital uploads. For printed submissions, 35×45 mm is the standard in the UK, Europe, Pakistan, and India, while 2×2 inch (51×51 mm) is required by the US. For digital online applications, requirements vary: US DS-160 online requires a square 600×600 pixel image; UK HM Passport Office online requires a digital photograph of at least 600×750 pixels (between 50KB and 10MB); and Pakistan Pak-Identity online portal requires 350×467 pixels.
 
-Create passport size photo online free for PPSC, FPSC, and NTS job applications. Convert your phone selfie or camera photo into the correct passport size without visiting a photo studio. The pixel size of passport size photo is 600×600 for 2x2 inch format. Online passport size photo is accepted by most government portals, embassy websites, and job recruitment systems. Your photo is resized privately on your device — no data is uploaded to any server.`,
+Select your portrait photo, pick your standard preset, and download an accurately formatted, print-ready or upload-ready photo in seconds. No watermarks, no sign-up, and all resizing happens privately inside your web browser.`,
     description:
       "Resize photos to official passport and visa dimensions (600×600 px / 2×2 inch or 35×45 mm) with zero server uploads.",
     answer:
@@ -629,7 +633,11 @@ Create passport size photo online free for PPSC, FPSC, and NTS job applications.
     questions: [
       [
         "What are the official passport photo pixel dimensions?",
-        "For US visas and standard 2x2 inch online portals, 600×600 pixels is required. For UK, Schengen, and Asian 35×45 mm photos, 413×531 pixels at 300 DPI is standard.",
+        "For US visas (DS-160) and 2x2 inch online portals, 600×600 pixels is required. For printed 35×45 mm European, Schengen, and Asian photos, 413×531 pixels at 300 DPI is standard. Note that UK online digital passport applications require a minimum of 600×750 pixels.",
+      ],
+      [
+        "What are the digital vs printed photo differences for the UK?",
+        "Physical UK passport photos must be printed at 35×45 mm. However, for UK digital passport renewals online, HM Passport Office requires a digital photo of at least 600×750 pixels and between 50KB and 10MB in file size.",
       ],
       [
         "Does Appliory crop the face automatically?",
@@ -645,7 +653,7 @@ Create passport size photo online free for PPSC, FPSC, and NTS job applications.
     slug: "pdf-to-excel",
     name: "PDF to Excel converter",
     h1: "PDF to Excel Converter Online (Extract Tables Free & Privately)",
-    metaTitle: "Convert PDF to Excel Free & Private (XLSX) | Appliory",
+    metaTitle: "Free PDF to Excel Converter Online",
     metaDescription:
       "Convert PDF tables into editable Excel (.xlsx) and CSV spreadsheets locally in your browser. Clean payroll reports, fill down IDs, and export with 100% privacy.",
     keywords: [

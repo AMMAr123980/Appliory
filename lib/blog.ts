@@ -21,7 +21,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "how-to-compress-image-to-20kb-for-ppsc-fpsc",
     title: "How to Compress Image to 20KB for PPSC, FPSC, and Government Job Portals",
-    metaTitle: "How to Compress Photo to 20KB for PPSC FPSC Online (Free) | Appliory",
+    metaTitle: "How to Compress Photo to 20KB for PPSC FPSC Online (Free)",
     metaDescription:
       "Learn how to compress JPG and PNG photos under 20KB for PPSC, FPSC, NTS, and government job portals. Keep text and face sharp with 100% private in-browser tools.",
     category: "Image Tools",
@@ -99,7 +99,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "how-to-compress-image-to-50kb",
     title: "How to Compress Image to 50KB for University and Scholarship Applications",
-    metaTitle: "Compress Image to 50KB Free Online — University & Scholarship Portals | Appliory",
+    metaTitle: "Compress Image to 50KB Free Online — University & Scholarship Portals",
     metaDescription:
       "Compress JPG, PNG, and WebP images to exactly 50KB for university admissions, scholarship portals, and visa forms. Fast, free, and runs locally with zero uploads.",
     category: "Image Tools",
@@ -132,8 +132,8 @@ export const blogPosts: BlogPost[] = [
     ],
     sections: [
       {
-        heading: "Common Portals That Require 50KB Photos",
-        body: "HEC scholarships, Punjab University, University of Karachi, Aga Khan Foundation, and many international scholarship portals set a 50KB limit for profile photos. Visa applications for embassies often have the same limit. The required format is usually JPEG.",
+        heading: "When Do You Need an Image Under 50KB?",
+        body: "Several online admissions systems, college application forms, competitive exam portals, and specific student ID registration platforms enforce an explicit 50KB file size cap for uploaded passport-style portraits or supporting documents. However, photo requirements vary considerably between institutions: while some portals enforce a strict 50KB ceiling, others allow up to 100KB, 200KB, or even 500KB (and in certain cases like UK digital passport renewals, 50KB is the minimum allowed size rather than the maximum). Before preparing your file, always check your institution's specific instructions. This guide serves as a practical tutorial for reducing any oversized photo to under 50KB when your portal enforces that limit.",
       },
       {
         heading: "The Difference Between 20KB and 50KB Limits",
@@ -174,7 +174,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "how-to-convert-pdf-to-excel",
     title: "How to Convert a PDF Table to Excel Without Uploading to Any Server",
-    metaTitle: "Convert PDF to Excel Free — No Upload, No Registration | Appliory",
+    metaTitle: "Convert PDF to Excel Free — No Upload, No Registration",
     metaDescription:
       "Convert PDF tables into editable Excel (.xlsx) and CSV spreadsheets locally in your browser. Perfect for payroll reports and financial sheets with zero uploads.",
     category: "PDF Tools",
@@ -246,7 +246,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "how-to-make-passport-photo-online-free",
     title: "How to Make a Passport Size Photo Online Free — 2×2 Inch and 35×45mm",
-    metaTitle: "Make Passport Size Photo Online Free (2x2 & 35x45mm) | Appliory",
+    metaTitle: "Make Passport Size Photo Online Free (2x2 & 35x45mm)",
     metaDescription:
       "Create official 2x2 inch and 35x45mm passport and visa photos online for free. Adjust dimensions, maintain aspect ratio, and download privately with zero uploads.",
     category: "Image Tools",
@@ -285,8 +285,8 @@ export const blogPosts: BlogPost[] = [
     ],
     sections: [
       {
-        heading: "What Are the Standard Passport Photo Sizes",
-        body: "The United States requires 2×2 inch (51×51mm) photos. The United Kingdom, European Schengen area, and most Pakistani visa applications require 35×45mm. NADRA and Pakistani passport applications follow the 35×45mm standard. Some portals accept both. Appliory supports both sizes and lets you print a sheet of 4 or 6 photos on a single page.",
+        heading: "Standard Passport Photo Sizes: Physical Prints vs Digital Uploads",
+        body: "Official passport photo rules strictly distinguish between printed submissions and digital online uploads. For physical printed photos, 35×45mm (approx 413×531 pixels at 300 DPI) is the standard across the UK, Schengen Area, Pakistan (NADRA offline), and India, while the United States requires 2×2 inch (51×51mm). However, for digital online uploads, requirements differ: the UK HM Passport Office online service mandates a digital photo of at least 600×750 pixels (between 50KB and 10MB); the US State Department DS-160 portal requires exactly 600×600 pixels; and Pakistan's Pak-Identity online portal requires 350×467 pixels. Appliory supports both standard 600×600 px and 35×45mm dimensions.",
       },
       {
         heading: "Background Requirements for Passport Photos",
@@ -327,7 +327,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "how-to-reduce-image-file-size-without-losing-quality",
     title: "How to Reduce Image File Size Without Losing Quality",
-    metaTitle: "Reduce Image File Size Without Losing Quality — Free Online | Appliory",
+    metaTitle: "Reduce Image File Size Without Losing Quality — Free Online",
     metaDescription:
       "Learn how to compress JPG, PNG, and WebP images while preserving crisp clarity. Practical dimension scaling and quality tips for job portals and email attachments.",
     category: "Image Tools",
@@ -394,7 +394,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "what-is-appliory",
     title: "What Is Appliory? Free Document and Image Tools for Job and Scholarship Applicants",
-    metaTitle: "What Is Appliory? Free Privacy-First Document & Image Tools | Appliory",
+    metaTitle: "What Is Appliory? Free Privacy-First Document & Image Tools",
     metaDescription:
       "Discover Appliory: a free, privacy-first platform offering image compressors, PDF converters, passport photo makers, and document checkers with zero server uploads.",
     category: "About Appliory",
@@ -450,16 +450,16 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "how-to-resize-ppsc-fpsc-challan-form-to-25kb",
-    title: "How to Resize PPSC & FPSC Fee Challan Form to 25KB Online (Free)",
-    metaTitle: "Resize PPSC & FPSC Challan Form to 25KB Online Free | Appliory",
+    title: "How to Resize PPSC Fee Challan Form 32-A to 25KB Online (Free)",
+    metaTitle: "Resize PPSC Challan Form to 25KB Online Free",
     metaDescription:
-      "Compress paid bank fee challan forms under 25KB for PPSC and FPSC online applications without blur. Crop borders and preserve bank stamps with 100% private tools.",
+      "Compress paid PPSC Form 32-A bank fee challan scans under 25KB for online job applications without blur. Crop borders and preserve bank stamps with 100% private tools.",
     category: "Challan & Fee Receipts",
-    tag: "PPSC · FPSC · Challan",
+    tag: "PPSC · Challan · Form 32-A",
     date: "2026-11-01",
     readTime: "6 min read",
     intro:
-      "When applying online for PPSC (Punjab Public Service Commission) or FPSC (Federal Public Service Commission) jobs, one of the most frustrating errors is: 'Challan image size must be less than 25KB'. This error stops thousands of candidates from completing their applications every year. Here is a complete, step-by-step guide to compress your paid bank fee receipt so the stamp and bank deposit ID stay perfectly legible under 25KB.",
+      "When applying online for Punjab Public Service Commission (PPSC) jobs, one of the most common errors is: 'Challan image size must be less than 25KB'. PPSC requires candidates to pay examination fees using Treasury Challan Form 32-A and upload a clear scan under 25KB. (Note: FPSC online applications now primarily use PSID / 1Link electronic payments, where candidate photographs must be under 30KB). Here is a complete, step-by-step guide to compress your paid PPSC bank fee receipt so the bank stamp and deposit ID remain crisp and verified.",
     keywords: [
       "resize challan form to 25kb",
       "ppsc challan form compress 25kb",
@@ -478,8 +478,12 @@ export const blogPosts: BlogPost[] = [
     ],
     sections: [
       {
-        heading: "Why PPSC and FPSC Reject Challan Scans Above 25KB",
-        body: "Government recruitment portals like PPSC and FPSC enforce a strict 25KB file size limit for paid fee challan scans for several technical and administrative reasons. First, these portals handle tens of thousands of applications simultaneously during peak recruitment drives. Large image files cause database bottlenecks and slow the verification process for administrative staff. Second, 25KB is enough for a legible scan of a bank stamp and deposit reference number — the two things reviewers actually need to verify payment. Third, portal servers often run on shared infrastructure with tight storage quotas. Candidates taking pictures with modern smartphones end up with photos that are 2MB to 5MB in size. Trying to upload these directly results in an error message, and many applicants waste hours trying to find a solution on the day of the deadline.",
+        heading: "Why PPSC Enforces a Strict 25KB Challan Scan Limit",
+        body: "The Punjab Public Service Commission (PPSC) enforces a strict 25KB file size limit for uploaded fee challan scans (Form 32-A). With hundreds of thousands of candidates applying during major recruitment drives, compact file limits keep verification portals fast and responsive. A 25KB JPEG file is more than sufficient for verification officers to inspect the cashier's stamp, deposit scroll number, branch code, and deposit date — provided the candidate crops away unnecessary blank paper borders before compressing.",
+      },
+      {
+        heading: "Fee Payment Verification: PPSC vs FPSC",
+        body: "It is important to understand the difference between recruitment systems in Pakistan: PPSC requires candidates to deposit fees using standard Treasury Challan Form 32-A at authorized bank branches (such as NBP or State Bank of Pakistan) and upload a cropped scan under 25KB. In contrast, FPSC has modernized its portal to accept online PSID / 1Link electronic fee submissions, where fee verification is automated and candidates only need to upload their photograph (which must be under 30KB). Candidates paying FPSC fees manually via treasury receipt should keep their stamped receipt safe for verification at the test center.",
       },
       {
         heading: "What Information Must Remain Readable at 25KB",
@@ -536,7 +540,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "how-to-compress-signature-to-20kb",
     title: "How to Compress Signature to 20KB for Online Job Applications",
-    metaTitle: "Compress Signature to 20KB Online Free (Sharp & Clear) | Appliory",
+    metaTitle: "Compress Signature to 20KB Online Free (Sharp & Clear)",
     metaDescription:
       "Compress scanned signature images to under 20KB for PPSC, FPSC, NTS, and university portals without blur. Crop ink tightly and optimize locally with zero uploads.",
     category: "Signature Tools",
@@ -617,7 +621,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "how-to-check-image-size-and-dimensions-online",
     title: "How to Check Image Size in KB and Dimensions in Pixels Online Free",
-    metaTitle: "How to Check Image Size in KB and Dimensions Online Free | Appliory",
+    metaTitle: "How to Check Image Size in KB and Dimensions Online Free",
     metaDescription:
       "Learn how to check image file size in KB and pixel dimensions online for free. Verify photo size for PPSC, FPSC, and visa portals with Appliory's instant file size checker.",
     category: "Image Tools",
@@ -706,7 +710,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "ppsc-fpsc-document-requirements-complete-guide",
     title: "PPSC & FPSC Online Application Document Requirements — Complete Guide 2026",
-    metaTitle: "PPSC & FPSC Document Requirements for Online Applications 2026 | Appliory",
+    metaTitle: "PPSC & FPSC Document Requirements for Online Applications 2026",
     metaDescription:
       "Complete guide to PPSC and FPSC online application document requirements. Learn exact photo size, signature size, challan format, and file size limits for government job portals in Pakistan.",
     category: "Government Jobs",
@@ -742,11 +746,15 @@ export const blogPosts: BlogPost[] = [
     sections: [
       {
         heading: "Overview of PPSC and FPSC Document Requirements",
-        body: "Both PPSC and FPSC require applicants to upload several digital documents when submitting online applications. While the specific requirements can vary slightly between job advertisements, the following documents are almost always required: a recent passport-size photograph, a scanned copy of the paid bank fee challan, a digital copy of your signature, a scanned copy of your CNIC (Computerized National Identity Card), and in some cases a scanned copy of your most recent educational degree or certificate. Each of these has strict file size and format requirements that are enforced by the portal software. Understanding these requirements before you start the application process saves you from last-minute panic on the application deadline day.",
+        body: "PPSC (Punjab Public Service Commission) and FPSC (Federal Public Service Commission) are Pakistan's two primary public service recruitment bodies. While both evaluate candidates for competitive positions, their online application portals enforce different technical document requirements. PPSC requires an under-20KB passport photo, an under-20KB signature, and an under-25KB Form 32-A bank challan scan. FPSC requires candidate photographs to be under 30KB, and handles application fees electronically via 1Link PSID or bank treasury receipts. Preparing your documents to each portal's exact specifications prevents upload errors and avoids last-minute panic before application deadlines.",
       },
       {
         heading: "PPSC Photo Requirements — Exact Specifications",
-        body: "The PPSC profile photo must be a recent, clear passport-size photograph. The file must be in JPEG format (JPG extension). The file size must be under 20KB — this is the most commonly violated requirement. The pixel dimensions should be approximately 213×213 pixels, though some PPSC advertisements specify 250×250 pixels. The photo must show a full face, front view, with a plain white or light blue background. No sunglasses, hats, or other face coverings are permitted (exceptions apply for religious head coverings). The face should be centered and occupy approximately 70–80% of the frame. The image must be recent — typically within the last 6 months. If you receive the error message 'only passport size (less than 250 pixel width and height) file are accepted', it means your image pixel dimensions exceed 250×250 pixels and need to be reduced.",
+        body: "The PPSC profile photo must be a recent, clear passport-size photograph in JPEG format. The file size must be strictly under 20KB — this is the most common reason for upload failure. The pixel dimensions must be less than 250×250 pixels (typically around 213×213 px). If you see the error 'only passport size (less than 250 pixel width and height) file are accepted', both your dimensions and file size need adjustment. The photo must show full face, front view, with a plain white or light blue background.",
+      },
+      {
+        heading: "FPSC Photo & Fee Verification Guidelines",
+        body: "FPSC online job applications require candidates to upload a clear passport photograph in JPG/JPEG format under 30KB. Unlike PPSC, which requires uploading a scanned bank challan image, FPSC now primarily verifies fees through electronic 1Link PSID numbers generated during the application process, or through National Bank of Pakistan treasury receipts. Retain your stamped receipt or transaction reference for verification at the examination hall.",
       },
       {
         heading: "PPSC Challan (Bank Fee Receipt) Requirements",

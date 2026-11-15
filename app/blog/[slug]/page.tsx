@@ -21,14 +21,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: post.metaTitle,
     description: post.metaDescription,
     keywords: post.keywords,
-    alternates: { canonical: "/blog/" + slug },
+    alternates: { canonical: absolute("/blog/" + slug) },
     openGraph: {
-      title: post.metaTitle,
+      title: `${post.metaTitle} | Appliory`,
       description: post.metaDescription,
       type: "article",
       url: absolute("/blog/" + slug),
       publishedTime: post.date,
-      authors: ["Appliory"],
+      authors: ["Ammar Hassan Malik"],
     },
   };
 }

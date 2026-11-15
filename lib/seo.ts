@@ -11,13 +11,15 @@ export function pageMetadata(
   keywords?: string[],
 ): Metadata {
   const fullUrl = absolute(path);
+  // Clean any trailing " | Appliory" to avoid duplicate brand suffix when layout template is applied
+  const cleanTitle = title.replace(/\s*\|\s*Appliory\s*$/i, "").trim();
   return {
-    title,
+    title: cleanTitle,
     description,
     keywords,
     alternates: { canonical: fullUrl },
     openGraph: {
-      title,
+      title: `${cleanTitle} | Appliory`,
       description,
       url: fullUrl,
       siteName: "Appliory",
@@ -34,7 +36,7 @@ export function pageMetadata(
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title: `${cleanTitle} | Appliory`,
       description,
       images: [absolute("/social-preview.png")],
     },
