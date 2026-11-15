@@ -745,12 +745,12 @@ export default async function Page({
                 <strong>Appliory</strong> (appliory.tech) is a free, privacy-first web platform built for students, job applicants, and professionals who need to prepare, compress, and verify documents before submitting to government portals, universities, scholarships, and employers. Every tool on Appliory processes files entirely inside your browser — no uploads, no accounts, and no subscriptions.
               </p>
               <p>
-                The platform was built to solve a problem that affects millions of people in Pakistan and across South Asia every year: online recruitment portals (such as PPSC with 20KB photo and 25KB Form 32-A challan limits, or FPSC requiring under 30KB photos), university admissions systems, and scholarship platforms enforce strict technical rules — exact pixel dimensions and tight file size ceilings — and most applicants have no easy way to meet these requirements without uploading their personal documents to unreliable third-party servers.
+                The platform was built to solve a problem that affects millions of people in Pakistan and across South Asia every year: online recruitment portals (such as PPSC with under-25KB photo guidelines, FPSC specifying under 30KB photos, or testing portals with distinct limits), university admissions systems, and scholarship platforms enforce specific technical rules — exact pixel dimensions and tight file size ceilings — and most applicants have no easy way to meet these requirements without uploading their personal documents to unreliable third-party servers.
               </p>
 
               <h2>Who Built Appliory?</h2>
               <p>
-                Appliory was founded and built by <strong>Ammar Hassan Malik</strong>, a software engineer based in Pakistan. The platform was created after observing how commonly applicants fail government job applications not because of their qualifications, but because of technical document errors — a photo that is 22KB instead of 20KB, a challan scan that is too blurry, or a signature image in the wrong format.
+                Appliory was founded and built by <strong>Ammar Hassan Malik</strong>, a software engineer based in Pakistan. The platform was created after observing how commonly applicants encounter online application rejections not because of their qualifications, but because of technical document errors — a photo that exceeds the upload ceiling, an unreadable document scan, or a signature image in the wrong format.
               </p>
               <p>
                 Ammar built Appliory as a fully client-side platform using Next.js, React, HTML5 Canvas, PDF.js, and the Web Cryptography API — technologies that enable complex document processing to run locally inside your browser. Document processing takes place locally in your browser. File contents are not uploaded to Appliory's document-processing servers. Standard hosting, analytics and advertising services may process limited technical or usage information. The result is a suite of tools that is not only free and fast, but also genuinely private: sensitive documents like CNIC cards, salary slips, and bank receipts never leave the user's device.
@@ -761,20 +761,20 @@ export default async function Page({
                 Every year in Pakistan, hundreds of thousands of candidates apply for government positions through PPSC (Punjab Public Service Commission), FPSC (Federal Public Service Commission), NTS (National Testing Service), ETEA, and similar bodies. University applicants submit to HEC scholarship portals, overseas scholarship programs like Chevening and Fulbright, and dozens of private university admission systems.
               </p>
               <p>
-                Each portal has technical document requirements that differ in details — one requires 20KB photos, another requires 50KB, one wants 213×213 pixel dimensions while another requires 600×600. Most applicants discover these requirements only when their upload fails at the last moment, often just before a midnight deadline. The tools most people reach for — WhatsApp to send photos to friends, random websites that upload documents to unknown servers, or paid desktop software — are either insecure, expensive, or unreliable.
+                Each portal has technical document requirements that differ in details — one offers a 20KB or 25KB preset, another requires 50KB, one wants 213×213 pixel dimensions while another requires 600×600. Most applicants discover these requirements only when their upload fails at the last moment, often just before a midnight deadline. The tools most people reach for — WhatsApp to send photos to friends, random websites that upload documents to unknown servers, or paid desktop software — are either insecure, expensive, or unreliable.
               </p>
               <p>
-                Appliory provides purpose-built tools that handle exactly these requirements, with preset targets for PPSC (20KB photos, 25KB Form 32-A challan scans), FPSC (under 30KB photo guidelines), university portals (50KB), and international visa photos (2×2 inch / 35×45mm), all without requiring a user account or uploading your personal files to our servers.
+                Appliory provides purpose-built tools that handle exactly these requirements, with flexible preset targets for recruitment agencies (20KB or 25KB photo/CNIC options, under 30KB for FPSC), university portals (50KB), and international visa photos (square 600–1200px or 35×45mm), all without requiring a user account or uploading your personal files to our servers.
               </p>
 
               <h2>Appliory's Core Tools</h2>
               <p>Every tool on Appliory processes files locally in your browser. Document files are never sent to external document-processing servers.</p>
               <ul style={{ margin: "1rem 0 1.5rem", paddingLeft: "1.5rem", lineHeight: 2 }}>
-                <li><strong>Image Compressor</strong> — Compress JPG, PNG and WebP images to exact KB targets (20KB, 50KB, 100KB, 200KB). Shows live before/after preview and actual output size in KB.</li>
-                <li><strong>Compress Image to 20KB</strong> — Dedicated tool preset calibrated for strict size caps such as PPSC profile photos (20KB) and government recruitment portal requirements. Calibrates both quality and dimensions automatically.</li>
+                <li><strong>Image Compressor</strong> — Compress JPG, PNG and WebP images toward selected KB targets (20KB, 50KB, 100KB, 200KB). Shows live before/after preview, structured compression report, and actual output size in KB.</li>
+                <li><strong>Compress Image to 20KB</strong> — Dedicated tool preset calibrated for tight upload ceilings with flexible 20KB and 25KB options for public service recruitment and application forms. Optimizes dimensions and compression quality automatically.</li>
                 <li><strong>Compress Image to 50KB</strong> — For university admissions, scholarship portals, and visa photo uploads. Accepts JPG, PNG, and WebP with JPEG output for best compression.</li>
-                <li><strong>Image Resizer</strong> — Resize photos to exact pixel dimensions including 600×600 px for US visa/passport, 413×531 px for standard 35×45mm physical prints (at 300 DPI), and any custom dimension.</li>
-                <li><strong>Passport Photo Maker</strong> — Create standard 2×2 inch (600×600 px) and 35×45mm passport and visa photos from portrait photos. Supports standard print-ready output and digital dimensions for major countries.</li>
+                <li><strong>Image Resizer</strong> — Resize photos to exact pixel dimensions with independent dimension controls, aspect ratio lock, format selection, and compression target options.</li>
+                <li><strong>Passport Photo Maker</strong> — Format photos to official specifications: US DS-160 Digital (600–1200px, max 240KB), US Diversity Visa (600×600px), UK Digital Passport (600×750px, 50KB–10MB), UK Visa Digital (600×750px, max 6MB), Pak-Identity (350×467px), and 35×45mm prints.</li>
                 <li><strong>PDF to Excel Converter</strong> — Extract tables from text-based PDFs into editable Excel (.xlsx) and CSV files. Includes intelligent payroll cleanup: fill down IDs, remove repeated headers, preserve leading zeros.</li>
                 <li><strong>PDF Page Counter</strong> — Count pages across multiple PDFs simultaneously. Generate extractive text summaries without uploading files. Verifies submission page limits for research papers and applications.</li>
                 <li><strong>File Size Checker</strong> — Verify exact file sizes in KB and MB against any upload limit. Check multiple files at once and get clear pass/fail indicators for each document.</li>
@@ -799,7 +799,7 @@ export default async function Page({
               <h2>Who Uses Appliory</h2>
               <p>Appliory serves a wide range of users across Pakistan and internationally:</p>
               <ul style={{ margin: "1rem 0 1.5rem", paddingLeft: "1.5rem", lineHeight: 2 }}>
-                <li><strong>Government job applicants</strong> — PPSC, FPSC, NTS, ETEA, and OTS candidates preparing photos (20KB for PPSC, under 30KB for FPSC), 25KB Form 32-A challan scans, and signatures.</li>
+                <li><strong>Government job applicants</strong> — Candidates preparing recruitment photos (20KB or 25KB presets for PPSC, under 30KB for FPSC, custom limits for NTS), fee vouchers, and signatures.</li>
                 <li><strong>Scholarship students</strong> — HEC, Chevening, Fulbright, Commonwealth, and Erasmus applicants preparing 50KB photos and application document packages.</li>
                 <li><strong>Visa applicants</strong> — Preparing 2×2 inch or 35×45mm passport photos for US, UK, Schengen, and UAE visa applications.</li>
                 <li><strong>HR and payroll professionals</strong> — Converting payroll PDFs into clean, editable Excel spreadsheets for financial analysis and reporting.</li>

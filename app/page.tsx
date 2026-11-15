@@ -95,8 +95,7 @@ export default function Home() {
             <span>for Every Application</span>
           </h1>
           <p>
-            Compress photos to specific KB targets, format passport pictures, verify
-            document readiness, and convert PDFs to Excel. File-size and photo requirements vary by institution, country, and application — choose a compression target or checklist based on the latest official instructions. 100% free, private, and with zero file uploads.
+            Appliory offers flexible compression presets for job applications, university admissions and visa documents. Select a target size, check your image quality and verify the exact requirements from your current official application instructions. 100% free, private, and with zero file uploads.
           </p>
           <div className="hero-actions">
             <Link className="button dark" href="/tool">
@@ -382,17 +381,17 @@ export default function Home() {
             Free document tools built for real application problems
           </h2>
           <p style={{ fontSize: "1.05rem", lineHeight: 1.8, color: "var(--ink)" }}>
-            Every year, thousands of job candidates encounter online portal rejections — not because of their qualifications, but due to technical document errors. PPSC application procedures may specify separate upload limits for photographs and CNIC images. FPSC requires a JPEG photograph under 30KB. University scholarship applicants face varying caps where some forms specify a 50KB ceiling, while visa portals require exact dimensions like 600×600 px (2×2 inch) for US DS-160, 600×750 px for UK Digital Passports, or 35×45mm physical prints. Always verify your current advertisement and upload-screen instructions before preparing your files.
+            Application requirements vary across recruitment bodies and academic institutions. Published guidelines such as PPSC specify photographs and CNIC images under 25KB, while FPSC specifies JPEG photographs under 30KB. University admission and scholarship portals enforce varying targets where some forms specify a 50KB ceiling. International visa systems specify varying parameters — from square 600×600 to 1200×1200 px (up to 240KB) for US DS-160, to at least 600×750 px for UK digital portals, or 35×45mm physical prints. Always check your active advertisement or upload screen for current official instructions.
           </p>
           <p style={{ fontSize: "1.05rem", lineHeight: 1.8, color: "var(--ink)" }}>
             Most tools that solve these problems upload your files to unknown servers — which is a serious privacy risk when you are dealing with identity cards, bank receipts, salary slips, and personal photos. Appliory was built to fix this: your document contents are processed locally in your browser and are not uploaded to our document-processing servers. Standard website hosting, security, analytics and advertising requests may still occur.
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "1rem", margin: "28px 0" }}>
             {([
-              ["20KB / 25KB", "PPSC photo & CNIC upload compression preset"],
-              ["Under 30KB", "FPSC official online photograph guideline"],
-              ["50KB", "Lightweight preset for university & scholarship forms"],
-              ["600×600px", "Standard US visa (DS-160) passport photo dimension preset"],
+              ["20KB / 25KB", "Recruitment photo & CNIC compression options"],
+              ["Under 30KB", "FPSC photograph guideline preset"],
+              ["50KB", "Target option for university & scholarship forms"],
+              ["600×600 – 1200px", "US visa & passport dimension presets"],
             ] as [string, string][]).map(([stat, label]) => (
               <div key={stat} style={{ background: "var(--surface, #f8fafc)", border: "1px solid var(--line)", borderRadius: 12, padding: "16px 20px" }}>
                 <b style={{ fontSize: "1.5rem", color: "var(--accent)", display: "block" }}>{stat}</b>
@@ -401,7 +400,7 @@ export default function Home() {
             ))}
           </div>
           <p style={{ fontSize: "1rem", lineHeight: 1.8, color: "var(--ink)" }}>
-            Appliory provides flexible image compression presets and document checklists for job applications, scholarships and visas. Select your desired file-size target and verify the applicable requirements against your current official application instructions. You can format 600×600 px (US DS-160), 600×750 px (UK Digital), 350×467 px (Pak-Identity), or 35×45mm prints, and use the File Size Checker to audit your files before final submission.
+            Appliory provides flexible image compression presets and document checklists for job applications, scholarships and visas. Select your desired file-size target and verify the applicable requirements against your current official application instructions. You can format 600–1200 px (US DS-160), 600×600 px (Diversity Visa), 600×750 px (UK Digital), 350×467 px (Pak-Identity), or 35×45mm prints, and use the File Size Checker to audit your files before final submission.
           </p>
         </div>
       </section>

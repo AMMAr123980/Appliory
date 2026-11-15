@@ -134,7 +134,7 @@ export default async function Page({
                           : t.slug === "pdf-page-counter"
                             ? "PDF Page Count & Content Summary"
                             : t.slug === "file-size-checker"
-                              ? "File Size Checked Against Limit"
+                              ? "File Size Checked"
                               : "Output Ready for Review"}
             </b>
           </div>

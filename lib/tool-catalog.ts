@@ -126,7 +126,7 @@ Recruitment and scholarship portals enforce varying file size caps. PPSC guideli
 
 To use it: set the maximum allowed size (for example, enter 2 MB or 500 KB), then select your documents. Each file is instantly measured and compared against your selected limit. You can check a photo, a PDF, a Word document, or any other format — the tool measures any file type locally on your device.`,
     description:
-      "Check document sizes in KB and MB against your own upload limit. Files stay on your device.",
+      "Check the exact size of your documents in bytes, KB and MB. Enter your own application upload limit and instantly see whether each file is within that limit. Appliory checks file size only; other requirements such as file format, image dimensions and document quality must be verified separately.",
     answer:
       "Choose your files and enter your application’s maximum size in MB. Appliory shows each file’s actual byte size and whether it is within your chosen limit. One MB is treated as 1,048,576 bytes.",
     action: "Check file sizes",
@@ -285,13 +285,13 @@ The image resizer also supports custom dimensions for ID cards, HR portals, univ
       "compress heic to jpg",
     ],
     category: "IMAGES",
-    intro: `Appliory's Image Compressor reduces any JPG, PNG, or WebP photo to your exact target size in KB — 20KB, 50KB, 100KB, or 200KB — directly inside your browser without uploading to any server. Set a target, click Compress, and get a submission-ready image in seconds.
+    intro: `Appliory's Image Compressor compresses images toward your selected file-size target — 20KB, 50KB, 100KB, or 200KB — directly inside your browser without uploading to any server. Preview the actual output size and image quality before downloading. If the target cannot be achieved without excessive quality loss, Appliory will show the closest available result.
 
-Compress image to 20KB for PPSC or under 30KB for FPSC and government recruitment portals. Compress image to 50KB for university admission forms and scholarship portals. Compress image to 100KB for visa applications, scholarship portals, and HR systems. The tool shows the actual output size alongside a live preview so you can compare before downloading. If the compressed image is still too large, reduce the pixel dimensions alongside quality to easily hit your target.
+Choose flexible presets: 20KB or 25KB for recruitment forms, 50KB for university admission and scholarship portals, or 100KB to 200KB for visa applications and HR systems. The tool shows the actual output size alongside a live before-and-after preview so you can compare before downloading. If the compressed image is still too large, reduce the pixel dimensions alongside quality to easily reach your target.
 
 This free image compressor supports JPEG and WebP output formats. JPEG gives the best compression for passport photos and document scans. WebP gives smaller file sizes for web use. Unlike other tools, Appliory displays the actual compressed file size so you can compare it against your portal's upload limit. No registration, no watermark, supports files up to 25 MB, and 100% private processing on your device.`,
     description:
-      "Reduce JPG or WebP image size with a target in KB. Compare the real result before downloading.",
+      "Compress images toward your selected file-size target. Preview the actual output size and image quality before downloading. If the target cannot be achieved without excessive quality loss, Appliory shows the closest available result.",
     answer:
       "Select an image, set a target size in KB, and choose JPEG or WebP. Appliory tries several quality levels, shows the actual result, and tells you if the target was not reached. A target size is not guaranteed.",
     action: "Compress an image",
@@ -614,40 +614,44 @@ Keep in mind that portal requirements vary: while several admission and scholars
       "make photo 2x2 for passport",
     ],
     category: "IMAGES",
-    intro: `Appliory's Passport Size Photo Maker is a free online tool to format official passport and visa photos to exact required dimensions — including standard 2×2 inch (600×600 pixels) for US visa / Diversity Visa portals, and 35×45 mm (413×531 pixels at 300 DPI) for European, Schengen, and Pakistani physical passport prints.
+    intro: `Appliory's Passport Size Photo Maker formats digital application and passport photos to exact specifications online — including US DS-160, US Diversity Visa, UK Digital Passport, UK Visa, Pakistan Pak-Identity, and European 35×45mm physical prints.
 
-Important: Official requirements distinguish between physical printed photos and online digital uploads. For printed submissions, 35×45 mm is the standard in the UK, Europe, Pakistan, and India, while 2×2 inch (51×51 mm) is required by the US. For digital online applications, requirements vary: US DS-160 online requires a square 600×600 pixel image; UK HM Passport Office online requires a digital photograph of at least 600×750 pixels (between 50KB and 10MB), whereas UK visa digital photos allow up to 6MB; and Pakistan Pak-Identity online portal requires 350×467 pixels (max 3MB).
+Official requirements distinguish between different programs and authorities:
+• US DS-160 Digital: Square dimensions from 600×600 to 1200×1200 pixels in JPEG format, with file size up to 240KB.
+• US Diversity Visa (DV Lottery): Exactly 600×600 pixels in JPEG format, with file size up to 240KB.
+• UK Digital Passport: Minimum 600×750 pixels, with file size between 50KB and 10MB.
+• UK Visa Digital: Minimum 600×750 pixels, with file size between 50KB and 6MB.
+• Pakistan Pak-Identity: Exactly 350×467 pixels, with file size up to 3MB.
+• Physical Prints: Standard 35×45 mm (413×531 pixels at 300 DPI) for UK, Schengen, and Asian printed submissions; 2×2 inch (51×51 mm) for US printed photos.
 
-This tool formats pixel dimensions and aspect ratio. It does not evaluate biometric facial framing, eye level, expression, or background lighting compliance; ensure your source portrait meets your authority's official photo guidelines.
-
-Select your portrait photo, pick your standard preset, and download an accurately formatted, print-ready or upload-ready photo in seconds. No watermarks, no sign-up, and all resizing happens privately inside your web browser.`,
+This tool formats pixel dimensions and aspect ratios. It does not promise biometric acceptance or automatically alter facial features, eye level, expression, or background lighting. Always review official photo instructions before submission.`,
     description:
-      "Resize photos to official passport and visa dimensions (600×600 px US, 600×750 px UK Digital, 350×467 px Pak-Identity, or 35×45 mm print) with zero server uploads.",
+      "Format photos to official passport and visa presets (US DS-160 600–1200px, US DV 600×600, UK Digital 600×750, Pak-Identity 350×467, 35×45mm) privately on your device.",
     answer:
-      "Upload a portrait photo and select from calibrated presets: 600×600 px (US / DS-160), 600×750 px (UK Digital Passport), 350×467 px (Pakistan Pak-Identity), or 413×531 px (35×45 mm physical print). Create a high-resolution print-ready or digital photo privately on your device.",
+      "Select your portrait photo and choose from dedicated presets: US DS-160 Digital (600–1200px, max 240KB), US Diversity Visa (600×600px, max 240KB), UK Digital Passport (600×750px, 50KB–10MB), UK Visa Digital (600×750px, max 6MB), Pak-Identity (350×467px), or 35×45mm physical print (413×531px). All processing happens in your browser.",
     action: "Make passport photo",
     accepts: "image/jpeg,image/png,image/webp",
     steps: [
-      "Select a clear, front-facing portrait photo with a plain background.",
-      "Pick your standard preset: US DS-160 (600×600 px), UK Digital (600×750 px), Pak-Identity (350×467 px), or 35×45 mm print (413×531 px).",
-      "Create and download your formatted passport photo instantly.",
+      "Select a clear portrait photo taken against a plain background.",
+      "Pick your preset: US DS-160, US Diversity Visa, UK Digital Passport, UK Visa Digital, Pak-Identity, or 35×45mm.",
+      "Inspect the formatted output and download your photo instantly.",
     ],
     questions: [
       [
-        "What are the official passport photo pixel dimensions?",
-        "For US visas (DS-160) and 2x2 inch online portals, 600×600 pixels is required. For printed 35×45 mm European, Schengen, and Asian photos, 413×531 pixels at 300 DPI is standard. Note that UK online digital passport applications require a minimum of 600×750 pixels.",
+        "What is the difference between US DS-160 and US Diversity Visa photo requirements?",
+        "While the US Diversity Visa program requires exactly 600×600 pixels, the US Department of State DS-160 digital specification accepts any square dimension from 600×600 up to 1200×1200 pixels. Both require JPEG format and a file size under 240KB.",
       ],
       [
-        "What are the digital vs printed photo differences for the UK?",
-        "Physical UK passport photos must be printed at 35×45 mm. However, for UK digital passport renewals online, HM Passport Office requires a digital photo of at least 600×750 pixels and between 50KB and 10MB in file size.",
+        "What are the UK Digital Passport vs UK Visa photo rules?",
+        "Both UK Digital Passports and UK digital visas require a photo of at least 600×750 pixels. However, UK Digital Passport applications specify a file size between 50KB and 10MB, whereas UK Visa digital photos allow up to 6MB. For physical submission, 35×45mm prints are used.",
       ],
       [
-        "Does Appliory crop the face automatically?",
-        "Appliory resizes and scales to exact dimensions. It does not evaluate biometric facial framing or background compliance; ensure your original photo is already centered with eyes at normal level against a compliant background.",
+        "Does Appliory crop the face automatically or guarantee biometric approval?",
+        "Appliory resizes and scales your photo to exact pixel dimensions. It does not promise biometric acceptance or alter your appearance; ensure your original photo follows your authority's official lighting, eye-level, and plain background guidelines.",
       ],
       [
         "Can I print the downloaded passport photo?",
-        "Yes, the output is saved in full resolution, ready to print on standard 4x6 inch photo paper or upload to government portals.",
+        "Yes, selecting the 35×45mm print preset (413×531 px at 300 DPI) or 2×2 inch preset produces high-resolution images ready to print on photo paper.",
       ],
     ],
   },

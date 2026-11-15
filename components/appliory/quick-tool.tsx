@@ -54,14 +54,16 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
     [target, setTarget] = useState(initialTarget),
     [format, setFormat] = useState("image/jpeg");
   const [output, setOutput] = useState<LocalDocument | null>(null),
-    [preview, setPreview] = useState("");
+    [preview, setPreview] = useState(""),
+    [sourcePreview, setSourcePreview] = useState("");
   const input = useRef<HTMLInputElement>(null);
   const source = docs[0];
   useEffect(
     () => () => {
       if (preview) URL.revokeObjectURL(preview);
+      if (sourcePreview) URL.revokeObjectURL(sourcePreview);
     },
-    [preview],
+    [preview, sourcePreview],
   );
   async function add(files: FileList | File[] | null) {
     if (!files?.length || busy) return;
@@ -105,6 +107,8 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
       }
       setDocs([...keep, ...next]);
       if (isImage) {
+        if (sourcePreview) URL.revokeObjectURL(sourcePreview);
+        setSourcePreview(URL.createObjectURL(next[0].file));
         if (slug !== "passport-photo-maker") {
           setWidth(next[0].width!);
           setHeight(next[0].height!);
@@ -148,7 +152,7 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
       return;
     }
     if (
-      isCompressor &&
+      (isCompressor || target > 0) &&
       (!Number.isFinite(target) || target < 1 || target > 25000)
     ) {
       setError("Enter a target from 1 to 25,000 KB.");
@@ -161,7 +165,7 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
         width,
         height,
         format,
-        isCompressor ? target : 0,
+        (isCompressor || target > 0) ? target : 0,
       );
       const result = await inspectFile(f);
       setPreview(URL.createObjectURL(f));
@@ -227,7 +231,10 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
           onClick={() => {
             setDocs([]);
             setOutput(null);
+            if (preview) URL.revokeObjectURL(preview);
+            if (sourcePreview) URL.revokeObjectURL(sourcePreview);
             setPreview("");
+            setSourcePreview("");
             setError("");
           }}
         >
@@ -402,8 +409,8 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
                     }
                   >
                     {d.size <= limit * 1024 * 1024
-                      ? "Within your limit"
-                      : "Exceeds your limit"}
+                      ? "Within your selected limit"
+                      : "Above your selected limit"}
                   </span>
                 )}
               </div>
@@ -497,16 +504,17 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
                     )}
                   </select>
                 </label>
-                {isCompressor && (
+                {(isCompressor || slug === "image-resizer") && (
                   <label>
-                    Target size (KB)
+                    Target size (KB) {slug === "image-resizer" ? "(Optional)" : ""}
                     <input
                       type="number"
                       min="1"
                       max="25000"
-                      value={target}
+                      placeholder={slug === "image-resizer" ? "e.g. 100" : "e.g. 50"}
+                      value={target || ""}
                       onChange={(e) => {
-                        setTarget(Number(e.target.value));
+                        setTarget(e.target.value === "" ? 0 : Number(e.target.value));
                         setOutput(null);
                       }}
                     />
@@ -546,18 +554,20 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
                   <div className="preset-chips">
                     {(slug === "passport-photo-maker"
                       ? [
-                          { label: "US DS-160 (600×600)", w: 600, h: 600 },
-                          { label: "UK Digital (600×750)", w: 600, h: 750 },
-                          { label: "Pak-Identity (350×467)", w: 350, h: 467 },
-                          { label: "35×45mm Print (413×531)", w: 413, h: 531 },
+                          { label: "US DS-160 Digital (600–1200px, max 240KB)", w: 600, h: 600, targetKb: 240 },
+                          { label: "US Diversity Visa (600×600, max 240KB)", w: 600, h: 600, targetKb: 240 },
+                          { label: "UK Digital Passport (600×750, 50KB–10MB)", w: 600, h: 750, targetKb: 0 },
+                          { label: "UK Visa Digital (600×750, 50KB–6MB)", w: 600, h: 750, targetKb: 0 },
+                          { label: "Pak-Identity (350×467, max 3MB)", w: 350, h: 467, targetKb: 0 },
+                          { label: "35×45mm Print (413×531)", w: 413, h: 531, targetKb: 0 },
                         ]
                       : [
-                          { label: "Passport (600×600)", w: 600, h: 600 },
-                          { label: "UK Digital (600×750)", w: 600, h: 750 },
-                          { label: "Pak-Identity (350×467)", w: 350, h: 467 },
-                          { label: "35×45mm (413×531)", w: 413, h: 531 },
-                          { label: "Square (800×800)", w: 800, h: 800 },
-                          { label: "Full HD (1920×1080)", w: 1920, h: 1080 },
+                          { label: "Passport (600×600)", w: 600, h: 600, targetKb: 0 },
+                          { label: "UK Digital (600×750)", w: 600, h: 750, targetKb: 0 },
+                          { label: "Pak-Identity (350×467)", w: 350, h: 467, targetKb: 0 },
+                          { label: "35×45mm (413×531)", w: 413, h: 531, targetKb: 0 },
+                          { label: "Square (800×800)", w: 800, h: 800, targetKb: 0 },
+                          { label: "Full HD (1920×1080)", w: 1920, h: 1080, targetKb: 0 },
                         ]
                     ).map((item) => (
                       <button
@@ -568,6 +578,9 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
                           setLocked(false);
                           setWidth(item.w);
                           setHeight(item.h);
+                          if ("targetKb" in item && typeof item.targetKb === "number") {
+                            setTarget(item.targetKb);
+                          }
                           setOutput(null);
                         }}
                       >
@@ -577,7 +590,12 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
                   </div>
                   {slug === "passport-photo-maker" && (
                     <small style={{ display: "block", marginTop: 8, color: "var(--muted)", fontSize: 12 }}>
-                      ℹ️ <strong>UK Digital Passport:</strong> Min 600×750 px (50KB to 10MB). <strong>UK Visa digital photo:</strong> Max 6MB. <strong>Pak-Identity:</strong> 350×467 px (max 3MB). <em>Notice: This tool adjusts pixel dimensions and does not evaluate biometric facial framing or background lighting compliance.</em>
+                      ℹ️ <strong>US DS-160 Digital:</strong> 600–1200 px square (JPEG, max 240KB). <strong>US Diversity Visa:</strong> Exactly 600×600 px (JPEG, max 240KB). <strong>UK Digital Passport:</strong> Min 600×750 px (50KB to 10MB). <strong>UK Visa Digital:</strong> Min 600×750 px (50KB to 6MB). <strong>Pak-Identity:</strong> 350×467 px (max 3MB). <strong>35×45mm Print:</strong> 413×531 px at 300 DPI. <em>Notice: This preset resizes image dimensions and does not promise biometric acceptance or automatically alter facial appearance.</em>
+                    </small>
+                  )}
+                  {slug === "image-resizer" && (
+                    <small style={{ display: "block", marginTop: 8, color: "var(--muted)", fontSize: 12 }}>
+                      💡 <strong>Pixel dimensions vs File size:</strong> Width and height adjust resolution in pixels, while target KB independently controls file size compression.
                     </small>
                   )}
                 </div>
@@ -610,6 +628,45 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
                       {output.width} × {output.height} px · {human(output.size)}{" "}
                       · {output.type}
                     </p>
+                    {(isCompressor || (slug === "image-resizer" && target > 0)) && (
+                      <div
+                        className="compression-report-table"
+                        style={{
+                          display: "grid",
+                          gridTemplateColumns: "repeat(auto-fit, minmax(110px, 1fr))",
+                          gap: "8px",
+                          margin: "12px 0 16px",
+                          padding: "12px",
+                          background: "var(--surface, #f8fafc)",
+                          border: "1px solid var(--line, #e2e8f0)",
+                          borderRadius: "8px",
+                          textAlign: "center",
+                        }}
+                      >
+                        <div>
+                          <small style={{ display: "block", color: "var(--muted)", fontSize: 11 }}>Original size</small>
+                          <b style={{ fontSize: 14 }}>{human(source.size)}</b>
+                        </div>
+                        <div>
+                          <small style={{ display: "block", color: "var(--muted)", fontSize: 11 }}>Compressed size</small>
+                          <b style={{ fontSize: 14, color: target > 0 && output.size <= target * 1024 ? "#16a34a" : target > 0 ? "#dc2626" : "inherit" }}>
+                            {human(output.size)}
+                          </b>
+                        </div>
+                        {target > 0 && (
+                          <div>
+                            <small style={{ display: "block", color: "var(--muted)", fontSize: 11 }}>Target size</small>
+                            <b style={{ fontSize: 14 }}>{target} KB</b>
+                          </div>
+                        )}
+                        <div>
+                          <small style={{ display: "block", color: "var(--muted)", fontSize: 11 }}>Space saved</small>
+                          <b style={{ fontSize: 14, color: "#16a34a" }}>
+                            {output.size < source.size ? `${Math.round((1 - output.size / Math.max(1, source.size)) * 100)}%` : "0%"}
+                          </b>
+                        </div>
+                      </div>
+                    )}
                     {isCompressor && (
                       <p
                         className={
@@ -664,9 +721,20 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
                       </div>
                     </div>
                   </div>
-                  {preview && (
-                    <img src={preview} alt="Preview of your processed image" />
-                  )}
+                  <div style={{ display: "flex", gap: "14px", flexWrap: "wrap", alignItems: "flex-start", marginTop: "12px", width: "100%" }}>
+                    {sourcePreview && (
+                      <div style={{ flex: "1 1 200px", textAlign: "center", background: "var(--surface, #f8fafc)", padding: "10px", borderRadius: 8, border: "1px solid var(--line)" }}>
+                        <small style={{ display: "block", marginBottom: 6, fontWeight: 600, color: "var(--muted)" }}>Before (Original: {human(source.size)})</small>
+                        <img src={sourcePreview} alt="Original uploaded file before processing" style={{ maxWidth: "100%", maxHeight: 220, objectFit: "contain", borderRadius: 4 }} />
+                      </div>
+                    )}
+                    {preview && (
+                      <div style={{ flex: "1 1 200px", textAlign: "center", background: "var(--surface, #f8fafc)", padding: "10px", borderRadius: 8, border: "1px solid var(--accent)" }}>
+                        <small style={{ display: "block", marginBottom: 6, fontWeight: 600, color: "var(--accent)" }}>After (Processed: {human(output.size)})</small>
+                        <img src={preview} alt="Processed output preview" style={{ maxWidth: "100%", maxHeight: 220, objectFit: "contain", borderRadius: 4 }} />
+                      </div>
+                    )}
+                  </div>
                 </div>
               )}
             </>
