@@ -5,7 +5,7 @@ import { StructuredData } from "@/components/appliory/structured-data";
 import { absolute } from "@/lib/seo";
 
 export const metadata = {
-  title: "Blog — Document & Image Tips for Job and Scholarship Applicants | Appliory",
+  title: "Blog — Document & Image Tips for Job and Scholarship Applicants",
   description:
     "Free guides on compressing images for PPSC FPSC, converting PDFs to Excel, making passport photos, and preparing documents for online job and scholarship portals.",
   alternates: { canonical: "/blog" },

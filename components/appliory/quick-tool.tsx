@@ -47,6 +47,7 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
     [drag, setDrag] = useState(false),
     [error, setError] = useState("");
   const [limit, setLimit] = useState(5),
+    [maxPages, setMaxPages] = useState<number | "">(""),
     [width, setWidth] = useState(600),
     [height, setHeight] = useState(600),
     [locked, setLocked] = useState(slug !== "passport-photo-maker"),
@@ -250,6 +251,22 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
           </small>
         </label>
       )}
+      {slug === "pdf-page-counter" && (
+        <label className="quick-limit">
+          Maximum allowed pages (optional compliance check)
+          <input
+            type="number"
+            min="1"
+            max="5000"
+            placeholder="e.g. 10 (leave empty for page count only)"
+            value={maxPages}
+            onChange={(e) => setMaxPages(e.target.value === "" ? "" : Math.max(1, parseInt(e.target.value) || 1))}
+          />
+          <small>
+            Specify your portal or grant's maximum page limit to check if your document is within limits.
+          </small>
+        </label>
+      )}
       <div
         className={"dropzone quick-dropzone " + (drag ? "dragging" : "")}
         onDragOver={(e) => {
@@ -353,8 +370,21 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
                       <span className="error-message">{d.error}</span>
                     ) : (
                       <>
-                        <b>{d.pages} pages</b> · {d.textPages} with selectable
-                        text
+                        <b>{d.pages} pages</b> · {d.textPages} with selectable text
+                        {typeof maxPages === "number" && maxPages > 0 && typeof d.pages === "number" && (
+                          <span
+                            style={{
+                              marginLeft: 8,
+                              fontWeight: 600,
+                              fontSize: 12,
+                              color: d.pages > maxPages ? "#dc2626" : "#16a34a",
+                            }}
+                          >
+                            {d.pages > maxPages
+                              ? `(${d.pages - maxPages} page${d.pages - maxPages > 1 ? "s" : ""} over limit of ${maxPages})`
+                              : `(✓ Within ${maxPages}-page limit)`}
+                          </span>
+                        )}
                         {d.textPages !== d.pages && (
                           <span className="review-tag">
                             Manual review needed for pages without text
@@ -514,12 +544,22 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
                 <div className="preset-block">
                   <span className="preset-title">Standard Size Presets:</span>
                   <div className="preset-chips">
-                    {[
-                      { label: "Passport (600×600)", w: 600, h: 600 },
-                      { label: "ID Photo (413×531)", w: 413, h: 531 },
-                      { label: "Square (800×800)", w: 800, h: 800 },
-                      { label: "Full HD (1920×1080)", w: 1920, h: 1080 },
-                    ].map((item) => (
+                    {(slug === "passport-photo-maker"
+                      ? [
+                          { label: "US DS-160 (600×600)", w: 600, h: 600 },
+                          { label: "UK Digital (600×750)", w: 600, h: 750 },
+                          { label: "Pak-Identity (350×467)", w: 350, h: 467 },
+                          { label: "35×45mm Print (413×531)", w: 413, h: 531 },
+                        ]
+                      : [
+                          { label: "Passport (600×600)", w: 600, h: 600 },
+                          { label: "UK Digital (600×750)", w: 600, h: 750 },
+                          { label: "Pak-Identity (350×467)", w: 350, h: 467 },
+                          { label: "35×45mm (413×531)", w: 413, h: 531 },
+                          { label: "Square (800×800)", w: 800, h: 800 },
+                          { label: "Full HD (1920×1080)", w: 1920, h: 1080 },
+                        ]
+                    ).map((item) => (
                       <button
                         key={item.label}
                         type="button"
@@ -535,6 +575,11 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
                       </button>
                     ))}
                   </div>
+                  {slug === "passport-photo-maker" && (
+                    <small style={{ display: "block", marginTop: 8, color: "var(--muted)", fontSize: 12 }}>
+                      ℹ️ <strong>UK Digital Passport:</strong> Min 600×750 px (official file size range: 50KB to 10MB; do not compress under 50KB). <strong>Pak-Identity:</strong> 350×467 px. Always verify current requirements with your specific official authority.
+                    </small>
+                  )}
                 </div>
               )}
               <label className="ratio-lock">

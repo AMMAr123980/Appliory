@@ -45,9 +45,9 @@ const pages: Record<string, { title: string; description: string }> = {
       "Contact the Appliory support team for questions, technical assistance, feedback, or tool feature requests. We are committed to private, client-side utilities.",
   },
   privacy: {
-    title: "Privacy Policy — Zero Server Uploads Guaranteed",
+    title: "Privacy Policy — Local File Processing & Data Protection",
     description:
-      "Read our strict privacy policy. Learn how Appliory ensures your sensitive identity documents, photos, and PDFs never leave your browser with zero server uploads.",
+      "Read our privacy policy. Learn how Appliory ensures your sensitive identity documents, photos, and PDFs are processed locally on your device with complete data protection.",
   },
   terms: {
     title: "Terms of Service — Free Document & File Checking Tools",

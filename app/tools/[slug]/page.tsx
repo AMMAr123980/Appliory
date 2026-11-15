@@ -127,7 +127,9 @@ export default async function Page({
                     ? "Standard 2×2 Inch or 35×45mm Dimensions"
                     : t.slug === "pdf-to-excel"
                       ? "Clean Excel (.xlsx) / CSV Spreadsheet"
-                      : "Verified & Compliant Result"}
+                      : t.slug === "pdf-page-counter"
+                        ? "PDF Page Count & Content Summary"
+                        : "Verified & Compliant Result"}
             </b>
           </div>
         </div>

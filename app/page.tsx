@@ -95,10 +95,8 @@ export default function Home() {
             <span>for Every Application</span>
           </h1>
           <p>
-            Compress photos to 20KB or 50KB, resize passport pictures, verify
-            document readiness, and convert PDFs to Excel. Prepare files for
-            PPSC, FPSC, university admissions, and scholarship portals — 100%
-            free, private, and with zero file uploads.
+            Compress photos to specific KB targets, format passport pictures, verify
+            document readiness, and convert PDFs to Excel. File-size and photo requirements vary by institution, country, and application — choose a compression target or checklist based on the latest official instructions. 100% free, private, and with zero file uploads.
           </p>
           <div className="hero-actions">
             <Link className="button dark" href="/tool">
@@ -182,7 +180,7 @@ export default function Home() {
             <span className="eyebrow">GROUPED BY YOUR TASK</span>
             <h2>Tools organized by your application goal</h2>
             <p>
-              Prepare your documents with confidence. Check file sizes, formats, dimensions and PDF requirements before submission.
+              Prepare your application documents with confidence. Validate file size, formats, dimensions and document requirements before submission.
             </p>
           </div>
           <Link className="text-link" href="/tools">
@@ -328,28 +326,24 @@ export default function Home() {
         <div className="checker-scope-grid">
           <div className="scope-col">
             <span className="scope-title valid">
-              <CheckCircle2 size={20} /> What the Checker Inspects &amp; Fixes
+              <CheckCircle2 size={20} /> Categorized Technical Validations
             </span>
             <ul className="scope-list">
               <li>
                 <Check size={16} />
-                <span><strong>File Size Limits:</strong> Ensures images and PDFs are strictly under 20KB, 50KB, 2MB, or custom limits.</span>
+                <span><strong>Image Checks (JPG, PNG, WebP):</strong> Verifies pixel width and height (e.g., 600×600 px or 35×45mm), inspects aspect ratio, and applies targeted compression in KB. <em>(Applies exclusively to images, not PDFs)</em>.</span>
               </li>
               <li>
                 <Check size={16} />
-                <span><strong>Real Binary Signatures:</strong> Detects corrupted files or renamed files (e.g. an image falsely named .pdf).</span>
+                <span><strong>PDF Checks (PDF only):</strong> Parses document structure, counts pages against limits, and detects selectable text vs scanned pages. <em>(Note: Selectable text detection does not perform OCR on scanned image-only PDFs)</em>.</span>
               </li>
               <li>
                 <Check size={16} />
-                <span><strong>Pixel Dimensions:</strong> Verifies exact image width and height (e.g. 35×45mm, 600×600 px) for passport photos.</span>
+                <span><strong>File Checks (All Formats):</strong> Inspects true binary magic numbers to catch corrupted or falsely renamed extensions (e.g. an image renamed to .pdf), measures exact file size in binary KB/MB, and detects duplicates via SHA-256 byte hashing.</span>
               </li>
               <li>
                 <Check size={16} />
-                <span><strong>PDF Page Counts &amp; Selectable Text:</strong> Flags scanned pages without extractable text and verifies page limits.</span>
-              </li>
-              <li>
-                <Check size={16} />
-                <span><strong>Duplicate Detection:</strong> Identifies duplicate uploads using cryptographic SHA-256 hashes even with different names.</span>
+                <span><strong>Checklist Checks (Application Pack):</strong> Audits overall required document lists, verifies individual submission limits, and exports a readiness summary report before you submit.</span>
               </li>
             </ul>
           </div>
@@ -510,12 +504,12 @@ export default function Home() {
                 <ArrowRight size={22} />
               </div>
               <div className="sample-step">
-                <small>Appliory 20KB Output</small>
+                <small>Compression Demonstration Output</small>
                 <b>Candidate_Photo_20kb.jpg (18.6 KB · 300×300 px)</b>
               </div>
             </div>
             <div className="sample-status">
-              <CheckCircle2 size={16} /> Ready for PPSC / FPSC Portal
+              <CheckCircle2 size={16} /> Compression Demonstration · Note: Dimensions and final image quality must be verified against your portal's official rules.
             </div>
           </div>
 

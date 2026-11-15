@@ -8,7 +8,7 @@ import { blogPosts } from "@/lib/blog";
 import { ArrowUpRight } from "lucide-react";
 
 export const metadata = pageMetadata(
-  "Convert PDF to Excel Free & Private (XLSX) | Appliory",
+  "Convert PDF to Excel Free & Private (XLSX)",
   "Convert PDF tables into editable Excel (.xlsx) and CSV spreadsheets locally in your browser. Clean payroll reports, fill down IDs, remove repeated headers with 100% privacy.",
   "/tools/pdf-to-excel",
   [
@@ -181,41 +181,51 @@ export default function PDFToExcelPage() {
         </div>
       </section>
 
-      {/* Comparison: Local Processing vs Generic Cloud Converters */}
+      {/* Appliory PDF Table Extraction Capabilities Matrix */}
       <section style={{ marginBottom: 48, background: "#f5f7f3", border: "1px solid var(--line)", borderRadius: 9, padding: 28 }}>
-        <h2 style={{ fontSize: 22, fontWeight: 650, marginBottom: 12 }}>Local In-Browser vs. Cloud Converters</h2>
+        <h2 style={{ fontSize: 22, fontWeight: 650, marginBottom: 12 }}>PDF Table Extraction Capabilities</h2>
         <p style={{ fontSize: 13, color: "#55645a", marginBottom: 20 }}>
-          Unlike common online converters that upload your PDFs to third-party cloud servers, Appliory parses PDFs locally on your device using WebAssembly and Web Workers.
+          How Appliory handles complex document formatting, employee codes, repeated headers, and payroll table structures locally on your device.
         </p>
         <div style={{ overflowX: "auto" }}>
           <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13, textAlign: "left" }}>
             <thead>
               <tr style={{ borderBottom: "2px solid #ccd8c7" }}>
-                <th style={{ padding: "10px 14px", fontWeight: 600 }}>Feature</th>
-                <th style={{ padding: "10px 14px", fontWeight: 600, color: "var(--accent)" }}>Appliory PDF to Excel</th>
-                <th style={{ padding: "10px 14px", fontWeight: 600, color: "#8c564b" }}>Standard Cloud Converters</th>
+                <th style={{ padding: "10px 14px", fontWeight: 600 }}>Test Case / Data Pattern</th>
+                <th style={{ padding: "10px 14px", fontWeight: 600, color: "var(--accent)" }}>Appliory Output</th>
+                <th style={{ padding: "10px 14px", fontWeight: 600, color: "var(--ink)" }}>Technical Handling</th>
               </tr>
             </thead>
             <tbody>
               <tr style={{ borderBottom: "1px solid #e1e7dc" }}>
-                <td style={{ padding: "10px 14px", fontWeight: 550 }}>Data Confidentiality</td>
-                <td style={{ padding: "10px 14px", color: "var(--accent)" }}>✅ 100% Private (0 bytes sent to servers)</td>
-                <td style={{ padding: "10px 14px", color: "#666" }}>❌ Uploaded to remote third-party servers</td>
+                <td style={{ padding: "10px 14px", fontWeight: 550 }}>Employee ID codes (e.g. <code>00142</code>)</td>
+                <td style={{ padding: "10px 14px", color: "var(--accent)", fontWeight: 600 }}>Preserved as Text</td>
+                <td style={{ padding: "10px 14px", color: "#475569" }}>Written as inline string (<code>t=&quot;inlineStr&quot;</code>) so spreadsheet software never truncates leading zeros.</td>
               </tr>
               <tr style={{ borderBottom: "1px solid #e1e7dc" }}>
-                <td style={{ padding: "10px 14px", fontWeight: 550 }}>Table Cleanup Tools</td>
-                <td style={{ padding: "10px 14px", color: "var(--accent)" }}>✅ Fill Down, Header Clean, Cell Editing</td>
-                <td style={{ padding: "10px 14px", color: "#666" }}>❌ Raw, messy table dump only</td>
+                <td style={{ padding: "10px 14px", fontWeight: 550 }}>Repeated multi-page table headers</td>
+                <td style={{ padding: "10px 14px", color: "var(--accent)", fontWeight: 600 }}>Removable in 1-Click</td>
+                <td style={{ padding: "10px 14px", color: "#475569" }}>Auto-detects recurrent header rows across pages and filters them out of your continuous spreadsheet.</td>
               </tr>
               <tr style={{ borderBottom: "1px solid #e1e7dc" }}>
-                <td style={{ padding: "10px 14px", fontWeight: 550 }}>Leading Zeros (e.g. 0012)</td>
-                <td style={{ padding: "10px 14px", color: "var(--accent)" }}>✅ Protected as inline string values</td>
-                <td style={{ padding: "10px 14px", color: "#666" }}>❌ Stripped to 12 automatically by Excel</td>
+                <td style={{ padding: "10px 14px", fontWeight: 550 }}>Empty rows and margin gaps</td>
+                <td style={{ padding: "10px 14px", color: "var(--accent)", fontWeight: 600 }}>Removable</td>
+                <td style={{ padding: "10px 14px", color: "#475569" }}>Removes blank spacing rows caused by PDF page margins and page breaks.</td>
               </tr>
               <tr style={{ borderBottom: "1px solid #e1e7dc" }}>
-                <td style={{ padding: "10px 14px", fontWeight: 550 }}>File Limits & Paywalls</td>
-                <td style={{ padding: "10px 14px", color: "var(--accent)" }}>✅ Unlimited free use, no registration</td>
-                <td style={{ padding: "10px 14px", color: "#666" }}>❌ Daily limits, subscriptions, and queues</td>
+                <td style={{ padding: "10px 14px", fontWeight: 550 }}>Grouped IDs (e.g. ID only on first row)</td>
+                <td style={{ padding: "10px 14px", color: "var(--accent)", fontWeight: 600 }}>Fill Down Tool</td>
+                <td style={{ padding: "10px 14px", color: "#475569" }}>Propagates parent account or employee codes down through subordinate item rows.</td>
+              </tr>
+              <tr style={{ borderBottom: "1px solid #e1e7dc" }}>
+                <td style={{ padding: "10px 14px", fontWeight: 550 }}>Multi-line descriptions / wrapped text</td>
+                <td style={{ padding: "10px 14px", color: "var(--accent)", fontWeight: 600 }}>Editable Cell Grid</td>
+                <td style={{ padding: "10px 14px", color: "#475569" }}>Coordinate clustering aligns adjacent lines into continuous text; editable in browser before export.</td>
+              </tr>
+              <tr style={{ borderBottom: "1px solid #e1e7dc" }}>
+                <td style={{ padding: "10px 14px", fontWeight: 550 }}>Scanned image-only PDFs</td>
+                <td style={{ padding: "10px 14px", color: "#b45309", fontWeight: 600 }}>OCR Preprocessing Required</td>
+                <td style={{ padding: "10px 14px", color: "#475569" }}>Appliory parses text vectors directly. Scanned photo PDFs must be run through OCR before tabular extraction.</td>
               </tr>
             </tbody>
           </table>
