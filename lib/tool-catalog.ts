@@ -40,9 +40,9 @@ export const tools = [
     category: "PDF",
     intro: `Appliory's PDF Page Counter lets you count pages in any PDF file instantly — no uploads, no account, no waiting. Simply select your PDF and the exact page count appears in seconds, all processed locally inside your browser.
 
-Universities, research grant foundations, and scholarship programs often enforce strict page limits. HEC research submissions and international personal statement portals specify maximum page ceilings. Exceeding page ceilings may lead to disqualification under specific program guidelines. Use this free page counter and optional maximum-page compliance checker to verify your document meets the exact requirements before you hit submit.
+Enter the maximum page limit specified by your institution or application. Appliory compares each PDF's actual page count against the limit you provide. The optional maximum-page check evaluates each individual PDF file separately against your specified ceiling, so you can verify submissions before uploading.
 
-You can also count pages across multiple PDF files at once. Upload your complete application package — research proposal, CV, statement of purpose — and confirm every document is within its allowed page limit in a single session. A readable document summary is generated from the actual text on each page, with no AI model involved and no data leaving your device.`,
+You can also count pages across multiple PDF files at once. Select your application documents — research proposal, CV, statement of purpose — and review page counts for each file in a single session. A readable document summary is generated from the actual text on each page, with no AI model involved and no data leaving your device.`,
     description:
       "Count PDF pages and generate a readable content summary with page references. Local extractive summaries, no uploads or registration.",
     answer:
@@ -122,9 +122,9 @@ You can also count pages across multiple PDF files at once. Upload your complete
     category: "FILES",
     intro: `Appliory's File Size Checker tells you the exact size of any file — in bytes, kilobytes (KB), and megabytes (MB) — right inside your browser without uploading it anywhere. This is the fastest way to check file size online for free, on mobile or desktop.
 
-Government job portals and scholarship applications are strict about file size limits. PPSC requires profile photos under 20KB and bank fee challan scans under 25KB, while FPSC requires candidate photographs under 30KB. University admission portals for scholarships commonly cap documents at 500KB or 1MB. If your file exceeds the limit, the portal rejects your submission with an error — sometimes without explaining why. Check your file size here before you apply, so you never get a surprise rejection.
+Recruitment and scholarship portals enforce varying file size caps. PPSC guidelines specify photographs and CNIC front images under 25KB, FPSC specifies photographs under 30KB, and other portals enforce custom ceilings. University admission portals commonly cap documents at 500KB, 1MB, or 2MB. Appliory compares your actual file size against the limit you configure so you can verify attachment sizes before submission.
 
-To use it: set the maximum allowed size (for example, enter 2 MB or 500 KB), then select your documents. Each file is instantly measured and shown as within limit (green) or over limit (red). You can check a photo, a PDF, a Word document, or any other format — the tool measures any file type. Your files stay 100% private on your device.`,
+To use it: set the maximum allowed size (for example, enter 2 MB or 500 KB), then select your documents. Each file is instantly measured and compared against your selected limit. You can check a photo, a PDF, a Word document, or any other format — the tool measures any file type locally on your device.`,
     description:
       "Check document sizes in KB and MB against your own upload limit. Files stay on your device.",
     answer:
@@ -206,7 +206,7 @@ To use it: set the maximum allowed size (for example, enter 2 MB or 500 KB), the
 
 Knowing how to resize a photo is essential for dozens of online applications. Passport photos for US visas require exactly 600×600 pixels (2×2 inch). The 35×45 mm format used for UK, Schengen, and Pakistani passports equals 413×531 pixels at 300 DPI. OCI (Overseas Citizen of India) application photos must be exactly 200×200 pixels. If you need to resize photo for OCI application, PPSC challan, or any government portal with strict pixel size requirements, enter the exact dimensions here and get a correctly sized image in one click.
 
-The image resizer also supports custom dimensions for ID cards, HR portals, university admissions, and company intranets. You can resize an image to 100KB to 200KB equivalent by reducing dimensions, then compressing. Lock the aspect ratio to prevent stretching when you resize JPEG, PNG, or WebP images. All processing happens directly inside your browser — your personal photos, identity documents, and passport pictures are never uploaded to any server.`,
+The image resizer also supports custom dimensions for ID cards, HR portals, university admissions, and company intranets. Pixel dimensions (width × height) and file size (in KB) are separate properties. While scaling down image dimensions reduces the total pixel count and helps decrease final file size, the actual KB output depends on image complexity, format, and compression quality. Lock the aspect ratio to prevent stretching when you resize JPEG, PNG, or WebP images. All processing happens directly inside your browser — your personal photos, identity documents, and passport pictures are never uploaded to any server.`,
     description:
       "Resize JPG, PNG and WebP images to exact pixel dimensions and download the result privately.",
     answer:
@@ -616,7 +616,9 @@ Keep in mind that portal requirements vary: while several admission and scholars
     category: "IMAGES",
     intro: `Appliory's Passport Size Photo Maker is a free online tool to format official passport and visa photos to exact required dimensions — including standard 2×2 inch (600×600 pixels) for US visa / Diversity Visa portals, and 35×45 mm (413×531 pixels at 300 DPI) for European, Schengen, and Pakistani physical passport prints.
 
-Important: Official requirements distinguish between physical printed photos and online digital uploads. For printed submissions, 35×45 mm is the standard in the UK, Europe, Pakistan, and India, while 2×2 inch (51×51 mm) is required by the US. For digital online applications, requirements vary: US DS-160 online requires a square 600×600 pixel image; UK HM Passport Office online requires a digital photograph of at least 600×750 pixels (between 50KB and 10MB); and Pakistan Pak-Identity online portal requires 350×467 pixels.
+Important: Official requirements distinguish between physical printed photos and online digital uploads. For printed submissions, 35×45 mm is the standard in the UK, Europe, Pakistan, and India, while 2×2 inch (51×51 mm) is required by the US. For digital online applications, requirements vary: US DS-160 online requires a square 600×600 pixel image; UK HM Passport Office online requires a digital photograph of at least 600×750 pixels (between 50KB and 10MB), whereas UK visa digital photos allow up to 6MB; and Pakistan Pak-Identity online portal requires 350×467 pixels (max 3MB).
+
+This tool formats pixel dimensions and aspect ratio. It does not evaluate biometric facial framing, eye level, expression, or background lighting compliance; ensure your source portrait meets your authority's official photo guidelines.
 
 Select your portrait photo, pick your standard preset, and download an accurately formatted, print-ready or upload-ready photo in seconds. No watermarks, no sign-up, and all resizing happens privately inside your web browser.`,
     description:
@@ -641,7 +643,7 @@ Select your portrait photo, pick your standard preset, and download an accuratel
       ],
       [
         "Does Appliory crop the face automatically?",
-        "Appliory resizes and scales to exact dimensions. Ensure your original photo is already centered with eyes at normal level before creating.",
+        "Appliory resizes and scales to exact dimensions. It does not evaluate biometric facial framing or background compliance; ensure your original photo is already centered with eyes at normal level against a compliant background.",
       ],
       [
         "Can I print the downloaded passport photo?",

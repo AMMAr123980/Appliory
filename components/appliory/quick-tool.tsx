@@ -253,7 +253,7 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
       )}
       {slug === "pdf-page-counter" && (
         <label className="quick-limit">
-          Maximum allowed pages (optional compliance check)
+          Maximum allowed pages per file (optional compliance check)
           <input
             type="number"
             min="1"
@@ -263,7 +263,7 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
             onChange={(e) => setMaxPages(e.target.value === "" ? "" : Math.max(1, parseInt(e.target.value) || 1))}
           />
           <small>
-            Specify your portal or grant's maximum page limit to check if your document is within limits.
+            Specify your portal or application&apos;s maximum page limit per file to compare against actual pages.
           </small>
         </label>
       )}
@@ -577,7 +577,7 @@ export default function QuickTool({ slug }: { slug: ToolSlug }) {
                   </div>
                   {slug === "passport-photo-maker" && (
                     <small style={{ display: "block", marginTop: 8, color: "var(--muted)", fontSize: 12 }}>
-                      ℹ️ <strong>UK Digital Passport:</strong> Min 600×750 px (official file size range: 50KB to 10MB; do not compress under 50KB). <strong>Pak-Identity:</strong> 350×467 px. Always verify current requirements with your specific official authority.
+                      ℹ️ <strong>UK Digital Passport:</strong> Min 600×750 px (50KB to 10MB). <strong>UK Visa digital photo:</strong> Max 6MB. <strong>Pak-Identity:</strong> 350×467 px (max 3MB). <em>Notice: This tool adjusts pixel dimensions and does not evaluate biometric facial framing or background lighting compliance.</em>
                     </small>
                   )}
                 </div>

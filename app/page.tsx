@@ -142,7 +142,7 @@ export default function Home() {
           <Link href="/tools/compress-image-to-20kb">
             <span>
               <b>Government Jobs &amp; Recruitment</b>
-              <small>Compression presets for 20KB photos or 25KB challans</small>
+              <small>Flexible compression presets for photos, CNIC &amp; application forms</small>
             </span>
             <ArrowUpRight size={20} />
           </Link>
@@ -401,7 +401,7 @@ export default function Home() {
             ))}
           </div>
           <p style={{ fontSize: "1rem", lineHeight: 1.8, color: "var(--ink)" }}>
-            Government and scholarship portal requirements vary by agency and advertisement. Appliory provides flexible presets matching these official requirements: compress to 20KB or 25KB for PPSC, under 30KB for FPSC, or 50KB for university portals. You can also format 600×600 px (US DS-160), 600×750 px (UK Digital), 350×467 px (Pak-Identity), or 35×45mm prints. Always verify your specific advertisement instructions, and use the File Size Checker to audit your files before final submission.
+            Appliory provides flexible image compression presets and document checklists for job applications, scholarships and visas. Select your desired file-size target and verify the applicable requirements against your current official application instructions. You can format 600×600 px (US DS-160), 600×750 px (UK Digital), 350×467 px (Pak-Identity), or 35×45mm prints, and use the File Size Checker to audit your files before final submission.
           </p>
         </div>
       </section>
