@@ -197,7 +197,7 @@ export default function Home() {
                   <Briefcase size={13} /> Target: Government Portals
                 </span>
                 <h3>PPSC, FPSC, NTS &amp; Public Service Commission</h3>
-                <p>Common portal presets: 20KB photo target for PPSC, under 30KB for FPSC, and 25KB for fee receipts.</p>
+                <p>Common recruitment presets: 20KB or 25KB target for PPSC, under 30KB for FPSC, and custom targets for testing agencies.</p>
               </div>
               <Link className="text-link" href="/blog/how-to-compress-image-to-20kb-for-ppsc-fpsc">
                 PPSC Photo Guide <ArrowUpRight size={14} />
@@ -382,16 +382,16 @@ export default function Home() {
             Free document tools built for real application problems
           </h2>
           <p style={{ fontSize: "1.05rem", lineHeight: 1.8, color: "var(--ink)" }}>
-            Every year, thousands of job candidates encounter online portal rejections — not because of their qualifications, but due to technical document errors. PPSC enforces a strict 20KB photo ceiling and 25KB Form 32-A bank challan scans, while FPSC guidelines specify under 30KB photograph uploads. University scholarship applicants face similar caps: a 55KB image fails when a portal caps uploads at 50KB. Visa portals require exact dimensions like 600×600 px (2×2 inch) for US DS-160 or 35×45mm physical prints.
+            Every year, thousands of job candidates encounter online portal rejections — not because of their qualifications, but due to technical document errors. PPSC application procedures may specify separate upload limits for photographs and CNIC images. FPSC requires a JPEG photograph under 30KB. University scholarship applicants face varying caps where some forms specify a 50KB ceiling, while visa portals require exact dimensions like 600×600 px (2×2 inch) for US DS-160, 600×750 px for UK Digital Passports, or 35×45mm physical prints. Always verify your current advertisement and upload-screen instructions before preparing your files.
           </p>
           <p style={{ fontSize: "1.05rem", lineHeight: 1.8, color: "var(--ink)" }}>
-            Most tools that solve these problems upload your files to unknown servers — which is a serious privacy risk when you are dealing with identity cards, bank receipts, salary slips, and personal photos. Appliory was built to fix this: every tool runs entirely inside your browser. Your CNIC, your challan, your passport photo — none of it leaves your device.
+            Most tools that solve these problems upload your files to unknown servers — which is a serious privacy risk when you are dealing with identity cards, bank receipts, salary slips, and personal photos. Appliory was built to fix this: your document contents are processed locally in your browser and are not uploaded to our document-processing servers. Standard website hosting, security, analytics and advertising requests may still occur.
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "1rem", margin: "28px 0" }}>
             {([
-              ["20KB", "PPSC photo compression preset (FPSC allows up to 30KB)"],
-              ["25KB", "PPSC Form 32-A bank challan scan compression preset"],
-              ["50KB", "Common target preset for university and scholarship forms"],
+              ["20KB / 25KB", "PPSC photo & CNIC upload compression preset"],
+              ["Under 30KB", "FPSC official online photograph guideline"],
+              ["50KB", "Lightweight preset for university & scholarship forms"],
               ["600×600px", "Standard US visa (DS-160) passport photo dimension preset"],
             ] as [string, string][]).map(([stat, label]) => (
               <div key={stat} style={{ background: "var(--surface, #f8fafc)", border: "1px solid var(--line)", borderRadius: 12, padding: "16px 20px" }}>
@@ -401,7 +401,7 @@ export default function Home() {
             ))}
           </div>
           <p style={{ fontSize: "1rem", lineHeight: 1.8, color: "var(--ink)" }}>
-            Government and scholarship portal requirements vary by agency and advertisement. Appliory provides flexible presets matching these official requirements: compress to 20KB for PPSC, under 30KB for FPSC, 25KB for Form 32-A bank challans, or 50KB for university portals. You can also format 2×2 inch (600×600 px) photos for US visas, or 35×45mm prints. Always verify your specific advertisement instructions, and use the File Size Checker to audit your files before final submission.
+            Government and scholarship portal requirements vary by agency and advertisement. Appliory provides flexible presets matching these official requirements: compress to 20KB or 25KB for PPSC, under 30KB for FPSC, or 50KB for university portals. You can also format 600×600 px (US DS-160), 600×750 px (UK Digital), 350×467 px (Pak-Identity), or 35×45mm prints. Always verify your specific advertisement instructions, and use the File Size Checker to audit your files before final submission.
           </p>
         </div>
       </section>

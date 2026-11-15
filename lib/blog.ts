@@ -29,7 +29,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-10-31",
     readTime: "4 min read",
     intro:
-      "Government job portals in Pakistan — PPSC, FPSC, NTS, ETEA, and others — have strict upload rules. The most common requirement is a profile photo below 20KB in JPEG format. Here is how to do it correctly without uploading your photo to any cloud server.",
+      "Government job and recruitment portals in Pakistan (such as PPSC, FPSC, and testing agencies) have specific upload rules. PPSC guidelines specify photographs and CNIC front images under 25KB, while FPSC requires JPEG photographs under 30KB. Compressing your photo to a 20KB preset ensures you stay well under strict portal ceilings. Here is how to do it correctly without uploading your photo to any cloud server.",
     keywords: [
       "compress image to 20kb",
       "ppsc photo compressor 20kb",
@@ -53,8 +53,8 @@ export const blogPosts: BlogPost[] = [
     ],
     sections: [
       {
-        heading: "Why Government Portals Require 20KB Photos",
-        body: "Pakistan's government job portals set strict file size limits — typically between 10KB and 20KB for profile photos — to reduce server load and standardize uploads. These limits are enforced by the portal and your form will not submit if the image exceeds the limit. The format is almost always JPEG (JPG), not PNG.",
+        heading: "Why Government Portals Enforce Image Size Limits",
+        body: "Pakistan's government recruitment portals enforce file size ceilings — such as under 25KB for PPSC or under 30KB for FPSC — to standardize applicant records and ensure swift server processing. A 20KB compression preset provides a safe, universal target for restrictive forms. Formats are almost always JPEG (JPG), not PNG.",
       },
       {
         heading: "What Happens If Your Photo Is Too Large",
@@ -290,19 +290,19 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: "Background Requirements for Passport Photos",
-        body: "Most countries require a plain white or off-white background. The USA requires white. The UK accepts white or light grey. UAE and most Gulf state visa photos require white. If your photo has a different background, Appliory's tool provides a background removal option so you can set it to white before cropping.",
+        body: "Most countries require a plain white or light grey background. The USA requires white. The UK accepts white or light grey. UAE and most Gulf state visa photos require white. Take your photo in front of a clean white wall or plain light background with even lighting before resizing.",
       },
       {
-        heading: "How to Make Your Passport Photo Using Appliory",
-        body: "Open the Passport Photo Maker at appliory.tech/tools/passport-photo-maker. Upload a clear portrait photo. Select your required size — 35×45mm or 2×2 inch. Use the crop tool to center your face with the top of your head near the top edge and your chin near the bottom third. Adjust if needed. Download the single photo or a printable sheet.",
+        heading: "How to Format Your Passport Photo Using Appliory",
+        body: "Open the Passport Photo Maker at appliory.tech/tools/passport-photo-maker. Upload a clear portrait photo. Select your required preset — US DS-160 (600×600 px), UK Digital Passport (600×750 px), Pakistan Pak-Identity (350×467 px), or 35×45mm physical print (413×531 px). Appliory scales your image to exact pixel dimensions. Download your formatted photo instantly.",
       },
       {
         heading: "Photo Requirements Beyond Size",
         body: "Your face must occupy 70–80% of the frame. Eyes must be open and looking directly at the camera. No glasses (required by most countries after 2020). Neutral expression. No head coverings unless for religious reasons. Good, even lighting with no shadows on your face or background. These are checked by the passport issuing authority, not by Appliory.",
       },
       {
-        heading: "Printing Your Passport Photo",
-        body: "Download the printable sheet and take it to any photo printing shop or print it on a colour printer on glossy photo paper. Most shops print a 4×6 inch sheet for a few rupees. Cut along the borders. The output is sized correctly for standard passport photo printing.",
+        heading: "Printing and Uploading Your Passport Photo",
+        body: "You can upload the downloaded digital photo directly to online visa and passport portals. For physical submissions, copy the downloaded image to your phone or USB drive and print it on standard glossy photo paper at any local printing studio at 100% scale without borderless stretching.",
       },
     ],
     faqs: [
@@ -312,7 +312,7 @@ export const blogPosts: BlogPost[] = [
       ],
       [
         "Does Appliory remove the background automatically?",
-        "Appliory provides a background adjustment option. For best results, start with a photo taken against a light background — automatic removal is more accurate and the edges look cleaner.",
+        "No. Appliory resizes and scales your portrait photo to exact pixel dimensions locally on your device. For official passport acceptance, always take your photo in front of an actual plain white or light-coloured wall with good lighting.",
       ],
       [
         "Is Appliory's passport photo maker really free?",
@@ -453,13 +453,13 @@ export const blogPosts: BlogPost[] = [
     title: "How to Resize PPSC Fee Challan Form 32-A to 25KB Online (Free)",
     metaTitle: "Resize PPSC Challan Form to 25KB Online Free",
     metaDescription:
-      "Compress paid PPSC Form 32-A bank fee challan scans under 25KB for online job applications without blur. Crop borders and preserve bank stamps with 100% private tools.",
+      "Compress paid PPSC Form 32-A bank fee challan scans under 25KB for online job applications when requested. Crop borders and preserve bank stamps with 100% private tools.",
     category: "Challan & Fee Receipts",
     tag: "PPSC · Challan · Form 32-A",
     date: "2026-11-01",
     readTime: "6 min read",
     intro:
-      "When applying online for Punjab Public Service Commission (PPSC) jobs, one of the most common errors is: 'Challan image size must be less than 25KB'. PPSC requires candidates to pay examination fees using Treasury Challan Form 32-A and upload a clear scan under 25KB. (Note: FPSC online applications now primarily use PSID / 1Link electronic payments, where candidate photographs must be under 30KB). Here is a complete, step-by-step guide to compress your paid PPSC bank fee receipt so the bank stamp and deposit ID remain crisp and verified.",
+      "When applying online for Punjab Public Service Commission (PPSC) jobs, candidates who deposit fees manually at authorized bank branches may need to upload a cropped scan of their paid Form 32-A receipt under 25KB. (Note: FPSC online applications now primarily use electronic PSID / 1Link payments and do not require challan uploads, while PPSC also supports online ePay Punjab). Here is a complete guide to compress your paid bank fee receipt when an image attachment is required.",
     keywords: [
       "resize challan form to 25kb",
       "ppsc challan form compress 25kb",
@@ -479,11 +479,11 @@ export const blogPosts: BlogPost[] = [
     sections: [
       {
         heading: "Why PPSC Enforces a Strict 25KB Challan Scan Limit",
-        body: "The Punjab Public Service Commission (PPSC) enforces a strict 25KB file size limit for uploaded fee challan scans (Form 32-A). With hundreds of thousands of candidates applying during major recruitment drives, compact file limits keep verification portals fast and responsive. A 25KB JPEG file is more than sufficient for verification officers to inspect the cashier's stamp, deposit scroll number, branch code, and deposit date — provided the candidate crops away unnecessary blank paper borders before compressing.",
+        body: "The Punjab Public Service Commission (PPSC) enforces a 25KB file size limit for uploaded fee challan scans (Form 32-A) whenever manual bank deposits are submitted. With hundreds of thousands of candidates applying during major recruitment drives, compact file limits keep verification portals fast and responsive. A 25KB JPEG file is sufficient for verification officers to inspect the cashier's stamp, deposit scroll number, branch code, and deposit date — provided the candidate crops away unnecessary blank paper borders before compressing.",
       },
       {
         heading: "Fee Payment Verification: PPSC vs FPSC",
-        body: "It is important to understand the difference between recruitment systems in Pakistan: PPSC requires candidates to deposit fees using standard Treasury Challan Form 32-A at authorized bank branches (such as NBP or State Bank of Pakistan) and upload a cropped scan under 25KB. In contrast, FPSC has modernized its portal to accept online PSID / 1Link electronic fee submissions, where fee verification is automated and candidates only need to upload their photograph (which must be under 30KB). Candidates paying FPSC fees manually via treasury receipt should keep their stamped receipt safe for verification at the test center.",
+        body: "It is important to understand modern recruitment processes in Pakistan: FPSC has modernized its portal to verify fees via online PSID / 1Link electronic systems, where no challan image upload is needed (candidates only upload a photograph under 30KB). Similarly, PPSC offers online payment via ePay Punjab. However, candidates depositing fees manually via National Bank of Pakistan (NBP) Treasury Challan Form 32-A should keep their stamped receipt safe, and crop and compress the receipt to under 25KB if their specific advertisement requires an image upload.",
       },
       {
         heading: "What Information Must Remain Readable at 25KB",
@@ -542,13 +542,13 @@ export const blogPosts: BlogPost[] = [
     title: "How to Compress Signature to 20KB for Online Job Applications",
     metaTitle: "Compress Signature to 20KB Online Free (Sharp & Clear)",
     metaDescription:
-      "Compress scanned signature images to under 20KB for PPSC, FPSC, NTS, and university portals without blur. Crop ink tightly and optimize locally with zero uploads.",
+      "Compress scanned signature images to under 20KB for job applications, competitive exams, and university portals without blur. Crop ink tightly and optimize locally with zero uploads.",
     category: "Signature Tools",
     tag: "Signature · PPSC · Jobs",
     date: "2026-11-01",
     readTime: "5 min read",
     intro:
-      "Online recruitment portals and university application forms almost universally demand a candidate's digital signature below 20KB. This requirement is tougher than it sounds — a photo of your signature taken on a modern smartphone is typically 2MB to 4MB, which is 100 to 200 times larger than the portal allows. Compressing a signature without losing line clarity or turning crisp ink strokes into blurry noise requires the right approach. This guide explains exactly how to do it.",
+      "Many online recruitment portals, competitive examination forms, and university admissions systems require a candidate's digital signature to be compressed to a small file size (such as under 20KB, 25KB, or 50KB). A smartphone photo of a signature is typically 2MB to 4MB, which exceeds portal limits. This guide explains how to crop and compress your signature to under 20KB cleanly without losing line clarity or turning ink strokes into blurry noise.",
     keywords: [
       "compress signature to 20kb",
       "signature resizer online 20kb",
@@ -567,8 +567,8 @@ export const blogPosts: BlogPost[] = [
     ],
     sections: [
       {
-        heading: "Why Online Portals Require Signatures Under 20KB",
-        body: "PPSC, FPSC, NTS, ETEA, and most university admission portals set a 20KB limit for digital signature uploads because signature images are stored directly in applicant profile databases. If every candidate uploads a 500KB signature image, a database with 500,000 applicants would require 250GB just for signatures. At 20KB per applicant, the same database uses only 10GB — a 25x reduction in storage and bandwidth costs. The 20KB limit is also based on the fact that a correctly prepared signature image — small canvas, plain white background, dark ink — does not need more than 20KB to be clearly readable. The challenge is that most people photograph their signature on a full-size piece of paper, which creates a huge, blank white area that the compression algorithm must struggle to eliminate.",
+        heading: "Why Portals Require Lightweight Signature Images",
+        body: "Recruitment portals and university admission forms often set tight file size limits (such as 20KB or 50KB) for digital signature uploads because signature images are stored directly in applicant database records. While modern candidate portals vary in their allowed upload size (with some allowing up to 100KB or more), preparing a lightweight signature under 20KB ensures your file will not be rejected by older or restrictive portal systems.",
       },
       {
         heading: "How to Capture a Perfect Signature for Compression",
@@ -580,7 +580,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: "Recommended Dimensions for a Signature Image",
-        body: "Most government portals and university forms accept signature images in a horizontal rectangle format. The ideal dimensions for a cropped signature image are between 300×100 pixels and 500×200 pixels — wide and short, matching the natural shape of a handwritten signature. At these dimensions, a JPEG file with reasonable quality easily fits under 20KB. PPSC specifically recommends a signature image of 213×71 pixels, though dimensions in the 300×100 to 400×150 pixel range are accepted by most other portals. After cropping, check the pixel dimensions in your photo editor and resize if needed using Appliory's Image Resizer before compressing.",
+        body: "Most portals and university forms accept signature images in a horizontal rectangle format. The ideal dimensions for a cropped signature image are between 300×100 pixels and 500×200 pixels — wide and short, matching the natural shape of a handwritten signature. At these dimensions, a JPEG file with reasonable quality easily fits under 20KB. After cropping, check the pixel dimensions in your photo editor and resize if needed using Appliory's Image Resizer before compressing.",
       },
       {
         heading: "Compressing Your Signature to 20KB Using Appliory",
@@ -592,7 +592,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: "Common Portal-Specific Signature Requirements",
-        body: "Different Pakistani recruitment and admission portals have specific requirements beyond file size. PPSC requires signature images in JPEG format under 20KB, with dimensions approximately 213×71 pixels. FPSC follows similar requirements. NTS (National Testing Service) specifies JPEG under 20KB. HEC (Higher Education Commission) scholarship portals typically accept up to 50KB for signatures. For international scholarship applications like Chevening, Fulbright, and Commonwealth, check the specific portal requirements — many accept up to 100KB for signatures. Always read the portal's document requirements section before preparing your files, as requirements can change between recruitment cycles.",
+        body: "Always verify the document requirements section of your specific advertisement before preparing your files, as guidelines vary across agencies and recruitment cycles. For portals specifying strict limits, compressing to a 20KB preset guarantees your file clears upload checks safely.",
       },
     ],
     faqs: [
@@ -746,23 +746,23 @@ export const blogPosts: BlogPost[] = [
     sections: [
       {
         heading: "Overview of PPSC and FPSC Document Requirements",
-        body: "PPSC (Punjab Public Service Commission) and FPSC (Federal Public Service Commission) are Pakistan's two primary public service recruitment bodies. While both evaluate candidates for competitive positions, their online application portals enforce different technical document requirements. PPSC requires an under-20KB passport photo, an under-20KB signature, and an under-25KB Form 32-A bank challan scan. FPSC requires candidate photographs to be under 30KB, and handles application fees electronically via 1Link PSID or bank treasury receipts. Preparing your documents to each portal's exact specifications prevents upload errors and avoids last-minute panic before application deadlines.",
+        body: "PPSC (Punjab Public Service Commission) and FPSC (Federal Public Service Commission) are Pakistan's two primary public service recruitment bodies. While both evaluate candidates for competitive positions, their online application portals enforce different technical document requirements. PPSC application procedures specify separate upload limits (photographs and CNIC front images under 25KB, with 20KB presets widely used to stay comfortably under limits). FPSC requires candidate photographs to be under 30KB in JPEG format, and verifies examination fees electronically via PSID/1Link numbers. Always verify your active advertisement and upload-screen instructions before preparing files.",
       },
       {
         heading: "PPSC Photo Requirements — Exact Specifications",
-        body: "The PPSC profile photo must be a recent, clear passport-size photograph in JPEG format. The file size must be strictly under 20KB — this is the most common reason for upload failure. The pixel dimensions must be less than 250×250 pixels (typically around 213×213 px). If you see the error 'only passport size (less than 250 pixel width and height) file are accepted', both your dimensions and file size need adjustment. The photo must show full face, front view, with a plain white or light blue background.",
+        body: "PPSC profile photos must be a recent, clear passport-style photograph in JPEG format. Available PPSC guidelines state uploaded photographs and CNIC front images should be under 25KB. Image dimensions are typically requested under 250×250 pixels. If you see an upload alert, adjust dimensions to under 250×250 px and compress to under 20KB–25KB. The photo must show a clear front view with a plain light background.",
       },
       {
         heading: "FPSC Photo & Fee Verification Guidelines",
-        body: "FPSC online job applications require candidates to upload a clear passport photograph in JPG/JPEG format under 30KB. Unlike PPSC, which requires uploading a scanned bank challan image, FPSC now primarily verifies fees through electronic 1Link PSID numbers generated during the application process, or through National Bank of Pakistan treasury receipts. Retain your stamped receipt or transaction reference for verification at the examination hall.",
+        body: "FPSC online job applications require candidates to upload a clear passport photograph in JPG/JPEG format under 30KB. Unlike older manual workflows, FPSC now primarily verifies fees through electronic 1Link PSID numbers generated during the application process, or through National Bank of Pakistan treasury receipts. Retain your stamped receipt or transaction reference for verification at the examination hall.",
       },
       {
-        heading: "PPSC Challan (Bank Fee Receipt) Requirements",
-        body: "The paid bank fee challan is proof that you have deposited the application fee at an authorized bank. PPSC requires the challan scan to be in JPEG format and under 25KB in file size. The image must clearly show the bank cashier's stamp or seal, the transaction reference or scroll number, the date of payment, the applicant's CNIC number, and the amount deposited. Many PPSC advertisements use the National Bank of Pakistan (NBP) or other designated banks for fee collection. After paying the fee, the bank cashier stamps your challan. Take a clear photograph of the applicant's copy (usually the smaller portion of the challan) and crop out blank margins before compressing. This is the section of the challan that PPSC reviewers check for payment verification.",
+        heading: "Fee Payment & Challan Verification Details",
+        body: "Both PPSC and FPSC have largely modernized fee verification with electronic payment options (such as ePay Punjab for PPSC and 1Link PSID for FPSC). When paying via manual National Bank challan (Form 32-A) and an image attachment is requested, the scan must be under 25KB in JPEG format with the cashier's stamp, deposit ID, and date clearly readable. Crop out unnecessary blank margins before compressing.",
       },
       {
-        heading: "Signature Requirements for PPSC and FPSC Applications",
-        body: "Your digital signature must be a photograph or scan of your handwritten signature on plain white paper. The file must be in JPEG format under 20KB. The recommended dimensions are approximately 213×71 pixels — a wide, short rectangle matching the natural shape of a signature. Sign with a dark blue or black pen on clean white paper. After photographing your signature, crop the image tightly so the ink strokes fill most of the frame, leaving only a small white margin of a few pixels on each side. This is essential for compressing to 20KB while keeping the signature lines sharp and readable. Signatures that appear blurry, faded, or pixelated during the review process can flag your application for manual scrutiny.",
+        heading: "Signature Guidelines for Online Applications",
+        body: "Digital signatures should be clean scans or photos of your handwritten signature on unlined white paper. Requirements vary across portals: many request JPEG images under 20KB to 50KB in a horizontal rectangular aspect ratio. Cropping tightly around the signature ink before compressing ensures crisp lines and high legibility without blurry artifacts.",
       },
       {
         heading: "CNIC (National Identity Card) Scan Requirements",
@@ -773,14 +773,14 @@ export const blogPosts: BlogPost[] = [
         body: "When PPSC or FPSC requires educational document uploads, the requirements are typically less strict in terms of pixel dimensions but still have file size limits. Certificates and degrees are usually acceptable as PDF files (which preserves the original document quality better than a photo) or as JPEG scans under 500KB to 2MB. For PDF documents, use Appliory's PDF Page Counter to verify the page count matches the requirement. If you have a multi-page degree transcript that must be a single PDF under 2MB, check the file size with Appliory's File Size Checker. For scanned certificates, ensure all text — university name, degree title, roll number, and date of issuance — is clearly readable.",
       },
       {
-        heading: "Common PPSC Application Errors and How to Fix Them",
-        body: "The most common technical errors during PPSC and FPSC online applications are entirely preventable. File size exceeded: your photo is over 20KB or challan is over 25KB — use Appliory's compression tools with the preset targets. Invalid file format: you uploaded a PNG or PDF when JPEG is required — use Appliory to export as JPEG. Image dimensions too large: your photo is 1200×1200 pixels but only up to 250×250 is accepted — use the Image Resizer to set exact pixel dimensions. Blurry challan scan: you compressed the full A4 sheet without cropping — retake the photo, crop to the challan's payment section only, then compress. Signature not accepted: your signature background is not white, or the image is too large — use a plain white paper, crop tightly, and compress with Appliory. Session timeout: applications should ideally be prepared before starting the portal form — have all documents ready in a folder before you begin filling.",
+        heading: "Common Application Errors and How to Fix Them",
+        body: "The most common technical errors during online applications are entirely preventable. File size exceeded: your photo is over the required limit — use Appliory's compression tools with the preset targets. Invalid file format: you uploaded a PNG or PDF when JPEG is required — use Appliory to export as JPEG. Image dimensions too large: your photo is 1200×1200 pixels but only up to 250×250 is accepted — use the Image Resizer to set exact pixel dimensions. Session timeout: applications should ideally be prepared before starting the portal form — have all documents ready in a folder before you begin filling.",
       },
     ],
     faqs: [
       [
         "What is the PPSC photo size in KB?",
-        "PPSC requires the profile photograph to be in JPEG format and under 20KB in file size. The pixel dimensions should be approximately 213×213 pixels or as specified in the job advertisement. Use Appliory's Compress Image to 20KB tool to prepare your photo to this exact specification.",
+        "PPSC guidelines specify candidate photos and CNIC front images under 25KB in JPEG format. Using Appliory's 20KB or 25KB preset ensures your photo meets this limit with clear facial details.",
       ],
       [
         "Can I submit a digital CNIC photo instead of a scanned copy?",

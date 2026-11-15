@@ -120,21 +120,27 @@ export default async function Page({
             <small>Target Output Specification</small>
             <b>
               {t.slug === "compress-image-to-20kb"
-                ? "Under 20KB JPEG (Sharp Face & Details)"
+                ? "Calibrated Under-20KB/25KB Preset"
                 : t.slug === "compress-image-to-50kb"
-                  ? "Under 50KB JPEG (High Clarity)"
-                  : t.slug === "passport-photo-maker"
-                    ? "Standard 2×2 Inch or 35×45mm Dimensions"
-                    : t.slug === "pdf-to-excel"
-                      ? "Clean Excel (.xlsx) / CSV Spreadsheet"
-                      : t.slug === "pdf-page-counter"
-                        ? "PDF Page Count & Content Summary"
-                        : "Verified & Compliant Result"}
+                  ? "Calibrated Under-50KB Preset"
+                  : t.slug === "image-compressor"
+                    ? "File Size Checked in KB"
+                    : t.slug === "image-resizer"
+                      ? "Dimensions Updated to Target Pixels"
+                      : t.slug === "passport-photo-maker"
+                        ? "Standard Dimensions (US, UK, Pak, 35×45mm)"
+                        : t.slug === "pdf-to-excel"
+                          ? "Clean Excel (.xlsx) / CSV Spreadsheet"
+                          : t.slug === "pdf-page-counter"
+                            ? "PDF Page Count & Content Summary"
+                            : t.slug === "file-size-checker"
+                              ? "File Size Checked Against Limit"
+                              : "Output Ready for Review"}
             </b>
           </div>
         </div>
         <div className="sample-status">
-          ✓ Ready for Inspection &amp; Download
+          ✓ Output Ready for Review · Preview Before Download
         </div>
       </div>
 

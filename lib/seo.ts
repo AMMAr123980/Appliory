@@ -11,8 +11,8 @@ export function pageMetadata(
   keywords?: string[],
 ): Metadata {
   const fullUrl = absolute(path);
-  // Clean any trailing " | Appliory" to avoid duplicate brand suffix when layout template is applied
-  const cleanTitle = title.replace(/\s*\|\s*Appliory\s*$/i, "").trim();
+  // Clean any trailing brand suffix to avoid duplicate brand suffix when layout template is applied
+  const cleanTitle = title.replace(/\s*([|–—]| - )\s*Appliory.*$/i, "").trim();
   return {
     title: cleanTitle,
     description,
