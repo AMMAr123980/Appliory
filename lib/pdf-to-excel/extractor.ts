@@ -64,8 +64,8 @@ export async function extractPDFTables(
     signal,
   } = options;
 
-  if (file.size > 50 * 1024 * 1024) {
-    throw new Error("Choose a PDF smaller than 50 MB for in-browser processing.");
+  if (file.size > 25 * 1024 * 1024) {
+    throw new Error("Choose a PDF smaller than 25 MB for in-browser processing.");
   }
 
   const bytes = new Uint8Array(await file.arrayBuffer());

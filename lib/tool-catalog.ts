@@ -287,9 +287,9 @@ The image resizer also supports custom dimensions for ID cards, HR portals, univ
     category: "IMAGES",
     intro: `Appliory's Image Compressor reduces any JPG, PNG, or WebP photo to your exact target size in KB — 20KB, 50KB, 100KB, or 200KB — directly inside your browser without uploading to any server. Set a target, click Compress, and get a submission-ready image in seconds.
 
-Compress image to 20KB for PPSC and FPSC government job portals. Compress image to 50KB for university admission forms. Compress image to 100KB for visa applications, scholarship portals, and HR systems. The tool shows the actual output size alongside a live preview so you can compare before downloading. If the compressed image is still too large, reduce the pixel dimensions alongside quality to easily hit your target.
+Compress image to 20KB for PPSC or under 30KB for FPSC and government recruitment portals. Compress image to 50KB for university admission forms and scholarship portals. Compress image to 100KB for visa applications, scholarship portals, and HR systems. The tool shows the actual output size alongside a live preview so you can compare before downloading. If the compressed image is still too large, reduce the pixel dimensions alongside quality to easily hit your target.
 
-This free image compressor supports JPEG and WebP output formats. JPEG gives the best compression for passport photos and document scans. WebP gives smaller file sizes for web use. Unlike other tools, Appliory shows the exact KB result — not an estimate — so you know the compressed photo will be accepted by the portal. No registration, no watermark, no file size limits on input, and 100% private processing on your device.`,
+This free image compressor supports JPEG and WebP output formats. JPEG gives the best compression for passport photos and document scans. WebP gives smaller file sizes for web use. Unlike other tools, Appliory displays the actual compressed file size so you can compare it against your portal's upload limit. No registration, no watermark, supports files up to 25 MB, and 100% private processing on your device.`,
     description:
       "Reduce JPG or WebP image size with a target in KB. Compare the real result before downloading.",
     answer:
@@ -691,7 +691,7 @@ Select your portrait photo, pick your standard preset, and download an accuratel
 
 Extract tables from PDF to Excel in seconds. The converter works best with payroll reports, salary slips, bank statements, fee registers, attendance sheets, and government data tables. It detects rows and columns from PDF coordinates, reconstructs the tabular grid, and lets you clean up the data before exporting. Use the Fill Down feature to propagate employee IDs or department names that only appear on the first row of each group — a problem common in government payroll PDFs.
 
-Convert bank statement PDF to Excel free for financial analysis and reconciliation. Convert payroll PDF to Excel for HR departments managing hundreds of employee records. The tool preserves leading zeros in employee IDs and codes (like 00142) by formatting them as text in the Excel output — unlike simple CSV converters that strip leading zeros. All conversion runs 100% locally in your browser. Confidential financial documents, payroll data, and employee records never leave your machine.`,
+Convert bank statement PDF to Excel free for financial analysis and reconciliation. Convert payroll PDF to Excel for HR departments managing hundreds of employee records. The tool preserves leading zeros in employee IDs and codes (like 00142) by explicitly formatting identifier cells as text in the generated Excel (.xlsx) output, preventing spreadsheet software from automatically dropping leading numbers. All conversion runs 100% locally in your browser. Confidential financial documents, payroll data, and employee records never leave your machine.`,
     description:
       "Convert PDF tables into editable spreadsheets, clean extracted data, and export your results. Designed with privacy-conscious processing.",
     answer:

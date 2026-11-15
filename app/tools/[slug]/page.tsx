@@ -124,7 +124,7 @@ export default async function Page({
                 : t.slug === "compress-image-to-50kb"
                   ? "Under 50KB JPEG (High Clarity)"
                   : t.slug === "passport-photo-maker"
-                    ? "Official 2×2 Inch or 35×45mm Format"
+                    ? "Standard 2×2 Inch or 35×45mm Dimensions"
                     : t.slug === "pdf-to-excel"
                       ? "Clean Excel (.xlsx) / CSV Spreadsheet"
                       : "Verified & Compliant Result"}
@@ -132,7 +132,7 @@ export default async function Page({
           </div>
         </div>
         <div className="sample-status">
-          ✓ Verified for Portal Uploads
+          ✓ Ready for Inspection &amp; Download
         </div>
       </div>
 

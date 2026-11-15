@@ -113,8 +113,8 @@ export function PDFToExcelConverter() {
       setErrorMessage("Please select a valid PDF document (.pdf).");
       return;
     }
-    if (selected.size > 50 * 1024 * 1024) {
-      setErrorMessage("PDF file size exceeds 50 MB. Please choose a smaller document.");
+    if (selected.size > 25 * 1024 * 1024) {
+      setErrorMessage("PDF file size exceeds 25 MB. Please choose a smaller document.");
       return;
     }
 
@@ -494,7 +494,7 @@ export function PDFToExcelConverter() {
                 ? `${(file.size / 1024 / 1024).toFixed(2)} MB · ${
                     detectedTotalPages ? `${detectedTotalPages} pages detected` : "PDF document"
                   }`
-                : "Ideal for payroll reports, financial statements, rosters, and tabular PDFs (up to 50 MB)"}
+                : "Ideal for payroll reports, financial statements, rosters, and tabular PDFs (up to 25 MB)"}
             </p>
           </div>
 
