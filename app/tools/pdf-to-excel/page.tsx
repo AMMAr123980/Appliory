@@ -8,7 +8,7 @@ import { blogPosts } from "@/lib/blog";
 import { ArrowUpRight } from "lucide-react";
 
 export const metadata = pageMetadata(
-  "Convert PDF to Excel Free & Private (XLSX)",
+  "Free PDF to Excel Converter Online",
   "Convert PDF tables into editable Excel (.xlsx) and CSV spreadsheets locally in your browser. Clean payroll reports, fill down IDs, remove repeated headers with 100% privacy.",
   "/tools/pdf-to-excel",
   [
@@ -174,6 +174,8 @@ export default function PDFToExcelPage() {
         <h2 style={{ fontSize: 20, fontWeight: 650, marginBottom: 8 }}>Real-World Extraction Demonstration</h2>
         <p style={{ fontSize: 13, color: "#55645a", marginBottom: 20 }}>
           See how Appliory reconstructs complex multi-row PDF tables into structured Excel (.xlsx) spreadsheets, preserving codes and filling grouped rows.
+          <br />
+          <em style={{ fontSize: 12, color: "var(--muted)" }}>* Demonstrating coordinate table extraction on illustrative synthetic payroll test data.</em>
         </p>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 18 }}>

@@ -29,7 +29,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-10-31",
     readTime: "4 min read",
     intro:
-      "Government job and recruitment portals in Pakistan enforce specific upload guidelines: PPSC published guidelines specify photographs and CNIC front images under 25KB (Official Source: ppsc.gop.pk · Verified November 2026), while FPSC requires JPEG photographs under 30KB (Official Source: fpsc.gov.pk · Verified November 2026). Modern NTS candidate portals accommodate up to 5MB (Official Source: nts.org.pk). Using a 20KB compression preset provides a reliable starting point for portals with strict upload ceilings. Here is how to compress your image to your portal's target size directly in your browser without cloud uploads.",
+      "A 20KB preset can help you meet strict image upload limits when specified by your application. Check the actual output and verify your portal's official requirements before submission. Official guidelines: PPSC specifies photographs and CNIC front images under 25KB (ppsc.gop.pk), while FPSC 2025/current guidelines specify photographs under 30KB (fpsc.gov.pk). Testing agencies like NTS and HEC may accommodate up to 5MB on specific programs (e.g. HEC BF-III). Here is how to compress your image to your portal's target size directly in your browser without cloud uploads.",
     keywords: [
       "compress image to 20kb",
       "ppsc photo compressor 20kb",
@@ -101,13 +101,13 @@ export const blogPosts: BlogPost[] = [
     title: "How to Compress Image to 50KB for University and Scholarship Applications",
     metaTitle: "Compress Image to 50KB Free Online — University & Scholarship Portals",
     metaDescription:
-      "Compress JPG, PNG, and WebP images to exactly 50KB for university admissions, scholarship portals, and visa forms. Fast, free, and runs locally with zero uploads.",
+      "Learn how to compress JPG, PNG, and WebP images toward a 50KB target for university admissions, scholarship portals, and visa forms. Fast, free, and 100% private.",
     category: "Image Tools",
     tag: "Scholarships · Universities",
     date: "2026-10-31",
     readTime: "4 min read",
     intro:
-      "University admissions portals, scholarship applications, and visa systems often require photos below 50KB. This guide explains how to reduce any image to exactly 50KB without losing important detail — privately, in your browser.",
+      "This guide explains how to reduce an image toward a 50KB target using Appliory's free online image compressor. The achievable file size and final image quality depend on the original image, dimensions and compression settings. Always review the output and confirm your application's official upload requirements before submitting.",
     keywords: [
       "compress image to 50kb",
       "compress photo for university admission",

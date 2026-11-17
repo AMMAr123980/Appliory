@@ -15,7 +15,7 @@ import { absolute, breadcrumb, pageMetadata } from "@/lib/seo";
 import { StructuredData } from "@/components/appliory/structured-data";
 
 export const metadata = pageMetadata(
-  "Free Online Document & Image Tools (100% Private)",
+  "All Free Online Image & PDF Tools",
   "Count PDF pages, check file sizes, resize and compress images to KB, and convert tables to Excel. 100% free, browser-based utilities with zero server uploads.",
   "/tools",
   [
@@ -88,11 +88,7 @@ export default function Page() {
           them can get your application rejected before it&apos;s even reviewed.
         </p>
         <p>
-          Every tool on this page works entirely in your browser using local web APIs. That means your photos, PDFs, and
-          personal documents never leave your device. There is no login required, no file upload to a cloud server, and
-          no usage limit beyond your browser&apos;s memory. You can compress a photo to under 20 KB, resize a passport
-          image to the exact pixel dimensions required by NADRA, PPSC, or the US embassy, count pages in a PDF, convert
-          a PDF table to Excel, or check whether a file meets size requirements — all in seconds, all for free.
+          Appliory processes your files locally in your browser without uploading document contents to our processing servers. Each tool has its own supported formats, file-size limits and batch capacity. Please check individual tool specifications before selecting your files.
         </p>
         <p>
           Our tools are especially useful for Pakistani applicants preparing documents for PPSC, FPSC, NTS, NADRA,

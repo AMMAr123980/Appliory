@@ -24,7 +24,7 @@ import { pageMetadata } from "@/lib/seo";
 import { StructuredData } from "@/components/appliory/structured-data";
 
 export const metadata = pageMetadata(
-  "Private Document & Image Tools for Applications",
+  "Document & Image Preparation Tools Online",
   "Free online tools to check file sizes, compress images, resize photos, count PDF pages and prepare application documents. No login, private in-browser processing.",
   "/",
   [
@@ -508,7 +508,7 @@ export default function Home() {
               </div>
             </div>
             <div className="sample-status">
-              <CheckCircle2 size={16} /> Compression Demonstration · Note: Dimensions and final image quality must be verified against your portal's official rules.
+              <CheckCircle2 size={16} /> Compression Demonstration · Note: Dimensions and final image quality must be verified against your portal&apos;s official rules. If a tight target cannot be reached without excessive visual degradation, Appliory displays the closest achievable result with a quality alert. Appliory does not guarantee portal acceptance, which is determined solely by the receiving authority.
             </div>
           </div>
 

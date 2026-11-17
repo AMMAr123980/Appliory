@@ -241,7 +241,7 @@ Understanding the difference between Image Resizer and Image Compressor: The Res
     slug: "image-compressor",
     name: "Image compressor",
     h1: "Image Compressor Online to KB (20KB, 50KB, 100KB, Custom)",
-    metaTitle: "Image Compressor Online to KB – Free & Private",
+    metaTitle: "Image Compressor Online to KB",
     metaDescription:
       "Compress JPG, PNG, and WebP images to custom sizes in KB online for free. Fast in-browser image compressor with live preview and zero server document uploads.",
     keywords: [
