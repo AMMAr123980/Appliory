@@ -15,8 +15,8 @@ import { absolute, breadcrumb, pageMetadata } from "@/lib/seo";
 import { StructuredData } from "@/components/appliory/structured-data";
 
 export const metadata = pageMetadata(
-  "All Free Online Image, PDF & File Tools",
-  "Count PDF pages, check file sizes, resize and compress images to KB, and convert tables to Excel. 100% free, browser-based utilities with zero server uploads.",
+  "Free Online PDF, Image & Document Tools",
+  "Explore free in-browser tools for image compression, passport photos, PDF-to-Excel, page counting, file-size checks and application document preparation.",
   "/tools",
   [
     "free online tools",
@@ -72,8 +72,8 @@ export default function Page() {
       <header className="section-heading">
         <div>
           <span className="eyebrow">BROWSER-BASED UTILITIES</span>
-          <h1>Free Online Document, PDF &amp; Image Tools</h1>
-          <p>Choose from free tools to compress images, check file sizes, convert PDFs and prepare application documents privately in your browser.</p>
+          <h1>Free Online Tools for Application Documents</h1>
+          <p>Choose from free tools to compress images, check file sizes, convert PDFs and prepare application documents privately in your browser. Usage limits vary by tool — check each tool&apos;s file-size, file-count and batch limits before processing.</p>
         </div>
         <span className="privacy-inline">
           <ShieldCheck size={17} /> Files stay on your device

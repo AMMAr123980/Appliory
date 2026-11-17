@@ -11,6 +11,18 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow: ["/dashboard", "/api/", "/login", "/signup", "/auth/"],
       },
+      // OAI-SearchBot: ChatGPT Search discovery crawler (separate from GPTBot training crawler)
+      {
+        userAgent: "OAI-SearchBot",
+        allow: "/",
+        disallow: ["/dashboard", "/api/"],
+      },
+      // PerplexityBot: Perplexity search crawler
+      {
+        userAgent: "Perplexity-User",
+        allow: "/",
+        disallow: ["/dashboard", "/api/"],
+      },
       {
         userAgent: [
           "GPTBot",

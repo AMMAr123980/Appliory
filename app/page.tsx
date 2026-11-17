@@ -24,8 +24,8 @@ import { pageMetadata } from "@/lib/seo";
 import { StructuredData } from "@/components/appliory/structured-data";
 
 export const metadata = pageMetadata(
-  "Free Online Document Preparation Tools",
-  "Free online tools to check file sizes, compress images, resize photos, count PDF pages and prepare application documents. No login, private in-browser processing.",
+  "Free Document & Image Tools for Applications",
+  "Prepare application files with free browser-based tools. Compress images, resize photos, check documents, count PDF pages and convert tables to Excel — without file uploads.",
   "/",
   [
     "private document tools for applications",
@@ -85,7 +85,7 @@ export default function Home() {
             <span>&amp; Prepare Application Documents</span>
           </h1>
           <p>
-            Appliory provides free, private online tools to check file sizes, compress images, resize photos, count PDF pages and prepare application documents. No login required — all processing executes directly inside your browser.
+            Appliory provides free, private online tools to prepare application documents and images: compress photos, resize for passports, check file sizes, count PDF pages, and convert tables to Excel. No login required — all processing runs directly inside your browser.
           </p>
           <p style={{ marginTop: "0.5rem", fontSize: "0.95rem", color: "var(--muted)" }}>
             File-size and photo requirements vary by institution, country and portal. Choose a compression target or checklist based on your latest official instructions.
@@ -159,6 +159,13 @@ export default function Home() {
             </span>
             <ArrowUpRight size={20} />
           </Link>
+          <Link href="/tools/pdf-to-excel">
+            <span>
+              <b>5. Convert PDF to Excel</b>
+              <small>Extract tables from text-based PDFs to .xlsx or CSV privately in your browser</small>
+            </span>
+            <ArrowUpRight size={20} />
+          </Link>
           <div className="task-panel-note">
             <ShieldCheck size={17} /> 100% On-device processing. No files sent to external servers.
           </div>
@@ -574,7 +581,7 @@ export default function Home() {
           <Link className="blog-card" href="/blog/how-to-compress-image-to-20kb-for-ppsc-fpsc">
             <div className="blog-card-header"><span className="blog-category">Image Tools</span></div>
             <h3>How to Compress Image to 20KB for PPSC, FPSC &amp; Government Portals</h3>
-            <p>Step-by-step guide to reduce your photo to exactly 20KB — free, private, no upload.</p>
+            <p>Guide to reduce your photo toward a 20KB or 25KB target for PPSC, FPSC and other portals — free, private, no upload.</p>
             <div className="blog-card-footer">
               <span className="blog-meta" style={{ fontSize: 11, color: "var(--muted)" }}>4 min read</span>
               <span className="text-link" style={{ fontSize: 13 }}>Read <ArrowUpRight size={12} /></span>

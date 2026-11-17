@@ -3,7 +3,7 @@ export const tools = [
     slug: "pdf-page-counter",
     name: "PDF page counter & summary",
     h1: "PDF Page Counter Online – Count & Check Pages Instantly",
-    metaTitle: "PDF Page Counter Online – Count & Check Pages",
+    metaTitle: "PDF Page Counter & Summary – Free Online | Appliory",
     metaDescription:
       "Count pages across single or multiple PDF files instantly. Verify submission page limits and extract document summaries locally in your browser with zero uploads.",
     keywords: [
@@ -77,7 +77,7 @@ You can also count pages across multiple PDF files at once. Select your applicat
     slug: "file-size-checker",
     name: "File size checker",
     h1: "Check File Size Online in KB & MB (Instant Validator)",
-    metaTitle: "Check File Size Online in KB & MB",
+    metaTitle: "File Size Checker – Check KB, MB & Bytes | Appliory",
     metaDescription:
       "Check the exact file size of images, PDFs and documents in bytes, KB and MB. Compare files against your custom upload limit privately in your browser. Free, no login.",
     keywords: [
@@ -167,7 +167,7 @@ Supported formats include images (JPG, PNG, WebP), PDF documents, Word documents
     slug: "image-resizer",
     name: "Image resizer",
     h1: "Image Resizer Online – Resize to Exact Pixels (Passport, ID & Custom)",
-    metaTitle: "Image Resizer Online – Resize to Exact Pixels",
+    metaTitle: "Image Resizer – Custom Pixels & Photo Sizes | Appliory",
     metaDescription:
       "Resize JPG, PNG, and WebP images to exact pixel dimensions (600x600 passport, 35x45mm, custom px). Lock aspect ratio and download privately with zero uploads.",
     keywords: [
@@ -241,7 +241,7 @@ Understanding the difference between Image Resizer and Image Compressor: The Res
     slug: "image-compressor",
     name: "Image compressor",
     h1: "Image Compressor Online to KB (20KB, 50KB, 100KB, Custom)",
-    metaTitle: "Image Compressor Online to KB",
+    metaTitle: "Free Image Compressor to KB – JPG, PNG, WebP | Appliory",
     metaDescription:
       "Compress JPG, PNG, and WebP images to custom sizes in KB online for free. Fast in-browser image compressor with live preview and zero server document uploads.",
     keywords: [
@@ -332,7 +332,7 @@ This free image compressor supports JPEG and WebP output formats. JPEG gives the
     slug: "duplicate-file-finder",
     name: "Duplicate file finder",
     h1: "Duplicate File Finder Online (Private SHA-256 Hashing)",
-    metaTitle: "Duplicate File Finder Online (SHA-256)",
+    metaTitle: "Duplicate File Finder – SHA-256 Check | Appliory",
     metaDescription:
       "Find identical duplicate files and documents using cryptographic SHA-256 byte hashing. Compare file bytes locally in your browser with 100% privacy and safety.",
     keywords: [
@@ -365,7 +365,7 @@ No files are uploaded. All SHA-256 hashing runs locally inside your browser usin
     description:
       "Find exact duplicate files using SHA-256 hashes, even when filenames differ. No file uploads.",
     answer:
-      "Select two or more files to compare their SHA-256 hashes locally. Files with identical bytes are grouped as exact duplicates, even if their names differ. Similar-looking files with different bytes are not grouped.",
+      "Select two or more files to compare their SHA-256 hashes locally. Files with identical bytes are grouped as exact duplicates, even if their names differ. Similar-looking images or documents with any byte difference are not considered duplicates by this tool.",
     action: "Find exact duplicates",
     accepts: "",
     steps: [
@@ -392,7 +392,7 @@ No files are uploaded. All SHA-256 hashing runs locally inside your browser usin
     slug: "compress-image-to-20kb",
     name: "Compress image to 20KB",
     h1: "Compress Image to 20KB Online – Free Photo Resizer for Job Portals",
-    metaTitle: "Compress Image to 20KB Online – Free Photo Resizer",
+    metaTitle: "Compress Image to 20KB Online for Job Forms | Appliory",
     metaDescription:
       "Compress photos, signatures, and application images under 20KB or 25KB online for free. Dedicated compression presets for PPSC, FPSC, NTS, and recruitment portals.",
     keywords: [
@@ -483,7 +483,7 @@ Always check your specific advertisement instructions before uploading. Use this
     slug: "compress-image-to-50kb",
     name: "Compress image to 50KB",
     h1: "Compress Image to 50KB Online Free for Admissions & Visas",
-    metaTitle: "Compress Image to 50KB Online Free",
+    metaTitle: "Compress Image to 50KB Online – Free | Appliory",
     metaDescription:
       "Compress JPG, PNG, and WebP images to 50KB online for free. Ideal for university admissions, specific scholarship forms, and portals enforcing a 50KB limit. 100% private.",
     keywords: [
@@ -537,7 +537,7 @@ Keep in mind that portal requirements vary: while several admission and scholars
     accepts: "image/jpeg,image/png,image/webp",
     steps: [
       "Select your JPG, PNG, or WebP photo.",
-      "The target size is preset to 50 KB (typically outputting between 40KB and 48KB).",
+      "The target size is preset to 50 KB. Inspect the preview and verify the actual output size before downloading — the achievable file size depends on the original image, dimensions, and content.",
       "Inspect the live preview and download your optimized 50KB image.",
     ],
     questions: [
@@ -559,7 +559,7 @@ Keep in mind that portal requirements vary: while several admission and scholars
     slug: "passport-photo-maker",
     name: "Passport photo maker & resizer",
     h1: "Passport Size Photo Maker Online Free (2x2 Inch & 35x45mm)",
-    metaTitle: "Passport Size Photo Maker Online Free (2x2 & 35x45mm)",
+    metaTitle: "Passport Photo Maker – Visa & ID Sizes | Appliory",
     metaDescription:
       "Create official 2x2 inch (600x600 px) and 35x45 mm passport and visa photos online for free. Maintain exact aspect ratio and download privately with zero uploads.",
     keywords: [
@@ -628,7 +628,9 @@ Official requirements distinguish between different programs and authorities:
 • Pakistan Pak-Identity: Exactly 350×467 pixels, with file size up to 3MB.
 • Physical Prints: Standard 35×45 mm (413×531 pixels at 300 DPI) for UK, Schengen, and Asian printed submissions; 2×2 inch (51×51 mm) for US printed photos.
 
-This tool formats pixel dimensions and aspect ratios. It does not promise biometric acceptance or automatically alter facial features, eye level, expression, or background lighting. Always review official photo instructions before submission.`,
+Important: 35×45mm is a common physical print standard but is not universally accepted for all countries or digital uploads. Always verify your authority's specific digital requirements before submitting.
+
+This tool formats pixel dimensions and aspect ratios. It does not promise biometric acceptance or automatically alter facial features, eye level, expression, or background lighting. Formatting pixel dimensions does not guarantee biometric acceptance — verify head framing, expression, lighting, and background requirements with your issuing authority.`,
     description:
       "Format photos to official passport and visa presets (US DS-160 600–1200px, US DV 600×600, UK Digital 600×750, Pak-Identity 350×467, 35×45mm) privately on your device.",
     answer:
@@ -663,7 +665,7 @@ This tool formats pixel dimensions and aspect ratios. It does not promise biomet
     slug: "pdf-to-excel",
     name: "PDF to Excel converter",
     h1: "PDF to Excel Converter Online (Extract Tables Free & Privately)",
-    metaTitle: "Free PDF to Excel Converter Online",
+    metaTitle: "PDF to Excel Converter Online – Free & Private | Appliory",
     metaDescription:
       "Convert PDF tables into editable Excel (.xlsx) and CSV spreadsheets locally in your browser. Clean payroll reports, fill down IDs, and export with 100% privacy.",
     keywords: [
