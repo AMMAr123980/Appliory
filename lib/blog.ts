@@ -687,7 +687,6 @@ export const blogPosts: BlogPost[] = [
         heading: "How to Resize Image to Exact Pixels",
         body: "If your image has the wrong dimensions (for example, you need 600×600 px for a visa or 250×250 px for an ID portal), use Appliory's Image Resizer (appliory.tech/tools/image-resizer). Enter your desired width and height in pixels, lock the aspect ratio to prevent stretching, and download your resized JPG, PNG, or WebP file. If the file is still too heavy after resizing, use Appliory's Image Compressor to reduce the storage size to 20KB, 50KB, or 100KB.",
       },
-    ],
       {
         heading: "What to Do if Your Image Is Too Large",
         body: "If Appliory's File Size Checker shows your image exceeds the portal's limit, the fix depends on how much over the limit it is. If your photo is 30KB but the limit is 20KB, use Appliory's Compress Image to 20KB tool — it will hit the target precisely. If your photo is 500KB and the limit is 50KB, first resize the pixel dimensions to match the required size (e.g. 600×600) using the Image Resizer, then compress. If your image is a large PNG, convert it to JPEG — PNG lossless compression cannot reach the small file sizes that JPEG achieves. The workflow is: check size → identify whether it is a pixel dimension problem or a file size problem → use the appropriate Appliory tool → re-check to confirm compliance.",
