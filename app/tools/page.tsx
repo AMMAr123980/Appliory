@@ -203,6 +203,7 @@ export default function Page() {
           <h2 style={{ fontSize: "1.25rem", margin: "4px 0" }}>Complete Document &amp; Image Suite</h2>
         </div>
       </div>
+      <div className="quick-tools-grid">
         {tools.map((t) => (
           <Link
             key={t.slug}
