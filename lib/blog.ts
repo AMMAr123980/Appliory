@@ -29,7 +29,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-10-31",
     readTime: "4 min read",
     intro:
-      "Government job and recruitment portals in Pakistan (such as PPSC, FPSC, and testing agencies) have specific upload rules. PPSC guidelines specify photographs and CNIC front images under 25KB, while FPSC requires JPEG photographs under 30KB. Compressing your photo to a 20KB preset ensures you stay well under strict portal ceilings. Here is how to do it correctly without uploading your photo to any cloud server.",
+      "Government job and recruitment portals in Pakistan have specific upload guidelines: PPSC published guidelines specify photographs and CNIC front images under 25KB (Official Source: ppsc.gop.pk · Verified November 2026), while FPSC requires JPEG photographs under 30KB (Official Source: fpsc.gov.pk · Verified November 2026). NTS candidate portals accommodate up to 5MB (Official Source: nts.org.pk). Using a 20KB compression preset helps candidates meet restrictive ceilings where required. Here is how to compress your image to your portal's target size directly in your browser without cloud uploads.",
     keywords: [
       "compress image to 20kb",
       "ppsc photo compressor 20kb",
@@ -54,11 +54,11 @@ export const blogPosts: BlogPost[] = [
     sections: [
       {
         heading: "Why Government Portals Enforce Image Size Limits",
-        body: "Pakistan's government recruitment portals enforce file size ceilings — such as under 25KB for PPSC or under 30KB for FPSC — to standardize applicant records and ensure swift server processing. A 20KB compression preset provides a safe, universal target for restrictive forms. Formats are almost always JPEG (JPG), not PNG.",
+        body: "Public service commissions and testing agencies enforce file size ceilings — such as under 25KB for PPSC or under 30KB for FPSC — to standardize applicant records and keep high-volume submission servers fast. Calibrated presets (20KB or 25KB) provide practical starting points whenever an application specifies a low ceiling. Supported formats are standard JPEG (JPG) files.",
       },
       {
-        heading: "What Happens If Your Photo Is Too Large",
-        body: "If you try to upload a photo above 20KB, the portal will show an error like 'File size exceeds limit' or 'Invalid file'. Many applicants miss application deadlines because they cannot fix their photo size. A photo that looks small on screen can still be 500KB or more depending on how it was saved.",
+        heading: "What Happens If Your Photo Exceeds the Portal Limit",
+        body: "If you try to upload a photo exceeding the portal ceiling, the submission form will show an error like 'File size exceeds limit' or 'Invalid file'. Many applicants miss application deadlines because high-resolution camera photos can easily exceed 2MB or 5MB. Inspecting and adjusting your file size before uploading prevents last-minute errors.",
       },
       {
         heading: "How to Compress Your Photo to 20KB — Step by Step",

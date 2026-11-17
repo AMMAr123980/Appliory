@@ -137,7 +137,7 @@ export default function PDFToExcelPage() {
         <span>PDF to Excel converter</span>
       </nav>
 
-      <header className="tool-intro" style={{ marginBottom: 32 }}>
+      <header className="tool-intro" style={{ marginBottom: 24 }}>
         <span className="eyebrow">100% LOCAL · PRIVACY-FIRST · ZERO CLOUD UPLOADS</span>
         <h1>Free Online PDF to Excel Converter</h1>
         <p>
@@ -145,9 +145,97 @@ export default function PDFToExcelPage() {
         </p>
       </header>
 
+      {/* Upfront Compatibility Notice */}
+      <div style={{
+        display: "flex",
+        alignItems: "center",
+        gap: 12,
+        padding: "10px 16px",
+        background: "#f0fdf4",
+        border: "1px solid #bbf7d0",
+        borderRadius: 8,
+        marginBottom: 24,
+        fontSize: 13,
+        color: "#166534"
+      }}>
+        <span>ℹ️</span>
+        <span>
+          <strong>Digital &amp; Text-Based PDFs Supported:</strong> Appliory extracts tabular data directly from native text layers (payroll slips, bank statements, invoice reports). Flattened photo scans without a text layer require OCR software prior to conversion.
+        </span>
+      </div>
+
       {/* Main Interactive Tool Workspace */}
       <section style={{ marginBottom: 48 }}>
         <PDFToExcelConverter />
+      </section>
+
+      {/* Real-World Demonstration: Payroll & Statement Extraction */}
+      <section style={{ marginBottom: 48, background: "#fff", border: "1px solid var(--line)", borderRadius: 10, padding: 24 }}>
+        <h2 style={{ fontSize: 20, fontWeight: 650, marginBottom: 8 }}>Real-World Extraction Demonstration</h2>
+        <p style={{ fontSize: 13, color: "#55645a", marginBottom: 20 }}>
+          See how Appliory reconstructs complex multi-row PDF tables into structured Excel (.xlsx) spreadsheets, preserving codes and filling grouped rows.
+        </p>
+
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 18 }}>
+          {/* Before: Raw PDF table */}
+          <div style={{ background: "#f8fafc", border: "1px solid #e2e8f0", borderRadius: 8, padding: 14 }}>
+            <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.5px", color: "#dc2626", display: "block", marginBottom: 8 }}>
+              ORIGINAL PDF TABLE (Fragmented text &amp; blank grouped rows)
+            </span>
+            <div style={{ fontSize: 12, fontFamily: "monospace", background: "#fff", border: "1px solid #cbd5e1", borderRadius: 4, padding: 10, lineHeight: 1.8 }}>
+              <div>Dept: IT &nbsp; | ID: 00142 | Name: A. Malik</div>
+              <div style={{ color: "#64748b" }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Basic Salary: 85,000</div>
+              <div style={{ color: "#64748b" }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Medical Allowance: 12,500</div>
+              <div style={{ borderTop: "1px dashed #cbd5e1", marginTop: 4, paddingTop: 4 }}>Dept: HR &nbsp; | ID: 00295 | Name: S. Khan</div>
+              <div style={{ color: "#64748b" }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Basic Salary: 78,000</div>
+            </div>
+            <small style={{ display: "block", marginTop: 8, color: "var(--muted)", fontSize: 11 }}>
+              ⚠️ Standard copy-paste truncates leading zeros (<code>00142</code> becomes <code>142</code>) and leaves grouped allowance rows blank.
+            </small>
+          </div>
+
+          {/* After: Cleaned Excel output */}
+          <div style={{ background: "#f0fdf4", border: "1px solid #bbf7d0", borderRadius: 8, padding: 14 }}>
+            <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.5px", color: "#166534", display: "block", marginBottom: 8 }}>
+              APPLIORY EXCEL (.XLSX) OUTPUT (Clean grid with Fill Down applied)
+            </span>
+            <div style={{ overflowX: "auto" }}>
+              <table style={{ width: "100%", fontSize: 11, borderCollapse: "collapse", background: "#fff", border: "1px solid #86efac" }}>
+                <thead>
+                  <tr style={{ background: "#dcfce7", borderBottom: "1px solid #86efac" }}>
+                    <th style={{ padding: "4px 8px", textAlign: "left" }}>Dept</th>
+                    <th style={{ padding: "4px 8px", textAlign: "left" }}>Emp ID</th>
+                    <th style={{ padding: "4px 8px", textAlign: "left" }}>Pay Item</th>
+                    <th style={{ padding: "4px 8px", textAlign: "right" }}>Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style={{ borderBottom: "1px solid #e2e8f0" }}>
+                    <td style={{ padding: "4px 8px" }}>IT</td>
+                    <td style={{ padding: "4px 8px", fontWeight: 600, color: "var(--accent)" }}>00142</td>
+                    <td style={{ padding: "4px 8px" }}>Basic Salary</td>
+                    <td style={{ padding: "4px 8px", textAlign: "right" }}>85,000</td>
+                  </tr>
+                  <tr style={{ borderBottom: "1px solid #e2e8f0" }}>
+                    <td style={{ padding: "4px 8px", color: "var(--accent)" }}>IT (Filled)</td>
+                    <td style={{ padding: "4px 8px", fontWeight: 600, color: "var(--accent)" }}>00142</td>
+                    <td style={{ padding: "4px 8px" }}>Medical Allowance</td>
+                    <td style={{ padding: "4px 8px", textAlign: "right" }}>12,500</td>
+                  </tr>
+                  <tr style={{ borderBottom: "1px solid #e2e8f0" }}>
+                    <td style={{ padding: "4px 8px" }}>HR</td>
+                    <td style={{ padding: "4px 8px", fontWeight: 600, color: "var(--accent)" }}>00295</td>
+                    <td style={{ padding: "4px 8px" }}>Basic Salary</td>
+                    <td style={{ padding: "4px 8px", textAlign: "right" }}>78,000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <small style={{ display: "block", marginTop: 8, color: "#166534", fontSize: 11 }}>
+              ✓ Leading zeros preserved as text cells (<code>00142</code>), Fill Down automatically links allowance lines to the parent employee.
+            </small>
+          </div>
+        </div>
       </section>
 
       {/* Features Overview */}

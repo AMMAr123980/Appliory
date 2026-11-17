@@ -5,6 +5,10 @@ import {
   ImageIcon,
   Files,
   ShieldCheck,
+  Briefcase,
+  GraduationCap,
+  Globe,
+  Table,
 } from "lucide-react";
 import { tools } from "@/lib/tool-catalog";
 import { absolute, breadcrumb, pageMetadata } from "@/lib/seo";
@@ -96,7 +100,109 @@ export default function Page() {
           the most common requirements for popular portals, and answers to frequently asked questions.
         </p>
       </section>
-      <div className="quick-tools-grid">
+
+      {/* Topic Clusters for Targeted Search Intent */}
+      <section style={{ maxWidth: 1040, margin: "0 auto 3rem", padding: "0 16px" }}>
+        <h2 style={{ fontSize: "1.35rem", fontWeight: 700, marginBottom: "1rem", color: "var(--ink)" }}>
+          Browse Tools by Solution Cluster
+        </h2>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(230px, 1fr))", gap: "16px" }}>
+          {/* Cluster 1: Recruitment (Pakistan) */}
+          <div style={{ background: "#fff", border: "1px solid var(--line)", borderRadius: 10, padding: "18px 20px" }}>
+            <span style={{ display: "inline-flex", alignItems: "center", gap: 6, fontSize: 11, fontWeight: 700, color: "var(--accent)", textTransform: "uppercase", letterSpacing: "0.5px" }}>
+              <Briefcase size={14} /> Recruitment (Pakistan)
+            </span>
+            <h3 style={{ fontSize: "1rem", margin: "8px 0 6px" }}>PPSC, FPSC &amp; NTS Jobs</h3>
+            <p style={{ fontSize: 13, color: "var(--muted)", lineHeight: 1.5, margin: "0 0 12px" }}>
+              Dedicated compression presets for photos, signatures, and identity scans.
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: 6, fontSize: 13 }}>
+              <Link href="/tools/compress-image-to-20kb" className="text-link" style={{ fontWeight: 550 }}>
+                Compress Image to 20KB <ArrowUpRight size={13} />
+              </Link>
+              <Link href="/tools/image-resizer" className="text-link">
+                Image Resizer (Custom Pixels) <ArrowUpRight size={13} />
+              </Link>
+              <Link href="/tools/file-size-checker" className="text-link">
+                File Size Limit Checker <ArrowUpRight size={13} />
+              </Link>
+            </div>
+          </div>
+
+          {/* Cluster 2: Visas & Passport Photos (International) */}
+          <div style={{ background: "#fff", border: "1px solid var(--line)", borderRadius: 10, padding: "18px 20px" }}>
+            <span style={{ display: "inline-flex", alignItems: "center", gap: 6, fontSize: 11, fontWeight: 700, color: "var(--accent)", textTransform: "uppercase", letterSpacing: "0.5px" }}>
+              <Globe size={14} /> Visa &amp; Passport (Global)
+            </span>
+            <h3 style={{ fontSize: "1rem", margin: "8px 0 6px" }}>US, UK &amp; Schengen Visas</h3>
+            <p style={{ fontSize: 13, color: "var(--muted)", lineHeight: 1.5, margin: "0 0 12px" }}>
+              Calibrated dimensions for US DS-160, DV Lottery, UK Digital, and 35×45mm prints.
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: 6, fontSize: 13 }}>
+              <Link href="/tools/passport-photo-maker" className="text-link" style={{ fontWeight: 550 }}>
+                Passport Photo Maker &amp; Resizer <ArrowUpRight size={13} />
+              </Link>
+              <Link href="/tools/image-compressor" className="text-link">
+                Online Image Compressor <ArrowUpRight size={13} />
+              </Link>
+              <Link href="/tools/image-resizer" className="text-link">
+                600×600 &amp; 35×45mm Resizer <ArrowUpRight size={13} />
+              </Link>
+            </div>
+          </div>
+
+          {/* Cluster 3: Scholarships & Higher Education */}
+          <div style={{ background: "#fff", border: "1px solid var(--line)", borderRadius: 10, padding: "18px 20px" }}>
+            <span style={{ display: "inline-flex", alignItems: "center", gap: 6, fontSize: 11, fontWeight: 700, color: "var(--accent)", textTransform: "uppercase", letterSpacing: "0.5px" }}>
+              <GraduationCap size={14} /> Scholarships &amp; Admissions
+            </span>
+            <h3 style={{ fontSize: "1rem", margin: "8px 0 6px" }}>HEC, Fulbright &amp; Erasmus</h3>
+            <p style={{ fontSize: 13, color: "var(--muted)", lineHeight: 1.5, margin: "0 0 12px" }}>
+              Prepare university portraits, check application page caps, and audit requirements.
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: 6, fontSize: 13 }}>
+              <Link href="/tools/compress-image-to-50kb" className="text-link" style={{ fontWeight: 550 }}>
+                Compress Image to 50KB <ArrowUpRight size={13} />
+              </Link>
+              <Link href="/tools/pdf-page-counter" className="text-link">
+                PDF Page Counter &amp; Summary <ArrowUpRight size={13} />
+              </Link>
+              <Link href="/guides/scholarship-document-checklist" className="text-link">
+                Scholarship Document Checklist <ArrowUpRight size={13} />
+              </Link>
+            </div>
+          </div>
+
+          {/* Cluster 4: Document & Spreadsheet Productivity */}
+          <div style={{ background: "#fff", border: "1px solid var(--line)", borderRadius: 10, padding: "18px 20px" }}>
+            <span style={{ display: "inline-flex", alignItems: "center", gap: 6, fontSize: 11, fontWeight: 700, color: "var(--accent)", textTransform: "uppercase", letterSpacing: "0.5px" }}>
+              <Table size={14} /> Document Productivity
+            </span>
+            <h3 style={{ fontSize: "1rem", margin: "8px 0 6px" }}>PDF Tables &amp; File Integrity</h3>
+            <p style={{ fontSize: 13, color: "var(--muted)", lineHeight: 1.5, margin: "0 0 12px" }}>
+              Extract payroll tables to Excel and verify file uniqueness with zero uploads.
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: 6, fontSize: 13 }}>
+              <Link href="/tools/pdf-to-excel" className="text-link" style={{ fontWeight: 550 }}>
+                PDF to Excel Converter (.xlsx) <ArrowUpRight size={13} />
+              </Link>
+              <Link href="/tools/duplicate-file-finder" className="text-link">
+                Duplicate File Finder (SHA-256) <ArrowUpRight size={13} />
+              </Link>
+              <Link href="/tools/file-size-checker" className="text-link">
+                Check File Size (KB &amp; MB) <ArrowUpRight size={13} />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="section-heading" style={{ maxWidth: 1040, margin: "0 auto 1.5rem", padding: "0 16px" }}>
+        <div>
+          <span className="eyebrow">ALL TOOLS</span>
+          <h2 style={{ fontSize: "1.25rem", margin: "4px 0" }}>Complete Document &amp; Image Suite</h2>
+        </div>
+      </div>
         {tools.map((t) => (
           <Link
             key={t.slug}
