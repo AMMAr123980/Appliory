@@ -29,7 +29,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-10-31",
     readTime: "4 min read",
     intro:
-      "Government job and recruitment portals in Pakistan have specific upload guidelines: PPSC published guidelines specify photographs and CNIC front images under 25KB (Official Source: ppsc.gop.pk · Verified November 2026), while FPSC requires JPEG photographs under 30KB (Official Source: fpsc.gov.pk · Verified November 2026). NTS candidate portals accommodate up to 5MB (Official Source: nts.org.pk). Using a 20KB compression preset helps candidates meet restrictive ceilings where required. Here is how to compress your image to your portal's target size directly in your browser without cloud uploads.",
+      "Government job and recruitment portals in Pakistan enforce specific upload guidelines: PPSC published guidelines specify photographs and CNIC front images under 25KB (Official Source: ppsc.gop.pk · Verified November 2026), while FPSC requires JPEG photographs under 30KB (Official Source: fpsc.gov.pk · Verified November 2026). Modern NTS candidate portals accommodate up to 5MB (Official Source: nts.org.pk). Using a 20KB compression preset provides a reliable starting point for portals with strict upload ceilings. Here is how to compress your image to your portal's target size directly in your browser without cloud uploads.",
     keywords: [
       "compress image to 20kb",
       "ppsc photo compressor 20kb",
@@ -58,19 +58,19 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: "What Happens If Your Photo Exceeds the Portal Limit",
-        body: "If you try to upload a photo exceeding the portal ceiling, the submission form will show an error like 'File size exceeds limit' or 'Invalid file'. Many applicants miss application deadlines because high-resolution camera photos can easily exceed 2MB or 5MB. Inspecting and adjusting your file size before uploading prevents last-minute errors.",
+        body: "If you try to upload a photo exceeding the portal ceiling, the submission form will show an error like 'File size exceeds limit' or 'Invalid file'. Many applicants encounter issues because high-resolution smartphone camera photos can easily exceed 2MB or 5MB. Inspecting and adjusting your file size before uploading prevents last-minute errors. Always consult your active job advertisement for exact portal parameters.",
       },
       {
         heading: "How to Compress Your Photo to 20KB — Step by Step",
-        body: "Open Appliory's free Image Compressor at appliory.tech/tools/compress-image-to-20kb. Click the upload area or drag your photo into it. Set the target size to 20KB. Click Compress. The tool reduces your photo's quality progressively until it reaches 20KB. Preview the result — if it looks acceptable, download it. No account is needed and your photo never leaves your device.",
+        body: "Open Appliory's free Image Compressor at appliory.tech/tools/compress-image-to-20kb. Click the upload area or drag your photo into it. Set the target size to 20KB (or 25KB depending on your portal). Click Compress. The tool optimizes your photo's pixel dimensions and JPEG quality progressively. Preview the result — if it looks sharp and recognizable, download it. No account is needed and your photo never leaves your device.",
       },
       {
         heading: "Tips for Best Photo Quality at 20KB",
-        body: "Start with a clear, well-lit JPEG photo. Avoid PNG for government portals — PNG files cannot be compressed as aggressively as JPEG. Crop your photo to the required dimensions (usually 35×45mm or passport size) before compressing. A smaller canvas means less data and better quality at the same file size. For best results, use a plain white or light blue background.",
+        body: "Start with a clear, well-lit JPEG photo. Avoid PNG for government portals — PNG files use lossless compression and cannot be reduced as aggressively as JPEG. Crop your photo to the required dimensions (usually 35×45mm or passport size) before compressing. A smaller canvas means less data and better quality at the same file size. For best results, use a plain white or light background.",
       },
       {
-        heading: "Does Compressing a Photo Affect Its Validity",
-        body: "No. Government portals care about file size limits and format — not image quality scores. As long as your face is clearly visible, the photo is well-lit, and the background matches requirements, a compressed 20KB photo is perfectly valid. Appliory's tool preserves the EXIF orientation data so the photo will not appear rotated.",
+        heading: "Balancing File Size and Image Clarity",
+        body: "Government recruitment portals require both: compliance with the maximum file-size limit and recognizable visual clarity. A photo that is under 20KB but heavily pixelated, blurred, or distorted may lead to scrutiny during scrutiny of documents or identity verification at exam centers. Appliory preserves facial clarity while reducing file size so your document remains legible.",
       },
       {
         heading: "Privacy — Your Photo Stays on Your Device",
@@ -297,8 +297,8 @@ export const blogPosts: BlogPost[] = [
         body: "Open the Passport Photo Maker at appliory.tech/tools/passport-photo-maker. Upload a clear portrait photo. Select your required preset — US DS-160 Digital (600–1200px, max 240KB), US Diversity Visa (600×600px), UK Digital Passport (600×750px, 50KB–10MB), UK Visa Digital (600×750px, max 6MB), Pakistan Pak-Identity (350×467px), or 35×45mm physical print (413×531px). Appliory scales and formats your image to exact pixel dimensions. Download your formatted photo instantly with 100% in-browser privacy.",
       },
       {
-        heading: "Photo Requirements Beyond Size",
-        body: "Your face must occupy 70–80% of the frame. Eyes must be open and looking directly at the camera. No glasses (required by most countries after 2020). Neutral expression. No head coverings unless for religious reasons. Good, even lighting with no shadows on your face or background. These are checked by the passport issuing authority, not by Appliory.",
+        heading: "Biometric Requirements Beyond Dimensions (Important Disclaimer)",
+        body: "Formatting your photo to 600×600 px or 35×45 mm adjusts the pixel canvas, but passport and consular authorities evaluate biometric standards separately. For official acceptance: your head must measure between 50% and 69% of the frame's total height, eyes must look straight ahead with a neutral facial expression, no eyeglasses or glare are permitted, and lighting must be uniform with zero shadows across the face or plain white background. Resizing pixel dimensions with an online tool does not guarantee biometric approval if your underlying portrait violates these framing or lighting standards.",
       },
       {
         heading: "Printing and Uploading Your Passport Photo",
@@ -620,16 +620,16 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "how-to-check-image-size-and-dimensions-online",
-    title: "How to Check Image Size in KB and Dimensions in Pixels Online Free",
-    metaTitle: "How to Check Image Size in KB and Dimensions Online Free",
+    title: "How to Check Image Size & Dimensions Online",
+    metaTitle: "How to Check Image Size & Dimensions Online",
     metaDescription:
-      "Learn how to check image file size in KB and pixel dimensions online for free. Verify photo size for PPSC, FPSC, and visa portals with Appliory's instant file size checker.",
+      "Learn how to check image file size in KB and pixel dimensions on Windows, Mac, Android, and iPhone. Free, instant in-browser check with zero uploads.",
     category: "Image Tools",
     tag: "File Size · Pixels · Dimensions",
     date: "2026-11-02",
     readTime: "5 min read",
     intro:
-      "Before uploading a photo to any government portal, university admission system, or visa application, you need to verify two things: the file size in kilobytes (KB) and the pixel dimensions (width × height). An image that looks correct on screen can still be rejected if it exceeds the portal's file size limit or does not meet the required pixel dimensions. This guide explains how to check both — instantly and for free — using Appliory's online tools.",
+      "Before uploading a photo to any government job portal, university admission system, or visa application, you must verify two separate technical parameters: the file size in kilobytes (KB) or megabytes (MB), and the pixel dimensions (width × height in px). An image that looks crisp on your screen can still trigger portal validation errors if it exceeds the maximum upload ceiling or fails required dimensions. This guide explains how to check both across Windows, Mac, Android, and iPhone, and how to verify or resize files instantly online with zero server uploads.",
     keywords: [
       "how to check image size",
       "how to check dimensions of an image",
@@ -660,25 +660,34 @@ export const blogPosts: BlogPost[] = [
     ],
     sections: [
       {
-        heading: "What Is Image File Size and Why Does It Matter",
-        body: "Image file size is measured in kilobytes (KB) or megabytes (MB) and refers to how much storage space the image occupies on a disk or device. This is different from the image's visual or print size. A 600×600 pixel JPEG photo can be anywhere from 15KB to 300KB depending on the JPEG quality setting, the complexity of the image, and whether it has been compressed before. Government job portals, scholarship portals, and visa application systems set a maximum file size for uploaded photos — typically 20KB for PPSC profile photos, 25KB for bank challans, 50KB for university admission photos, and 100KB to 500KB for visa photos. If your image exceeds the portal's limit by even 1KB, the upload will be rejected. This is why checking your image size before uploading is essential.",
+        heading: "Difference Between Image File Size (KB/MB) and Image Dimensions (Pixels)",
+        body: "Understanding the distinction between file size and pixel dimensions prevents confusion during online applications:\n• Image File Size: Measured in bytes, kilobytes (KB), or megabytes (MB). This refers to disk storage space. For example, portals like PPSC specify under 25KB, FPSC specifies under 30KB, and university admission forms often cap portraits at 50KB.\n• Image Dimensions: Measured in pixels (width × height). For example, a US Visa photo requires 600×600 pixels, UK Digital Passports specify 600×750 pixels, and 35×45mm physical prints translate to 413×531 pixels at 300 DPI.\nA 600×600 pixel image can weigh 15KB or 300KB depending on compression quality, while an uncompressed smartphone camera photo can easily exceed 4000×3000 pixels and 4MB.",
       },
       {
-        heading: "What Are Pixel Dimensions and Why Do They Matter",
-        body: "Pixel dimensions describe the width and height of an image measured in pixels (px). For example, a 600×600 pixel image is 600 pixels wide and 600 pixels tall. Pixel dimensions determine the image's resolution and how large it will print or display. Government portals often specify exact pixel dimension requirements alongside file size limits. PPSC requires profile photos to be approximately 213×213 pixels. US visa photos must be exactly 600×600 pixels. Schengen and Pakistani passport photos follow the 35×45 mm standard, which at 300 DPI equals 413×531 pixels. Submitting a photo with incorrect pixel dimensions — even if the file size is within limit — can cause portal validation errors or lead to your application being flagged during document review.",
+        heading: "How to Check Image Size & Dimensions on Windows",
+        body: "Windows provides two native methods to check image details without extra software:\n1. File Explorer Properties: Right-click the image file and select 'Properties'. The 'General' tab displays the exact file size in KB and bytes. Switch to the 'Details' tab to view 'Dimensions' (width and height in pixels), resolution (DPI), and bit depth.\n2. Photos App: Open the photo in the Windows Photos app, click the three-dot menu (...) at the top, and select 'File info'. A side panel immediately displays the file size, resolution in megapixels, and pixel dimensions.",
       },
       {
-        heading: "How to Check Image File Size in KB on Windows and Mobile",
-        body: "On Windows, you can right-click any image file, select Properties, and read the size under the General tab. On macOS, right-click and select Get Info. On Android, open the Files app, long-press the image, and tap Details. On iPhone, open the Photos app, tap the image, swipe up, and scroll to Information. These methods show the file size but not the pixel dimensions in a convenient format. For the fastest and most accurate way to check image file size in KB online, use Appliory's File Size Checker at appliory.tech/tools/file-size-checker. Upload your image and get the exact size in bytes, KB, and MB instantly, alongside a comparison against your target upload limit — without sending your photo to any server.",
+        heading: "How to Check Image Dimensions on Mac (macOS)",
+        body: "macOS provides quick inspection tools built into Finder and Preview:\n1. Finder Get Info: Select the image file in Finder and press 'Command + I' (or right-click and select 'Get Info'). The 'More Info' section lists dimensions (e.g., 1200 × 1600) and color space, while the 'General' section shows the exact file size.\n2. Preview Inspector: Open the image in Preview and press 'Command + I' to open the Inspector window. The General Info tab shows document size in KB/MB, pixel dimensions, and DPI resolution.",
       },
       {
-        heading: "How to Check the Pixel Dimensions of an Image",
-        body: "To find out how many pixels your photo is, you can use the operating system's built-in tools. On Windows, open the image in Photos, click the three-dot menu, and select File info — dimensions are shown. On macOS, open in Preview and go to Tools → Adjust Size. On Android, the native gallery often shows dimensions when you tap the image info icon. On iPhone, check the image Info by swiping up in Photos. Alternatively, use Appliory's Image Resizer at appliory.tech/tools/image-resizer — when you upload any image, it shows you the original pixel dimensions before you resize. This is the fastest way to check dimensions of an image online for free on any device without installing software.",
+        heading: "How to Check Image Size & Dimensions on Android",
+        body: "On Android smartphones (Samsung, Xiaomi, Google Pixel, OnePlus):\n1. Native Gallery: Open the photo in your phone's Gallery, swipe up on the image or tap the 'Details' / 'Info' (i) icon in the menu.\n2. File Info Display: The details sheet shows the file name, storage size (e.g. 2.4 MB), resolution (e.g. 12 MP), and exact pixel dimensions (e.g. 3024 × 4032 px).\n3. Google Photos: In Google Photos, open the picture and swipe up. The metadata section shows file size, resolution, and dimensions.",
       },
       {
-        heading: "Using Appliory's File Size Checker for Portal Validation",
-        body: "Appliory's File Size Checker was built specifically for applicants preparing documents for portals with strict size limits. Here is how to use it effectively. Open the File Size Checker at appliory.tech/tools/file-size-checker. Enter your portal's maximum file size in the limit field — for example, type 20 for a 20KB limit or 0.5 for a 500KB limit if the portal specifies MB. Select all your application documents at once — photo, signature, challan, certificate scans. The tool instantly shows each file's size in KB and MB, with a clear green (within limit) or red (over limit) indicator. Download the results summary as a text file for reference. This saves you from discovering a file size problem at the last moment during submission.",
+        heading: "How to Check Image Dimensions on iPhone (iOS)",
+        body: "On iPhone and iPad running iOS 15 or later:\n1. Apple Photos App: Open the photo and tap the 'Info' button (the lowercase 'i' inside a circle at the bottom of the screen), or swipe up on the image.\n2. Read Technical Details: The info panel displays the exact camera model, lens, ISO, file format (HEIC or JPEG), file size in MB/KB, and pixel dimensions (e.g., 12 MP · 3024 × 4032).",
       },
+      {
+        heading: "How to Check Image Size Online Without Uploading (Appliory)",
+        body: "If you are on a restricted computer, public terminal, or mobile device, or need to verify whether files meet an exact upload limit, use Appliory's File Size Checker (appliory.tech/tools/file-size-checker). Simply drag or select your files: the tool instantly calculates exact bytes, KB, and MB locally inside your web browser. Enter your portal's limit (e.g. 2 MB or 500 KB) to see a green compliance pass or red warning immediately — with 100% privacy and zero file uploads.",
+      },
+      {
+        heading: "How to Resize Image to Exact Pixels",
+        body: "If your image has the wrong dimensions (for example, you need 600×600 px for a visa or 250×250 px for an ID portal), use Appliory's Image Resizer (appliory.tech/tools/image-resizer). Enter your desired width and height in pixels, lock the aspect ratio to prevent stretching, and download your resized JPG, PNG, or WebP file. If the file is still too heavy after resizing, use Appliory's Image Compressor to reduce the storage size to 20KB, 50KB, or 100KB.",
+      },
+    ],
       {
         heading: "What to Do if Your Image Is Too Large",
         body: "If Appliory's File Size Checker shows your image exceeds the portal's limit, the fix depends on how much over the limit it is. If your photo is 30KB but the limit is 20KB, use Appliory's Compress Image to 20KB tool — it will hit the target precisely. If your photo is 500KB and the limit is 50KB, first resize the pixel dimensions to match the required size (e.g. 600×600) using the Image Resizer, then compress. If your image is a large PNG, convert it to JPEG — PNG lossless compression cannot reach the small file sizes that JPEG achieves. The workflow is: check size → identify whether it is a pixel dimension problem or a file size problem → use the appropriate Appliory tool → re-check to confirm compliance.",

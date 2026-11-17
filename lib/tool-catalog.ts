@@ -2,8 +2,8 @@ export const tools = [
   {
     slug: "pdf-page-counter",
     name: "PDF page counter & summary",
-    h1: "PDF Page Counter & Page Range Checker Online",
-    metaTitle: "Free PDF Page Counter & Summary Tool",
+    h1: "PDF Page Counter Online – Count & Check Pages Instantly",
+    metaTitle: "PDF Page Counter Online – Count & Check Pages",
     metaDescription:
       "Count pages across single or multiple PDF files instantly. Verify submission page limits and extract document summaries locally in your browser with zero uploads.",
     keywords: [
@@ -79,7 +79,7 @@ You can also count pages across multiple PDF files at once. Select your applicat
     h1: "Check File Size Online in KB & MB (Instant Validator)",
     metaTitle: "Check File Size Online in KB & MB",
     metaDescription:
-      "Check file size online in exact KB and MB. Verify PDF, image, and document upload limits for job portals, scholarships, PPSC, and FPSC with 100% local privacy.",
+      "Check the exact file size of images, PDFs and documents in bytes, KB and MB. Compare files against your custom upload limit privately in your browser. Free, no login.",
     keywords: [
       "file size check",
       "how to check the size of a file",
@@ -122,9 +122,9 @@ You can also count pages across multiple PDF files at once. Select your applicat
     category: "FILES",
     intro: `Appliory's File Size Checker tells you the exact size of any file — in bytes, kilobytes (KB), and megabytes (MB) — right inside your browser without uploading it anywhere. This is the fastest way to check file size online for free, on mobile or desktop.
 
-Check the exact size of your files in bytes, KB and MB. Enter your application's maximum upload limit and instantly see whether each file meets your selected size requirement. File Size Checker verifies file size only, not complete application compliance. Check your upload limit before submission to verify attachment sizes against your specific portal's stated ceiling.
+Check the exact size of your files in bytes, KB and MB. Enter your application's maximum upload limit (e.g., 500 KB, 2 MB, 5 MB) and instantly see whether each file meets your selected size requirement. File Size Checker verifies file size only, not complete application compliance. Check your upload limit before submission to verify attachment sizes against your specific portal's stated ceiling.
 
-To use it: set the maximum allowed size (for example, enter 2 MB or 500 KB), then select your documents. Each file is instantly measured and compared against your selected limit. You can check a photo, a PDF, a Word document, or any other format — the tool measures any file type locally on your device.`,
+Supported formats include images (JPG, PNG, WebP), PDF documents, Word documents (DOCX), Excel spreadsheets (XLSX), and any other file format. Note the essential distinction between file size and image dimensions: file size measures disk storage in bytes, KB, and MB, whereas image dimensions measure visual pixel width and height (e.g., 600×600 px or 35×45 mm). If your photo requires dimension adjustments, use our Image Resizer; if it exceeds storage ceilings, use our Image Compressor.`,
     description:
       "Check the exact size of your files in bytes, KB and MB. Enter your application's maximum upload limit and instantly see whether each file meets your selected size requirement. File Size Checker verifies file size only, not complete application compliance.",
     answer:
@@ -146,6 +146,10 @@ To use it: set the maximum allowed size (for example, enter 2 MB or 500 KB), the
         "Enter your target limit (e.g. 2 MB) into the limit input. The checker highlights in green if your file is within the limit, or flags it in amber/red if it exceeds the limit so you know to compress it before uploading.",
       ],
       [
+        "What is the difference between file size and image dimensions?",
+        "File size measures how much disk space a file occupies (in bytes, KB, or MB). Image dimensions measure the width and height in pixels (e.g. 600×600 px). Scaling pixel dimensions down often reduces file size, but format and compression quality also impact final KB.",
+      ],
+      [
         "Does this compress files?",
         "No. This tool measures file size. Use the image compressor for supported images; PDF compression is not provided.",
       ],
@@ -154,16 +158,16 @@ To use it: set the maximum allowed size (for example, enter 2 MB or 500 KB), the
         "Some portals use decimal MB (1,000,000 bytes), while this tool uses 1,048,576 bytes. Exact byte counts are shown so you can compare.",
       ],
       [
-        "Are Word documents supported?",
-        "Yes, file size can be measured for any format. This does not verify a Word document’s contents.",
+        "Are Word documents and PDFs supported?",
+        "Yes, file size can be measured for any format including PDF, DOCX, XLSX, JPG, and PNG. This measures binary size without altering or inspecting contents.",
       ],
     ],
   },
   {
     slug: "image-resizer",
     name: "Image resizer",
-    h1: "Image Resizer Online (Passport, ID & Custom Dimensions)",
-    metaTitle: "Resize Image to Passport & ID Dimensions Online",
+    h1: "Image Resizer Online – Resize to Exact Pixels (Passport, ID & Custom)",
+    metaTitle: "Image Resizer Online – Resize to Exact Pixels",
     metaDescription:
       "Resize JPG, PNG, and WebP images to exact pixel dimensions (600x600 passport, 35x45mm, custom px). Lock aspect ratio and download privately with zero uploads.",
     keywords: [
@@ -206,7 +210,7 @@ To use it: set the maximum allowed size (for example, enter 2 MB or 500 KB), the
 
 Knowing how to resize a photo is essential for dozens of online applications. Digital passport and visa specifications vary by authority: US DS-160 accepts square dimensions from 600×600 up to 1200×1200 pixels (max 240KB), while the US Diversity Visa program requires exactly 600×600 pixels. UK Digital Passport and UK Visa portals specify at least 600×750 pixels, Pakistan Pak-Identity specifies 350×467 pixels, and physical printed photo standards specify 35×45 mm (413×531 pixels at 300 DPI). OCI (Overseas Citizen of India) application photos require 200×200 pixels. Enter your exact required dimensions here and get a correctly sized image in one click.
 
-The image resizer also supports custom dimensions for ID cards, HR portals, university admissions, and company intranets. Pixel dimensions (width × height) and file size (in KB) are separate properties. While scaling down image dimensions reduces the total pixel count and helps decrease final file size, the actual KB output depends on image complexity, format, and compression quality. Lock the aspect ratio to prevent stretching when you resize JPEG, PNG, or WebP images. All processing happens directly inside your browser — your personal photos, identity documents, and passport pictures are never uploaded to any server.`,
+Understanding the difference between Image Resizer and Image Compressor: The Resizer modifies the image's pixel dimensions (width × height), which alters the physical layout and resolution. The Compressor reduces the disk storage size (in KB/MB) while keeping pixel dimensions intact or adjusting quality. Lock the aspect ratio in the Resizer to prevent distortion or stretching when resizing JPEG, PNG, or WebP images. All processing executes 100% locally in your browser with zero server uploads.`,
     description:
       "Resize JPG, PNG and WebP images to exact pixel dimensions and download the result privately.",
     answer:
@@ -236,8 +240,8 @@ The image resizer also supports custom dimensions for ID cards, HR portals, univ
   {
     slug: "image-compressor",
     name: "Image compressor",
-    h1: "Image Compressor Online to KB (20KB, 50KB, 100KB)",
-    metaTitle: "Online Image Compressor to KB",
+    h1: "Image Compressor Online to KB (20KB, 50KB, 100KB, Custom)",
+    metaTitle: "Image Compressor Online to KB – Free & Private",
     metaDescription:
       "Compress JPG, PNG, and WebP images to custom sizes in KB online for free. Fast in-browser image compressor with live preview and zero server document uploads.",
     keywords: [
@@ -387,8 +391,8 @@ No files are uploaded. All SHA-256 hashing runs locally inside your browser usin
   {
     slug: "compress-image-to-20kb",
     name: "Compress image to 20KB",
-    h1: "Compress Photo to 20KB for PPSC, FPSC & Govt Jobs Online",
-    metaTitle: "Compress Image to 20KB Online Free",
+    h1: "Compress Image to 20KB Online – Free Photo Resizer for Job Portals",
+    metaTitle: "Compress Image to 20KB Online – Free Photo Resizer",
     metaDescription:
       "Compress photos, signatures, and application images under 20KB or 25KB online for free. Dedicated compression presets for PPSC, FPSC, NTS, and recruitment portals.",
     keywords: [

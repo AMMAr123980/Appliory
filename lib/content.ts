@@ -47,8 +47,8 @@ export const faqs = [
 export const guides = [
   {
     slug: "scholarship-document-checklist",
-    title: "Scholarship Document Checklist (2026): Complete Required Documents Guide",
-    metaTitle: "[PDF Checklist] Scholarship Documents Required (2026) | Appliory",
+    title: "Scholarship Application Document Checklist (2026): Complete Required Documents Guide",
+    metaTitle: "Scholarship Application Document Checklist (2026)",
     metaDescription:
       "Complete scholarship document checklist for 2026. Review transcripts, SOP, recommendation letters, passport photos, and file size limits before applying.",
     keywords: [
@@ -73,35 +73,35 @@ export const guides = [
     category: "SCHOLARSHIPS",
     read: "6 min read",
     intro:
-      "Complete scholarship document checklist for 2026 international and national scholarship applications. Ensure your academic transcripts, statement of purpose, recommendation letters, passport photos, and PDF files comply with strict portal upload limits.",
+      "Complete scholarship document checklist for 2026 international and national scholarship applications. Ensure your academic transcripts, statement of purpose, recommendation letters, passport photos, and PDF files comply with strict portal upload limits. Last verified: November 2026 by Appliory Editorial Team.",
     sections: [
       [
-        "1. Core Document Foundations: Transcripts, Degrees & Translations",
-        "Official transcripts and graduation degree certificates must show all completed semesters, courses, credit hours, and grading scales. If issued in a language other than English, provide certified official English translations alongside original copies. Check whether initial submission accepts color scans or requires official attestation (HEC/MOFA for Pakistan, Apostille for Hague convention countries) before upload.",
+        "1. Core Document Foundations: Required vs Optional Attachments",
+        "Distinguish strictly between mandatory documents (without which your file is marked incomplete and discarded) and optional supplemental documents:\n• Mandatory (Required): Official academic transcripts with full grading scales, graduation degree certificates or provisional certificates, Statement of Purpose (SOP) / Study Plan, 2 to 3 recommendation letters, an updated CV/resume, and a valid passport bio page.\n• Optional / Program-Dependent: Standardized test scores (GRE, GMAT, TOEFL, IELTS), portfolio of work, certified English translations for vernacular credentials, employment certificates, and medical fitness certificates.\nAlways review your specific scholarship's active call for applications before applying.",
       ],
       [
-        "2. HEC Overseas & National Scholarships (Pakistan)",
-        "Official Authority: Higher Education Commission of Pakistan (Source: hec.gov.pk · Verified November 2026)\nKey Document Rules:\n• Academic Transcripts & Degrees: Must be verified by HEC before final award.\n• CNIC / NICOP and Valid Passport copy.\n• Statement of Purpose / Research Proposal: Masters/PhD proposals must align with national research priority areas.\n• Portal Limit: HEC e-portal specifies PDF file size limits (typically under 2MB to 5MB per attachment). Use Appliory's File Size Checker to verify file sizes before uploading.",
+        "2. Pakistan Scholarships — HEC Indigenous & Overseas (Official: hec.gov.pk)",
+        "Official Authority: Higher Education Commission of Pakistan (Source: hec.gov.pk · Verified November 2026)\nKey Document Requirements:\n• HEC Verified Degrees & Transcripts: Attested by HEC prior to award disbursement.\n• CNIC / NICOP and Valid Passport bio-data scan.\n• Research Proposal / Statement of Purpose: Tailored specifically to national developmental priorities.\n• Domicile Certificate & Recent Passport Photograph.\n• Portal Constraints: The HEC e-portal specifies PDF file size limits (typically under 2MB to 5MB per attachment). Use Appliory File Size Checker to verify exact sizes.",
       ],
       [
-        "3. Fulbright Foreign Student Program (United States)",
-        "Official Authority: U.S. Department of State / USEFP (Source: foreign.fulbrightonline.org / usefp.org · Verified November 2026)\nKey Document Rules:\n• Three Letters of Reference (LORs): Submitted directly by recommenders through the online portal.\n• Personal Statement & Study Objectives: Clear essays detailing academic goals and community impact.\n• Standardized Tests: GRE and TOEFL score reports according to current cycle requirements.\n• Transcripts: Scanned official transcripts with grading keys attached.",
+        "3. USA Scholarships — Fulbright Foreign Student Program (Official: foreign.fulbrightonline.org / usefp.org)",
+        "Official Authority: U.S. Department of State & USEFP (Sources: foreign.fulbrightonline.org, usefp.org · Verified November 2026)\nKey Document Requirements:\n• Three Confidential Letters of Reference: Submitted directly online by academic and professional referees.\n• Personal Statement & Study Objectives: Two distinct essays focusing on academic goals, background, and cultural exchange.\n• Complete Academic Transcripts: From every collegiate institution attended, accompanied by university grading legends.\n• Digital Photo: Square format following US visa specifications (600×600 to 1200×1200 px, max 240KB in JPEG format). Format using Appliory Passport Photo Maker.",
       ],
       [
-        "4. Chevening Scholarships (United Kingdom)",
-        "Official Authority: UK Foreign, Commonwealth & Development Office (Source: chevening.org · Verified November 2026)\nKey Document Rules:\n• Two References: Referees provide letters in letterhead format.\n• Valid Passport / National Identity Document.\n• Three Eligible UK Master's Course Offers: Unconditional offer proof uploaded according to timeline.\n• Education Documents: Degree certificates and academic transcripts in PDF format under 5MB.",
+        "4. UK Scholarships — Chevening & Commonwealth (Official: chevening.org / cscuk.fcdo.gov.uk)",
+        "Official Authorities: UK Foreign, Commonwealth & Development Office (FCDO) & Commonwealth Scholarship Commission (Sources: chevening.org, cscuk.fcdo.gov.uk · Verified November 2026)\nKey Document Requirements:\n• Two Comprehensive References: On official institutional or organizational letterhead.\n• Three Eligible Master's Course Choices: Demonstration of unconditional or conditional UK university offers.\n• Valid National Passport / Citizenship proof.\n• Essay Responses & Development Impact Statement: Demonstrating leadership potential and home-country developmental benefit.\n• Document Restrictions: Portals cap individual PDF uploads between 2MB and 5MB.",
       ],
       [
-        "5. Erasmus Mundus Joint Masters (European Union)",
-        "Official Authority: European Commission (Source: erasmus-plus.ec.europa.eu · Verified November 2026)\nKey Document Rules:\n• Europass Standard CV: Standardized formatting detailing academic and research background.\n• Motivation Letter / SOP: Tailored to specific consortium university partners.\n• Recommendation Letters: 2 academic or professional letters on institutional letterhead.\n• Consortium Upload Limits: Varies by program consortium; individual PDFs are generally capped between 2MB and 5MB.",
+        "5. Europe Scholarships — Erasmus Mundus & DAAD Germany (Official: erasmus-plus.ec.europa.eu / daad.de)",
+        "Official Authorities: European Commission (Erasmus+) & German Academic Exchange Service (DAAD) (Sources: erasmus-plus.ec.europa.eu, daad.de · Verified November 2026)\nKey Document Requirements:\n• Europass CV Format: Chronological structure highlighting academic research and technical competencies.\n• Motivation Letter / SOP: Maximum 2 pages addressing the consortium partners or German university department.\n• Proof of 2+ Years Professional Experience: Mandatory for DAAD EPOS development-related grants.\n• Certified English Translations: All non-English transcripts must be officially translated and notarized.\n• PDF Limits: Individual PDF documents must be verified using Appliory File Size Checker prior to submission.",
       ],
       [
-        "6. DAAD Development-Related Postgraduate Courses (Germany)",
-        "Official Authority: German Academic Exchange Service (Source: daad.de · Verified November 2026)\nKey Document Rules:\n• DAAD Application Form: Hand-signed by the applicant.\n• Europass CV: Hand-signed, chronological CV.\n• Letter of Motivation: Maximum 2 pages with personal signature.\n• Current Recommendation Letter: From university professor or current employer with official seal and signature.\n• Professional Work Experience Proof: Minimum 2 years professional experience certificates for EPOS grants.",
+        "6. Academic Transcripts, Degrees & Translations",
+        "Ensure all university marks cards, provisional certificates, and degree parchments display the official university registrar seal, signature, and grading scale (CGPA conversion formula or percentage breakdown). If your native documents are in Urdu, Arabic, French, or another regional language, obtain certified translations from an authorized legal translator. Upload both the original language document and the certified translation in a single compiled PDF where required.",
       ],
       [
-        "7. Commonwealth Scholarships (United Kingdom)",
-        "Official Authority: Commonwealth Scholarship Commission (Source: cscuk.fcdo.gov.uk · Verified November 2026)\nKey Document Rules:\n• Proof of Citizenship / Refugee Status: Valid passport or official identity card.\n• Full Academic Transcripts: Including up-to-date transcripts for ongoing study.\n• Two Confidential References: Submitted directly to the online portal by designated referees.\n• Development Impact Statement: Detailed narrative across four sections showing home country impact.",
+        "7. Statement of Purpose, CV & Recommendation Letters",
+        "Your SOP must be written cleanly with standard 1-inch margins and clear paragraph breaks. For European programs, format your CV using the Europass layout. Letters of recommendation must feature official university or employer letterheads, institutional email addresses, phone contacts, and physical signatures from referees. Never attempt to submit duplicate or generic recommendation templates.",
       ],
       [
         "8. Application Photograph Guidelines by Destination",
@@ -109,7 +109,7 @@ export const guides = [
       ],
       [
         "9. Pre-Submission Technical Verification Checklist",
-        "Before finalizing your submission on any scholarship portal:\n• Verify exact byte sizes against the portal ceiling (e.g. 2MB or 5MB per document) using Appliory File Size Checker.\n• Check PDF page ranges for Statement of Purpose and CV using Appliory PDF Page Counter.\n• Ensure scanned documents have selectable text or clear visual readability at 100% zoom.",
+        "Before finalizing your submission on any scholarship portal:\n• Verify exact byte sizes against the portal ceiling (e.g. 2MB or 5MB per document) using Appliory File Size Checker.\n• Check PDF page ranges for Statement of Purpose and CV using Appliory PDF Page Counter.\n• Ensure scanned documents have selectable text or clear visual readability at 100% zoom.\n• Audit your complete document pack with Appliory's Document Checker.",
       ],
     ],
     faq: "Can I reuse the same recommendation letters and SOP for multiple scholarships? While academic transcripts and test scores remain identical, your Statement of Purpose and research proposal must always be customized for each scholarship’s specific objectives and university program.",

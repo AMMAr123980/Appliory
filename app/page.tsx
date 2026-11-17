@@ -24,34 +24,24 @@ import { pageMetadata } from "@/lib/seo";
 import { StructuredData } from "@/components/appliory/structured-data";
 
 export const metadata = pageMetadata(
-  "Free Online Document & Image Tools",
-  "Compress photos to 20KB or 50KB, resize passport photos, check application documents, and convert PDFs to Excel. 100% free, private browser-based tools.",
+  "Private Document & Image Tools for Applications",
+  "Free online tools to check file sizes, compress images, resize photos, count PDF pages and prepare application documents. No login, private in-browser processing.",
   "/",
   [
-    "free document tools for job applications",
+    "private document tools for applications",
+    "check file size online",
     "compress photo to 20kb",
     "compress photo to 50kb",
-    "image compressor",
+    "image compressor to kb",
+    "image resizer to pixels",
     "passport photo maker",
     "pdf to excel converter",
+    "pdf page counter",
+    "scholarship document checklist",
     "ppsc photo compressor",
     "fpsc document resize",
+    "free online tools",
     "appliory",
-    "compress image to kb online free",
-    "resize photo for government portal",
-    "file size checker online",
-    "passport size photo online free",
-    "online document tools for pakistan",
-    "resize image online free",
-    "compress jpeg online free",
-    "online image tools no upload",
-    "ppsc fpsc document preparation tools",
-    "pdf page counter online free",
-    "make passport photo online free",
-    "compress signature to 20kb",
-    "image resizer online free",
-    "check file size in kb online",
-    "free online tools for job applications pakistan",
   ],
 );
 
@@ -90,22 +80,22 @@ export default function Home() {
             <span className="live-dot" /> PRIVATE IN-BROWSER SUITE · ZERO CLOUD UPLOADS
           </span>
           <h1>
-            Flexible Document Preparation
+            Free Tools to Check, Resize
             <br />
-            <span>for Every Application</span>
+            <span>&amp; Prepare Application Documents</span>
           </h1>
           <p>
-            Appliory provides customizable image compression presets and document checklists for government jobs, university admissions, scholarships and visa applications. Select your desired file-size target, check image dimensions and review your documents before submission.
+            Appliory provides free, private online tools to check file sizes, compress images, resize photos, count PDF pages and prepare application documents. No login required — all processing executes directly inside your browser.
           </p>
           <p style={{ marginTop: "0.5rem", fontSize: "0.95rem", color: "var(--muted)" }}>
-            Upload limits vary by institution and application. Always confirm the latest official instructions before using a preset. 100% free, private, and with zero file uploads.
+            File-size and photo requirements vary by institution, country and portal. Choose a compression target or checklist based on your latest official instructions.
           </p>
           <div className="hero-actions">
-            <Link className="button dark" href="/tool">
-              Check my documents <ArrowUpRight size={18} />
+            <Link className="button dark" href="#free-tools">
+              Start Using Free Tools <ArrowRight size={18} />
             </Link>
-            <Link className="button" href="#tools-by-goal">
-              Choose tool by goal <ArrowRight size={18} />
+            <Link className="button" href="/tool">
+              Check Documents <ArrowUpRight size={18} />
             </Link>
           </div>
           <div className="hero-assurances">
@@ -130,154 +120,129 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Task Picker: 3 Primary Pathways */}
+        {/* Task Picker: 3 Primary Actions */}
         <div className="hero-task-panel">
           <div className="task-panel-title">
             <span className="tool-icon">
               <ListChecks size={25} />
             </span>
             <div>
-              <small>QUICK TASK SELECTOR</small>
-              <h2>What are you applying for?</h2>
+              <small>QUICK START</small>
+              <h2>Select an action:</h2>
             </div>
           </div>
-          <Link href="/tools/compress-image-to-20kb">
+          <Link href="/tools/file-size-checker">
             <span>
-              <b>Government Jobs &amp; Recruitment</b>
-              <small>Flexible compression presets for photos, CNIC &amp; application forms</small>
+              <b>1. Check File Size</b>
+              <small>Measure exact bytes, KB &amp; MB against your portal upload limit</small>
             </span>
             <ArrowUpRight size={20} />
           </Link>
-          <Link href="/tools/compress-image-to-50kb">
+          <Link href="/tools/image-compressor">
             <span>
-              <b>University Admissions &amp; Scholarships</b>
-              <small>Compress image to 50KB or format 2×2" passport photo</small>
+              <b>2. Compress Image</b>
+              <small>Compress JPG/PNG to 20KB, 50KB or custom target with live preview</small>
             </span>
             <ArrowUpRight size={20} />
           </Link>
-          <Link href="/tools/pdf-to-excel">
+          <Link href="/tool">
             <span>
-              <b>Confidential PDF &amp; Payroll Reports</b>
-              <small>Extract and clean PDF tables to Excel (.xlsx) &amp; CSV</small>
+              <b>3. Check Documents</b>
+              <small>Verify an entire application pack (transcripts, photos, PDFs) together</small>
             </span>
             <ArrowUpRight size={20} />
           </Link>
-          <Link href="/tool?template=scholarship">
+          <Link href="/tools/passport-photo-maker">
             <span>
-              <b>Multi-Document Application Checklist</b>
-              <small>Verify an entire document pack before uploading</small>
+              <b>4. Passport &amp; Visa Photo</b>
+              <small>Format 2×2" (600×600) or 35×45mm dimensions for US, UK &amp; Schengen</small>
             </span>
             <ArrowUpRight size={20} />
           </Link>
           <div className="task-panel-note">
-            <ShieldCheck size={17} /> On-device processing. No files sent to external servers.
+            <ShieldCheck size={17} /> 100% On-device processing. No files sent to external servers.
           </div>
         </div>
       </section>
 
-      {/* Tools Grouped by User Goal */}
-      <section className="home-tools wrap" id="tools-by-goal">
+      {/* Tools Grouped into 4 Clear Categories */}
+      <section className="home-tools wrap" id="free-tools">
         <div className="section-heading">
           <div>
-            <span className="eyebrow">GROUPED BY YOUR TASK</span>
-            <h2>Tools organized by your application goal</h2>
+            <span className="eyebrow">COMPLETE TOOL SUITE</span>
+            <h2>Private Online Document &amp; Image Tools</h2>
             <p>
-              Prepare your application documents with confidence. Validate file size, formats, dimensions and document requirements before submission.
+              Prepare, check, resize and convert your files with free online tools. No account required. Your documents stay on your device.
             </p>
           </div>
           <Link className="text-link" href="/tools">
-            All tools <ArrowUpRight size={17} />
+            View all tools <ArrowUpRight size={17} />
           </Link>
         </div>
 
         <div className="goal-group-container">
-          {/* Goal 1: Government Jobs & Recruitment */}
+          {/* Category 1: Image Tools */}
           <div className="goal-group">
             <div className="goal-group-header">
               <div>
                 <span className="goal-group-badge">
-                  <Briefcase size={13} /> Target: Government Portals
+                  <ImageIcon size={13} /> Image Tools
                 </span>
-                <h3>Public Service &amp; Recruitment Portals</h3>
-                <p>Customizable presets: 20KB or 25KB target options for recruitment portals, under 30KB for FPSC, and custom limits for testing agencies.</p>
+                <h3>Compress, Resize &amp; Format Application Photos</h3>
+                <p>Resize to exact pixel dimensions, format passport photos, or compress images to 20KB, 50KB, or custom sizes.</p>
               </div>
-              <Link className="text-link" href="/blog/how-to-compress-image-to-20kb-for-ppsc-fpsc">
-                Recruitment Photo Guide <ArrowUpRight size={14} />
+              <Link className="text-link" href="/blog/how-to-check-image-size-and-dimensions-online">
+                Dimensions Guide <ArrowUpRight size={14} />
               </Link>
             </div>
             <div className="goal-tools-grid">
-              <Link href={"/tools/" + ppscTool.slug} className="quick-tool-card featured">
+              <Link href={"/tools/" + generalCompressor.slug} className="quick-tool-card featured">
                 <span className="tool-icon images"><ImageIcon /></span>
-                <small>RECRUITMENT</small>
-                <h3>{ppscTool.name}</h3>
-                <p>{ppscTool.description}</p>
-                <span className="text-link">{ppscTool.action} <ArrowUpRight size={17} /></span>
+                <small>COMPRESSION</small>
+                <h3>{generalCompressor.name}</h3>
+                <p>Compress JPG, PNG &amp; WebP to custom KB targets with before-and-after preview.</p>
+                <span className="text-link">{generalCompressor.action} <ArrowUpRight size={17} /></span>
               </Link>
               <Link href={"/tools/" + resizerTool.slug} className="quick-tool-card">
                 <span className="tool-icon images"><ImageIcon /></span>
                 <small>DIMENSIONS</small>
                 <h3>{resizerTool.name}</h3>
-                <p>{resizerTool.description}</p>
+                <p>Resize images to exact pixel width and height while locking aspect ratio.</p>
                 <span className="text-link">{resizerTool.action} <ArrowUpRight size={17} /></span>
-              </Link>
-              <Link href={"/tools/" + sizeCheckerTool.slug} className="quick-tool-card">
-                <span className="tool-icon files"><Files /></span>
-                <small>LIMIT AUDIT</small>
-                <h3>{sizeCheckerTool.name}</h3>
-                <p>{sizeCheckerTool.description}</p>
-                <span className="text-link">{sizeCheckerTool.action} <ArrowUpRight size={17} /></span>
-              </Link>
-            </div>
-          </div>
-
-          {/* Goal 2: University Admissions & Scholarships */}
-          <div className="goal-group">
-            <div className="goal-group-header">
-              <div>
-                <span className="goal-group-badge">
-                  <GraduationCap size={13} /> Target: Higher Education &amp; Visas
-                </span>
-                <h3>University Admissions, Scholarships &amp; Visa Portals</h3>
-                <p>Custom targets: 50KB compression preset, 2×2 inch (600×600 px) or 35×45mm passport dimensions.</p>
-              </div>
-              <Link className="text-link" href="/guides/scholarship-document-checklist">
-                Scholarship Checklist <ArrowUpRight size={14} />
-              </Link>
-            </div>
-            <div className="goal-tools-grid">
-              <Link href={"/tools/" + uniTool.slug} className="quick-tool-card featured">
-                <span className="tool-icon images"><ImageIcon /></span>
-                <small>ADMISSIONS</small>
-                <h3>{uniTool.name}</h3>
-                <p>{uniTool.description}</p>
-                <span className="text-link">{uniTool.action} <ArrowUpRight size={17} /></span>
               </Link>
               <Link href={"/tools/" + passportTool.slug} className="quick-tool-card">
                 <span className="tool-icon images"><ImageIcon /></span>
                 <small>PASSPORT &amp; VISA</small>
                 <h3>{passportTool.name}</h3>
-                <p>{passportTool.description}</p>
+                <p>Format 2×2" (600×600), 35×45mm, and regional passport and visa photos.</p>
                 <span className="text-link">{passportTool.action} <ArrowUpRight size={17} /></span>
               </Link>
-              <Link href="/tool?template=scholarship" className="quick-tool-card">
-                <span className="tool-icon"><ListChecks /></span>
-                <small>READINESS CHECK</small>
-                <h3>Application Pack Checker</h3>
-                <p>Verify multiple degrees, transcripts, and ID scans together against portal requirements.</p>
-                <span className="text-link">Start Pack Audit <ArrowUpRight size={17} /></span>
+              <Link href={"/tools/" + ppscTool.slug} className="quick-tool-card">
+                <span className="tool-icon images"><ImageIcon /></span>
+                <small>PRESET</small>
+                <h3>{ppscTool.name}</h3>
+                <p>Dedicated 20KB and 25KB compression presets for recruitment portals.</p>
+                <span className="text-link">{ppscTool.action} <ArrowUpRight size={17} /></span>
+              </Link>
+              <Link href={"/tools/" + uniTool.slug} className="quick-tool-card">
+                <span className="tool-icon images"><ImageIcon /></span>
+                <small>PRESET</small>
+                <h3>{uniTool.name}</h3>
+                <p>Compress application photos and document scans under 50KB for admissions.</p>
+                <span className="text-link">{uniTool.action} <ArrowUpRight size={17} /></span>
               </Link>
             </div>
           </div>
 
-          {/* Goal 3: Confidential PDF & Office Utilities */}
+          {/* Category 2: PDF Tools */}
           <div className="goal-group">
             <div className="goal-group-header">
               <div>
                 <span className="goal-group-badge">
-                  <Table size={13} /> Target: Confidential Data &amp; PDF
+                  <FileText size={13} /> PDF Tools
                 </span>
-                <h3>PDF Table Extraction &amp; Document Verification</h3>
-                <p>Local in-browser conversion: Extract payroll tables to Excel and count PDF pages with zero server upload.</p>
+                <h3>Extract Tables &amp; Audit PDF Page Limits</h3>
+                <p>Convert text-based PDF tables to clean Excel (.xlsx) spreadsheets or count pages across multi-file submissions.</p>
               </div>
               <Link className="text-link" href="/blog/how-to-convert-pdf-to-excel">
                 PDF to Excel Guide <ArrowUpRight size={14} />
@@ -288,22 +253,54 @@ export default function Home() {
                 <span className="tool-icon pdf"><FileText /></span>
                 <small>SPREADSHEET</small>
                 <h3>{pdfExcelTool.name}</h3>
-                <p>{pdfExcelTool.description}</p>
+                <p>Extract payroll reports, statements, and tables to Excel with leading zero preservation.</p>
                 <span className="text-link">{pdfExcelTool.action} <ArrowUpRight size={17} /></span>
               </Link>
               <Link href={"/tools/" + pdfCounterTool.slug} className="quick-tool-card">
                 <span className="tool-icon pdf"><FileText /></span>
-                <small>PAGE COUNT</small>
+                <small>PAGE AUDIT</small>
                 <h3>{pdfCounterTool.name}</h3>
-                <p>{pdfCounterTool.description}</p>
+                <p>Count PDF pages instantly and check compliance against application page ceilings.</p>
                 <span className="text-link">{pdfCounterTool.action} <ArrowUpRight size={17} /></span>
               </Link>
-              <Link href={"/tools/" + generalCompressor.slug} className="quick-tool-card">
-                <span className="tool-icon images"><ImageIcon /></span>
-                <small>OPTIMIZATION</small>
-                <h3>{generalCompressor.name}</h3>
-                <p>{generalCompressor.description}</p>
-                <span className="text-link">{generalCompressor.action} <ArrowUpRight size={17} /></span>
+            </div>
+          </div>
+
+          {/* Category 3: Document Preparation & Auditing */}
+          <div className="goal-group">
+            <div className="goal-group-header">
+              <div>
+                <span className="goal-group-badge">
+                  <Files size={13} /> Document Preparation
+                </span>
+                <h3>Validate File Sizes, Duplicates &amp; Checklists</h3>
+                <p>Verify files before upload: check exact byte sizes, identify duplicate documents, and audit submission packs.</p>
+              </div>
+              <Link className="text-link" href="/guides/scholarship-document-checklist">
+                Scholarship Checklist <ArrowUpRight size={14} />
+              </Link>
+            </div>
+            <div className="goal-tools-grid">
+              <Link href={"/tools/" + sizeCheckerTool.slug} className="quick-tool-card featured">
+                <span className="tool-icon files"><Files /></span>
+                <small>FILE SIZE</small>
+                <h3>{sizeCheckerTool.name}</h3>
+                <p>Inspect exact file size in bytes, KB, and MB against custom upload limits.</p>
+                <span className="text-link">{sizeCheckerTool.action} <ArrowUpRight size={17} /></span>
+              </Link>
+              <Link href="/tool" className="quick-tool-card">
+                <span className="tool-icon"><ListChecks /></span>
+                <small>CHECKLIST</small>
+                <h3>Document Checker</h3>
+                <p>Verify multiple degrees, transcripts, and ID scans together against portal requirements.</p>
+                <span className="text-link">Start Pack Audit <ArrowUpRight size={17} /></span>
+              </Link>
+              <Link href={"/tools/" + duplicateTool.slug} className="quick-tool-card">
+                <span className="tool-icon files"><Files /></span>
+                <small>DEDUPLICATION</small>
+                <h3>{duplicateTool.name}</h3>
+                <p>Detect exact duplicate files using SHA-256 byte hashing with 100% privacy.</p>
+                <span className="text-link">{duplicateTool.action} <ArrowUpRight size={17} /></span>
               </Link>
             </div>
           </div>
