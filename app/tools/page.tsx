@@ -15,7 +15,7 @@ import { absolute, breadcrumb, pageMetadata } from "@/lib/seo";
 import { StructuredData } from "@/components/appliory/structured-data";
 
 export const metadata = pageMetadata(
-  "All Free Online Image & PDF Tools",
+  "All Free Online Image, PDF & File Tools",
   "Count PDF pages, check file sizes, resize and compress images to KB, and convert tables to Excel. 100% free, browser-based utilities with zero server uploads.",
   "/tools",
   [
@@ -71,9 +71,9 @@ export default function Page() {
       />
       <header className="section-heading">
         <div>
-          <span className="eyebrow">SMALL TASKS. SIMPLE TOOLS.</span>
-          <h1>What would you like to do?</h1>
-          <p>Choose a tool. Add your files. Leave with a useful result.</p>
+          <span className="eyebrow">BROWSER-BASED UTILITIES</span>
+          <h1>Free Online Document, PDF &amp; Image Tools</h1>
+          <p>Choose from free tools to compress images, check file sizes, convert PDFs and prepare application documents privately in your browser.</p>
         </div>
         <span className="privacy-inline">
           <ShieldCheck size={17} /> Files stay on your device
@@ -88,7 +88,7 @@ export default function Page() {
           them can get your application rejected before it&apos;s even reviewed.
         </p>
         <p>
-          Appliory processes your files locally in your browser without uploading document contents to our processing servers. Each tool has its own supported formats, file-size limits and batch capacity. Please check individual tool specifications before selecting your files.
+          Appliory processes your files locally in your browser without uploading their contents to our document-processing servers. Each tool has specific file-size, format and batch limits. Please check the individual tool specifications before selecting your documents.
         </p>
         <p>
           Our tools are especially useful for Pakistani applicants preparing documents for PPSC, FPSC, NTS, NADRA,

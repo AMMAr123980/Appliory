@@ -24,7 +24,7 @@ import { pageMetadata } from "@/lib/seo";
 import { StructuredData } from "@/components/appliory/structured-data";
 
 export const metadata = pageMetadata(
-  "Document & Image Preparation Tools Online",
+  "Free Online Document Preparation Tools",
   "Free online tools to check file sizes, compress images, resize photos, count PDF pages and prepare application documents. No login, private in-browser processing.",
   "/",
   [

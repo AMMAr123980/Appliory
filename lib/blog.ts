@@ -80,7 +80,7 @@ export const blogPosts: BlogPost[] = [
     faqs: [
       [
         "Can I compress a PNG photo to 20KB for PPSC?",
-        "Yes, but we recommend converting it to JPEG first. PNG files use lossless compression, which means they cannot be reduced as much as JPEG without losing data. Most government portals also require JPEG specifically.",
+        "Yes, but we recommend converting it to JPEG first. PNG files use lossless compression, which means they cannot be reduced as much as JPEG without losing data. Check your specific portal's format requirement before submitting — PPSC and FPSC portals specify JPEG, but other portals may differ.",
       ],
       [
         "What if my photo is already 20KB but still gets rejected?",
@@ -726,7 +726,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-11-03",
     readTime: "7 min read",
     intro:
-      "Applying for a government job through PPSC (Punjab Public Service Commission) or FPSC (Federal Public Service Commission) requires preparing several digital documents to exact specifications. Many candidates are rejected or have their applications flagged simply because their photo is 22KB instead of 20KB, or their challan scan is too blurry, or their signature is in the wrong format. This complete guide covers every document requirement so you can prepare your application correctly the first time.",
+      "Applying for a government job through PPSC (Punjab Public Service Commission) or FPSC (Federal Public Service Commission) requires preparing several digital documents to exact specifications. Many candidates' applications are flagged because their photos exceed the stated portal ceiling — for example, uploading a file larger than 25KB for PPSC or 30KB for FPSC. Preparing documents to the correct size, dimensions and format in advance prevents last-minute rejections. This complete guide covers every document requirement so you can prepare your application correctly the first time.",
     keywords: [
       "ppsc document requirements",
       "fpsc application documents",

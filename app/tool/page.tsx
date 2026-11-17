@@ -4,7 +4,7 @@ import Tool from "@/components/appliory/tool";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata(
-  "Free Document Checker Online — Private File & PDF Validator",
+  "Application Document Checker Online",
   "Check application requirements, missing files, PDF page counts, file sizes, and image dimensions locally in your browser with zero document uploads & privacy.",
   "/tool",
 );
@@ -89,9 +89,9 @@ export default function Page() {
             Candidates applying for <strong>PPSC, FPSC, NTS, CSS</strong>, university admissions (HEC, international colleges), Erasmus, Chevening, Fulbright scholarships, and corporate job applications where strict upload limits lead to rejected applications.
           </p>
 
-          <h2>Complete Privacy Guarantee</h2>
+          <h2>Local File Processing &amp; Privacy</h2>
           <p>
-            Your documents never leave your computer or phone. All cryptographic checks, PDF parsing, and image measurements run 100% on your device using client-side JavaScript and WebAssembly. No files are uploaded to any server.
+            Your documents never leave your computer or phone. All cryptographic checks, PDF parsing, and image measurements run 100% on your device using client-side JavaScript. Document contents are not sent to any processing server. Standard website hosting, analytics, and security requests collect only anonymous access data — never your files.
           </p>
         </article>
       </section>
