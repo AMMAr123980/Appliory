@@ -149,7 +149,7 @@ export default function RootLayout({
         <Script
           strategy="afterInteractive"
           src="https://analytics.ahrefs.com/analytics.js"
-          data-key="+esYWE0KYUZz/T2uUK8aDg"
+          data-key="+esYWEOKYUZz/T2uUK8aDg"
         />
         {/* Google AdSense */}
         <Script
